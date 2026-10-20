@@ -7,6 +7,9 @@
 - 공포·탐욕 지수: CNN Business 데이터 엔드포인트.
 - 원/달러 환율: yfinance KRW=X.
 
+- 종목코드가 비어 있는 data/stocks.json 항목은 KRX 상장법인 목록(KIND)과 네이버 자동완성으로
+  이름을 찾아 코드를 채워 넣어요. 3번 찾지 못하면 비상장으로 보고 더 찾지 않아요.
+
 어떤 항목을 못 받아와도 기존 값은 그대로 두고 다음 종목으로 넘어가요.
 업데이트할 종목은 data/stocks.json(사이트 기본 종목 목록 전체), data/portfolio.json(보유·장기·비교 종목), data/market.json에 이미 있는 종목이에요.
 """
@@ -189,6 +192,24 @@ def update_us(symbol, quotes, funds, key):
                 v = info.get(src)
                 if isinstance(v, (int, float)):
                     f[dst] = float(v)
+            # ETF는 EPS·배당금 항목이 비어 있는 경우가 많아 대체 항목으로 채워요
+            if "dps" not in f or f.get("dps") is None:
+                v = info.get("trailingAnnualDividendRate")
+                if isinstance(v, (int, float)) and v > 0:
+                    f["dps"] = float(v)
+                else:
+                    y = info.get("yield") or info.get("dividendYield")
+                    if isinstance(y, (int, float)) and y > 0:
+                        y = y / 100 if y > 1 else y
+                        f["dps"] = round(price * y, 4)
+            pe = info.get("trailingPE")
+            if f.get("eps") is None and isinstance(pe, (int, float)) and pe > 0:
+                f["eps"] = round(price / pe, 4)
+            er = info.get("netExpenseRatio") or info.get("annualReportExpenseRatio")
+            if isinstance(er, (int, float)):
+                f["expense"] = float(er)
+            if info.get("quoteType") == "ETF":
+                f["etf"] = True
             f["asOf"] = date
             f["source"] = "Yahoo Finance (자동 갱신)"
         except Exception as e:
@@ -239,6 +260,97 @@ def update_fx(market):
         log(f"  · 환율 실패: {e}")
 
 
+def _nz(name):
+    return re.sub(r"\s+", "", str(name or "")).upper().replace("(주)", "")
+
+
+def krx_listing():
+    """KRX KIND 상장법인 목록 → {정규화된 회사명: 종목코드}"""
+    url = "https://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13"
+    try:
+        r = requests.get(url, headers=UA, timeout=30)
+        r.raise_for_status()
+        html = r.content.decode("euc-kr", errors="ignore")
+    except Exception as e:
+        log(f"  · KRX 상장법인 목록 실패: {e}")
+        return {}
+    out = {}
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S | re.I):
+        cells = [re.sub(r"<[^>]+>", "", c).strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", row, re.S | re.I)]
+        if len(cells) < 3:
+            continue
+        code = next((c for c in cells[1:4] if re.fullmatch(r"[0-9A-Z]{6}", c)), None)
+        if code:
+            out[_nz(cells[0])] = code
+    log(f"  · KRX 상장법인 {len(out)}개 불러옴")
+    return out
+
+
+def naver_lookup(name):
+    """네이버 증권 자동완성에서 이름이 정확히 같은 국내 종목 코드를 찾아요."""
+    try:
+        r = requests.get("https://ac.stock.naver.com/ac", params={"q": name, "target": "stock"}, headers=UA, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+    except Exception:
+        return None
+    found = []
+
+    def walk(o):
+        if isinstance(o, dict):
+            c, n = o.get("code"), o.get("name")
+            if isinstance(c, str) and isinstance(n, str) and re.fullmatch(r"[0-9A-Z]{6}", c):
+                nation = str(o.get("nationCode") or o.get("nation") or "KOR")
+                if nation in ("KOR", "KR", "") or str(o.get("typeCode", "")).upper() in ("KOSPI", "KOSDAQ", "KONEX"):
+                    found.append((n, c))
+            for v in o.values():
+                walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+
+    walk(data)
+    for n, c in found:
+        if _nz(n) == _nz(name):
+            return c
+    return None
+
+
+def resolve_codes(stocks):
+    """코드가 없는 종목을 찾아 채워요. 바뀐 게 있으면 True."""
+    todo = [s for s in stocks if not s.get("code") and s.get("listed") is not False]
+    if not todo:
+        return False
+    log(f"종목코드 찾기: {len(todo)}개")
+    listing = krx_listing()
+    changed = False
+    for s in todo:
+        names = [s["name"]] + list(s.get("aliases", []))
+        code = None
+        for n in names:
+            code = listing.get(_nz(n))
+            if code:
+                break
+        if not code:
+            for n in names:
+                code = naver_lookup(n)
+                time.sleep(0.2)
+                if code:
+                    break
+        if code:
+            s["code"] = f"KRX:{code}"
+            s.pop("tries", None)
+            s["listed"] = True
+            log(f"  ✓ {s['name']} → {code}")
+        else:
+            s["tries"] = int(s.get("tries", 0)) + 1
+            if s["tries"] >= 3:
+                s["listed"] = False
+            log(f"  · {s['name']} 코드를 찾지 못함 ({s['tries']}회)")
+        changed = True
+    return changed
+
+
 def main():
     market = load(MARKET, {"quotes": {}, "fundamentals": {}, "feargreed": None, "fx": {}})
     pf = load(PORTFOLIO, {})
@@ -246,6 +358,8 @@ def main():
     funds = market.setdefault("fundamentals", {})
 
     stocks = load(STOCKS, [])
+    if resolve_codes(stocks):
+        STOCKS.write_text(json.dumps(stocks, ensure_ascii=False, indent=1), encoding="utf-8")
     codes = set(quotes) | set(funds) | set(pf.get("watch", []))
     for st in stocks:
         if st.get("code"):
@@ -264,13 +378,13 @@ def main():
     ok = 0
     for key in sorted(codes):
         ex, _, sym = key.partition(":")
-        if ex == "KRX" and re.fullmatch(r"\d{6}", sym):
+        if ex == "KRX" and re.fullmatch(r"[0-9A-Z]{6}", sym):
             ok += update_kr(sym, quotes, funds, key)
         elif ex in ("NASDAQ", "NYSE", "NYSEARCA", "AMEX"):
             ok += update_us(sym, quotes, funds, key)
         else:
             log(f"  · {key} 알 수 없는 코드 형식, 건너뜀")
-        time.sleep(0.4)
+        time.sleep(0.25)
 
     update_feargreed(market)
     update_fx(market)

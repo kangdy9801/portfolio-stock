@@ -416,7 +416,7 @@ th.sort[aria-sort="descending"]::after{content:" ▼";font-size:9px}
       </div>
       <p class="code" id="wHint" style="padding:0 20px;margin:-4px 0 8px"></p>
       <div id="wNew" class="wnew" hidden>
-        <p class="code" style="margin:0 0 8px">목록에 없는 종목이에요. 정보를 직접 넣으면 비교에 추가돼요. 현재가·EPS·BPS를 넣으면 PER·PBR도 바로 계산돼요(나중에 채팅에서 “<span id="wNewNm"></span> 재무 업데이트해줘”라고 해도 돼요).</p>
+        <p class="code" style="margin:0 0 8px">목록에 없는 종목이에요. 정보를 직접 넣으면 비교에 추가돼요. 현재가·EPS·BPS를 넣으면 PER·PBR도 바로 계산돼요(<span id="wNewNm"></span> 같은 기본 목록 밖 종목을 자동 업데이트하려면 저장소의 data/stocks.json에 추가하세요).</p>
         <div class="lf-grid" style="grid-template-columns:repeat(7,minmax(0,1fr)) auto">
           <div class="field"><label for="nName">종목명</label><input id="nName"></div>
           <div class="field"><label for="nCode">코드</label><input id="nCode" placeholder="KRX:000000"></div>
@@ -529,7 +529,7 @@ th.sort[aria-sort="descending"]::after{content:" ▼";font-size:9px}
     <section class="panel drop" id="dropZone" aria-labelledby="dropTitle">
       <div>
         <h2 id="dropTitle">보고서 PDF 올리기</h2>
-        <p class="code" style="margin:4px 0 0">국가데이터처 <b>산업활동동향</b>, 산업통상부 <b>수출입 동향</b>, 국가데이터처 <b>소비자물가동향</b> 보도자료를 올리면 종류를 알아서 구분해 섹터별로 정리하고 월별 기록에 더해요. 같은 달 같은 자료를 다시 올리면 새 내용으로 바꿔요.</p>
+        <p class="code" style="margin:4px 0 0">국가데이터처 <b>산업활동동향</b>, 산업통상부 <b>수출입 동향</b>, 국가데이터처 <b>소비자물가동향</b> 보도자료 PDF를 올리면 브라우저에서 바로 표와 문장을 읽어 섹터별로 정리해요(외부 서비스 없이 동작). 여기서 올린 결과는 이 브라우저에 저장되고, 저장소의 <b>reports</b> 폴더에 같은 PDF를 올리면 GitHub Actions가 분석해 모든 기기에 반영해요.</p>
       </div>
       <label class="btn primary" style="white-space:nowrap">PDF 선택<input type="file" id="pdfIn" accept="application/pdf,.pdf" multiple style="display:none"></label>
       <div id="upStatus" class="up-status"></div>
@@ -540,11 +540,12 @@ th.sort[aria-sort="descending"]::after{content:" ▼";font-size:9px}
   </section>
 
   <div class="panel note">
-    <b>매일 종가 반영 방법</b> — 이 페이지는 외부 시세 사이트에 직접 접속할 수 없어요. Claude 채팅에서 “주가 업데이트해줘”라고 하면 보유 종목과 비교 종목의 종가, 공포·탐욕 지수, 재무 데이터를 찾아 이 페이지에 채워 넣어요. 급할 땐 종목 상세 화면에서 현재가를 직접 입력할 수도 있어요.
+    <b>매일 종가 반영 방법</b> — GitHub Actions가 평일 16:30(한국장 마감 후)과 다음 날 07:30(미국장 마감 후)에 기본 종목 117개와 내 종목의 종가·EPS·BPS·배당금, 공포·탐욕 지수, 환율을 받아 와요. 바로 받고 싶으면 저장소 Actions 탭에서 ‘Run workflow’를 누르세요. 급할 땐 종목 상세 화면에서 현재가를 직접 입력할 수도 있어요.
     <br><span id="storeNote"></span>
     <div id="backupBox" style="display:none;margin-top:10px;gap:8px;flex-wrap:wrap;align-items:center">
       <button class="btn small" id="expBtn">백업 내보내기 (portfolio.json)</button>
       <label class="btn small" style="display:inline-block">백업 불러오기<input type="file" id="impFile" accept="application/json,.json" style="display:none"></label>
+      <button class="btn small" id="resetBtn">이 브라우저 데이터 초기화</button>
       <span class="code" id="bkHint"></span>
     </div>
   </div>
@@ -554,6 +555,7 @@ th.sort[aria-sort="descending"]::after{content:" ▼";font-size:9px}
 <div class="tip" id="tip"></div>
 <div class="scrim" id="scrim"></div>
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dName" tabindex="-1"></aside>
+<script src="scripts/report_parser.js"></script>
 <script>
 (function(){
 "use strict";
@@ -619,7 +621,8 @@ const state = {
 const ui = { tab:"portfolio", sector:"전체", sort:{key:"rel", dir:1}, divYear: new Date().getFullYear(), logType:"div" };
 let backend = "local", pRef = null, mRef = null, dirtyP = false, dirtyM = false;
 let openCode = null;
-const LS_KEY = "pf-v2";
+const LS_KEY = "pf-v3";
+const IS_GH = () => true;
 
 /* ───────── 포맷 ───────── */
 const won = n => (n==null||!isFinite(n)) ? "—" : Math.round(n).toLocaleString("ko-KR");
@@ -999,7 +1002,7 @@ function renderGoal(typing){
 
 /* ───────── 섹터 비교 ───────── */
 function universe(){
-  const set = new Set(Object.keys(state.market.fundamentals||{}));
+  const set = new Set();
   state.holdings.forEach(h=>set.add(h.code)); state.longHoldings.forEach(h=>set.add(h.code)); (state.watch||[]).forEach(c=>set.add(c));
   const hid = new Set(state.hiddenCmp||[]);
   return [...set].filter(c=>!hid.has(c)).map(metrics);
@@ -1219,7 +1222,7 @@ function renderDrawer(code){
     }
     body += `<div class="d-src">${[f.source?esc(f.source):"", f.asOf?esc(f.asOf)+" 기준":""].filter(Boolean).join(" · ")}${(f.source||f.asOf)?". ":""}PER·PBR·배당수익률은 현재가로 다시 계산했어요.</div>`;
   } else {
-    body += `<div class="d-sec"><h4>재무 정보</h4><div class="d-empty">아직 이 종목의 재무 데이터가 없어요. Claude 채팅에서 “${esc(m.name)} 재무 업데이트해줘”라고 하면 PER, PBR, EPS, 순이익, 분기 실적을 채워 넣어요.</div></div>`;
+    body += `<div class="d-sec"><h4>재무 정보</h4><div class="d-empty">아직 이 종목의 재무 데이터가 없어요. ${(DICT.some(x=>x[1]===code) ? "기본 종목 목록에 있는 종목이라 다음 자동 업데이트(평일 16:30·07:30) 때 현재가·EPS·BPS·배당금이 채워져요. 바로 보려면 GitHub 저장소 Actions에서 ‘Run workflow’를 누르세요." : "기본 종목 목록에 없는 종목은 저장소의 data/stocks.json에 한 줄 추가하면 자동 업데이트돼요. 지금은 위 ‘현재가 직접 입력’이나 섹터 비교의 ‘편집’으로 입력할 수 있어요.")}</div></div>`;
   }
   d.innerHTML = body;
   document.getElementById("dClose").onclick = closeDrawer;
@@ -1562,7 +1565,7 @@ function renderUpNext(){
     return `<div class="up-item"><div class="dd ${dd<=3?"soon":""}">${dd===0?"오늘":"D-"+dd} · ${fmtD(e.d)}(${wday(e.d)})${e.t?" "+esc(e.t):""}</div>
       <div class="tt"><span class="kchip" style="background:${K[1]}"></span>${esc(CNAME[e.c]||"")} ${esc(e.title)}</div>
       <div class="mt">${esc(e.note||e.forecast||"")}${e.tentative?" (날짜 잠정)":""}</div></div>`;
-  }).join("") : `<p class="code" style="margin:0">예정된 일정이 없어요. 채팅에서 “경제 일정 업데이트해줘”라고 하면 채워 넣어요.</p>`;
+  }).join("") : `<p class="code" style="margin:0">예정된 일정이 없어요. 경제 일정·금리 탭의 ‘내 일정 추가’나 저장소 data/market.json의 macro.events에서 추가할 수 있어요.</p>`;
 }
 function stepAt(list, t, key){ let v=null; for(const p of list){ if(p.d<=t) v=p[key]; else break; } return v; }
 function renderRateChart(){
@@ -1934,7 +1937,7 @@ function savedList(types){
   types.forEach(k=>Object.values(R[k]||{}).forEach(rec=>rows.push({k, rec})));
   rows.sort((a,b)=>b.rec.month.localeCompare(a.rec.month));
   return `<section class="panel rpanel"><h2>저장된 보고서</h2><table class="sumtab"><thead><tr><th class="l">기준월</th><th class="l">종류</th><th class="l">발표일</th><th class="l">추가 방법</th><th></th></tr></thead><tbody>` +
-    rows.map(r=>`<tr><td class="l">${mLabel(r.rec.month)}</td><td class="l">${RT[r.k]}</td><td class="l">${esc(r.rec.released||"—")}</td><td class="l code">${r.rec.via==="page"?"페이지에서 PDF 분석":"채팅에서 정리"}</td><td><button class="del" data-delrep="${r.k}|${r.rec.month}">삭제</button></td></tr>`).join("") + `</tbody></table></section>`;
+    rows.map(r=>`<tr><td class="l">${mLabel(r.rec.month)}</td><td class="l">${RT[r.k]}</td><td class="l">${esc(r.rec.released||"—")}</td><td class="l code">${r.rec.via==="parser"?"PDF 자동 분석":"기존 데이터"}</td><td><button class="del" data-delrep="${r.k}|${r.rec.month}">삭제</button></td></tr>`).join("") + `</tbody></table></section>`;
 }
 function renderReport(){
   const view = ui.rView || "trade";
@@ -1953,7 +1956,7 @@ function renderReport(){
     return `<button data-rm="${m}" aria-pressed="${ui[key]===m}">${mLabel(m)} <span style="opacity:.7;font-size:11.5px">${has}</span></button>`;
   }).join("");
   const body = document.getElementById("reportBody");
-  if(!months.length){ body.innerHTML = `<div class="panel empty-r">아직 분석할 ${view==="trade"?"수출입동향(또는 산업활동동향)":"소비자물가동향"} 보고서가 없어요. 위에서 PDF를 올려 주세요.</div>` + savedList(["ip","trade","cpi","tp"]); return; }
+  if(!months.length){ body.innerHTML = `<div class="panel empty-r">아직 분석할 ${view==="trade"?"수출입동향(또는 산업활동동향)":"소비자물가동향"} 보고서가 없어요. 위에서 PDF를 올리면 바로 분석해요. 저장소의 reports 폴더에 PDF를 올리면 GitHub가 자동으로 분석해 모든 기기에 반영해요.</div>`; return; }
   body.innerHTML = view==="trade" ? tradeView(ui[key]) : cpiView(ui[key]);
 }
 /* ── 짝 분석: T월 수출입 ↔ (T-1)월 산업활동 ── */
@@ -2016,7 +2019,7 @@ function sectorCards(T){
     if(!prods.length && !exps.length) return null;
     const a = prods[0], x = exps[0];
     const chips = [];
-    const both = x && ((x.pv && x.pv.vol_yoy>0 && x.pv.price_yoy>0) || /물량.*(단가|가격).*모두|물량도 확대|물량.*개선/.test((x.note||"")+" "+((x.pv&&x.pv.note)||"")));
+    const both = x && ((x.pv && x.pv.vol_yoy>0 && x.pv.price_yoy>0) || /물량.*(단가|가격).*모두|물량도 확대|물량.*개선|수출\s*물량\s*확대|물량.*단가.*상승/.test((x.note||"")+" "+((x.pv&&x.pv.note)||"")));
     const priceLed = x && x.pv && x.pv.vol_yoy<0 && x.pv.price_yoy>0;
     if(x && a){
       if(x.e.yoy>20 && both) chips.push(sig("good","물량·가격 동반 호조"));
@@ -2072,7 +2075,9 @@ function investorGuide(T){
     items.push({t:"반도체는 수출액보다 재고와 출하를 먼저 보세요", data, s, how:"수출은 계속 강한데 반도체 재고가 다시 쌓이기 시작하면 경계해야 해요. 반대로 출하 증가와 재고 감소가 이어지면 수요의 질이 좋은 거예요. 한 달 수치보다 두세 달 연속인지가 중요해요."}); }
   // 2 가격 vs 물량 + 속도
   { const pv = (own&&own.priceVolume)||[];
-    const both = pv.filter(x=>(x.vol_yoy>0&&x.price_yoy>0) || /물량.*(단가|가격).*모두|물량도 확대|물량.*개선/.test(x.note||"")).map(x=>x.name);
+    const notes = (own&&own.itemNotes)||{};
+    const bothRe = /물량.*(단가|가격).*모두|물량도 확대|물량.*개선|수출\s*물량\s*확대|물량\s*확대.*가격|물량.*단가.*상승/;
+    const both = [...new Set(pv.filter(x=>(x.vol_yoy>0&&x.price_yoy>0) || bothRe.test(x.note||"")).map(x=>x.name).concat(Object.entries(notes).filter(([k,v])=>bothRe.test(v)).map(([k])=>k)))];
     const pl = pv.filter(x=>x.vol_yoy<0&&x.price_yoy>0).map(x=>`${x.name}(물량 ${fmtP(x.vol_yoy)}, 단가 ${fmtP(x.price_yoy)})`);
     const ds = priceSpeed(T,"DDR5 16Gb 고정가($)"), oil = priceSpeed(T,"두바이유($/b)");
     let speed = "", spdTxt = "메모리 고정가격의 수준보다 전월 대비 상승률이 커지는지 작아지는지가 앞으로의 수출 증가율에는 더 중요해요.";
@@ -2458,32 +2463,23 @@ async function handleFiles(files){
   for(const f of files){
     const id = "u"+Math.random().toString(36).slice(2,8);
     try{
+      if(!window.ReportParser) throw new Error("scripts/report_parser.js를 불러오지 못했어요. 저장소에 파일이 있는지 확인하세요.");
       stat(id, `<b>${esc(f.name)}</b> · 텍스트 읽는 중…`);
-      const probe = await pdfText(f, 2);
-      const det = detectType(probe.text);
-      if(!det.type){ stat(id, `<b>${esc(f.name)}</b> · 산업활동동향·수출입동향·소비자물가동향 보도자료가 아니에요.`, true); continue; }
-      const full = await pdfText(f, det.type==="ip" ? 60 : det.type==="cpi" ? 17 : det.type==="trade" ? 30 : 14);
-      let text = full.text;
-      if(det.type==="ip"){
-        const pages = text.split(/\n(?=\[p\d+\])/);
-        const keep = pages.filter((p,i)=> i<34 || /업종별\s*생산\s*\.?\s*출하/.test(p));
-        text = keep.join("\n");
-      }
-      if(text.length > 80000) text = text.slice(0,80000);
-      const sample = window.claude && typeof window.claude.use==="function" ? await claude.use("sample") : null;
-      if(!sample){ stat(id, `<b>${esc(f.name)}</b> · 이 화면에서는 PDF 자동 분석을 쓸 수 없어요. Claude 채팅에 PDF를 올려 “보고서 추가해줘”라고 하면 정리해 넣어 드려요.`, true); continue; }
-      stat(id, `<b>${esc(f.name)}</b> · ${det.month?mLabel(det.month)+" ":""}${RT[det.type]} 분석 중… (30초~1분)`);
-      const j = await sample.json(buildPrompt(det.type, text), {modelTier:"default"});
-      const rec = sanitize(det.type, j, det.month);
-      state.reports[det.type] = state.reports[det.type] || {};
-      const existed = !!state.reports[det.type][rec.month];
-      state.reports[det.type][rec.month] = rec;
+      const probe = await pdfText(f, 3);
+      const det = ReportParser.detect(probe.text);
+      if(!det.type || det.type==="tp"){ stat(id, `<b>${esc(f.name)}</b> · 산업활동동향·수출입동향·소비자물가동향 보도자료가 아니에요.`, true); continue; }
+      stat(id, `<b>${esc(f.name)}</b> · ${det.month?mLabel(det.month)+" ":""}${RT[det.type]} 분석 중…`);
+      const full = await pdfText(f, ReportParser.maxPages[det.type]||30);
+      const res = ReportParser.parse(full.text);
+      const rec = res.rec;
+      state.reports[res.type] = state.reports[res.type] || {};
+      const existed = !!state.reports[res.type][rec.month];
+      state.reports[res.type][rec.month] = rec;
       await saveReports();
-      ui.rView = det.type==="cpi" ? "cpi" : "trade"; ui[ui.rView==="trade"?"rMonthT":"rMonthC"] = det.type==="ip" ? nextMonth(rec.month) : rec.month; renderReport();
-      stat(id, `<b>${esc(f.name)}</b> · ${mLabel(rec.month)} ${RT[det.type]}를 ${existed?"새 내용으로 바꿨어요":"추가했어요"}. 숫자는 원문과 한 번 대조해 보세요.`);
+      ui.rView = res.type==="cpi" ? "cpi" : "trade"; ui[ui.rView==="trade"?"rMonthT":"rMonthC"] = res.type==="ip" ? nextMonth(rec.month) : rec.month; renderReport();
+      stat(id, `<b>${esc(f.name)}</b> · ${mLabel(rec.month)} ${RT[res.type]}를 ${existed?"새 내용으로 바꿨어요":"추가했어요"}. 이 브라우저에 저장됐어요. 모든 기기에 남기려면 같은 PDF를 저장소의 <code>reports</code> 폴더에 올리세요.`);
     }catch(e){
-      const msg = e && e.code==="not_granted" ? "Claude 사용 권한이 허용되지 않았어요." : e && e.code==="rate_limited" ? "잠시 후 다시 시도해 주세요." : (e && e.message) || "알 수 없는 오류";
-      stat(id, `<b>${esc(f.name)}</b> · 분석하지 못했어요: ${esc(msg)}`, true);
+      stat(id, `<b>${esc(f.name)}</b> · 분석하지 못했어요: ${esc((e && e.message) || "알 수 없는 오류")}`, true);
     }
   }
 }
@@ -2497,7 +2493,7 @@ async function saveReports(){
   dirtyR = true;
   try{
     if(backend==="db" && rRef){ await rRef.set(JSON.parse(JSON.stringify(state.reports))); }
-    else { try{ localStorage.setItem("pf-reports", JSON.stringify(state.reports)); }catch(_){} }
+    else { try{ localStorage.setItem("pf-reports-v3", JSON.stringify(state.reports)); }catch(_){} }
   }catch(_){}
   dirtyR = false;
 }
@@ -2628,7 +2624,7 @@ document.getElementById("wAdd").onclick = ()=>{
   state.hiddenCmp = (state.hiddenCmp||[]).filter(x=>x!==d[1]);
   inp.value=""; ui.sector = d[2];
   const has = !!(state.market.fundamentals||{})[d[1]];
-  hint.textContent = has ? `${d[0]} 추가됨.` : `${d[0]} 추가됨. 재무 데이터는 채팅에서 “${d[0]} 재무 업데이트해줘”라고 하면 채워져요.`;
+  hint.textContent = has ? `${d[0]} 추가됨.` : `${d[0]} 추가됨. 아직 시세가 없어요. 다음 자동 업데이트(평일 16:30·07:30) 때 채워지고, 바로 보려면 저장소 Actions에서 ‘Run workflow’를 누르세요.`;
   render(); scheduleSave();
 };
 document.getElementById("wName").addEventListener("keydown", e=>{ if(e.key==="Enter") document.getElementById("wAdd").click(); });
@@ -2716,7 +2712,7 @@ function applyP(d){
 }
 function applyM(d){ state.market = Object.assign({quotes:{},fundamentals:{},feargreed:null,fx:{}}, d ? JSON.parse(JSON.stringify(d)) : {}); }
 function loadLocal(){
-  try{ const rr = localStorage.getItem("pf-reports"); if(rr) state.reports = Object.assign({ip:{},trade:{},cpi:{},tp:{}}, JSON.parse(rr)); }catch(_){}
+  try{ const rr = localStorage.getItem("pf-reports-v3"); if(rr) state.reports = Object.assign({ip:{},trade:{},cpi:{},tp:{}}, JSON.parse(rr)); }catch(_){}
   try{ const raw = localStorage.getItem(LS_KEY); if(!raw) return false; const o = JSON.parse(raw); if(o.p) applyP(o.p); if(o.m) applyM(o.m); return !!o.p; }catch(_){ return false; }
 }
 /* GitHub Pages 등 일반 웹에서 열었을 때: data/market.json(자동 갱신 시세)과 data/portfolio.json(초기 포트폴리오)을 읽어요 */
@@ -2742,14 +2738,16 @@ async function loadRepo(hadLocal){
 document.getElementById("expBtn").onclick = async ()=>{
   const text = JSON.stringify(Object.assign(snapshotP(), {reports: state.reports}), null, 2);
   const hint = document.getElementById("bkHint");
-  if(window.claude && typeof window.claude.use==="function"){
-    try{ const dl = await claude.use("downloads"); if(dl){ const r = await dl.save({filename:"portfolio.json", data:text}); hint.textContent = "portfolio.json을 저장했어요. GitHub의 data/portfolio.json을 이 파일로 바꾸고, reports 항목은 data/reports.json으로 옮기세요."; return; } }
-    catch(e){ hint.textContent = "저장하지 않았어요."; return; }
-  }
   const blob = new Blob([text], {type:"application/json"});
   const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "portfolio.json";
   document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 500);
   document.getElementById("bkHint").textContent = "portfolio.json을 내려받았어요.";
+};
+document.getElementById("resetBtn").onclick = e=>{
+  const b = e.currentTarget;
+  if(!b.classList.contains("confirm")){ b.classList.add("confirm"); b.textContent = "정말 초기화할까요? 한 번 더 누르세요"; setTimeout(()=>{ b.classList.remove("confirm"); b.textContent = "이 브라우저 데이터 초기화"; }, 3000); return; }
+  try{ ["pf-v2","pf-v3","pf-reports","pf-reports-v3","pf-lastTab"].forEach(k=>localStorage.removeItem(k)); }catch(_){}
+  location.reload();
 };
 document.getElementById("impFile").onchange = async e=>{
   const f = e.target.files && e.target.files[0]; if(!f) return;
@@ -2763,32 +2761,7 @@ async function init(){
   const hadLocal = loadLocal();
   setTab(location.hash.slice(1));
   setNote("데이터는 이 브라우저에만 저장돼요.");
-  if(!window.claude || typeof window.claude.use!=="function"){ await loadRepo(hadLocal); return; }
-  claude.use("downloads").then(dl=>{ if(dl){ document.getElementById("backupBox").style.display="flex"; document.querySelector('#backupBox label').style.display="none"; } }).catch(()=>{});
-  try{
-    const [db,user] = await Promise.all([claude.use("db"), claude.use("user")]);
-    if(!db || !user) return;
-    const uid = await user.id();
-    if(!uid) return;
-    pRef = db.doc("data/users/"+uid+"/portfolio");
-    mRef = db.doc("data/users/"+uid+"/market");
-    rRef = db.doc("data/users/"+uid+"/reports");
-    rRef.onSnapshot(s=>{ if(dirtyR) return; const d = s.exists ? s.data() : null; state.reports = Object.assign({ip:{},trade:{},cpi:{},tp:{}}, d ? JSON.parse(JSON.stringify(d)) : {}); if(ui.tab==="report") renderReport(); }, ()=>{});
-    backend = "db";
-    setNote("데이터는 내 계정에 비공개로 저장돼요. 링크를 공유해도 다른 사람에게는 내 종목이 보이지 않아요.");
-    saveEl.textContent = "불러오는 중…";
-    pRef.onSnapshot(s=>{
-      if(dirtyP) return;
-      applyP(s.exists ? s.data() : null);
-      saveEl.textContent = "저장됨";
-      render();
-    }, ()=>{ saveEl.textContent="동기화가 끊겼어요 — 새로고침해 주세요"; });
-    mRef.onSnapshot(s=>{
-      if(dirtyM) return;
-      applyM(s.exists ? s.data() : null);
-      render();
-    }, ()=>{});
-  }catch(_){ backend="local"; }
+  await loadRepo(hadLocal);
 }
 init();
 })();

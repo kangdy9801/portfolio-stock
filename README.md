@@ -8,7 +8,9 @@ GitHub Pages로 공개하고, GitHub Actions가 평일마다 종가를 자동으
 ```
 index.html                         사이트 본체 (이 파일 하나로 동작)
 data/market.json                   종가·재무지표·공포탐욕지수·환율 (Actions가 자동 갱신)
-data/portfolio.json                처음 열었을 때 불러올 포트폴리오 + 자동 갱신할 종목 목록
+data/portfolio.json                처음 열었을 때 불러올 포트폴리오 (처음엔 비어 있음)
+data/stocks.json                   사이트 기본 종목 목록(117개) — 이 종목들은 매일 시세·재무가 자동 갱신돼요
+data/reports.json                  경제 보고서 기록 (처음엔 비어 있음)
 scripts/update_prices.py           시세를 받아오는 스크립트
 .github/workflows/update-prices.yml  매일 스크립트를 실행하는 예약 작업
 ```
@@ -49,9 +51,16 @@ GitHub 예약 작업은 몇 분~수십 분 늦게 시작될 수 있어요. 공�
 
 ## 4. 종목을 추가했을 때
 
+사이트 기본 종목 목록(`data/stocks.json`, 117개)에 있는 종목은 따로 할 일이 없어요. 매일 자동 업데이트 때 현재가·EPS·BPS·배당금이 함께 들어와서, 섹터 비교나 보유 종목에 추가하면 바로 PER·PBR이 계산돼요.
+처음 올린 직후에는 시세가 비어 있으니 Actions에서 **Run workflow**를 한 번 눌러 주세요.
+
+목록에 없는 종목을 자동 업데이트하려면 `data/stocks.json`에 `{"name":"종목명","code":"KRX:000000","sector":"섹터","currency":"KRW"}` 한 줄을 추가해 커밋하세요. 커밋하면 바로 시세를 받아와요.
+
+### 기기 간 동기화
+
 사이트에서 입력한 내용은 **그 브라우저에만** 저장돼요. 자동 업데이트 대상 종목을 바꾸려면:
 
-1. Claude 사이트(또는 GitHub 사이트) 맨 아래 **백업 내보내기**를 눌러 `portfolio.json`을 받아요.
+1. 사이트 맨 아래 **백업 내보내기**를 눌러 `portfolio.json`을 받아요.
 2. 저장소의 `data/portfolio.json`을 이 파일로 바꿔서 커밋해요.
 3. 다음 업데이트부터 새 종목의 종가·재무지표가 들어와요. (바로 보고 싶으면 Actions에서 **Run workflow**)
 
@@ -75,10 +84,14 @@ git add data/market.json && git commit -m "시세 업데이트" && git push
 - 금리가 바뀌면 `macro.rates.kr` 또는 `macro.rates.us`에 한 줄 추가
 - 사이트에서 ‘내 일정 추가’로 넣은 일정은 브라우저(백업 파일)에 저장돼요
 
-## 경제 보고서 (산업활동동향·소비자물가동향)
+## 경제 보고서 (산업활동동향·수출입동향·소비자물가동향)
 
-`data/reports.json`에 월별로 쌓여요. GitHub Pages에서는 Claude가 없어서 PDF 자동 분석이 동작하지 않아요.
-새 달 보고서는 Claude 사이트에서 PDF를 올려 분석한 뒤 **백업 내보내기**로 받은 파일의 `reports` 항목을 `data/reports.json`에 옮기면 돼요.
+외부 서비스 없이 PDF의 표와 문장을 정해진 규칙으로 읽어요(`scripts/report_parser.js`). 두 가지 방법이 있어요.
+
+- **모든 기기에 남기기(추천)**: 저장소의 `reports` 폴더에 보도자료 PDF를 올리세요(Add file → Upload files). GitHub Actions의 **경제 보고서 분석**이 자동으로 실행돼 `data/reports.json`에 반영돼요. 1~2분 뒤 사이트를 새로고침하면 보여요.
+- **바로 보기**: 사이트의 경제 보고서 탭에서 PDF를 올리면 브라우저에서 바로 분석해요. 결과는 그 브라우저에만 저장돼요.
+
+같은 달 같은 보고서를 다시 올리면 새 내용으로 바뀌어요. 정부 보도자료 양식이 크게 바뀌면 일부 숫자를 못 읽을 수 있으니, 처음 보는 달은 원문과 한 번 대조해 보세요.
 
 ## 데이터 출처
 

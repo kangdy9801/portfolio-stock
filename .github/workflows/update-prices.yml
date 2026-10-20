@@ -7,6 +7,11 @@ on:
     # 미국장 마감 후: 화~토 07:30 KST (= 22:30 UTC, 월~금)
     - cron: "30 22 * * 1-5"
   workflow_dispatch: {}   # Actions 탭에서 "Run workflow"로 바로 실행
+  push:                   # 종목 목록을 고쳐 커밋하면 바로 시세를 받아와요
+    branches: [main]
+    paths:
+      - "data/portfolio.json"
+      - "data/stocks.json"
 
 permissions:
   contents: write

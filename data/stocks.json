@@ -1,0 +1,704 @@
+[
+ {
+  "name": "삼성전자",
+  "code": "KRX:005930",
+  "sector": "반도체",
+  "currency": "KRW"
+ },
+ {
+  "name": "삼성전자우",
+  "code": "KRX:005935",
+  "sector": "반도체",
+  "currency": "KRW"
+ },
+ {
+  "name": "SK하이닉스",
+  "code": "KRX:000660",
+  "sector": "반도체",
+  "currency": "KRW"
+ },
+ {
+  "name": "한미반도체",
+  "code": "KRX:042700",
+  "sector": "반도체장비",
+  "currency": "KRW"
+ },
+ {
+  "name": "DB하이텍",
+  "code": "KRX:000990",
+  "sector": "반도체",
+  "currency": "KRW"
+ },
+ {
+  "name": "리노공업",
+  "code": "KRX:058470",
+  "sector": "반도체부품",
+  "currency": "KRW"
+ },
+ {
+  "name": "삼성전기",
+  "code": "KRX:009150",
+  "sector": "전자부품",
+  "currency": "KRW"
+ },
+ {
+  "name": "LG이노텍",
+  "code": "KRX:011070",
+  "sector": "전자부품",
+  "currency": "KRW"
+ },
+ {
+  "name": "이수페타시스",
+  "code": "KRX:007660",
+  "sector": "전자부품",
+  "currency": "KRW"
+ },
+ {
+  "name": "LG디스플레이",
+  "code": "KRX:034220",
+  "sector": "디스플레이",
+  "currency": "KRW"
+ },
+ {
+  "name": "LG전자",
+  "code": "KRX:066570",
+  "sector": "가전",
+  "currency": "KRW"
+ },
+ {
+  "name": "삼성SDS",
+  "code": "KRX:018260",
+  "sector": "IT서비스",
+  "currency": "KRW"
+ },
+ {
+  "name": "LG에너지솔루션",
+  "code": "KRX:373220",
+  "sector": "2차전지",
+  "currency": "KRW"
+ },
+ {
+  "name": "삼성SDI",
+  "code": "KRX:006400",
+  "sector": "2차전지",
+  "currency": "KRW"
+ },
+ {
+  "name": "포스코퓨처엠",
+  "code": "KRX:003670",
+  "sector": "2차전지",
+  "currency": "KRW"
+ },
+ {
+  "name": "에코프로비엠",
+  "code": "KRX:247540",
+  "sector": "2차전지",
+  "currency": "KRW"
+ },
+ {
+  "name": "에코프로",
+  "code": "KRX:086520",
+  "sector": "2차전지",
+  "currency": "KRW"
+ },
+ {
+  "name": "엘앤에프",
+  "code": "KRX:066970",
+  "sector": "2차전지",
+  "currency": "KRW"
+ },
+ {
+  "name": "삼성바이오로직스",
+  "code": "KRX:207940",
+  "sector": "바이오",
+  "currency": "KRW"
+ },
+ {
+  "name": "셀트리온",
+  "code": "KRX:068270",
+  "sector": "바이오",
+  "currency": "KRW"
+ },
+ {
+  "name": "알테오젠",
+  "code": "KRX:196170",
+  "sector": "바이오",
+  "currency": "KRW"
+ },
+ {
+  "name": "HLB",
+  "code": "KRX:028300",
+  "sector": "바이오",
+  "currency": "KRW"
+ },
+ {
+  "name": "SK바이오팜",
+  "code": "KRX:326030",
+  "sector": "바이오",
+  "currency": "KRW"
+ },
+ {
+  "name": "유한양행",
+  "code": "KRX:000100",
+  "sector": "제약",
+  "currency": "KRW"
+ },
+ {
+  "name": "한미약품",
+  "code": "KRX:128940",
+  "sector": "제약",
+  "currency": "KRW"
+ },
+ {
+  "name": "현대차",
+  "code": "KRX:005380",
+  "sector": "자동차",
+  "currency": "KRW"
+ },
+ {
+  "name": "기아",
+  "code": "KRX:000270",
+  "sector": "자동차",
+  "currency": "KRW"
+ },
+ {
+  "name": "현대모비스",
+  "code": "KRX:012330",
+  "sector": "자동차부품",
+  "currency": "KRW"
+ },
+ {
+  "name": "KB금융",
+  "code": "KRX:105560",
+  "sector": "금융",
+  "currency": "KRW"
+ },
+ {
+  "name": "신한지주",
+  "code": "KRX:055550",
+  "sector": "금융",
+  "currency": "KRW"
+ },
+ {
+  "name": "하나금융지주",
+  "code": "KRX:086790",
+  "sector": "금융",
+  "currency": "KRW"
+ },
+ {
+  "name": "우리금융지주",
+  "code": "KRX:316140",
+  "sector": "금융",
+  "currency": "KRW"
+ },
+ {
+  "name": "메리츠금융지주",
+  "code": "KRX:138040",
+  "sector": "금융",
+  "currency": "KRW"
+ },
+ {
+  "name": "기업은행",
+  "code": "KRX:024110",
+  "sector": "금융",
+  "currency": "KRW"
+ },
+ {
+  "name": "카카오뱅크",
+  "code": "KRX:323410",
+  "sector": "금융",
+  "currency": "KRW"
+ },
+ {
+  "name": "삼성생명",
+  "code": "KRX:032830",
+  "sector": "보험",
+  "currency": "KRW"
+ },
+ {
+  "name": "삼성화재",
+  "code": "KRX:000810",
+  "sector": "보험",
+  "currency": "KRW"
+ },
+ {
+  "name": "삼성증권",
+  "code": "KRX:016360",
+  "sector": "증권",
+  "currency": "KRW"
+ },
+ {
+  "name": "미래에셋증권",
+  "code": "KRX:006800",
+  "sector": "증권",
+  "currency": "KRW"
+ },
+ {
+  "name": "키움증권",
+  "code": "KRX:039490",
+  "sector": "증권",
+  "currency": "KRW"
+ },
+ {
+  "name": "NAVER",
+  "code": "KRX:035420",
+  "sector": "인터넷",
+  "currency": "KRW"
+ },
+ {
+  "name": "카카오",
+  "code": "KRX:035720",
+  "sector": "인터넷",
+  "currency": "KRW"
+ },
+ {
+  "name": "크래프톤",
+  "code": "KRX:259960",
+  "sector": "게임",
+  "currency": "KRW"
+ },
+ {
+  "name": "엔씨소프트",
+  "code": "KRX:036570",
+  "sector": "게임",
+  "currency": "KRW"
+ },
+ {
+  "name": "넷마블",
+  "code": "KRX:251270",
+  "sector": "게임",
+  "currency": "KRW"
+ },
+ {
+  "name": "하이브",
+  "code": "KRX:352820",
+  "sector": "엔터",
+  "currency": "KRW"
+ },
+ {
+  "name": "JYP Ent.",
+  "code": "KRX:035900",
+  "sector": "엔터",
+  "currency": "KRW"
+ },
+ {
+  "name": "에스엠",
+  "code": "KRX:041510",
+  "sector": "엔터",
+  "currency": "KRW"
+ },
+ {
+  "name": "POSCO홀딩스",
+  "code": "KRX:005490",
+  "sector": "철강·소재",
+  "currency": "KRW"
+ },
+ {
+  "name": "고려아연",
+  "code": "KRX:010130",
+  "sector": "비철금속",
+  "currency": "KRW"
+ },
+ {
+  "name": "LG화학",
+  "code": "KRX:051910",
+  "sector": "화학",
+  "currency": "KRW"
+ },
+ {
+  "name": "롯데케미칼",
+  "code": "KRX:011170",
+  "sector": "화학",
+  "currency": "KRW"
+ },
+ {
+  "name": "OCI홀딩스",
+  "code": "KRX:010060",
+  "sector": "화학",
+  "currency": "KRW"
+ },
+ {
+  "name": "한화솔루션",
+  "code": "KRX:009830",
+  "sector": "에너지",
+  "currency": "KRW"
+ },
+ {
+  "name": "SK이노베이션",
+  "code": "KRX:096770",
+  "sector": "에너지",
+  "currency": "KRW"
+ },
+ {
+  "name": "S-Oil",
+  "code": "KRX:010950",
+  "sector": "정유",
+  "currency": "KRW"
+ },
+ {
+  "name": "한국전력",
+  "code": "KRX:015760",
+  "sector": "유틸리티",
+  "currency": "KRW"
+ },
+ {
+  "name": "두산에너빌리티",
+  "code": "KRX:034020",
+  "sector": "원전·에너지",
+  "currency": "KRW"
+ },
+ {
+  "name": "한화에어로스페이스",
+  "code": "KRX:012450",
+  "sector": "방산",
+  "currency": "KRW"
+ },
+ {
+  "name": "한화시스템",
+  "code": "KRX:272210",
+  "sector": "방산",
+  "currency": "KRW"
+ },
+ {
+  "name": "LIG넥스원",
+  "code": "KRX:079550",
+  "sector": "방산",
+  "currency": "KRW"
+ },
+ {
+  "name": "현대로템",
+  "code": "KRX:064350",
+  "sector": "방산",
+  "currency": "KRW"
+ },
+ {
+  "name": "한국항공우주",
+  "code": "KRX:047810",
+  "sector": "방산",
+  "currency": "KRW"
+ },
+ {
+  "name": "HD현대중공업",
+  "code": "KRX:329180",
+  "sector": "조선",
+  "currency": "KRW"
+ },
+ {
+  "name": "HD한국조선해양",
+  "code": "KRX:009540",
+  "sector": "조선",
+  "currency": "KRW"
+ },
+ {
+  "name": "한화오션",
+  "code": "KRX:042660",
+  "sector": "조선",
+  "currency": "KRW"
+ },
+ {
+  "name": "삼성중공업",
+  "code": "KRX:010140",
+  "sector": "조선",
+  "currency": "KRW"
+ },
+ {
+  "name": "HD현대일렉트릭",
+  "code": "KRX:267260",
+  "sector": "전력기기",
+  "currency": "KRW"
+ },
+ {
+  "name": "LS ELECTRIC",
+  "code": "KRX:010120",
+  "sector": "전력기기",
+  "currency": "KRW"
+ },
+ {
+  "name": "효성중공업",
+  "code": "KRX:298040",
+  "sector": "전력기기",
+  "currency": "KRW"
+ },
+ {
+  "name": "삼성물산",
+  "code": "KRX:028260",
+  "sector": "지주",
+  "currency": "KRW"
+ },
+ {
+  "name": "SK",
+  "code": "KRX:034730",
+  "sector": "지주",
+  "currency": "KRW"
+ },
+ {
+  "name": "LG",
+  "code": "KRX:003550",
+  "sector": "지주",
+  "currency": "KRW"
+ },
+ {
+  "name": "SK스퀘어",
+  "code": "KRX:402340",
+  "sector": "지주",
+  "currency": "KRW"
+ },
+ {
+  "name": "LS",
+  "code": "KRX:006260",
+  "sector": "지주",
+  "currency": "KRW"
+ },
+ {
+  "name": "GS",
+  "code": "KRX:078930",
+  "sector": "지주",
+  "currency": "KRW"
+ },
+ {
+  "name": "SK텔레콤",
+  "code": "KRX:017670",
+  "sector": "통신",
+  "currency": "KRW"
+ },
+ {
+  "name": "KT",
+  "code": "KRX:030200",
+  "sector": "통신",
+  "currency": "KRW"
+ },
+ {
+  "name": "LG유플러스",
+  "code": "KRX:032640",
+  "sector": "통신",
+  "currency": "KRW"
+ },
+ {
+  "name": "HMM",
+  "code": "KRX:011200",
+  "sector": "해운",
+  "currency": "KRW"
+ },
+ {
+  "name": "대한항공",
+  "code": "KRX:003490",
+  "sector": "항공",
+  "currency": "KRW"
+ },
+ {
+  "name": "현대글로비스",
+  "code": "KRX:086280",
+  "sector": "물류",
+  "currency": "KRW"
+ },
+ {
+  "name": "CJ대한통운",
+  "code": "KRX:000120",
+  "sector": "물류",
+  "currency": "KRW"
+ },
+ {
+  "name": "현대건설",
+  "code": "KRX:000720",
+  "sector": "건설",
+  "currency": "KRW"
+ },
+ {
+  "name": "포스코인터내셔널",
+  "code": "KRX:047050",
+  "sector": "상사",
+  "currency": "KRW"
+ },
+ {
+  "name": "CJ제일제당",
+  "code": "KRX:097950",
+  "sector": "식품",
+  "currency": "KRW"
+ },
+ {
+  "name": "오리온",
+  "code": "KRX:271560",
+  "sector": "식품",
+  "currency": "KRW"
+ },
+ {
+  "name": "KT&G",
+  "code": "KRX:033780",
+  "sector": "필수소비재",
+  "currency": "KRW"
+ },
+ {
+  "name": "아모레퍼시픽",
+  "code": "KRX:090430",
+  "sector": "화장품",
+  "currency": "KRW"
+ },
+ {
+  "name": "LG생활건강",
+  "code": "KRX:051900",
+  "sector": "화장품",
+  "currency": "KRW"
+ },
+ {
+  "name": "이마트",
+  "code": "KRX:139480",
+  "sector": "유통",
+  "currency": "KRW"
+ },
+ {
+  "name": "KODEX 200",
+  "code": "KRX:069500",
+  "sector": "ETF",
+  "currency": "KRW"
+ },
+ {
+  "name": "KODEX 레버리지",
+  "code": "KRX:122630",
+  "sector": "ETF",
+  "currency": "KRW"
+ },
+ {
+  "name": "TIGER 미국S&P500",
+  "code": "KRX:360750",
+  "sector": "ETF",
+  "currency": "KRW"
+ },
+ {
+  "name": "TIGER 미국나스닥100",
+  "code": "KRX:133690",
+  "sector": "ETF",
+  "currency": "KRW"
+ },
+ {
+  "name": "애플",
+  "code": "NASDAQ:AAPL",
+  "sector": "IT하드웨어",
+  "currency": "USD"
+ },
+ {
+  "name": "마이크로소프트",
+  "code": "NASDAQ:MSFT",
+  "sector": "소프트웨어",
+  "currency": "USD"
+ },
+ {
+  "name": "엔비디아",
+  "code": "NASDAQ:NVDA",
+  "sector": "반도체",
+  "currency": "USD"
+ },
+ {
+  "name": "알파벳",
+  "code": "NASDAQ:GOOGL",
+  "sector": "인터넷",
+  "currency": "USD"
+ },
+ {
+  "name": "아마존",
+  "code": "NASDAQ:AMZN",
+  "sector": "이커머스",
+  "currency": "USD"
+ },
+ {
+  "name": "메타",
+  "code": "NASDAQ:META",
+  "sector": "인터넷",
+  "currency": "USD"
+ },
+ {
+  "name": "테슬라",
+  "code": "NASDAQ:TSLA",
+  "sector": "자동차",
+  "currency": "USD"
+ },
+ {
+  "name": "브로드컴",
+  "code": "NASDAQ:AVGO",
+  "sector": "반도체",
+  "currency": "USD"
+ },
+ {
+  "name": "TSMC",
+  "code": "NYSE:TSM",
+  "sector": "반도체",
+  "currency": "USD"
+ },
+ {
+  "name": "AMD",
+  "code": "NASDAQ:AMD",
+  "sector": "반도체",
+  "currency": "USD"
+ },
+ {
+  "name": "인텔",
+  "code": "NASDAQ:INTC",
+  "sector": "반도체",
+  "currency": "USD"
+ },
+ {
+  "name": "마이크론",
+  "code": "NASDAQ:MU",
+  "sector": "반도체",
+  "currency": "USD"
+ },
+ {
+  "name": "넷플릭스",
+  "code": "NASDAQ:NFLX",
+  "sector": "미디어",
+  "currency": "USD"
+ },
+ {
+  "name": "팔란티어",
+  "code": "NASDAQ:PLTR",
+  "sector": "소프트웨어",
+  "currency": "USD"
+ },
+ {
+  "name": "버크셔해서웨이",
+  "code": "NYSE:BRK.B",
+  "sector": "금융",
+  "currency": "USD"
+ },
+ {
+  "name": "JP모건",
+  "code": "NYSE:JPM",
+  "sector": "금융",
+  "currency": "USD"
+ },
+ {
+  "name": "비자",
+  "code": "NYSE:V",
+  "sector": "금융",
+  "currency": "USD"
+ },
+ {
+  "name": "코카콜라",
+  "code": "NYSE:KO",
+  "sector": "필수소비재",
+  "currency": "USD"
+ },
+ {
+  "name": "일라이릴리",
+  "code": "NYSE:LLY",
+  "sector": "제약",
+  "currency": "USD"
+ },
+ {
+  "name": "SPY",
+  "code": "NYSEARCA:SPY",
+  "sector": "ETF",
+  "currency": "USD"
+ },
+ {
+  "name": "QQQ",
+  "code": "NASDAQ:QQQ",
+  "sector": "ETF",
+  "currency": "USD"
+ },
+ {
+  "name": "SCHD",
+  "code": "NYSEARCA:SCHD",
+  "sector": "ETF",
+  "currency": "USD"
+ }
+]

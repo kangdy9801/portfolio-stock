@@ -13,6 +13,7 @@
 어떤 항목을 못 받아와도 기존 값은 그대로 두고 다음 종목으로 넘어가요.
 업데이트할 종목은 data/stocks.json(사이트 기본 종목 목록 전체), data/portfolio.json(보유·장기·비교 종목), data/market.json에 이미 있는 종목이에요.
 """
+import html
 import json
 import re
 import sys
@@ -202,6 +203,17 @@ def update_us(symbol, quotes, funds, key):
                     if isinstance(y, (int, float)) and y > 0:
                         y = y / 100 if y > 1 else y
                         f["dps"] = round(price * y, 4)
+            # 최근 1년 실제 지급액 합계(TTM)를 가장 믿을 만한 연 배당금으로 써요
+            try:
+                divs = yf.Ticker(ysym).dividends
+                if divs is not None and len(divs):
+                    cutoff = divs.index[-1] - timedelta(days=355)  # 1년 전 같은 회차는 빼고 최근 1년치만
+                    ttm = float(divs[divs.index > cutoff].sum())
+                    if ttm > 0:
+                        f["dps"] = round(ttm, 4)
+                        f["dpsBasis"] = "최근 1년 실지급 합계"
+            except Exception:
+                pass
             pe = info.get("trailingPE")
             if f.get("eps") is None and isinstance(pe, (int, float)) and pe > 0:
                 f["eps"] = round(price / pe, 4)
@@ -270,13 +282,13 @@ def krx_listing():
     try:
         r = requests.get(url, headers=UA, timeout=30)
         r.raise_for_status()
-        html = r.content.decode("euc-kr", errors="ignore")
+        page = r.content.decode("euc-kr", errors="ignore")
     except Exception as e:
         log(f"  · KRX 상장법인 목록 실패: {e}")
         return {}
     out = {}
-    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S | re.I):
-        cells = [re.sub(r"<[^>]+>", "", c).strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", row, re.S | re.I)]
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", page, re.S | re.I):
+        cells = [html.unescape(re.sub(r"<[^>]+>", "", c)).strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", row, re.S | re.I)]
         if len(cells) < 3:
             continue
         code = next((c for c in cells[1:4] if re.fullmatch(r"[0-9A-Z]{6}", c)), None)
@@ -384,13 +396,19 @@ def main():
             ok += update_us(sym, quotes, funds, key)
         else:
             log(f"  · {key} 알 수 없는 코드 형식, 건너뜀")
-        time.sleep(0.25)
+        time.sleep(0.2)
+
+    # ETF는 종목 수가 많아서 가격 기록을 60일만 남겨 파일 크기를 줄여요
+    for st in stocks:
+        q = quotes.get(st.get("code") or "")
+        if st.get("etf") and q and isinstance(q.get("history"), list):
+            q["history"] = q["history"][-60:]
 
     update_feargreed(market)
     update_fx(market)
     market["updatedAt"] = datetime.now(KST).isoformat(timespec="seconds")
 
-    MARKET.write_text(json.dumps(market, ensure_ascii=False, indent=1), encoding="utf-8")
+    MARKET.write_text(json.dumps(market, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     log(f"완료: {ok}/{len(codes)} 종목 갱신")
     return 0
 

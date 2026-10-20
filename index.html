@@ -1177,7 +1177,7 @@ function renderDrawer(code){
   const prev = hist.length>=2 ? hist[hist.length-2][1] : null;
   const chg = (price!=null&&prev) ? price-prev : null;
   const money = v => v==null ? "—" : (usd? "$"+num(v,2) : won(v)+"원");
-  let body = `<div class="d-head"><div><h3 id="dName">${esc(m.name)}</h3><div class="code">${esc(code)} · ${esc(m.sector)}</div></div>
+  let body = `<div class="d-head"><div><h3 id="dName">${esc(m.name)}</h3><div class="code">${esc(code)} · ${esc(m.sector)}</div>${(THEMES[code]||[]).length?`<div class="tagrow" style="margin-top:6px">${THEMES[code].map(t=>`<span>${esc(t)}</span>`).join("")}</div>`:""}</div>
     <button class="btn small" id="dClose">닫기</button></div>
     <div class="d-price">${price!=null? money(price) : "가격 미반영"}${chg!=null?`<small class="${cls(chg)}">${sgn(chg)}${usd?num(chg,2):won(chg)} (${sgn(chg)}${pct(chg/prev,2)})</small>`:""}</div>
     <div class="d-asof">${q&&q.asOf? q.asOf+" 종가"+(q.src==="manual"?" · 직접 입력":"") : "아직 시세가 없어요"}</div>
@@ -2716,7 +2716,20 @@ function loadLocal(){
   try{ const raw = localStorage.getItem(LS_KEY); if(!raw) return false; const o = JSON.parse(raw); if(o.p) applyP(o.p); if(o.m) applyM(o.m); return !!o.p; }catch(_){ return false; }
 }
 /* GitHub Pages 등 일반 웹에서 열었을 때: data/market.json(자동 갱신 시세)과 data/portfolio.json(초기 포트폴리오)을 읽어요 */
+const THEMES = {};
+async function loadStocks(){
+  try{
+    const r = await fetch("data/stocks.json", {cache:"no-store"}); if(!r.ok) return;
+    const arr = await r.json(); const have = new Set(DICT.map(d=>d[1]));
+    arr.forEach(x=>{ if(!x || !x.code) return;
+      if(x.themes && x.themes.length) THEMES[x.code] = x.themes;
+      if(!have.has(x.code)){ DICT.push(x.currency==="USD" ? [x.name, x.code, x.sector||"기타", "USD"] : [x.name, x.code, x.sector||"기타"]); have.add(x.code); }
+      else if(x.sector){ const d = DICT.find(d=>d[1]===x.code); if(d) d[2] = x.sector; } });
+    refreshStockList();
+  }catch(_){}
+}
 async function loadRepo(hadLocal){
+  await loadStocks();
   document.getElementById("backupBox").style.display = "flex";
   setNote("데이터는 이 브라우저에 저장돼요. 다른 기기에서 쓰거나 GitHub 자동 업데이트 종목을 바꾸려면 ‘백업 내보내기’로 받은 파일을 저장소의 data/portfolio.json에 올려 주세요.");
   try{

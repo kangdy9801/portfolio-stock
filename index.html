@@ -404,15 +404,17 @@ th.sort[aria-sort="descending"]::after{content:" ▼";font-size:9px}
 
   <!-- ② 섹터 비교 -->
   <section class="view" id="view-sector" role="tabpanel" aria-labelledby="tab-sector" hidden>
-    <section class="panel sec" aria-labelledby="secTitle">
+    <section class="panel sec" aria-labelledby="cmpTitle">
       <div class="sec-head">
-        <h2 id="secTitle">섹터별 밸류에이션</h2>
+        <div><h2 id="cmpTitle">종목별 비교</h2>
+        <p style="margin:2px 0 0">머리글을 누르면 정렬돼요. “섹터 대비”는 같은 섹터 PER 중앙값과의 차이예요.</p></div>
         <div class="watch-add">
-          <input id="wName" list="stockList" placeholder="비교할 종목 이름" autocomplete="off" aria-label="비교할 종목 이름">
-          <button class="btn small" id="wAdd">비교에 추가</button>
-          <span class="code" id="wHint"></span>
+          <input id="wName" list="stockList" placeholder="종목 이름 또는 코드" autocomplete="off" aria-label="비교할 종목 이름 또는 코드">
+          <button class="btn primary small" id="wAdd">비교에 추가</button>
+          <button class="btn small" id="bulkEdit" aria-pressed="false">전체 편집</button>
         </div>
       </div>
+      <p class="code" id="wHint" style="padding:0 20px;margin:-4px 0 8px"></p>
       <div id="wNew" class="wnew" hidden>
         <p class="code" style="margin:0 0 8px">목록에 없는 종목이에요. 정보를 직접 넣으면 비교에 추가돼요. 현재가·EPS·BPS를 넣으면 PER·PBR도 바로 계산돼요(나중에 채팅에서 “<span id="wNewNm"></span> 재무 업데이트해줘”라고 해도 돼요).</p>
         <div class="lf-grid" style="grid-template-columns:repeat(7,minmax(0,1fr)) auto">
@@ -426,6 +428,19 @@ th.sort[aria-sort="descending"]::after{content:" ▼";font-size:9px}
           <button class="btn primary" id="nAdd">비교에 추가</button>
         </div>
         <datalist id="sectorList"></datalist>
+      </div>
+
+      <div class="scroll">
+        <table class="cmp-table">
+          <thead><tr id="cmpHead"></tr></thead>
+          <tbody id="cmpBody"></tbody>
+        </table>
+      </div>
+      <p class="code" id="hidNote" style="padding:8px 20px 0;margin:0"></p>
+    </section>
+    <section class="panel sec" aria-labelledby="secTitle">
+      <div class="sec-head">
+        <h2 id="secTitle">섹터별 밸류에이션</h2>
       </div>
       <div class="chips" id="chips" role="group" aria-label="섹터 선택"></div>
       <div class="scroll">
@@ -455,18 +470,6 @@ th.sort[aria-sort="descending"]::after{content:" ▼";font-size:9px}
       </div>
     </section>
 
-    <section class="panel sec" aria-labelledby="cmpTitle">
-      <div class="sec-head">
-        <h2 id="cmpTitle">종목별 비교</h2>
-        <p>머리글을 누르면 정렬돼요. “섹터 대비”는 같은 섹터 PER 중앙값과의 차이예요.</p>
-      </div>
-      <div class="scroll">
-        <table class="cmp-table">
-          <thead><tr id="cmpHead"></tr></thead>
-          <tbody id="cmpBody"></tbody>
-        </table>
-      </div>
-    </section>
   </section>
 
   <!-- ③ 장기 프로젝트 -->
@@ -652,11 +655,11 @@ function compute(key){
 function infoOf(code){
   const f = (state.market.fundamentals||{})[code] || null;
   const h = state.holdings.find(x=>x.code===code) || state.longHoldings.find(x=>x.code===code) || null;
-  const d = byCode(code);
+  const d = byCode(code), o = ((state.stockMeta||{})[code])||{};
   return {
     code, f, h,
-    name: (h&&h.name) || (f&&f.name) || (d&&d[0]) || code,
-    sector: (h&&h.sector) || (f&&f.sector) || (d&&d[2]) || "기타",
+    name: o.name || (h&&h.name) || (f&&f.name) || (d&&d[0]) || code,
+    sector: o.sector || (h&&h.sector) || (f&&f.sector) || (d&&d[2]) || "기타",
     currency: (h&&h.currency) || (d&&d[3]) || (isUSD(code)?"USD":"KRW")
   };
 }
@@ -998,7 +1001,8 @@ function renderGoal(typing){
 function universe(){
   const set = new Set(Object.keys(state.market.fundamentals||{}));
   state.holdings.forEach(h=>set.add(h.code)); state.longHoldings.forEach(h=>set.add(h.code)); (state.watch||[]).forEach(c=>set.add(c));
-  return [...set].map(metrics);
+  const hid = new Set(state.hiddenCmp||[]);
+  return [...set].filter(c=>!hid.has(c)).map(metrics);
 }
 function sectorStats(list){
   const by = {};
@@ -1045,6 +1049,7 @@ function renderSector(){
     if(x==null && y==null) return 0; if(x==null) return 1; if(y==null) return -1;
     return dir*(x-y);
   });
+  if(ui.bulkEdit){ renderBulk(list); const hidN=(state.hiddenCmp||[]).length; document.getElementById("hidNote").innerHTML = hidN ? `비교에서 뺀 종목 ${hidN}개 · <button class="del" id="unhideAll" style="color:var(--ink)">다시 보이기</button>` : ""; drawScatter(list, ui.sector!=="전체" ? statBy[ui.sector] : null); return; }
   document.getElementById("cmpHead").innerHTML = COLS.map(([k,l,c])=>`<th class="sort ${c||""}" data-sort="${k}" aria-sort="${ui.sort.key===k?(dir>0?"ascending":"descending"):"none"}" tabindex="0">${l}</th>`).join("") + `<th></th>`;
   const watchSet = new Set(state.watch||[]);
   document.getElementById("cmpBody").innerHTML = list.map(m=>{
@@ -1062,11 +1067,61 @@ function renderSector(){
       <td>${m.dy!=null?pct(m.dy,2):"—"}</td>
       <td>${capStr}</td>
       <td>${m.own?'<span class="tag">보유</span>':""}</td>
-      <td>${!m.has?'<span class="pending">데이터 없음</span>':""}${watchSet.has(m.code)?`<button class="del" data-unwatch="${esc(m.code)}" aria-label="${esc(m.name)} 비교에서 빼기">빼기</button>`:""}</td>
-    </tr>`;
-  }).join("") || `<tr><td class="l code" colspan="12" style="padding:20px">이 섹터에 비교할 종목이 없어요.</td></tr>`;
+      <td style="white-space:nowrap">${!m.has?'<span class="pending">데이터 없음</span>':""}<button class="del" data-edit="${esc(m.code)}" aria-label="${esc(m.name)} 편집" style="color:var(--ink)">편집</button><button class="del" data-unwatch="${esc(m.code)}" aria-label="${esc(m.name)} 비교에서 빼기">빼기</button></td>
+    </tr>${ui.editCode===m.code?editRow(m):""}`;
+  }).join("") || `<tr><td class="l code" colspan="12" style="padding:20px">${ui.sector==="전체"?"아직 비교할 종목이 없어요. 위 입력칸에 종목 이름이나 코드를 넣고 ‘비교에 추가’를 눌러 보세요.":"이 섹터에 비교할 종목이 없어요."}</td></tr>`;
 
+  const hidN = (state.hiddenCmp||[]).length;
+  document.getElementById("hidNote").innerHTML = hidN ? `비교에서 뺀 종목 ${hidN}개 · <button class="del" id="unhideAll" style="color:var(--ink)">다시 보이기</button>` : "";
   drawScatter(list, ui.sector!=="전체" ? statBy[ui.sector] : null);
+}
+function saveStockEdit(code, v){
+  const I = infoOf(code), name = v.name || I.name, sector = v.sector || I.sector;
+  state.stockMeta = state.stockMeta||{}; state.stockMeta[code] = {name, sector};
+  if(state.customStocks && state.customStocks[code]){ state.customStocks[code].name = name; state.customStocks[code].sector = sector; }
+  const F = state.market.fundamentals = state.market.fundamentals||{};
+  const f = F[code] = Object.assign({}, F[code]||{});
+  f.name = name; f.sector = sector;
+  const before = JSON.stringify([f.eps,f.fwdEps,f.bps,f.dps]);
+  ["eps","fwdEps","bps","dps"].forEach(k=>{ if(v[k]==null) delete f[k]; else f[k]=v[k]; });
+  if(JSON.stringify([f.eps,f.fwdEps,f.bps,f.dps])!==before){ f.source = "직접 수정"; f.asOf = today(); }
+  if(v.price!=null && v.price!==priceOf(code)){
+    const qs = state.market.quotes = state.market.quotes||{}, t = today();
+    const q = qs[code] = Object.assign({history:[]}, qs[code]||{});
+    q.price = v.price; q.asOf = t; q.src = "manual"; q.history = (q.history||[]).filter(x=>x[0]!==t).concat([[t, v.price]]).slice(-250);
+  }
+}
+function renderBulk(list){
+  document.getElementById("cmpHead").innerHTML = `<th class="l">종목명</th><th class="l">코드</th><th class="l">섹터</th><th>현재가</th><th>EPS</th><th>추정 EPS</th><th>BPS</th><th>주당배당금</th><th>PER</th><th>PBR</th><th></th>`;
+  const inp = (c,k,v,w) => `<input class="cell" data-bc="${esc(c)}" data-bk="${k}" value="${esc(v==null?"":v)}" ${k==="name"||k==="sector"?'style="width:'+(w||110)+'px;text-align:left"':'inputmode="decimal"'} ${k==="sector"?'list="sectorList2"':""} aria-label="${k}">`;
+  document.getElementById("cmpBody").innerHTML = list.map(m=>{ const f=m.f||{};
+    return `<tr data-bulk="${esc(m.code)}"><td class="l">${inp(m.code,"name",m.name,130)}</td><td class="l code">${esc(m.code.split(":")[1]||m.code)}</td><td class="l">${inp(m.code,"sector",m.sector)}</td>
+      <td>${inp(m.code,"price",m.price)}</td><td>${inp(m.code,"eps",f.eps)}</td><td>${inp(m.code,"fwdEps",f.fwdEps)}</td><td>${inp(m.code,"bps",f.bps)}</td><td>${inp(m.code,"dps",f.dps)}</td>
+      <td class="code" data-bper>${m.per!=null?num(m.per,2)+"배":(m.loss?"적자":"—")}</td><td class="code" data-bpbr>${m.pbr!=null?num(m.pbr,2)+"배":"—"}</td>
+      <td><button class="del" data-unwatch="${esc(m.code)}">빼기</button></td></tr>`; }).join("") +
+    `<tr class="editrow"><td colspan="11" style="text-align:left;padding:12px 20px;background:var(--panel-2)"><button class="btn primary small" id="bulkSave">모두 저장</button> <button class="btn small" id="bulkCancel">취소</button> <span class="code">값을 고치고 ‘모두 저장’을 누르세요. 비운 칸은 지워져요.</span>
+    <datalist id="sectorList2">${[...new Set(DICT.map(x=>x[2]).concat(list.map(x=>x.sector)))].map(x=>`<option value="${esc(x)}">`).join("")}</datalist></td></tr>`;
+}
+function editRow(m){
+  const f = m.f||{}, usd = m.currency==="USD";
+  const v = x => x==null ? "" : x;
+  const fld = (id,l,val,ph) => `<div class="field"><label for="${id}">${l}</label><input id="${id}" inputmode="decimal" value="${esc(v(val))}" placeholder="${ph||""}"></div>`;
+  return `<tr class="editrow"><td colspan="12" style="text-align:left;background:var(--panel-2);padding:14px 20px">
+    <div class="lf-grid" style="grid-template-columns:1.2fr 1fr repeat(5,minmax(0,1fr))">
+      <div class="field"><label for="eName">종목명</label><input id="eName" value="${esc(m.name)}"></div>
+      <div class="field"><label for="eSector">섹터</label><input id="eSector" list="sectorList2" value="${esc(m.sector)}"></div>
+      ${fld("ePrice", usd?"현재가 ($)":"현재가 (원)", m.price)}
+      ${fld("eEps","EPS (주당순이익)", f.eps, "적자면 음수")}
+      ${fld("eFwd","추정 EPS", f.fwdEps)}
+      ${fld("eBps","BPS (주당순자산)", f.bps)}
+      ${fld("eDps","주당배당금", f.dps)}
+    </div>
+    <datalist id="sectorList2">${[...new Set(DICT.map(x=>x[2]).concat(universe().map(x=>x.sector)))].map(x=>`<option value="${esc(x)}">`).join("")}</datalist>
+    <div style="display:flex;gap:8px;margin-top:10px;align-items:center;flex-wrap:wrap">
+      <button class="btn primary small" data-esave="${esc(m.code)}">저장</button>
+      <button class="btn small" data-ecancel="1">취소</button>
+      <span class="code">비우면 그 값은 지워져요. 숫자를 바꾸면 PER·PBR·ROE·배당수익률이 다시 계산돼요. 출처는 “직접 수정”으로 표시돼요.</span>
+    </div></td></tr>`;
 }
 function drawScatter(list, st){
   const svg = document.getElementById("scatter");
@@ -2473,7 +2528,8 @@ function render(){
 
 /* ───────── 탭 ───────── */
 function setTab(t){
-  if(!["portfolio","sector","long","macro","report"].includes(t)) t="portfolio";
+  if(!["portfolio","sector","long","macro","report"].includes(t)){ let last=null; try{ last=localStorage.getItem("pf-lastTab"); }catch(_){} t = ["portfolio","sector","long","macro","report"].includes(last) ? last : "portfolio"; }
+  try{ localStorage.setItem("pf-lastTab", t); }catch(_){}
   ui.tab = t;
   ["portfolio","sector","long","macro","report"].forEach(k=>{
     document.getElementById("view-"+k).hidden = k!==t;
@@ -2496,10 +2552,48 @@ function sortBy(k){ ui.sort = {key:k, dir: ui.sort.key===k ? -ui.sort.dir : (k==
 document.getElementById("cmpHead").addEventListener("click", e=>{ const th=e.target.closest("[data-sort]"); if(th) sortBy(th.dataset.sort); });
 document.getElementById("cmpHead").addEventListener("keydown", e=>{ if((e.key==="Enter"||e.key===" ") && e.target.dataset.sort){ e.preventDefault(); sortBy(e.target.dataset.sort); } });
 document.getElementById("cmpBody").addEventListener("click", e=>{
+  if(ui.bulkEdit && !e.target.closest("[data-unwatch]")) return;
+  if(e.target.closest(".editrow") && !e.target.closest("button")) return;
   const u = e.target.closest("[data-unwatch]");
-  if(u){ e.stopPropagation(); state.watch = (state.watch||[]).filter(c=>c!==u.dataset.unwatch); render(); scheduleSave(); return; }
+  if(u){ e.stopPropagation(); const c=u.dataset.unwatch; state.watch = (state.watch||[]).filter(x=>x!==c);
+    const inSrc = (state.market.fundamentals||{})[c] || state.holdings.some(h=>h.code===c) || state.longHoldings.some(h=>h.code===c);
+    if(inSrc){ state.hiddenCmp = (state.hiddenCmp||[]).filter(x=>x!==c).concat(c); }
+    if(ui.editCode===c) ui.editCode=null; render(); scheduleSave(); return; }
+  const ed = e.target.closest("[data-edit]");
+  if(ed){ e.stopPropagation(); ui.editCode = ui.editCode===ed.dataset.edit ? null : ed.dataset.edit; renderSector(); const n=document.getElementById("eName"); if(n) n.focus(); return; }
+  if(e.target.closest("[data-ecancel]")){ ui.editCode=null; renderSector(); return; }
+  const sv = e.target.closest("[data-esave]");
+  if(sv){ const code = sv.dataset.esave, val = id => document.getElementById(id).value.trim(), nv = id => { const t=val(id); return t==="" ? null : parseNum(t); };
+    saveStockEdit(code, {name:val("eName"), sector:val("eSector"), price:nv("ePrice"), eps:nv("eEps"), fwdEps:nv("eFwd"), bps:nv("eBps"), dps:nv("eDps")});
+    ui.editCode = null; render(); saveMarket(); scheduleSave(); refreshStockList();
+    document.getElementById("wHint").textContent = `${infoOf(code).name} 정보를 저장했어요.`;
+    return; }
   const tr = e.target.closest("tr[data-code]"); if(tr) openDrawer(tr.dataset.code);
 });
+document.getElementById("bulkEdit").onclick = ()=>{ ui.bulkEdit = !ui.bulkEdit; ui.editCode = null; document.getElementById("bulkEdit").setAttribute("aria-pressed", ui.bulkEdit); document.getElementById("bulkEdit").textContent = ui.bulkEdit ? "편집 끝내기" : "전체 편집"; renderSector(); };
+document.getElementById("cmpBody").addEventListener("click", e=>{
+  if(e.target.id==="bulkCancel"){ ui.bulkEdit=false; document.getElementById("bulkEdit").textContent="전체 편집"; renderSector(); }
+  if(e.target.id==="bulkSave"){
+    const rows = [...document.querySelectorAll("#cmpBody tr[data-bulk]")]; let n=0;
+    rows.forEach(tr=>{ const code=tr.dataset.bulk, g=k=>tr.querySelector(`[data-bk="${k}"]`).value.trim(), nv=k=>{ const t=g(k); return t==="" ? null : parseNum(t); };
+      const m = metrics(code), f = m.f||{};
+      const v = {name:g("name"), sector:g("sector"), price:nv("price"), eps:nv("eps"), fwdEps:nv("fwdEps"), bps:nv("bps"), dps:nv("dps")};
+      const changed = v.name!==m.name || v.sector!==m.sector || v.price!==(m.price==null?null:m.price) || ["eps","fwdEps","bps","dps"].some(k=>v[k]!==(f[k]==null?null:f[k]));
+      if(changed){ saveStockEdit(code, v); n++; } });
+    ui.bulkEdit=false; document.getElementById("bulkEdit").textContent="전체 편집";
+    render(); if(n){ saveMarket(); scheduleSave(); refreshStockList(); }
+    document.getElementById("wHint").textContent = n ? `${n}개 종목을 저장했어요.` : "바뀐 내용이 없어요.";
+  }
+});
+document.getElementById("cmpBody").addEventListener("input", e=>{
+  const t=e.target; if(!t.dataset.bc || !ui.bulkEdit) return;
+  const tr=t.closest("tr"), g=k=>parseNum(tr.querySelector(`[data-bk="${k}"]`).value);
+  const p=g("price"), eps=g("eps"), bps=g("bps");
+  tr.querySelector("[data-bper]").textContent = (p&&eps>0) ? num(p/eps,2)+"배" : (eps!=null&&eps<=0?"적자":"—");
+  tr.querySelector("[data-bpbr]").textContent = (p&&bps) ? num(p/bps,2)+"배" : "—";
+});
+document.getElementById("hidNote").addEventListener("click", e=>{ if(e.target.id==="unhideAll"){ state.hiddenCmp = []; render(); scheduleSave(); } });
+document.getElementById("cmpBody").addEventListener("keydown", e=>{ if(e.key==="Enter" && e.target.closest(".editrow input")){ const b=document.querySelector("[data-esave]"); if(b) b.click(); } if(e.key==="Escape" && ui.editCode){ ui.editCode=null; renderSector(); } });
 const tip = document.getElementById("tip");
 const sc = document.getElementById("scatter");
 sc.addEventListener("click", e=>{ const g=e.target.closest(".pt"); if(g) openDrawer(g.dataset.code); });
@@ -2531,6 +2625,7 @@ document.getElementById("wAdd").onclick = ()=>{
   document.getElementById("wNew").hidden = true;
   state.watch = state.watch||[];
   if(!state.watch.includes(d[1])) state.watch.push(d[1]);
+  state.hiddenCmp = (state.hiddenCmp||[]).filter(x=>x!==d[1]);
   inp.value=""; ui.sector = d[2];
   const has = !!(state.market.fundamentals||{})[d[1]];
   hint.textContent = has ? `${d[0]} 추가됨.` : `${d[0]} 추가됨. 재무 데이터는 채팅에서 “${d[0]} 재무 업데이트해줘”라고 하면 채워져요.`;
@@ -2547,7 +2642,7 @@ document.getElementById("nAdd").onclick = ()=>{
   if(!code) code = "CUSTOM:"+name.replace(/\s+/g,"");
   const currency = isUSD(code) ? "USD" : "KRW";
   state.customStocks = state.customStocks||{}; state.customStocks[code] = {name, sector, currency};
-  state.watch = state.watch||[]; if(!state.watch.includes(code)) state.watch.push(code);
+  state.watch = state.watch||[]; if(!state.watch.includes(code)) state.watch.push(code); state.hiddenCmp = (state.hiddenCmp||[]).filter(x=>x!==code);
   const price = parseNum(v("nPrice")), eps = parseNum(v("nEps")), bps = parseNum(v("nBps")), dps = parseNum(v("nDps"));
   if(price || eps!=null || bps || dps){
     state.market.fundamentals = state.market.fundamentals||{};
@@ -2565,7 +2660,7 @@ document.getElementById("nAdd").onclick = ()=>{
 /* ───────── 저장 ───────── */
 const saveEl = document.getElementById("saveState");
 let saveTimer=null, saving=false, again=false;
-function snapshotP(){ return {holdings: JSON.parse(JSON.stringify(state.holdings)), longHoldings: JSON.parse(JSON.stringify(state.longHoldings)), watch: (state.watch||[]).slice(), divInfo: JSON.parse(JSON.stringify(state.divInfo||{})), divLog: JSON.parse(JSON.stringify(state.divLog||[])), saleLog: JSON.parse(JSON.stringify(state.saleLog||[])), customEvents: JSON.parse(JSON.stringify(state.customEvents||[])), customStocks: JSON.parse(JSON.stringify(state.customStocks||{})), settings: JSON.parse(JSON.stringify(state.settings)), updatedAt: new Date().toISOString()}; }
+function snapshotP(){ return {holdings: JSON.parse(JSON.stringify(state.holdings)), longHoldings: JSON.parse(JSON.stringify(state.longHoldings)), watch: (state.watch||[]).slice(), divInfo: JSON.parse(JSON.stringify(state.divInfo||{})), divLog: JSON.parse(JSON.stringify(state.divLog||[])), saleLog: JSON.parse(JSON.stringify(state.saleLog||[])), customEvents: JSON.parse(JSON.stringify(state.customEvents||[])), customStocks: JSON.parse(JSON.stringify(state.customStocks||{})), stockMeta: JSON.parse(JSON.stringify(state.stockMeta||{})), hiddenCmp: (state.hiddenCmp||[]).slice(), settings: JSON.parse(JSON.stringify(state.settings)), updatedAt: new Date().toISOString()}; }
 function scheduleSave(){ dirtyP = true; saveEl.textContent="저장 대기"; clearTimeout(saveTimer); saveTimer=setTimeout(flush,700); }
 async function flush(){
   if(saving){ again=true; return; }
@@ -2612,6 +2707,8 @@ function applyP(d){
   state.saleLog = d && Array.isArray(d.saleLog) ? JSON.parse(JSON.stringify(d.saleLog)) : [];
   state.customEvents = d && Array.isArray(d.customEvents) ? JSON.parse(JSON.stringify(d.customEvents)) : [];
   state.customStocks = d && d.customStocks ? JSON.parse(JSON.stringify(d.customStocks)) : {};
+  state.stockMeta = d && d.stockMeta ? JSON.parse(JSON.stringify(d.stockMeta)) : {};
+  state.hiddenCmp = d && Array.isArray(d.hiddenCmp) ? d.hiddenCmp.slice() : [];
   refreshStockList();
   const s = d && d.settings ? JSON.parse(JSON.stringify(d.settings)) : {};
   state.settings = Object.assign({usdkrw:null}, s);

@@ -1086,43 +1086,47 @@
  },
  {
   "name": "이오테크닉스",
-  "code": null,
+  "code": "KRX:039030",
   "sector": "AI 반도체",
   "currency": "KRW",
   "themes": [
    "AI 반도체",
    "반도체 장비",
    "마이크로 LED"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "해성디에스",
-  "code": null,
+  "code": "KRX:195870",
   "sector": "AI 반도체",
   "currency": "KRW",
   "themes": [
    "AI 반도체"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "하나머티리얼즈",
-  "code": null,
+  "code": "KRX:166090",
   "sector": "AI 반도체",
   "currency": "KRW",
   "themes": [
    "AI 반도체"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "네패스",
-  "code": null,
+  "code": "KRX:033640",
   "sector": "AI 반도체",
   "currency": "KRW",
   "themes": [
    "AI 반도체",
    "CXL·차세대메모리",
    "AI 반도체설계(팹리스)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "리벨리온",
@@ -1134,7 +1138,8 @@
    "온디바이스 AI",
    "AI 반도체설계(팹리스)",
    "엣지컴퓨팅·엣지 AI"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "사피온",
@@ -1145,7 +1150,8 @@
    "AI 반도체",
    "온디바이스 AI",
    "AI 반도체설계(팹리스)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "퓨리오사AI",
@@ -1156,7 +1162,8 @@
    "AI 반도체",
    "온디바이스 AI",
    "AI 반도체설계(팹리스)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "딥엑스",
@@ -1166,34 +1173,38 @@
   "themes": [
    "AI 반도체",
    "AI 반도체설계(팹리스)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "ISC",
-  "code": null,
+  "code": "KRX:095340",
   "sector": "HBM·AI 메모리",
   "currency": "KRW",
   "themes": [
    "HBM·AI 메모리"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "솔브레인",
-  "code": null,
+  "code": "KRX:357780",
   "sector": "HBM·AI 메모리",
   "currency": "KRW",
   "themes": [
    "HBM·AI 메모리"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "유니테스트",
-  "code": null,
+  "code": "KRX:086390",
   "sector": "HBM·AI 메모리",
   "currency": "KRW",
   "themes": [
    "HBM·AI 메모리"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "동진쎄미",
@@ -1202,112 +1213,124 @@
   "currency": "KRW",
   "themes": [
    "HBM·AI 메모리"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "덕산네오룩스",
-  "code": null,
+  "code": "KRX:213420",
   "sector": "HBM·AI 메모리",
   "currency": "KRW",
   "themes": [
    "HBM·AI 메모리",
    "디스플레이(OLED)",
    "산업용가스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "오킨스전자",
-  "code": null,
+  "code": "KRX:080580",
   "sector": "HBM·AI 메모리",
   "currency": "KRW",
   "themes": [
    "HBM·AI 메모리"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "주성엔지니어링",
-  "code": null,
+  "code": "KRX:036930",
   "sector": "반도체 장비",
   "currency": "KRW",
   "themes": [
    "반도체 장비"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "원익IPS",
-  "code": null,
+  "code": "KRX:240810",
   "sector": "반도체 장비",
   "currency": "KRW",
   "themes": [
    "반도체 장비"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "피에스케이",
-  "code": null,
+  "code": "KRX:319660",
   "sector": "반도체 장비",
   "currency": "KRW",
   "themes": [
    "반도체 장비"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "케이씨텍",
-  "code": null,
+  "code": "KRX:281820",
   "sector": "반도체 장비",
   "currency": "KRW",
   "themes": [
    "반도체 장비"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "GST",
-  "code": null,
+  "code": "KRX:083450",
   "sector": "반도체 장비",
   "currency": "KRW",
   "themes": [
    "반도체 장비"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "원익QnC",
-  "code": null,
+  "code": "KRX:074600",
   "sector": "반도체 장비",
   "currency": "KRW",
   "themes": [
    "반도체 장비",
    "산업용가스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "프로텍",
-  "code": null,
+  "code": "KRX:053610",
   "sector": "반도체 장비",
   "currency": "KRW",
   "themes": [
    "반도체 장비",
    "마이크로 LED"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "다산네트웍스",
-  "code": null,
+  "code": "KRX:039560",
   "sector": "데이터센터",
   "currency": "KRW",
   "themes": [
    "데이터센터",
    "광통신·네트워크장비"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "솔루엠",
-  "code": null,
+  "code": "KRX:248070",
   "sector": "데이터센터",
   "currency": "KRW",
   "themes": [
    "데이터센터",
    "엣지컴퓨팅·엣지 AI"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "에이티세미콘",
@@ -1319,7 +1342,8 @@
    "자동차부품·모빌리티",
    "전력반도체(SiC/GaN)",
    "엣지컴퓨팅·엣지 AI"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "네이버클라우드",
@@ -1331,7 +1355,8 @@
    "클라우드·SaaS",
    "스마트시티",
    "엣지컴퓨팅·엣지 AI"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "KT클라우드",
@@ -1340,21 +1365,23 @@
   "currency": "KRW",
   "themes": [
    "데이터센터"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "NHN",
-  "code": null,
+  "code": "KRX:181710",
   "sector": "데이터센터",
   "currency": "KRW",
   "themes": [
    "데이터센터",
    "클라우드·SaaS"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "대한전선",
-  "code": null,
+  "code": "KRX:001440",
   "sector": "전력기기·변압기",
   "currency": "KRW",
   "themes": [
@@ -1362,11 +1389,12 @@
    "광통신·네트워크장비",
    "해상풍력",
    "구리·전선"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한전KPS",
-  "code": null,
+  "code": "KRX:051600",
   "sector": "전력기기·변압기",
   "currency": "KRW",
   "themes": [
@@ -1375,17 +1403,19 @@
    "ESS(에너지저장)",
    "SMR(소형모듈원자로)",
    "구리·전선"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "가온전선",
-  "code": null,
+  "code": "KRX:000500",
   "sector": "전력기기·변압기",
   "currency": "KRW",
   "themes": [
    "전력기기·변압기",
    "구리·전선"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "LS전선",
@@ -1397,65 +1427,72 @@
    "광통신·네트워크장비",
    "해상풍력",
    "구리·전선"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "서전기전",
-  "code": null,
+  "code": "KRX:189860",
   "sector": "전력기기·변압기",
   "currency": "KRW",
   "themes": [
    "전력기기·변압기"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "피앤씨테크",
-  "code": null,
+  "code": "KRX:237750",
   "sector": "전력기기·변압기",
   "currency": "KRW",
   "themes": [
    "전력기기·변압기"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한전기술",
-  "code": null,
+  "code": "KRX:052690",
   "sector": "원전(원자력)",
   "currency": "KRW",
   "themes": [
    "원전(원자력)",
    "SMR(소형모듈원자로)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "비에이치아이",
-  "code": null,
+  "code": "KRX:083650",
   "sector": "원전(원자력)",
   "currency": "KRW",
   "themes": [
    "원전(원자력)",
    "SMR(소형모듈원자로)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "보성파워텍",
-  "code": null,
+  "code": "KRX:006910",
   "sector": "원전(원자력)",
   "currency": "KRW",
   "themes": [
    "원전(원자력)",
    "SMR(소형모듈원자로)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "우진",
-  "code": null,
+  "code": "KRX:105840",
   "sector": "원전(원자력)",
   "currency": "KRW",
   "themes": [
    "원전(원자력)",
    "SMR(소형모듈원자로)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한전원자력연료",
@@ -1465,7 +1502,8 @@
   "themes": [
    "원전(원자력)",
    "SMR(소형모듈원자로)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한전산업개발",
@@ -1474,25 +1512,28 @@
   "currency": "KRW",
   "themes": [
    "원전(원자력)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "퍼스텍",
-  "code": null,
+  "code": "KRX:010820",
   "sector": "방산·우주항공",
   "currency": "KRW",
   "themes": [
    "방산·우주항공"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "빅텍",
-  "code": null,
+  "code": "KRX:065450",
   "sector": "방산·우주항공",
   "currency": "KRW",
   "themes": [
    "방산·우주항공"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한국항공서비스",
@@ -1502,65 +1543,72 @@
   "themes": [
    "방산·우주항공",
    "여행·항공·레저"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한국카본",
-  "code": null,
+  "code": "KRX:017960",
   "sector": "조선·해운",
   "currency": "KRW",
   "themes": [
    "조선·해운",
    "전기선박·친환경해운"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "동성화인텍",
-  "code": null,
+  "code": "KRX:033500",
   "sector": "조선·해운",
   "currency": "KRW",
   "themes": [
    "조선·해운"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "태광",
-  "code": null,
+  "code": "KRX:023160",
   "sector": "조선·해운",
   "currency": "KRW",
   "themes": [
    "조선·해운"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "팬오션",
-  "code": null,
+  "code": "KRX:028670",
   "sector": "조선·해운",
   "currency": "KRW",
   "themes": [
    "조선·해운",
    "전기선박·친환경해운"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "대한해운",
-  "code": null,
+  "code": "KRX:005880",
   "sector": "조선·해운",
   "currency": "KRW",
   "themes": [
    "조선·해운",
    "전기선박·친환경해운"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "천보",
-  "code": null,
+  "code": "KRX:278280",
   "sector": "2 차전지·배터리",
   "currency": "KRW",
   "themes": [
    "2 차전지·배터리",
    "리튬·배터리원재료"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "SK온",
@@ -1571,27 +1619,30 @@
    "2 차전지·배터리",
    "전고체배터리",
    "ESS(에너지저장)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한온시스템",
-  "code": null,
+  "code": "KRX:018880",
   "sector": "2 차전지·배터리",
   "currency": "KRW",
   "themes": [
    "2 차전지·배터리",
    "자동차부품·모빌리티",
    "AI 데이터센터냉각"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "상신이디피",
-  "code": null,
+  "code": "KRX:091580",
   "sector": "2 차전지·배터리",
   "currency": "KRW",
   "themes": [
    "2 차전지·배터리"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "코윈테크",
@@ -1600,17 +1651,19 @@
   "currency": "KRW",
   "themes": [
    "2 차전지·배터리"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "SK시그넷",
-  "code": null,
+  "code": "KRX:260870",
   "sector": "전기차 충전",
   "currency": "KRW",
   "themes": [
    "전기차 충전",
    "V2G·양방향충전"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "시그넷이브이",
@@ -1620,7 +1673,8 @@
   "themes": [
    "전기차 충전",
    "V2G·양방향충전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "대영채비",
@@ -1629,18 +1683,20 @@
   "currency": "KRW",
   "themes": [
    "전기차 충전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "파워넷",
-  "code": null,
+  "code": "KRX:037030",
   "sector": "전기차 충전",
   "currency": "KRW",
   "themes": [
    "전기차 충전",
    "양자컴퓨팅",
    "V2G·양방향충전"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "차지비",
@@ -1650,7 +1706,8 @@
   "themes": [
    "전기차 충전",
    "V2G·양방향충전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "클린일렉스",
@@ -1659,7 +1716,8 @@
   "currency": "KRW",
   "themes": [
    "전기차 충전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "에바트란코리아",
@@ -1668,7 +1726,8 @@
   "currency": "KRW",
   "themes": [
    "전기차 충전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "GS커넥트",
@@ -1677,11 +1736,12 @@
   "currency": "KRW",
   "themes": [
    "전기차 충전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "HL만도",
-  "code": null,
+  "code": "KRX:204320",
   "sector": "자율주행",
   "currency": "KRW",
   "themes": [
@@ -1690,11 +1750,12 @@
    "3D 프린팅·적층제조",
    "디지털트윈",
    "자율주행트럭·상용차"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "현대오토에버",
-  "code": null,
+  "code": "KRX:307950",
   "sector": "자율주행",
   "currency": "KRW",
   "themes": [
@@ -1705,11 +1766,12 @@
    "디지털트윈",
    "물류자동화·AGV",
    "자율주행트럭·상용차"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "에스오에스랩",
-  "code": null,
+  "code": "KRX:464080",
   "sector": "자율주행",
   "currency": "KRW",
   "themes": [
@@ -1718,7 +1780,8 @@
   ],
   "aliases": [
    "SOS랩"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "42dot",
@@ -1728,7 +1791,8 @@
   "themes": [
    "자율주행",
    "미래모빌리티·MaaS"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "서울로보틱스",
@@ -1738,7 +1802,8 @@
   "themes": [
    "자율주행",
    "디지털트윈"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "모빌린",
@@ -1748,68 +1813,75 @@
   "themes": [
    "자율주행",
    "자율주행트럭·상용차"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "오비고",
-  "code": null,
+  "code": "KRX:352910",
   "sector": "자율주행",
   "currency": "KRW",
   "themes": [
    "자율주행"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "두산로보틱스",
-  "code": null,
+  "code": "KRX:454910",
   "sector": "로봇·자동화",
   "currency": "KRW",
   "themes": [
    "로봇·자동화"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "레인보우로보틱스",
-  "code": null,
+  "code": "KRX:277810",
   "sector": "로봇·자동화",
   "currency": "KRW",
   "themes": [
    "로봇·자동화"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "로보티즈",
-  "code": null,
+  "code": "KRX:108490",
   "sector": "로봇·자동화",
   "currency": "KRW",
   "themes": [
    "로봇·자동화",
    "물류자동화·AGV"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "삼익THK",
-  "code": null,
+  "code": "KRX:004380",
   "sector": "로봇·자동화",
   "currency": "KRW",
   "themes": [
    "로봇·자동화",
    "물류자동화·AGV"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "로보스타",
-  "code": null,
+  "code": "KRX:090360",
   "sector": "로봇·자동화",
   "currency": "KRW",
   "themes": [
    "로봇·자동화",
    "물류자동화·AGV"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "티피씨글로벌",
-  "code": null,
+  "code": "KRX:130740",
   "sector": "로봇·자동화",
   "currency": "KRW",
   "themes": [
@@ -1818,7 +1890,8 @@
   ],
   "aliases": [
    "TPC메카트로닉스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "현대로보틱스",
@@ -1828,7 +1901,8 @@
   "themes": [
    "로봇·자동화",
    "물류자동화·AGV"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "씨메스",
@@ -1838,17 +1912,19 @@
   "themes": [
    "로봇·자동화",
    "물류자동화·AGV"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "SK바이오사이언스",
-  "code": null,
+  "code": "KRX:302440",
   "sector": "바이오·신약",
   "currency": "KRW",
   "themes": [
    "바이오·신약",
    "유전자치료(CGT)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "GC녹십자",
@@ -1858,52 +1934,58 @@
   "themes": [
    "바이오·신약",
    "비만치료제(GLP-1)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "씨젠",
-  "code": null,
+  "code": "KRX:096530",
   "sector": "바이오·신약",
   "currency": "KRW",
   "themes": [
    "바이오·신약"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "바디텍메드",
-  "code": null,
+  "code": "KRX:206640",
   "sector": "바이오·신약",
   "currency": "KRW",
   "themes": [
    "바이오·신약"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "루닛",
-  "code": null,
+  "code": "KRX:328130",
   "sector": "의료 AI·디지털헬스",
   "currency": "KRW",
   "themes": [
    "의료 AI·디지털헬스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "뷰노",
-  "code": null,
+  "code": "KRX:338220",
   "sector": "의료 AI·디지털헬스",
   "currency": "KRW",
   "themes": [
    "의료 AI·디지털헬스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "딥노이드",
-  "code": null,
+  "code": "KRX:315640",
   "sector": "의료 AI·디지털헬스",
   "currency": "KRW",
   "themes": [
    "의료 AI·디지털헬스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "유비케어",
@@ -1912,25 +1994,28 @@
   "currency": "KRW",
   "themes": [
    "의료 AI·디지털헬스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "인성정보",
-  "code": null,
+  "code": "KRX:033230",
   "sector": "의료 AI·디지털헬스",
   "currency": "KRW",
   "themes": [
    "의료 AI·디지털헬스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "이지케어텍",
-  "code": null,
+  "code": "KRX:099750",
   "sector": "의료 AI·디지털헬스",
   "currency": "KRW",
   "themes": [
    "의료 AI·디지털헬스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "닥터나우",
@@ -1939,7 +2024,8 @@
   "currency": "KRW",
   "themes": [
    "의료 AI·디지털헬스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "라인헬스케어",
@@ -1948,7 +2034,8 @@
   "currency": "KRW",
   "themes": [
    "의료 AI·디지털헬스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "메디히어",
@@ -1957,34 +2044,38 @@
   "currency": "KRW",
   "themes": [
    "의료 AI·디지털헬스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한국석유",
-  "code": null,
+  "code": "KRX:004090",
   "sector": "정유·에너지",
   "currency": "KRW",
   "themes": [
    "정유·에너지"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "흥구석유",
-  "code": null,
+  "code": "KRX:024060",
   "sector": "정유·에너지",
   "currency": "KRW",
   "themes": [
    "정유·에너지"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "인터지스",
-  "code": null,
+  "code": "KRX:129260",
   "sector": "정유·에너지",
   "currency": "KRW",
   "themes": [
    "정유·에너지"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "GS칼텍스",
@@ -1994,7 +2085,8 @@
   "themes": [
    "정유·에너지",
    "AI 데이터센터냉각"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "SK에너지",
@@ -2003,17 +2095,19 @@
   "currency": "KRW",
   "themes": [
    "정유·에너지"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "GS리테일",
-  "code": null,
+  "code": "KRX:007070",
   "sector": "정유·에너지",
   "currency": "KRW",
   "themes": [
    "정유·에너지",
    "음식료·필수소비재"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "현대오일뱅크",
@@ -2022,26 +2116,29 @@
   "currency": "KRW",
   "themes": [
    "정유·에너지"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "씨에스윈드",
-  "code": null,
+  "code": "KRX:112610",
   "sector": "태양광·풍력",
   "currency": "KRW",
   "themes": [
    "태양광·풍력",
    "해상풍력"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "OCI",
-  "code": null,
+  "code": "KRX:456040",
   "sector": "태양광·풍력",
   "currency": "KRW",
   "themes": [
    "태양광·풍력"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "현대에너지솔루션",
@@ -2050,7 +2147,8 @@
   "currency": "KRW",
   "themes": [
    "태양광·풍력"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한화큐셀",
@@ -2059,7 +2157,8 @@
   "currency": "KRW",
   "themes": [
    "태양광·풍력"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "SK E&S",
@@ -2071,28 +2170,31 @@
    "탄소중립·CCUS",
    "스마트그리드·전력망",
    "전기버스·수소버스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "두산퓨얼셀",
-  "code": null,
+  "code": "KRX:336260",
   "sector": "수소경제",
   "currency": "KRW",
   "themes": [
    "수소경제",
    "전기버스·수소버스",
    "전기선박·친환경해운"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "일진하이솔루스",
-  "code": null,
+  "code": "KRX:271940",
   "sector": "수소경제",
   "currency": "KRW",
   "themes": [
    "수소경제",
    "탄소섬유·경량소재"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "효성첨단소재",
@@ -2102,7 +2204,8 @@
   "themes": [
    "수소경제",
    "탄소섬유·경량소재"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "엘켐텍",
@@ -2111,26 +2214,29 @@
   "currency": "KRW",
   "themes": [
    "수소경제"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "이엔플러스",
-  "code": null,
+  "code": "KRX:074610",
   "sector": "수소경제",
   "currency": "KRW",
   "themes": [
    "수소경제"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한국가스공사",
-  "code": null,
+  "code": "KRX:036460",
   "sector": "수소경제",
   "currency": "KRW",
   "themes": [
    "수소경제",
    "탄소중립·CCUS"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "코오롱인더스트리",
@@ -2142,46 +2248,51 @@
    "물·수자원·환경",
    "탄소섬유·경량소재",
    "바이오플라스틱·친환경포장"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "범한퓨얼셀",
-  "code": null,
+  "code": "KRX:382900",
   "sector": "수소경제",
   "currency": "KRW",
   "themes": [
    "수소경제"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "풍산",
-  "code": null,
+  "code": "KRX:103140",
   "sector": "금·원자재",
   "currency": "KRW",
   "themes": [
    "금·원자재",
    "희토류·핵심광물",
    "구리·전선"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "이구산업",
-  "code": null,
+  "code": "KRX:025820",
   "sector": "금·원자재",
   "currency": "KRW",
   "themes": [
    "금·원자재"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "영풍",
-  "code": null,
+  "code": "KRX:000670",
   "sector": "금·원자재",
   "currency": "KRW",
   "themes": [
    "금·원자재",
    "폐배터리 재활용"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한국전자금융",
@@ -2190,36 +2301,40 @@
   "currency": "KRW",
   "themes": [
    "금·원자재"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "솔루스첨단소재",
-  "code": null,
+  "code": "KRX:336370",
   "sector": "UAM·드론",
   "currency": "KRW",
   "themes": [
    "UAM·드론",
    "자동차부품·모빌리티"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "안랩",
-  "code": null,
+  "code": "KRX:053800",
   "sector": "사이버보안",
   "currency": "KRW",
   "themes": [
    "사이버보안",
    "사이버전·전자전"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "지니언스",
-  "code": null,
+  "code": "KRX:263860",
   "sector": "사이버보안",
   "currency": "KRW",
   "themes": [
    "사이버보안"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "이글루코퍼레이션",
@@ -2228,26 +2343,29 @@
   "currency": "KRW",
   "themes": [
    "사이버보안"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "드림시큐리티",
-  "code": null,
+  "code": "KRX:203650",
   "sector": "사이버보안",
   "currency": "KRW",
   "themes": [
    "사이버보안",
    "양자컴퓨팅"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "파이오링크",
-  "code": null,
+  "code": "KRX:170790",
   "sector": "사이버보안",
   "currency": "KRW",
   "themes": [
    "사이버보안"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "ICTK",
@@ -2256,7 +2374,8 @@
   "currency": "KRW",
   "themes": [
    "사이버보안"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "시큐어",
@@ -2265,7 +2384,8 @@
   "currency": "KRW",
   "themes": [
    "사이버보안"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "SK쉴더스",
@@ -2274,7 +2394,8 @@
   "currency": "KRW",
   "themes": [
    "사이버보안"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "시큐아이",
@@ -2284,7 +2405,8 @@
   "themes": [
    "사이버보안",
    "사이버전·전자전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "더존비즈온",
@@ -2293,7 +2415,8 @@
   "currency": "KRW",
   "themes": [
    "클라우드·SaaS"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "효성인포메이션시스템",
@@ -2302,7 +2425,8 @@
   "currency": "KRW",
   "themes": [
    "클라우드·SaaS"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "NHN클라우드",
@@ -2311,7 +2435,8 @@
   "currency": "KRW",
   "themes": [
    "클라우드·SaaS"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "카카오엔터프라이즈",
@@ -2320,7 +2445,8 @@
   "currency": "KRW",
   "themes": [
    "클라우드·SaaS"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "토스",
@@ -2330,7 +2456,8 @@
   "themes": [
    "클라우드·SaaS",
    "핀테크·디지털금융"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "채널톡",
@@ -2339,7 +2466,8 @@
   "currency": "KRW",
   "themes": [
    "클라우드·SaaS"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "에스에프에이",
@@ -2348,38 +2476,42 @@
   "currency": "KRW",
   "themes": [
    "디스플레이(OLED)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "AP시스템",
-  "code": null,
+  "code": "KRX:265520",
   "sector": "디스플레이(OLED)",
   "currency": "KRW",
   "themes": [
    "디스플레이(OLED)",
    "마이크로 LED"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "이녹스첨단소재",
-  "code": null,
+  "code": "KRX:272290",
   "sector": "디스플레이(OLED)",
   "currency": "KRW",
   "themes": [
    "디스플레이(OLED)",
    "웨어러블·스마트워치"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "SKC",
-  "code": null,
+  "code": "KRX:011790",
   "sector": "디스플레이(OLED)",
   "currency": "KRW",
   "themes": [
    "디스플레이(OLED)",
    "전력반도체(SiC/GaN)",
    "바이오플라스틱·친환경포장"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "삼성디스플레이",
@@ -2388,7 +2520,8 @@
   "currency": "KRW",
   "themes": [
    "디스플레이(OLED)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "HB테크놀로지",
@@ -2397,26 +2530,29 @@
   "currency": "KRW",
   "themes": [
    "디스플레이(OLED)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "CJ ENM",
-  "code": null,
+  "code": "KRX:035760",
   "sector": "K-콘텐츠",
   "currency": "KRW",
   "themes": [
    "K-콘텐츠"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "스튜디오드래곤",
-  "code": null,
+  "code": "KRX:253450",
   "sector": "K-콘텐츠",
   "currency": "KRW",
   "themes": [
    "K-콘텐츠",
    "엔터·K-POP"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "카카오엔터",
@@ -2426,16 +2562,18 @@
   "themes": [
    "K-콘텐츠",
    "엔터·K-POP"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "에이스토리",
-  "code": null,
+  "code": "KRX:241840",
   "sector": "K-콘텐츠",
   "currency": "KRW",
   "themes": [
    "K-콘텐츠"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "네이버웹툰",
@@ -2444,7 +2582,8 @@
   "currency": "KRW",
   "themes": [
    "K-콘텐츠"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "문피아",
@@ -2453,16 +2592,18 @@
   "currency": "KRW",
   "themes": [
    "K-콘텐츠"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "NEW",
-  "code": null,
+  "code": "KRX:160550",
   "sector": "K-콘텐츠",
   "currency": "KRW",
   "themes": [
    "K-콘텐츠"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "넥슨",
@@ -2471,54 +2612,60 @@
   "currency": "KRW",
   "themes": [
    "게임"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "펄어비스",
-  "code": null,
+  "code": "KRX:263750",
   "sector": "게임",
   "currency": "KRW",
   "themes": [
    "게임"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "카카오게임즈",
-  "code": null,
+  "code": "KRX:293490",
   "sector": "게임",
   "currency": "KRW",
   "themes": [
    "게임"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "위메이드",
-  "code": null,
+  "code": "KRX:112040",
   "sector": "게임",
   "currency": "KRW",
   "themes": [
    "게임",
    "블록체인·가상자산"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "네오위즈",
-  "code": null,
+  "code": "KRX:095660",
   "sector": "게임",
   "currency": "KRW",
   "themes": [
    "게임"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "포스코DX",
-  "code": null,
+  "code": "KRX:022100",
   "sector": "스마트팩토리",
   "currency": "KRW",
   "themes": [
    "스마트팩토리",
    "디지털트윈"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "오토닉스",
@@ -2529,27 +2676,30 @@
    "스마트팩토리",
    "스마트시티",
    "스마트홈·IoT 가전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "미래산업",
-  "code": null,
+  "code": "KRX:025560",
   "sector": "스마트팩토리",
   "currency": "KRW",
   "themes": [
    "스마트팩토리"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "인텔리안테크",
-  "code": null,
+  "code": "KRX:189300",
   "sector": "스마트팩토리",
   "currency": "KRW",
   "themes": [
    "스마트팩토리",
    "우주인터넷·위성",
    "스마트시티"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "LG CNS",
@@ -2559,7 +2709,8 @@
   "themes": [
    "스마트팩토리",
    "AI 에이전트·RPA"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "KT엔지니어링",
@@ -2568,17 +2719,19 @@
   "currency": "KRW",
   "themes": [
    "스마트팩토리"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "코위버",
-  "code": null,
+  "code": "KRX:056360",
   "sector": "양자컴퓨팅",
   "currency": "KRW",
   "themes": [
    "양자컴퓨팅",
    "광통신·네트워크장비"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "크립토랩",
@@ -2587,7 +2740,8 @@
   "currency": "KRW",
   "themes": [
    "양자컴퓨팅"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "EYL",
@@ -2596,45 +2750,50 @@
   "currency": "KRW",
   "themes": [
    "양자컴퓨팅"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "케이씨에스",
-  "code": null,
+  "code": "KRX:115500",
   "sector": "양자컴퓨팅",
   "currency": "KRW",
   "themes": [
    "양자컴퓨팅"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "쎄트렉아이",
-  "code": null,
+  "code": "KRX:099320",
   "sector": "우주인터넷·위성",
   "currency": "KRW",
   "themes": [
    "우주인터넷·위성",
    "군용드론·무인기"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "AP위성",
-  "code": null,
+  "code": "KRX:211270",
   "sector": "우주인터넷·위성",
   "currency": "KRW",
   "themes": [
    "우주인터넷·위성"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "이노스페이스",
-  "code": null,
+  "code": "KRX:462350",
   "sector": "우주인터넷·위성",
   "currency": "KRW",
   "themes": [
    "우주인터넷·위성",
    "우주발사체"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "페리지항공우주",
@@ -2644,7 +2803,8 @@
   "themes": [
    "우주인터넷·위성",
    "우주발사체"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "KT SAT",
@@ -2653,25 +2813,28 @@
   "currency": "KRW",
   "themes": [
    "우주인터넷·위성"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "컨텍",
-  "code": null,
+  "code": "KRX:451760",
   "sector": "우주인터넷·위성",
   "currency": "KRW",
   "themes": [
    "우주인터넷·위성"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "엘엠에스",
-  "code": null,
+  "code": "KRX:073110",
   "sector": "XR·메타버스",
   "currency": "KRW",
   "themes": [
    "XR·메타버스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "맥스트",
@@ -2681,16 +2844,18 @@
   "themes": [
    "XR·메타버스",
    "디지털트윈"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "자이언트스텝",
-  "code": null,
+  "code": "KRX:289220",
   "sector": "XR·메타버스",
   "currency": "KRW",
   "themes": [
    "XR·메타버스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "레티널",
@@ -2699,16 +2864,18 @@
   "currency": "KRW",
   "themes": [
    "XR·메타버스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "이랜텍",
-  "code": null,
+  "code": "KRX:054210",
   "sector": "XR·메타버스",
   "currency": "KRW",
   "themes": [
    "XR·메타버스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "네이버제트",
@@ -2717,43 +2884,48 @@
   "currency": "KRW",
   "themes": [
    "XR·메타버스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "SK리츠",
-  "code": null,
+  "code": "KRX:395400",
   "sector": "리츠·부동산",
   "currency": "KRW",
   "themes": [
    "리츠·부동산"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "ESR켄달스퀘어리츠",
-  "code": null,
+  "code": "KRX:365550",
   "sector": "리츠·부동산",
   "currency": "KRW",
   "themes": [
    "리츠·부동산"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "롯데리츠",
-  "code": null,
+  "code": "KRX:330590",
   "sector": "리츠·부동산",
   "currency": "KRW",
   "themes": [
    "리츠·부동산"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "신한알파리츠",
-  "code": null,
+  "code": "KRX:293940",
   "sector": "리츠·부동산",
   "currency": "KRW",
   "themes": [
    "리츠·부동산"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "이지스밸류리츠",
@@ -2762,29 +2934,32 @@
   "currency": "KRW",
   "themes": [
    "리츠·부동산"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "DL이앤씨",
-  "code": null,
+  "code": "KRX:375500",
   "sector": "리츠·부동산",
   "currency": "KRW",
   "themes": [
    "리츠·부동산",
    "건설·인프라",
    "클린룸·반도체시설"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "GS건설",
-  "code": null,
+  "code": "KRX:006360",
   "sector": "리츠·부동산",
   "currency": "KRW",
   "themes": [
    "리츠·부동산",
    "건설·인프라",
    "스마트시티"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "이지스자산운용",
@@ -2793,7 +2968,8 @@
   "currency": "KRW",
   "themes": [
    "리츠·부동산"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "맥쿼리자산운용",
@@ -2802,7 +2978,8 @@
   "currency": "KRW",
   "themes": [
    "리츠·부동산"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "신한리츠운용",
@@ -2811,43 +2988,48 @@
   "currency": "KRW",
   "themes": [
    "리츠·부동산"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "피엔티",
-  "code": null,
+  "code": "KRX:137400",
   "sector": "전고체배터리",
   "currency": "KRW",
   "themes": [
    "전고체배터리"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한솔케미칼",
-  "code": null,
+  "code": "KRX:014680",
   "sector": "전고체배터리",
   "currency": "KRW",
   "themes": [
    "전고체배터리"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "파두",
-  "code": null,
+  "code": "KRX:440110",
   "sector": "CXL·차세대메모리",
   "currency": "KRW",
   "themes": [
    "CXL·차세대메모리"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "솔트룩스",
-  "code": null,
+  "code": "KRX:304100",
   "sector": "AI SW·LLM",
   "currency": "KRW",
   "themes": [
    "AI SW·LLM"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "업스테이지",
@@ -2857,7 +3039,8 @@
   "themes": [
    "AI SW·LLM",
    "AI 에이전트·RPA"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "마인즈랩",
@@ -2867,16 +3050,18 @@
   "themes": [
    "AI SW·LLM",
    "AI 에이전트·RPA"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "크라우드웍스",
-  "code": null,
+  "code": "KRX:355390",
   "sector": "AI SW·LLM",
   "currency": "KRW",
   "themes": [
    "AI SW·LLM"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "뤼이드",
@@ -2886,7 +3071,8 @@
   "themes": [
    "AI SW·LLM",
    "에듀테크·교육"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "포티투마루",
@@ -2896,7 +3082,8 @@
   "themes": [
    "AI SW·LLM",
    "AI 에이전트·RPA"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "올거나이즈",
@@ -2906,48 +3093,53 @@
   "themes": [
    "AI SW·LLM",
    "AI 에이전트·RPA"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "카카오페이",
-  "code": null,
+  "code": "KRX:377300",
   "sector": "핀테크·디지털금융",
   "currency": "KRW",
   "themes": [
    "핀테크·디지털금융",
    "인슈어테크·보험",
    "미래모빌리티·MaaS"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "KG이니시스",
-  "code": null,
+  "code": "KRX:035600",
   "sector": "핀테크·디지털금융",
   "currency": "KRW",
   "themes": [
    "핀테크·디지털금융",
    "전자상거래·커머스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "NHN KCP",
-  "code": null,
+  "code": "KRX:060250",
   "sector": "핀테크·디지털금융",
   "currency": "KRW",
   "themes": [
    "핀테크·디지털금융",
    "전자상거래·커머스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "갤럭시아머니트리",
-  "code": null,
+  "code": "KRX:094480",
   "sector": "핀테크·디지털금융",
   "currency": "KRW",
   "themes": [
    "핀테크·디지털금융",
    "블록체인·가상자산"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한국NFC",
@@ -2956,16 +3148,18 @@
   "currency": "KRW",
   "themes": [
    "핀테크·디지털금융"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "케이뱅크",
-  "code": null,
+  "code": "KRX:279570",
   "sector": "핀테크·디지털금융",
   "currency": "KRW",
   "themes": [
    "핀테크·디지털금융"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "핀다",
@@ -2974,7 +3168,8 @@
   "currency": "KRW",
   "themes": [
    "핀테크·디지털금융"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "뱅크샐러드",
@@ -2983,7 +3178,8 @@
   "currency": "KRW",
   "themes": [
    "핀테크·디지털금융"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "레이니스트",
@@ -2992,52 +3188,58 @@
   "currency": "KRW",
   "themes": [
    "핀테크·디지털금융"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "코스맥스",
-  "code": null,
+  "code": "KRX:192820",
   "sector": "K-뷰티·화장품",
   "currency": "KRW",
   "themes": [
    "K-뷰티·화장품"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한국콜마",
-  "code": null,
+  "code": "KRX:161890",
   "sector": "K-뷰티·화장품",
   "currency": "KRW",
   "themes": [
    "K-뷰티·화장품"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "클리오",
-  "code": null,
+  "code": "KRX:237880",
   "sector": "K-뷰티·화장품",
   "currency": "KRW",
   "themes": [
    "K-뷰티·화장품"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "실리콘투",
-  "code": null,
+  "code": "KRX:257720",
   "sector": "K-뷰티·화장품",
   "currency": "KRW",
   "themes": [
    "K-뷰티·화장품"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "코스메카코리아",
-  "code": null,
+  "code": "KRX:241710",
   "sector": "K-뷰티·화장품",
   "currency": "KRW",
   "themes": [
    "K-뷰티·화장품"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "CJ올리브영",
@@ -3047,7 +3249,8 @@
   "themes": [
    "K-뷰티·화장품",
    "바이오플라스틱·친환경포장"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "무신사뷰티",
@@ -3056,25 +3259,28 @@
   "currency": "KRW",
   "themes": [
    "K-뷰티·화장품"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "디어유",
-  "code": null,
+  "code": "KRX:376300",
   "sector": "엔터·K-POP",
   "currency": "KRW",
   "themes": [
    "엔터·K-POP"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "와이지엔터테인먼트",
-  "code": null,
+  "code": "KRX:122870",
   "sector": "엔터·K-POP",
   "currency": "KRW",
   "themes": [
    "엔터·K-POP"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "위버스",
@@ -3083,7 +3289,8 @@
   "currency": "KRW",
   "themes": [
    "엔터·K-POP"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "벅스",
@@ -3092,55 +3299,61 @@
   "currency": "KRW",
   "themes": [
    "엔터·K-POP"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "하나투어",
-  "code": null,
+  "code": "KRX:039130",
   "sector": "여행·항공·레저",
   "currency": "KRW",
   "themes": [
    "여행·항공·레저",
    "면세점·관광인프라"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "제주항공",
-  "code": null,
+  "code": "KRX:089590",
   "sector": "여행·항공·레저",
   "currency": "KRW",
   "themes": [
    "여행·항공·레저"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "강원랜드",
-  "code": null,
+  "code": "KRX:035250",
   "sector": "여행·항공·레저",
   "currency": "KRW",
   "themes": [
    "여행·항공·레저",
    "면세점·관광인프라"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "호텔신라",
-  "code": null,
+  "code": "KRX:008770",
   "sector": "여행·항공·레저",
   "currency": "KRW",
   "themes": [
    "여행·항공·레저",
    "면세점·관광인프라"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "아시아나항공",
-  "code": null,
+  "code": "KRX:020560",
   "sector": "여행·항공·레저",
   "currency": "KRW",
   "themes": [
    "여행·항공·레저"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "티웨이항공",
@@ -3149,73 +3362,81 @@
   "currency": "KRW",
   "themes": [
    "여행·항공·레저"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "모두투어",
-  "code": null,
+  "code": "KRX:080160",
   "sector": "여행·항공·레저",
   "currency": "KRW",
   "themes": [
    "여행·항공·레저"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "비나텍",
-  "code": null,
+  "code": "KRX:126340",
   "sector": "ESS(에너지저장)",
   "currency": "KRW",
   "themes": [
    "ESS(에너지저장)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "KC코트렐",
-  "code": null,
+  "code": "KRX:119650",
   "sector": "탄소중립·CCUS",
   "currency": "KRW",
   "themes": [
    "탄소중립·CCUS"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "후성",
-  "code": null,
+  "code": "KRX:093370",
   "sector": "탄소중립·CCUS",
   "currency": "KRW",
   "themes": [
    "탄소중립·CCUS",
    "리튬·배터리원재료",
    "산업용가스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "남해화학",
-  "code": null,
+  "code": "KRX:025860",
   "sector": "농업·식량안보",
   "currency": "KRW",
   "themes": [
    "농업·식량안보"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "그린플러스",
-  "code": null,
+  "code": "KRX:186230",
   "sector": "농업·식량안보",
   "currency": "KRW",
   "themes": [
    "농업·식량안보",
    "수직농업·도시농업"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "경농",
-  "code": null,
+  "code": "KRX:002100",
   "sector": "농업·식량안보",
   "currency": "KRW",
   "themes": [
    "농업·식량안보"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "팜한농",
@@ -3224,16 +3445,18 @@
   "currency": "KRW",
   "themes": [
    "농업·식량안보"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "조비",
-  "code": null,
+  "code": "KRX:001550",
   "sector": "농업·식량안보",
   "currency": "KRW",
   "themes": [
    "농업·식량안보"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "우성사료",
@@ -3243,7 +3466,8 @@
   "themes": [
    "농업·식량안보",
    "반려동물·펫경제"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "이지팜",
@@ -3252,22 +3476,24 @@
   "currency": "KRW",
   "themes": [
    "농업·식량안보"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "사조대림",
-  "code": null,
+  "code": "KRX:003960",
   "sector": "농업·식량안보",
   "currency": "KRW",
   "themes": [
    "농업·식량안보",
    "음식료·필수소비재",
    "반려동물·펫경제"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "농심",
-  "code": null,
+  "code": "KRX:004370",
   "sector": "농업·식량안보",
   "currency": "KRW",
   "themes": [
@@ -3275,36 +3501,40 @@
    "음식료·필수소비재",
    "K-푸드·식품수출",
    "대체단백질·배양육"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "삼성E&A",
-  "code": null,
+  "code": "KRX:028050",
   "sector": "물·수자원·환경",
   "currency": "KRW",
   "themes": [
    "물·수자원·환경",
    "건설·인프라",
    "클린룸·반도체시설"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "웅진",
-  "code": null,
+  "code": "KRX:016880",
   "sector": "물·수자원·환경",
   "currency": "KRW",
   "themes": [
    "물·수자원·환경"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "코오롱글로벌",
-  "code": null,
+  "code": "KRX:003070",
   "sector": "물·수자원·환경",
   "currency": "KRW",
   "themes": [
    "물·수자원·환경"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "도레이첨단소재",
@@ -3314,7 +3544,8 @@
   "themes": [
    "물·수자원·환경",
    "탄소섬유·경량소재"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "KMW",
@@ -3324,44 +3555,49 @@
   "themes": [
    "5G/6G·통신",
    "사이버전·전자전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "서진시스템",
-  "code": null,
+  "code": "KRX:178320",
   "sector": "5G/6G·통신",
   "currency": "KRW",
   "themes": [
    "5G/6G·통신"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "에이스테크",
-  "code": null,
+  "code": "KRX:088800",
   "sector": "5G/6G·통신",
   "currency": "KRW",
   "themes": [
    "5G/6G·통신",
    "사이버전·전자전"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "오이솔루션",
-  "code": null,
+  "code": "KRX:138080",
   "sector": "광통신·네트워크장비",
   "currency": "KRW",
   "themes": [
    "광통신·네트워크장비"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "옵티시스",
-  "code": null,
+  "code": "KRX:109080",
   "sector": "광통신·네트워크장비",
   "currency": "KRW",
   "themes": [
    "광통신·네트워크장비"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "라이트론",
@@ -3370,16 +3606,18 @@
   "currency": "KRW",
   "themes": [
    "광통신·네트워크장비"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "유비쿼스",
-  "code": null,
+  "code": "KRX:264450",
   "sector": "광통신·네트워크장비",
   "currency": "KRW",
   "themes": [
    "광통신·네트워크장비"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "쿠팡",
@@ -3392,18 +3630,20 @@
    "스마트물류·풀필먼트",
    "대체단백질·배양육",
    "수직농업·도시농업"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한진",
-  "code": null,
+  "code": "KRX:002320",
   "sector": "전자상거래·커머스",
   "currency": "KRW",
   "themes": [
    "전자상거래·커머스",
    "스마트물류·풀필먼트",
    "자율주행트럭·상용차"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "오스템임플란트",
@@ -3413,37 +3653,41 @@
   "themes": [
    "고령화·실버산업",
    "의료기기·진단"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "인바디",
-  "code": null,
+  "code": "KRX:041830",
   "sector": "고령화·실버산업",
   "currency": "KRW",
   "themes": [
    "고령화·실버산업",
    "의료기기·진단"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "바텍",
-  "code": null,
+  "code": "KRX:043150",
   "sector": "고령화·실버산업",
   "currency": "KRW",
   "themes": [
    "고령화·실버산업",
    "의료기기·진단"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "경동나비엔",
-  "code": null,
+  "code": "KRX:009450",
   "sector": "고령화·실버산업",
   "currency": "KRW",
   "themes": [
    "고령화·실버산업",
    "스마트홈·IoT 가전"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "교보생명",
@@ -3452,7 +3696,8 @@
   "currency": "KRW",
   "themes": [
    "고령화·실버산업"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "메디컬아이피",
@@ -3461,7 +3706,8 @@
   "currency": "KRW",
   "themes": [
    "고령화·실버산업"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "케어링",
@@ -3470,45 +3716,50 @@
   "currency": "KRW",
   "themes": [
    "고령화·실버산업"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "메가스터디",
-  "code": null,
+  "code": "KRX:072870",
   "sector": "에듀테크·교육",
   "currency": "KRW",
   "themes": [
    "에듀테크·교육"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "비상교육",
-  "code": null,
+  "code": "KRX:100220",
   "sector": "에듀테크·교육",
   "currency": "KRW",
   "themes": [
    "에듀테크·교육",
    "디지털교과서·공교육 AI"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "웅진씽크빅",
-  "code": null,
+  "code": "KRX:095720",
   "sector": "에듀테크·교육",
   "currency": "KRW",
   "themes": [
    "에듀테크·교육",
    "디지털교과서·공교육 AI"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "대교",
-  "code": null,
+  "code": "KRX:019680",
   "sector": "에듀테크·교육",
   "currency": "KRW",
   "themes": [
    "에듀테크·교육"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "미래엔",
@@ -3518,7 +3769,8 @@
   "themes": [
    "에듀테크·교육",
    "디지털교과서·공교육 AI"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "천재교육",
@@ -3528,7 +3780,8 @@
   "themes": [
    "에듀테크·교육",
    "디지털교과서·공교육 AI"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "능률교육",
@@ -3537,16 +3790,18 @@
   "currency": "KRW",
   "themes": [
    "에듀테크·교육"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "YBM넷",
-  "code": null,
+  "code": "KRX:057030",
   "sector": "에듀테크·교육",
   "currency": "KRW",
   "themes": [
    "에듀테크·교육"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "두나무",
@@ -3555,25 +3810,28 @@
   "currency": "KRW",
   "themes": [
    "블록체인·가상자산"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한컴위드",
-  "code": null,
+  "code": "KRX:054920",
   "sector": "블록체인·가상자산",
   "currency": "KRW",
   "themes": [
    "블록체인·가상자산"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "우리기술투자",
-  "code": null,
+  "code": "KRX:041190",
   "sector": "블록체인·가상자산",
   "currency": "KRW",
   "themes": [
    "블록체인·가상자산"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "빗썸코리아",
@@ -3582,7 +3840,8 @@
   "currency": "KRW",
   "themes": [
    "블록체인·가상자산"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "코인원",
@@ -3591,7 +3850,8 @@
   "currency": "KRW",
   "themes": [
    "블록체인·가상자산"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "람다256",
@@ -3600,40 +3860,44 @@
   "currency": "KRW",
   "themes": [
    "블록체인·가상자산"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "삼양식품",
-  "code": null,
+  "code": "KRX:003230",
   "sector": "음식료·필수소비재",
   "currency": "KRW",
   "themes": [
    "음식료·필수소비재",
    "K-푸드·식품수출"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "오뚜기",
-  "code": null,
+  "code": "KRX:007310",
   "sector": "음식료·필수소비재",
   "currency": "KRW",
   "themes": [
    "음식료·필수소비재",
    "K-푸드·식품수출"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "BGF리테일",
-  "code": null,
+  "code": "KRX:282330",
   "sector": "음식료·필수소비재",
   "currency": "KRW",
   "themes": [
    "음식료·필수소비재"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "대상",
-  "code": null,
+  "code": "KRX:001680",
   "sector": "음식료·필수소비재",
   "currency": "KRW",
   "themes": [
@@ -3641,58 +3905,64 @@
    "K-푸드·식품수출",
    "프랜차이즈·외식",
    "대체단백질·배양육"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "삼양사",
-  "code": null,
+  "code": "KRX:145990",
   "sector": "음식료·필수소비재",
   "currency": "KRW",
   "themes": [
    "음식료·필수소비재",
    "K-푸드·식품수출"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "동국제강",
-  "code": null,
+  "code": "KRX:460860",
   "sector": "건설·인프라",
   "currency": "KRW",
   "themes": [
    "건설·인프라",
    "철강·특수강"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "KCC",
-  "code": null,
+  "code": "KRX:002380",
   "sector": "건설·인프라",
   "currency": "KRW",
   "themes": [
    "건설·인프라"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한샘",
-  "code": null,
+  "code": "KRX:009240",
   "sector": "건설·인프라",
   "currency": "KRW",
   "themes": [
    "건설·인프라"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "현대리바트",
-  "code": null,
+  "code": "KRX:079430",
   "sector": "건설·인프라",
   "currency": "KRW",
   "themes": [
    "건설·인프라"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "SNT모티브",
-  "code": null,
+  "code": "KRX:064960",
   "sector": "건설·인프라",
   "currency": "KRW",
   "themes": [
@@ -3701,17 +3971,19 @@
   ],
   "aliases": [
    "S&T모티브"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "현대위아",
-  "code": null,
+  "code": "KRX:011210",
   "sector": "자동차부품·모빌리티",
   "currency": "KRW",
   "themes": [
    "자동차부품·모빌리티",
    "3D 프린팅·적층제조"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "카카오모빌리티",
@@ -3721,7 +3993,8 @@
   "themes": [
    "자동차부품·모빌리티",
    "미래모빌리티·MaaS"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "매그나칩",
@@ -3730,7 +4003,8 @@
   "currency": "KRW",
   "themes": [
    "전력반도체(SiC/GaN)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "예스파워테크닉스",
@@ -3739,34 +4013,38 @@
   "currency": "KRW",
   "themes": [
    "전력반도체(SiC/GaN)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "덕산테코피아",
-  "code": null,
+  "code": "KRX:317330",
   "sector": "전력반도체(SiC/GaN)",
   "currency": "KRW",
   "themes": [
    "전력반도체(SiC/GaN)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "에스티팜",
-  "code": null,
+  "code": "KRX:237690",
   "sector": "비만치료제(GLP-1)",
   "currency": "KRW",
   "themes": [
    "비만치료제(GLP-1)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "동아에스티",
-  "code": null,
+  "code": "KRX:170900",
   "sector": "비만치료제(GLP-1)",
   "currency": "KRW",
   "themes": [
    "비만치료제(GLP-1)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "폴루스",
@@ -3775,34 +4053,38 @@
   "currency": "KRW",
   "themes": [
    "비만치료제(GLP-1)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "JW중외제약",
-  "code": null,
+  "code": "KRX:001060",
   "sector": "비만치료제(GLP-1)",
   "currency": "KRW",
   "themes": [
    "비만치료제(GLP-1)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "종근당",
-  "code": null,
+  "code": "KRX:185750",
   "sector": "비만치료제(GLP-1)",
   "currency": "KRW",
   "themes": [
    "비만치료제(GLP-1)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "성일하이텍",
-  "code": null,
+  "code": "KRX:365340",
   "sector": "폐배터리 재활용",
   "currency": "KRW",
   "themes": [
    "폐배터리 재활용"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "에코프로CnG",
@@ -3811,16 +4093,18 @@
   "currency": "KRW",
   "themes": [
    "폐배터리 재활용"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "새빗켐",
-  "code": null,
+  "code": "KRX:107600",
   "sector": "폐배터리 재활용",
   "currency": "KRW",
   "themes": [
    "폐배터리 재활용"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "영풍정밀",
@@ -3829,20 +4113,22 @@
   "currency": "KRW",
   "themes": [
    "폐배터리 재활용"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "파워로직스",
-  "code": null,
+  "code": "KRX:047310",
   "sector": "폐배터리 재활용",
   "currency": "KRW",
   "themes": [
    "폐배터리 재활용"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "SK오션플랜트",
-  "code": null,
+  "code": "KRX:100090",
   "sector": "해상풍력",
   "currency": "KRW",
   "themes": [
@@ -3850,25 +4136,28 @@
   ],
   "aliases": [
    "삼강엠앤티"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "세진중공업",
-  "code": null,
+  "code": "KRX:075580",
   "sector": "해상풍력",
   "currency": "KRW",
   "themes": [
    "해상풍력"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "유니슨",
-  "code": null,
+  "code": "KRX:018000",
   "sector": "해상풍력",
   "currency": "KRW",
   "themes": [
    "해상풍력"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "SK에코플랜트",
@@ -3877,7 +4166,8 @@
   "currency": "KRW",
   "themes": [
    "해상풍력"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "누리텔레콤",
@@ -3888,16 +4178,18 @@
    "스마트그리드·전력망",
    "스마트시티",
    "가상발전소(VPP)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "옴니시스템",
-  "code": null,
+  "code": "KRX:057540",
   "sector": "스마트그리드·전력망",
   "currency": "KRW",
   "themes": [
    "스마트그리드·전력망"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한전KDN",
@@ -3907,7 +4199,8 @@
   "themes": [
    "스마트그리드·전력망",
    "가상발전소(VPP)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "인스텍",
@@ -3916,7 +4209,8 @@
   "currency": "KRW",
   "themes": [
    "3D 프린팅·적층제조"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "캐리마",
@@ -3925,16 +4219,18 @@
   "currency": "KRW",
   "themes": [
    "3D 프린팅·적층제조"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "대주전자재료",
-  "code": null,
+  "code": "KRX:078600",
   "sector": "3D 프린팅·적층제조",
   "currency": "KRW",
   "themes": [
    "3D 프린팅·적층제조"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "메탈쓰리디",
@@ -3943,7 +4239,8 @@
   "currency": "KRW",
   "themes": [
    "3D 프린팅·적층제조"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "비즈모델라인",
@@ -3952,7 +4249,8 @@
   "currency": "KRW",
   "themes": [
    "디지털트윈"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한컴인텔리전스",
@@ -3964,16 +4262,18 @@
    "소방·재난안전",
    "CCTV·영상보안",
    "사이버전·전자전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "서울바이오시스",
-  "code": null,
+  "code": "KRX:092190",
   "sector": "마이크로 LED",
   "currency": "KRW",
   "themes": [
    "마이크로 LED"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "루멘스",
@@ -3983,45 +4283,50 @@
   "themes": [
    "마이크로 LED",
    "수직농업·도시농업"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "엘티씨",
-  "code": null,
+  "code": "KRX:170920",
   "sector": "마이크로 LED",
   "currency": "KRW",
   "themes": [
    "마이크로 LED"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "SK케미칼",
-  "code": null,
+  "code": "KRX:285130",
   "sector": "탄소섬유·경량소재",
   "currency": "KRW",
   "themes": [
    "탄소섬유·경량소재",
    "바이오플라스틱·친환경포장"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "슈프리마",
-  "code": null,
+  "code": "KRX:236200",
   "sector": "생체인식·보안",
   "currency": "KRW",
   "themes": [
    "생체인식·보안"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "알체라",
-  "code": null,
+  "code": "KRX:347860",
   "sector": "생체인식·보안",
   "currency": "KRW",
   "themes": [
    "생체인식·보안",
    "CCTV·영상보안"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "크루셜텍",
@@ -4030,7 +4335,8 @@
   "currency": "KRW",
   "themes": [
    "생체인식·보안"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "슈프리마아이디",
@@ -4039,55 +4345,61 @@
   "currency": "KRW",
   "themes": [
    "생체인식·보안"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "파인텍",
-  "code": null,
+  "code": "KRX:131760",
   "sector": "생체인식·보안",
   "currency": "KRW",
   "themes": [
    "생체인식·보안",
    "수직농업·도시농업"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "이엘피",
-  "code": null,
+  "code": "KRX:063760",
   "sector": "생체인식·보안",
   "currency": "KRW",
   "themes": [
    "생체인식·보안"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "옵트론텍",
-  "code": null,
+  "code": "KRX:082210",
   "sector": "생체인식·보안",
   "currency": "KRW",
   "themes": [
    "생체인식·보안"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "에스원",
-  "code": null,
+  "code": "KRX:012750",
   "sector": "생체인식·보안",
   "currency": "KRW",
   "themes": [
    "생체인식·보안",
    "소방·재난안전",
    "CCTV·영상보안"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "하림",
-  "code": null,
+  "code": "KRX:136480",
   "sector": "반려동물·펫경제",
   "currency": "KRW",
   "themes": [
    "반려동물·펫경제"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "대웅바이오",
@@ -4096,7 +4408,8 @@
   "currency": "KRW",
   "themes": [
    "반려동물·펫경제"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "펫프렌즈",
@@ -4105,18 +4418,20 @@
   "currency": "KRW",
   "themes": [
    "반려동물·펫경제"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "풀무원",
-  "code": null,
+  "code": "KRX:017810",
   "sector": "K-푸드·식품수출",
   "currency": "KRW",
   "themes": [
    "K-푸드·식품수출",
    "대체단백질·배양육",
    "바이오플라스틱·친환경포장"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "동원F&B",
@@ -4125,7 +4440,8 @@
   "currency": "KRW",
   "themes": [
    "K-푸드·식품수출"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "교촌F&B",
@@ -4134,16 +4450,18 @@
   "currency": "KRW",
   "themes": [
    "프랜차이즈·외식"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "CJ프레시웨이",
-  "code": null,
+  "code": "KRX:051500",
   "sector": "프랜차이즈·외식",
   "currency": "KRW",
   "themes": [
    "프랜차이즈·외식"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "SPC삼립",
@@ -4152,7 +4470,8 @@
   "currency": "KRW",
   "themes": [
    "프랜차이즈·외식"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "제너시스BBQ",
@@ -4161,7 +4480,8 @@
   "currency": "KRW",
   "themes": [
    "프랜차이즈·외식"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "이디야",
@@ -4170,7 +4490,8 @@
   "currency": "KRW",
   "themes": [
    "프랜차이즈·외식"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "다이닝브랜즈그룹",
@@ -4182,7 +4503,8 @@
   ],
   "aliases": [
    "bhc"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "맘스터치",
@@ -4191,25 +4513,28 @@
   "currency": "KRW",
   "themes": [
    "프랜차이즈·외식"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "파라다이스",
-  "code": null,
+  "code": "KRX:034230",
   "sector": "면세점·관광인프라",
   "currency": "KRW",
   "themes": [
    "면세점·관광인프라"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "롯데관광개발",
-  "code": null,
+  "code": "KRX:032350",
   "sector": "면세점·관광인프라",
   "currency": "KRW",
   "themes": [
    "면세점·관광인프라"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "롯데면세",
@@ -4218,7 +4543,8 @@
   "currency": "KRW",
   "themes": [
    "면세점·관광인프라"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "신세계면세",
@@ -4227,16 +4553,18 @@
   "currency": "KRW",
   "themes": [
    "면세점·관광인프라"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "유진로봇",
-  "code": null,
+  "code": "KRX:056080",
   "sector": "물류자동화·AGV",
   "currency": "KRW",
   "themes": [
    "물류자동화·AGV"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "롯데글로벌로지스",
@@ -4246,7 +4574,8 @@
   "themes": [
    "스마트물류·풀필먼트",
    "자율주행트럭·상용차"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한화정밀기계",
@@ -4255,16 +4584,18 @@
   "currency": "KRW",
   "themes": [
    "스마트물류·풀필먼트"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "인터플렉스",
-  "code": null,
+  "code": "KRX:051370",
   "sector": "스마트물류·풀필먼트",
   "currency": "KRW",
   "themes": [
    "스마트물류·풀필먼트"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "팀프레시",
@@ -4273,7 +4604,8 @@
   "currency": "KRW",
   "themes": [
    "스마트물류·풀필먼트"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "오아시스",
@@ -4282,16 +4614,18 @@
   "currency": "KRW",
   "themes": [
    "스마트물류·풀필먼트"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "현대제철",
-  "code": null,
+  "code": "KRX:004020",
   "sector": "철강·특수강",
   "currency": "KRW",
   "themes": [
    "철강·특수강"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "세아베스틸",
@@ -4300,25 +4634,28 @@
   "currency": "KRW",
   "themes": [
    "철강·특수강"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한국철강",
-  "code": null,
+  "code": "KRX:104700",
   "sector": "철강·특수강",
   "currency": "KRW",
   "themes": [
    "철강·특수강"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "동국S&C",
-  "code": null,
+  "code": "KRX:100130",
   "sector": "철강·특수강",
   "currency": "KRW",
   "themes": [
    "철강·특수강"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "포스코A&C",
@@ -4327,7 +4664,8 @@
   "currency": "KRW",
   "themes": [
    "스마트시티"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "타타대우",
@@ -4336,7 +4674,8 @@
   "currency": "KRW",
   "themes": [
    "자율주행트럭·상용차"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "우진산전",
@@ -4345,7 +4684,8 @@
   "currency": "KRW",
   "themes": [
    "전기버스·수소버스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "에디슨모터스",
@@ -4354,7 +4694,8 @@
   "currency": "KRW",
   "themes": [
    "전기버스·수소버스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "지구인컴퍼니",
@@ -4363,7 +4704,8 @@
   "currency": "KRW",
   "themes": [
    "대체단백질·배양육"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "씨위드",
@@ -4372,7 +4714,8 @@
   "currency": "KRW",
   "themes": [
    "대체단백질·배양육"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "디보션푸드",
@@ -4381,7 +4724,8 @@
   "currency": "KRW",
   "themes": [
    "대체단백질·배양육"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "SK스페셜티",
@@ -4390,16 +4734,18 @@
   "currency": "KRW",
   "themes": [
    "산업용가스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "원익머트리얼즈",
-  "code": null,
+  "code": "KRX:104830",
   "sector": "산업용가스",
   "currency": "KRW",
   "themes": [
    "산업용가스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "대성산업가스",
@@ -4408,7 +4754,8 @@
   "currency": "KRW",
   "themes": [
    "산업용가스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "SK머티리얼즈",
@@ -4417,25 +4764,28 @@
   "currency": "KRW",
   "themes": [
    "산업용가스"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "하나마이크론",
-  "code": null,
+  "code": "KRX:067310",
   "sector": "산업용가스",
   "currency": "KRW",
   "themes": [
    "산업용가스"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "동방",
-  "code": null,
+  "code": "KRX:004140",
   "sector": "소방·재난안전",
   "currency": "KRW",
   "themes": [
    "소방·재난안전"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한국소방산업",
@@ -4444,134 +4794,149 @@
   "currency": "KRW",
   "themes": [
    "소방·재난안전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "파트론",
-  "code": null,
+  "code": "KRX:091700",
   "sector": "웨어러블·스마트워치",
   "currency": "KRW",
   "themes": [
    "웨어러블·스마트워치"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "자화전자",
-  "code": null,
+  "code": "KRX:033240",
   "sector": "웨어러블·스마트워치",
   "currency": "KRW",
   "themes": [
    "웨어러블·스마트워치"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "아모텍",
-  "code": null,
+  "code": "KRX:052710",
   "sector": "웨어러블·스마트워치",
   "currency": "KRW",
   "themes": [
    "웨어러블·스마트워치",
    "스마트홈·IoT 가전"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "LX세미콘",
-  "code": null,
+  "code": "KRX:108320",
   "sector": "스마트홈·IoT 가전",
   "currency": "KRW",
   "themes": [
    "스마트홈·IoT 가전"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "차바이오텍",
-  "code": null,
+  "code": "KRX:085660",
   "sector": "줄기세포·재생의료",
   "currency": "KRW",
   "themes": [
    "줄기세포·재생의료"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "메디포스트",
-  "code": null,
+  "code": "KRX:078160",
   "sector": "줄기세포·재생의료",
   "currency": "KRW",
   "themes": [
    "줄기세포·재생의료"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "안트로젠",
-  "code": null,
+  "code": "KRX:065660",
   "sector": "줄기세포·재생의료",
   "currency": "KRW",
   "themes": [
    "줄기세포·재생의료"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "파미셀",
-  "code": null,
+  "code": "KRX:005690",
   "sector": "줄기세포·재생의료",
   "currency": "KRW",
   "themes": [
    "줄기세포·재생의료"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "강스템바이오텍",
-  "code": null,
+  "code": "KRX:217730",
   "sector": "줄기세포·재생의료",
   "currency": "KRW",
   "themes": [
    "줄기세포·재생의료"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "툴젠",
-  "code": null,
+  "code": "KRX:199800",
   "sector": "유전자치료(CGT)",
   "currency": "KRW",
   "themes": [
    "유전자치료(CGT)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "제넥신",
-  "code": null,
+  "code": "KRX:095700",
   "sector": "유전자치료(CGT)",
   "currency": "KRW",
   "themes": [
    "유전자치료(CGT)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "바이넥스",
-  "code": null,
+  "code": "KRX:053030",
   "sector": "유전자치료(CGT)",
   "currency": "KRW",
   "themes": [
    "유전자치료(CGT)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "진원생명과학",
-  "code": null,
+  "code": "KRX:011000",
   "sector": "유전자치료(CGT)",
   "currency": "KRW",
   "themes": [
    "유전자치료(CGT)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "인터로조",
-  "code": null,
+  "code": "KRX:119610",
   "sector": "의료기기·진단",
   "currency": "KRW",
   "themes": [
    "의료기기·진단"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "루트로닉",
@@ -4580,71 +4945,79 @@
   "currency": "KRW",
   "themes": [
    "의료기기·진단"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "큐렉소",
-  "code": null,
+  "code": "KRX:060280",
   "sector": "의료기기·진단",
   "currency": "KRW",
   "themes": [
    "의료기기·진단"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "힘스",
-  "code": null,
+  "code": "KRX:238490",
   "sector": "의료기기·진단",
   "currency": "KRW",
   "themes": [
    "의료기기·진단"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "세운메디칼",
-  "code": null,
+  "code": "KRX:100700",
   "sector": "의료기기·진단",
   "currency": "KRW",
   "themes": [
    "의료기기·진단"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "메디톡스",
-  "code": null,
+  "code": "KRX:086900",
   "sector": "의료기기·진단",
   "currency": "KRW",
   "themes": [
    "의료기기·진단"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "DB손해보험",
-  "code": null,
+  "code": "KRX:005830",
   "sector": "인슈어테크·보험",
   "currency": "KRW",
   "themes": [
    "인슈어테크·보험",
    "미래모빌리티·MaaS"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "웹케시",
-  "code": null,
+  "code": "KRX:053580",
   "sector": "인슈어테크·보험",
   "currency": "KRW",
   "themes": [
    "인슈어테크·보험"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "쿠콘",
-  "code": null,
+  "code": "KRX:294570",
   "sector": "인슈어테크·보험",
   "currency": "KRW",
   "themes": [
    "인슈어테크·보험"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "카카오페이손해보험",
@@ -4653,7 +5026,8 @@
   "currency": "KRW",
   "themes": [
    "인슈어테크·보험"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "보맵",
@@ -4662,7 +5036,8 @@
   "currency": "KRW",
   "themes": [
    "인슈어테크·보험"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "굿리치",
@@ -4671,29 +5046,32 @@
   "currency": "KRW",
   "themes": [
    "인슈어테크·보험"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "HD현대마린솔루션",
-  "code": null,
+  "code": "KRX:443060",
   "sector": "전기선박·친환경해운",
   "currency": "KRW",
   "themes": [
    "전기선박·친환경해운"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "에너토크",
-  "code": null,
+  "code": "KRX:019990",
   "sector": "가상발전소(VPP)",
   "currency": "KRW",
   "themes": [
    "가상발전소(VPP)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "KPX케미칼",
-  "code": null,
+  "code": "KRX:025000",
   "sector": "가상발전소(VPP)",
   "currency": "KRW",
   "themes": [
@@ -4701,7 +5079,8 @@
   ],
   "aliases": [
    "KPX"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "뉴냅스",
@@ -4710,7 +5089,8 @@
   "currency": "KRW",
   "themes": [
    "디지털치료제(DTx)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "라이프시맨틱스",
@@ -4719,7 +5099,8 @@
   "currency": "KRW",
   "themes": [
    "디지털치료제(DTx)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "웰트",
@@ -4728,7 +5109,8 @@
   "currency": "KRW",
   "themes": [
    "디지털치료제(DTx)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "에이아이더뉴트리션",
@@ -4737,34 +5119,38 @@
   "currency": "KRW",
   "themes": [
    "디지털치료제(DTx)"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "한화비전",
-  "code": null,
+  "code": "KRX:489790",
   "sector": "CCTV·영상보안",
   "currency": "KRW",
   "themes": [
    "CCTV·영상보안"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "아이디스",
-  "code": null,
+  "code": "KRX:143160",
   "sector": "CCTV·영상보안",
   "currency": "KRW",
   "themes": [
    "CCTV·영상보안"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "수산아이앤티",
-  "code": null,
+  "code": "KRX:050960",
   "sector": "CCTV·영상보안",
   "currency": "KRW",
   "themes": [
    "CCTV·영상보안"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "ADT캡스",
@@ -4773,52 +5159,58 @@
   "currency": "KRW",
   "themes": [
    "CCTV·영상보안"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "칩스앤미디어",
-  "code": null,
+  "code": "KRX:094360",
   "sector": "AI 반도체설계(팹리스)",
   "currency": "KRW",
   "themes": [
    "AI 반도체설계(팹리스)"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "신성이엔지",
-  "code": null,
+  "code": "KRX:011930",
   "sector": "클린룸·반도체시설",
   "currency": "KRW",
   "themes": [
    "클린룸·반도체시설"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "한양이엔지",
-  "code": null,
+  "code": "KRX:045100",
   "sector": "클린룸·반도체시설",
   "currency": "KRW",
   "themes": [
    "클린룸·반도체시설"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "크린앤사이언스",
-  "code": null,
+  "code": "KRX:045520",
   "sector": "클린룸·반도체시설",
   "currency": "KRW",
   "themes": [
    "클린룸·반도체시설"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "케이씨",
-  "code": null,
+  "code": "KRX:029460",
   "sector": "클린룸·반도체시설",
   "currency": "KRW",
   "themes": [
    "클린룸·반도체시설"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "에이치엘비",
@@ -4827,7 +5219,8 @@
   "currency": "KRW",
   "themes": [
    "클린룸·반도체시설"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "SK엔무브",
@@ -4836,25 +5229,28 @@
   "currency": "KRW",
   "themes": [
    "AI 데이터센터냉각"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "아이스크림에듀",
-  "code": null,
+  "code": "KRX:289010",
   "sector": "디지털교과서·공교육 AI",
   "currency": "KRW",
   "themes": [
    "디지털교과서·공교육 AI"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "서울반도체",
-  "code": null,
+  "code": "KRX:046890",
   "sector": "수직농업·도시농업",
   "currency": "KRW",
   "themes": [
    "수직농업·도시농업"
-  ]
+  ],
+  "listed": true
  },
  {
   "name": "팜에이트",
@@ -4863,7 +5259,8 @@
   "currency": "KRW",
   "themes": [
    "수직농업·도시농업"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "넥스트온",
@@ -4872,7 +5269,8 @@
   "currency": "KRW",
   "themes": [
    "수직농업·도시농업"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "마켓컬리",
@@ -4881,7 +5279,8 @@
   "currency": "KRW",
   "themes": [
    "수직농업·도시농업"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "풍산FNS",
@@ -4890,7 +5289,8 @@
   "currency": "KRW",
   "themes": [
    "사이버전·전자전"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "타다",
@@ -4899,7 +5299,8 @@
   "currency": "KRW",
   "themes": [
    "미래모빌리티·MaaS"
-  ]
+  ],
+  "tries": 1
  },
  {
   "name": "QQQM",

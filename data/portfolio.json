@@ -1,0 +1,29 @@
+{
+ "holdings": [
+  {
+   "addedAt": "2026-10-20",
+   "avg": 83423,
+   "code": "KRX:005930",
+   "currency": "KRW",
+   "id": "h-samsung",
+   "name": "삼성전자",
+   "qty": 4,
+   "sector": "반도체"
+  }
+ ],
+ "longHoldings": [],
+ "settings": {
+  "long": {
+   "start": null,
+   "target": null,
+   "title": "장기 프로젝트",
+   "years": null
+  },
+  "usdkrw": null
+ },
+ "updatedAt": "2026-10-20T06:17:41.317Z",
+ "watch": [
+  "KRX:005930",
+  "KRX:000660"
+ ]
+}

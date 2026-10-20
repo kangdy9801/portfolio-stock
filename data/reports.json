@@ -1,0 +1,7437 @@
+{
+ "cpi": {
+  "2026-05": {
+   "core": {
+    "ap": {
+     "mom": 0.5,
+     "yoy": 2.5
+    },
+    "fe": {
+     "mom": 0.5,
+     "yoy": 2.5
+    }
+   },
+   "fresh": {
+    "mom": -1.4,
+    "yoy": -1.4
+   },
+   "headline": {
+    "index": 119.92,
+    "mom": 0.5,
+    "yoy": 3.1
+   },
+   "living": {
+    "mom": 0.3,
+    "yoy": 3.3
+   },
+   "month": "2026-05",
+   "movers": {
+    "down": [
+     "유치원납입금(-41.4)",
+     "양배추(-43.9)",
+     "무(-27.5)",
+     "당근(-24.8)",
+     "보육시설이용료(-18.3)",
+     "양파(-18.5)",
+     "배(-17.8)",
+     "식용유(-9.5)"
+    ],
+    "up": [
+     "휘발유(23.1)",
+     "경유(33.3)",
+     "국제항공료(33.5)",
+     "해외단체여행비(26.3)",
+     "승용차임차료(25.7)",
+     "컴퓨터(19.0)",
+     "등유(21.7)",
+     "쌀(13.5)",
+     "보험서비스료(13.4)"
+    ]
+   },
+   "released": "2026-06-02",
+   "sectorSeries": {
+    "가정용품 및 가사서비스": [
+     {
+      "m": "2026-03",
+      "mom": 0.4,
+      "yoy": 3.2
+     },
+     {
+      "m": "2026-04",
+      "mom": 0.2,
+      "yoy": 1.9
+     },
+     {
+      "m": "2026-05",
+      "mom": 0.8,
+      "yoy": 2.6
+     }
+    ],
+    "공업제품": [
+     {
+      "m": "2026-03",
+      "mom": 1.5,
+      "yoy": 2.7
+     },
+     {
+      "m": "2026-04",
+      "mom": 1.1,
+      "yoy": 3.8
+     },
+     {
+      "m": "2026-05",
+      "mom": 0.5,
+      "yoy": 4.2
+     }
+    ],
+    "교육": [
+     {
+      "m": "2026-03",
+      "mom": 0.5,
+      "yoy": 1.1
+     },
+     {
+      "m": "2026-04",
+      "mom": 0.3,
+      "yoy": 1.1
+     },
+     {
+      "m": "2026-05",
+      "mom": 0.2,
+      "yoy": 1.3
+     }
+    ],
+    "교통": [
+     {
+      "m": "2026-03",
+      "mom": 3.4,
+      "yoy": 5
+     },
+     {
+      "m": "2026-04",
+      "mom": 3.4,
+      "yoy": 9.7
+     },
+     {
+      "m": "2026-05",
+      "mom": 1.5,
+      "yoy": 11.6
+     }
+    ],
+    "기타 상품 및 서비스": [
+     {
+      "m": "2026-03",
+      "mom": -0.1,
+      "yoy": 4.6
+     },
+     {
+      "m": "2026-04",
+      "mom": 0.7,
+      "yoy": 4.1
+     },
+     {
+      "m": "2026-05",
+      "mom": 0,
+      "yoy": 4.1
+     }
+    ],
+    "농축수산물": [
+     {
+      "m": "2026-03",
+      "mom": -1.9,
+      "yoy": -0.6
+     },
+     {
+      "m": "2026-04",
+      "mom": -1.7,
+      "yoy": -0.5
+     },
+     {
+      "m": "2026-05",
+      "mom": 0,
+      "yoy": 2.2
+     }
+    ],
+    "보건": [
+     {
+      "m": "2026-03",
+      "mom": 0.4,
+      "yoy": 1.3
+     },
+     {
+      "m": "2026-04",
+      "mom": -0.1,
+      "yoy": 1.2
+     },
+     {
+      "m": "2026-05",
+      "mom": 0,
+      "yoy": 1.1
+     }
+    ],
+    "서비스": [
+     {
+      "m": "2026-03",
+      "mom": 0,
+      "yoy": 2.4
+     },
+     {
+      "m": "2026-04",
+      "mom": 0.5,
+      "yoy": 2.4
+     },
+     {
+      "m": "2026-05",
+      "mom": 0.5,
+      "yoy": 2.8
+     }
+    ],
+    "식료품 및 비주류음료": [
+     {
+      "m": "2026-03",
+      "mom": -0.9,
+      "yoy": 0.5
+     },
+     {
+      "m": "2026-04",
+      "mom": -0.8,
+      "yoy": 0.3
+     },
+     {
+      "m": "2026-05",
+      "mom": 0,
+      "yoy": 1.6
+     }
+    ],
+    "오락 및 문화": [
+     {
+      "m": "2026-03",
+      "mom": -0.1,
+      "yoy": 2.8
+     },
+     {
+      "m": "2026-04",
+      "mom": 1.5,
+      "yoy": 3.4
+     },
+     {
+      "m": "2026-05",
+      "mom": 1.8,
+      "yoy": 5
+     }
+    ],
+    "음식 및 숙박": [
+     {
+      "m": "2026-03",
+      "mom": 0.1,
+      "yoy": 2.7
+     },
+     {
+      "m": "2026-04",
+      "mom": 0.4,
+      "yoy": 2.6
+     },
+     {
+      "m": "2026-05",
+      "mom": 0.3,
+      "yoy": 2.7
+     }
+    ],
+    "의류 및 신발": [
+     {
+      "m": "2026-03",
+      "mom": 0,
+      "yoy": 2.1
+     },
+     {
+      "m": "2026-04",
+      "mom": 0.1,
+      "yoy": 2.1
+     },
+     {
+      "m": "2026-05",
+      "mom": 0.9,
+      "yoy": 2.8
+     }
+    ],
+    "전기·가스·수도": [
+     {
+      "m": "2026-03",
+      "mom": 0,
+      "yoy": 0.2
+     },
+     {
+      "m": "2026-04",
+      "mom": 0,
+      "yoy": 0.2
+     },
+     {
+      "m": "2026-05",
+      "mom": 0,
+      "yoy": 0.1
+     }
+    ],
+    "주류 및 담배": [
+     {
+      "m": "2026-03",
+      "mom": 0,
+      "yoy": 0.6
+     },
+     {
+      "m": "2026-04",
+      "mom": -0.4,
+      "yoy": 0.1
+     },
+     {
+      "m": "2026-05",
+      "mom": 0.1,
+      "yoy": 0.3
+     }
+    ],
+    "주택, 수도, 전기 및 연료": [
+     {
+      "m": "2026-03",
+      "mom": 0.2,
+      "yoy": 1.5
+     },
+     {
+      "m": "2026-04",
+      "mom": 0.2,
+      "yoy": 1.7
+     },
+     {
+      "m": "2026-05",
+      "mom": 0.2,
+      "yoy": 1.8
+     }
+    ],
+    "통신": [
+     {
+      "m": "2026-03",
+      "mom": 0.2,
+      "yoy": 0.6
+     },
+     {
+      "m": "2026-04",
+      "mom": 0,
+      "yoy": 0.6
+     },
+     {
+      "m": "2026-05",
+      "mom": 0,
+      "yoy": 0.6
+     }
+    ]
+   },
+   "sectors": [
+    {
+     "contrib": 0.24,
+     "mom": 0,
+     "name": "식료품 및 비주류음료",
+     "weight": 142,
+     "yoy": 1.6
+    },
+    {
+     "contrib": 0,
+     "mom": 0.1,
+     "name": "주류 및 담배",
+     "weight": 15.8,
+     "yoy": 0.3
+    },
+    {
+     "contrib": 0.14,
+     "mom": 0.9,
+     "name": "의류 및 신발",
+     "weight": 49.6,
+     "yoy": 2.8
+    },
+    {
+     "contrib": 0.31,
+     "mom": 0.2,
+     "name": "주택, 수도, 전기 및 연료",
+     "weight": 171.6,
+     "yoy": 1.8
+    },
+    {
+     "contrib": 0.12,
+     "mom": 0.8,
+     "name": "가정용품 및 가사서비스",
+     "weight": 45.6,
+     "yoy": 2.6
+    },
+    {
+     "contrib": 0.09,
+     "mom": 0,
+     "name": "보건",
+     "weight": 84,
+     "yoy": 1.1
+    },
+    {
+     "contrib": 1.17,
+     "mom": 1.5,
+     "name": "교통",
+     "weight": 110.6,
+     "yoy": 11.6
+    },
+    {
+     "contrib": 0.03,
+     "mom": 0,
+     "name": "통신",
+     "weight": 46.6,
+     "yoy": 0.6
+    },
+    {
+     "contrib": 0.31,
+     "mom": 1.8,
+     "name": "오락 및 문화",
+     "weight": 62.9,
+     "yoy": 5
+    },
+    {
+     "contrib": 0.1,
+     "mom": 0.2,
+     "name": "교육",
+     "weight": 73.9,
+     "yoy": 1.3
+    },
+    {
+     "contrib": 0.4,
+     "mom": 0.3,
+     "name": "음식 및 숙박",
+     "weight": 144.7,
+     "yoy": 2.7
+    },
+    {
+     "contrib": 0.23,
+     "mom": 0,
+     "name": "기타 상품 및 서비스",
+     "weight": 52.7,
+     "yoy": 4.1
+    }
+   ],
+   "series": [
+    {
+     "core": 2,
+     "m": "2025-05",
+     "mom": -0.1,
+     "yoy": 1.9
+    },
+    {
+     "core": 2,
+     "m": "2025-06",
+     "mom": 0,
+     "yoy": 2.2
+    },
+    {
+     "core": 2,
+     "m": "2025-07",
+     "mom": 0.2,
+     "yoy": 2.1
+    },
+    {
+     "core": 1.3,
+     "m": "2025-08",
+     "mom": -0.1,
+     "yoy": 1.7
+    },
+    {
+     "core": 2,
+     "m": "2025-09",
+     "mom": 0.5,
+     "yoy": 2.1
+    },
+    {
+     "core": 2.2,
+     "m": "2025-10",
+     "mom": 0.3,
+     "yoy": 2.4
+    },
+    {
+     "core": 2,
+     "m": "2025-11",
+     "mom": -0.2,
+     "yoy": 2.4
+    },
+    {
+     "core": 2,
+     "m": "2025-12",
+     "mom": 0.3,
+     "yoy": 2.3
+    },
+    {
+     "core": 2,
+     "m": "2026-01",
+     "mom": 0.4,
+     "yoy": 2
+    },
+    {
+     "core": 2.3,
+     "m": "2026-02",
+     "mom": 0.3,
+     "yoy": 2
+    },
+    {
+     "core": 2.2,
+     "m": "2026-03",
+     "mom": 0.3,
+     "yoy": 2.2
+    },
+    {
+     "core": 2.2,
+     "m": "2026-04",
+     "mom": 0.5,
+     "yoy": 2.6
+    },
+    {
+     "core": 2.5,
+     "m": "2026-05",
+     "mom": 0.5,
+     "yoy": 3.1
+    }
+   ],
+   "source": "국가데이터처 2026년 5월 소비자물가동향",
+   "summary": [
+    "소비자물가는 전년동월대비 3.1% 올라 4월(2.6%)보다 상승 폭이 0.5%p 커졌어요. 2024년 이후 가장 높은 수준이에요.",
+    "석유류가 24.2% 올라 혼자서 0.92%p를 끌어올렸어요. 교통 물가는 11.6%로 12개 부문 중 가장 많이 올랐어요.",
+    "근원물가(식료품·에너지 제외)도 2.5%로 높아져, 에너지 충격이 서비스·공업제품 가격으로 번지는 모습이에요.",
+    "반면 신선식품은 1.4% 내렸고, 채소(무·양배추·당근)가 크게 하락했어요. 유치원납입금(-41.4%)은 정책 효과예요."
+   ],
+   "types": [
+    {
+     "contrib": 1.57,
+     "mom": 0.4,
+     "name": "상품",
+     "weight": 447.6,
+     "yoy": 3.5
+    },
+    {
+     "contrib": 0.17,
+     "mom": 0,
+     "name": "농축수산물",
+     "weight": 75.6,
+     "yoy": 2.2
+    },
+    {
+     "contrib": -0.03,
+     "mom": -1.4,
+     "name": "농산물",
+     "weight": 38.4,
+     "yoy": -0.8
+    },
+    {
+     "contrib": 0.14,
+     "mom": 1.8,
+     "name": "축산물",
+     "weight": 26.4,
+     "yoy": 5.8
+    },
+    {
+     "contrib": 0.06,
+     "mom": 0.8,
+     "name": "수산물",
+     "weight": 10.8,
+     "yoy": 5
+    },
+    {
+     "contrib": 1.4,
+     "mom": 0.5,
+     "name": "공업제품",
+     "weight": 338.3,
+     "yoy": 4.2
+    },
+    {
+     "contrib": 0.07,
+     "mom": -0.1,
+     "name": "가공식품",
+     "weight": 82.7,
+     "yoy": 0.8
+    },
+    {
+     "contrib": 0.92,
+     "mom": 1.5,
+     "name": "석유류",
+     "weight": 46.6,
+     "yoy": 24.2
+    },
+    {
+     "contrib": 0.01,
+     "mom": 0,
+     "name": "전기·가스·수도",
+     "weight": 33.7,
+     "yoy": 0.1
+    },
+    {
+     "contrib": 1.56,
+     "mom": 0.5,
+     "name": "서비스",
+     "weight": 552.4,
+     "yoy": 2.8
+    },
+    {
+     "contrib": 0.09,
+     "mom": 0.1,
+     "name": "집세",
+     "weight": 99.1,
+     "yoy": 1
+    },
+    {
+     "contrib": 0.2,
+     "mom": 0.4,
+     "name": "공공서비스",
+     "weight": 120,
+     "yoy": 1.8
+    },
+    {
+     "contrib": 1.26,
+     "mom": 0.7,
+     "name": "개인서비스",
+     "weight": 333.3,
+     "yoy": 3.7
+    },
+    {
+     "contrib": 0.38,
+     "mom": 0.1,
+     "name": "외식",
+     "weight": 138,
+     "yoy": 2.6
+    }
+   ]
+  }
+ },
+ "ip": {
+  "2026-04": {
+   "cycle": {
+    "coincident": {
+     "chg": 0.2,
+     "level": 100.2
+    },
+    "leading": {
+     "chg": 0.6,
+     "level": 104.1
+    }
+   },
+   "exportMovers": {
+    "down": [
+     "석유정제",
+     "통신·방송장비",
+     "화학제품"
+    ],
+    "up": [
+     "금속가공",
+     "의약품",
+     "기타운송장비"
+    ]
+   },
+   "headline": {
+    "all": {
+     "mom": -0.6,
+     "yoy": 2.4
+    },
+    "construction": {
+     "mom": -1.4,
+     "yoy": -5.5
+    },
+    "facility": {
+     "mom": -3.6,
+     "yoy": 8.1
+    },
+    "manu": {
+     "mom": -0.8,
+     "yoy": 1.6
+    },
+    "mining": {
+     "mom": -0.7,
+     "yoy": 1.5
+    },
+    "public": {
+     "mom": 4.5,
+     "yoy": 2.9
+    },
+    "retail": {
+     "mom": -3.6,
+     "yoy": 1.6
+    },
+    "service": {
+     "mom": -1,
+     "yoy": 3.5
+    }
+   },
+   "industries": [
+    {
+     "name": "광업",
+     "prod_mom": -3.9,
+     "prod_yoy": -4.1,
+     "ship_mom": -3.7,
+     "ship_yoy": -4.5,
+     "weight": 17.9
+    },
+    {
+     "inv_mom": 1.7,
+     "inv_yoy": -0.4,
+     "name": "제조업",
+     "prod_mom": -0.8,
+     "prod_yoy": 1.6,
+     "ship_mom": -3.6,
+     "ship_yoy": -1.3,
+     "weight": 9392.3
+    },
+    {
+     "inv_mom": -0.6,
+     "inv_yoy": 2.4,
+     "name": "식료품",
+     "prod_mom": 1.6,
+     "prod_yoy": -0.2,
+     "ship_mom": 0.9,
+     "ship_yoy": -0.6,
+     "weight": 571.7
+    },
+    {
+     "inv_mom": 2.3,
+     "inv_yoy": 1.1,
+     "name": "음료",
+     "prod_mom": -0.5,
+     "prod_yoy": -6.8,
+     "ship_mom": 0.9,
+     "ship_yoy": -4.6,
+     "weight": 111.3
+    },
+    {
+     "inv_mom": -1.7,
+     "inv_yoy": 10.5,
+     "name": "담배",
+     "prod_mom": -4.8,
+     "prod_yoy": -0.4,
+     "ship_mom": 15.4,
+     "ship_yoy": 7.6,
+     "weight": 42.1
+    },
+    {
+     "inv_mom": -2.2,
+     "inv_yoy": -8.3,
+     "name": "섬유제품",
+     "prod_mom": -3.3,
+     "prod_yoy": -6.8,
+     "ship_mom": -3.8,
+     "ship_yoy": -4.3,
+     "weight": 96.3
+    },
+    {
+     "inv_mom": -0.6,
+     "inv_yoy": -9,
+     "name": "의복·모피",
+     "prod_mom": -7.4,
+     "prod_yoy": -13.2,
+     "ship_mom": -5.7,
+     "ship_yoy": -7.8,
+     "weight": 56.9
+    },
+    {
+     "inv_mom": 6.9,
+     "inv_yoy": 19.5,
+     "name": "가죽·신발",
+     "prod_mom": 4.5,
+     "prod_yoy": -4.2,
+     "ship_mom": -10.7,
+     "ship_yoy": -6.1,
+     "weight": 15.7
+    },
+    {
+     "inv_mom": -7.9,
+     "inv_yoy": -19.5,
+     "name": "나무제품",
+     "prod_mom": 4.5,
+     "prod_yoy": -2.2,
+     "ship_mom": 8.5,
+     "ship_yoy": 2.8,
+     "weight": 30.4
+    },
+    {
+     "inv_mom": 1.7,
+     "inv_yoy": 2.5,
+     "name": "종이제품",
+     "prod_mom": -0.6,
+     "prod_yoy": 1.7,
+     "ship_mom": 1.3,
+     "ship_yoy": 5.3,
+     "weight": 130.4
+    },
+    {
+     "name": "인쇄·기록매체",
+     "prod_mom": 2.2,
+     "prod_yoy": 0.5,
+     "ship_mom": 0.4,
+     "ship_yoy": 0.5,
+     "weight": 40.3
+    },
+    {
+     "inv_mom": -5.9,
+     "inv_yoy": 4,
+     "name": "석유정제",
+     "prod_mom": -19.4,
+     "prod_yoy": -20.5,
+     "ship_mom": -17.9,
+     "ship_yoy": -20.6,
+     "weight": 277.6
+    },
+    {
+     "inv_mom": -6.2,
+     "inv_yoy": -5.8,
+     "name": "화학제품",
+     "prod_mom": -2.1,
+     "prod_yoy": -3.2,
+     "ship_mom": -5.7,
+     "ship_yoy": -6.3,
+     "weight": 647.8
+    },
+    {
+     "name": "의약품",
+     "prod_mom": 13.3,
+     "prod_yoy": 12.4,
+     "ship_mom": 10.2,
+     "ship_yoy": 7,
+     "weight": 308.4
+    },
+    {
+     "inv_mom": -3.8,
+     "inv_yoy": -8.6,
+     "name": "고무·플라스틱",
+     "prod_mom": -1,
+     "prod_yoy": -5.7,
+     "ship_mom": -3.4,
+     "ship_yoy": -5.2,
+     "weight": 405.1
+    },
+    {
+     "inv_mom": -0.8,
+     "inv_yoy": -3,
+     "name": "비금속광물",
+     "prod_mom": -7.1,
+     "prod_yoy": -9,
+     "ship_mom": -5,
+     "ship_yoy": -11.1,
+     "weight": 206.5
+    },
+    {
+     "inv_mom": -0.6,
+     "inv_yoy": 3.6,
+     "name": "1차금속",
+     "prod_mom": 2.1,
+     "prod_yoy": 3.5,
+     "ship_mom": 1.8,
+     "ship_yoy": 1.3,
+     "weight": 536.4
+    },
+    {
+     "inv_mom": 1.4,
+     "inv_yoy": 1,
+     "name": "금속가공",
+     "prod_mom": 5.9,
+     "prod_yoy": 7.7,
+     "ship_mom": 9.9,
+     "ship_yoy": 7.5,
+     "weight": 514.5
+    },
+    {
+     "inv_mom": 10.1,
+     "inv_yoy": -13.3,
+     "name": "반도체",
+     "prod_mom": 3.1,
+     "prod_yoy": 13,
+     "ship_mom": -2.5,
+     "ship_yoy": 20.8,
+     "weight": 1867.1
+    },
+    {
+     "inv_mom": 9.8,
+     "inv_yoy": 10.8,
+     "name": "전자부품",
+     "prod_mom": 0.7,
+     "prod_yoy": 1.9,
+     "ship_mom": -1.1,
+     "ship_yoy": -4.6,
+     "weight": 385.8
+    },
+    {
+     "inv_mom": 10.2,
+     "inv_yoy": -39.7,
+     "name": "컴퓨터",
+     "prod_mom": 13.8,
+     "prod_yoy": -7.3,
+     "ship_mom": -0.8,
+     "ship_yoy": 5,
+     "weight": 15.3
+    },
+    {
+     "inv_mom": 28.1,
+     "inv_yoy": 65.3,
+     "name": "통신·방송장비",
+     "prod_mom": -2,
+     "prod_yoy": 22.9,
+     "ship_mom": -21.9,
+     "ship_yoy": -2.5,
+     "weight": 114
+    },
+    {
+     "inv_mom": -6.9,
+     "inv_yoy": -9.7,
+     "name": "영상·음향기기",
+     "prod_mom": 8.9,
+     "prod_yoy": 24.8,
+     "ship_mom": 11.3,
+     "ship_yoy": 31,
+     "weight": 10.5
+    },
+    {
+     "inv_mom": 7.7,
+     "inv_yoy": -2.2,
+     "name": "의료정밀광학",
+     "prod_mom": 6.6,
+     "prod_yoy": 13.9,
+     "ship_mom": 3.9,
+     "ship_yoy": 11.4,
+     "weight": 223.5
+    },
+    {
+     "inv_mom": 0.4,
+     "inv_yoy": -4.3,
+     "name": "전기장비",
+     "prod_mom": -5.5,
+     "prod_yoy": -5.4,
+     "ship_mom": -3.5,
+     "ship_yoy": 3.1,
+     "weight": 404
+    },
+    {
+     "inv_mom": 2.6,
+     "inv_yoy": 8.7,
+     "name": "기계장비",
+     "prod_mom": -3.6,
+     "prod_yoy": 0,
+     "ship_mom": -2.8,
+     "ship_yoy": -2.1,
+     "weight": 736.7
+    },
+    {
+     "inv_mom": -0.6,
+     "inv_yoy": 0.4,
+     "name": "자동차",
+     "prod_mom": -10,
+     "prod_yoy": -7.1,
+     "ship_mom": -9.3,
+     "ship_yoy": -6.3,
+     "weight": 1135.3
+    },
+    {
+     "name": "기타운송장비",
+     "prod_mom": 3.7,
+     "prod_yoy": 3.4,
+     "ship_mom": 6.1,
+     "ship_yoy": -3.2,
+     "weight": 325.8
+    },
+    {
+     "inv_mom": -3.1,
+     "inv_yoy": -11.4,
+     "name": "가구",
+     "prod_mom": -4.2,
+     "prod_yoy": -7.8,
+     "ship_mom": -5.5,
+     "ship_yoy": -5.9,
+     "weight": 53.5
+    },
+    {
+     "inv_mom": 0,
+     "inv_yoy": 1.2,
+     "name": "기타제품",
+     "prod_mom": -2.5,
+     "prod_yoy": -0.8,
+     "ship_mom": -3.5,
+     "ship_yoy": -0.6,
+     "weight": 43.6
+    },
+    {
+     "name": "기계·장비수리",
+     "prod_mom": -1,
+     "prod_yoy": -6.2,
+     "ship_mom": -10.3,
+     "ship_yoy": -6,
+     "weight": 85.8
+    },
+    {
+     "name": "전기·가스업",
+     "prod_mom": 0.9,
+     "prod_yoy": -1.7,
+     "ship_mom": 1.2,
+     "ship_yoy": -1.6,
+     "weight": 589.8
+    }
+   ],
+   "inventory": {
+    "mom": 1.7,
+    "yoy": -0.4
+   },
+   "manuSectors": [
+    {
+     "mom": 3.1,
+     "name": "반도체",
+     "yoy": 13
+    },
+    {
+     "mom": 13.3,
+     "name": "의약품",
+     "yoy": 12.4
+    },
+    {
+     "mom": 5.9,
+     "name": "금속가공",
+     "yoy": 7.7
+    },
+    {
+     "mom": -3.6,
+     "name": "기계장비",
+     "yoy": null
+    },
+    {
+     "mom": null,
+     "name": "고무·플라스틱",
+     "yoy": -5.7
+    },
+    {
+     "mom": -10,
+     "name": "자동차",
+     "yoy": -7.1
+    },
+    {
+     "mom": -19.4,
+     "name": "석유정제",
+     "yoy": -20.5
+    }
+   ],
+   "month": "2026-04",
+   "orders": {
+    "construction_yoy": 39.3,
+    "machinery_yoy": -7.6
+   },
+   "released": "2026-05-29",
+   "retailTypes": [
+    {
+     "mom": -11.1,
+     "name": "내구재",
+     "yoy": 1.6
+    },
+    {
+     "mom": 0,
+     "name": "준내구재",
+     "yoy": 4.5
+    },
+    {
+     "mom": -1.1,
+     "name": "비내구재",
+     "yoy": 0.5
+    }
+   ],
+   "series": [
+    {
+     "all_mom": -0.2,
+     "all_yoy": 1.1,
+     "construction_mom": -3.2,
+     "construction_yoy": -20.8,
+     "export_ship_yoy": 6.2,
+     "facility_mom": -2.8,
+     "facility_yoy": 8.4,
+     "m": "2025-04",
+     "mining_mom": -0.1,
+     "mining_yoy": 5,
+     "retail_mom": -0.5,
+     "retail_yoy": 0,
+     "service_mom": 0.3,
+     "service_yoy": 1.4
+    },
+    {
+     "all_mom": -0.8,
+     "all_yoy": 4.9,
+     "coincident_chg": 0,
+     "construction_mom": -7.8,
+     "construction_yoy": -7,
+     "facility_mom": 5,
+     "facility_yoy": 13.6,
+     "m": "2026-01",
+     "mining_mom": -2.4,
+     "mining_yoy": 6.8,
+     "retail_mom": 2.8,
+     "retail_yoy": 0.5,
+     "service_mom": -0.2,
+     "service_yoy": 4.7
+    },
+    {
+     "all_mom": 2.1,
+     "all_yoy": 0.1,
+     "coincident_chg": 0.6,
+     "construction_mom": 11.1,
+     "construction_yoy": -5.9,
+     "export_ship_yoy": 2.5,
+     "facility_mom": 15,
+     "facility_yoy": 6.5,
+     "m": "2026-02",
+     "mining_mom": 5.2,
+     "mining_yoy": -2.3,
+     "retail_mom": -0.4,
+     "retail_yoy": 4.2,
+     "service_mom": 0.5,
+     "service_yoy": 2.2
+    },
+    {
+     "all_mom": 0.4,
+     "all_yoy": 3.7,
+     "coincident_chg": 0.4,
+     "construction_mom": -6.1,
+     "construction_yoy": -5.8,
+     "export_ship_yoy": 5.4,
+     "facility_mom": 1.7,
+     "facility_yoy": 9.8,
+     "m": "2026-03",
+     "mining_mom": 0.6,
+     "mining_yoy": 3.9,
+     "retail_mom": 1.9,
+     "retail_yoy": 5,
+     "service_mom": 1.5,
+     "service_yoy": 5.4
+    },
+    {
+     "all_mom": -0.6,
+     "all_yoy": 2.4,
+     "coincident_chg": 0.2,
+     "construction_mom": -1.4,
+     "construction_yoy": -5.5,
+     "export_ship_yoy": 1.9,
+     "facility_mom": -3.6,
+     "facility_yoy": 8.1,
+     "m": "2026-04",
+     "mining_mom": -0.7,
+     "mining_yoy": 1.5,
+     "retail_mom": -3.6,
+     "retail_yoy": 1.6,
+     "service_mom": -1,
+     "service_yoy": 3.5
+    }
+   ],
+   "serviceSectors": [
+    {
+     "mom": 4.3,
+     "name": "정보통신",
+     "yoy": 3.8
+    },
+    {
+     "mom": 3,
+     "name": "전문·과학·기술",
+     "yoy": 9.4
+    },
+    {
+     "mom": 2.1,
+     "name": "숙박·음식점",
+     "yoy": 1.1
+    },
+    {
+     "mom": -0.1,
+     "name": "운수·창고",
+     "yoy": 2.7
+    },
+    {
+     "mom": -1.5,
+     "name": "도소매",
+     "yoy": 3.1
+    },
+    {
+     "mom": -2.2,
+     "name": "보건·사회복지",
+     "yoy": 3.2
+    },
+    {
+     "mom": -7.7,
+     "name": "금융·보험",
+     "yoy": 5.5
+    },
+    {
+     "mom": null,
+     "name": "사업시설관리·사업지원·임대",
+     "yoy": 1.6
+    },
+    {
+     "mom": null,
+     "name": "협회·수리·개인",
+     "yoy": 2.5
+    },
+    {
+     "mom": null,
+     "name": "교육",
+     "yoy": 0.8
+    },
+    {
+     "mom": null,
+     "name": "수도·하수·폐기물처리",
+     "yoy": 2
+    },
+    {
+     "mom": null,
+     "name": "예술·스포츠·여가",
+     "yoy": 0.8
+    },
+    {
+     "mom": null,
+     "name": "부동산",
+     "yoy": 0.4
+    }
+   ],
+   "shipment": {
+    "domestic": {
+     "mom": -4.2,
+     "yoy": -4.2
+    },
+    "export": {
+     "mom": -3,
+     "yoy": 1.9
+    },
+    "total": {
+     "mom": null,
+     "yoy": -1.3
+    }
+   },
+   "source": "국가데이터처 2026년 4월 산업활동동향",
+   "summary": [
+    "전산업생산이 전월대비 0.6% 줄었어요. 서비스업(-1.0%, 금융·보험 -7.7%)과 광공업(-0.7%)이 함께 감소했어요.",
+    "제조업에서는 반도체(+3.1%)와 의약품(+13.3%)이 늘었지만, 자동차(-10.0%)와 석유정제(-19.4%, 경유·휘발유 생산 감소)가 크게 줄었어요.",
+    "소매판매는 통신기기·컴퓨터와 차량연료 판매가 줄어 3.6% 감소했어요. 설비투자도 항공기 수입이 줄어 3.6% 감소했어요.",
+    "수출출하는 전월대비 3.0% 줄었지만 전년동월대비로는 1.9% 늘었어요. 내수출하는 4.2% 줄었어요.",
+    "그래도 동행지수 순환변동치(+0.2p)와 선행지수 순환변동치(+0.6p)는 함께 올라, 경기 흐름 자체가 꺾였다고 보기는 어려워요."
+   ],
+   "utilization": {
+    "chg": -1.2,
+    "rate": 73.7
+   }
+  },
+  "2026-07": {
+   "cycle": {
+    "coincident": {
+     "chg": 0.8,
+     "level": 101.2
+    },
+    "leading": {
+     "chg": 0.4,
+     "level": 104.2
+    }
+   },
+   "exportMovers": {
+    "down": [
+     "반도체(-8.1%)",
+     "통신·방송장비(-35.9%)",
+     "전기장비(-12.1%)"
+    ],
+    "up": [
+     "의약품(+63.3%)",
+     "전자부품(+14.6%)",
+     "화학제품(+6.8%)"
+    ]
+   },
+   "facilityDetail": {
+    "machinery_mom": 4.2,
+    "machinery_yoy": 21.3,
+    "transport_mom": 15.4,
+    "transport_yoy": 32.7
+   },
+   "headline": {
+    "all": {
+     "mom": 0,
+     "yoy": 3.1
+    },
+    "construction": {
+     "mom": -1.1,
+     "yoy": -3.2
+    },
+    "facility": {
+     "mom": 7.5,
+     "yoy": 24.9
+    },
+    "manu": {
+     "mom": 0.2,
+     "yoy": 3.9
+    },
+    "mining": {
+     "mom": 0.2,
+     "yoy": 3.6
+    },
+    "public": {
+     "mom": 10.4,
+     "yoy": 2
+    },
+    "retail": {
+     "mom": -2.4,
+     "yoy": -0.8
+    },
+    "service": {
+     "mom": -1.3,
+     "yoy": 3.5
+    }
+   },
+   "industries": [
+    {
+     "name": "광업",
+     "prod_mom": 1.4,
+     "prod_yoy": -2.4,
+     "ship_mom": -1.7,
+     "ship_yoy": -2.2,
+     "weight": 17.9
+    },
+    {
+     "inv_mom": 2.1,
+     "inv_yoy": 6.4,
+     "name": "제조업",
+     "prod_mom": 0.2,
+     "prod_yoy": 3.9,
+     "ship_mom": -1.5,
+     "ship_yoy": 2.2,
+     "weight": 9392.3
+    },
+    {
+     "inv_mom": 1.7,
+     "inv_yoy": 2.4,
+     "name": "식료품",
+     "prod_mom": 0.1,
+     "prod_yoy": -0.1,
+     "ship_mom": -1.5,
+     "ship_yoy": -0.9,
+     "weight": 571.7
+    },
+    {
+     "inv_mom": 2.1,
+     "inv_yoy": 8.1,
+     "name": "음료",
+     "prod_mom": 1.1,
+     "prod_yoy": 0.4,
+     "ship_mom": 2.2,
+     "ship_yoy": -2.7,
+     "weight": 111.3
+    },
+    {
+     "inv_mom": -11.2,
+     "inv_yoy": -6,
+     "name": "담배",
+     "prod_mom": -7,
+     "prod_yoy": -9.7,
+     "ship_mom": 0.6,
+     "ship_yoy": 15.7,
+     "weight": 42.1
+    },
+    {
+     "inv_mom": 7.2,
+     "inv_yoy": 10.1,
+     "name": "섬유제품",
+     "prod_mom": 3.2,
+     "prod_yoy": -1.3,
+     "ship_mom": 1.5,
+     "ship_yoy": -3.8,
+     "weight": 96.3
+    },
+    {
+     "inv_mom": -3.2,
+     "inv_yoy": -11.8,
+     "name": "의복·모피",
+     "prod_mom": -5.9,
+     "prod_yoy": -18.1,
+     "ship_mom": 2,
+     "ship_yoy": -3.7,
+     "weight": 56.9
+    },
+    {
+     "inv_mom": 5.8,
+     "inv_yoy": 54.9,
+     "name": "가죽·신발",
+     "prod_mom": -19.9,
+     "prod_yoy": -12,
+     "ship_mom": -15.4,
+     "ship_yoy": -16.7,
+     "weight": 15.7
+    },
+    {
+     "inv_mom": 1.2,
+     "inv_yoy": -9.3,
+     "name": "나무제품",
+     "prod_mom": -5.5,
+     "prod_yoy": -10.2,
+     "ship_mom": -3,
+     "ship_yoy": -9.5,
+     "weight": 30.4
+    },
+    {
+     "inv_mom": 2.3,
+     "inv_yoy": 7.7,
+     "name": "종이제품",
+     "prod_mom": -2.4,
+     "prod_yoy": 3.6,
+     "ship_mom": -3.2,
+     "ship_yoy": 2.1,
+     "weight": 130.4
+    },
+    {
+     "name": "인쇄·기록매체",
+     "prod_mom": 4.6,
+     "prod_yoy": 10.7,
+     "ship_mom": 1.8,
+     "ship_yoy": 9.5,
+     "weight": 40.3
+    },
+    {
+     "inv_mom": -16.7,
+     "inv_yoy": -12.5,
+     "name": "석유정제",
+     "prod_mom": 4.7,
+     "prod_yoy": -6.7,
+     "ship_mom": 7.1,
+     "ship_yoy": -4.3,
+     "weight": 277.6
+    },
+    {
+     "inv_mom": -0.5,
+     "inv_yoy": 3.3,
+     "name": "화학제품",
+     "prod_mom": -0.1,
+     "prod_yoy": 0.2,
+     "ship_mom": 3.9,
+     "ship_yoy": -4.8,
+     "weight": 647.8
+    },
+    {
+     "name": "의약품",
+     "prod_mom": 4.7,
+     "prod_yoy": 10.8,
+     "ship_mom": 20,
+     "ship_yoy": 24.8,
+     "weight": 308.4
+    },
+    {
+     "inv_mom": 1.1,
+     "inv_yoy": -6,
+     "name": "고무·플라스틱",
+     "prod_mom": -0.7,
+     "prod_yoy": 0.5,
+     "ship_mom": -1.4,
+     "ship_yoy": -1.8,
+     "weight": 405.1
+    },
+    {
+     "inv_mom": -2.6,
+     "inv_yoy": -5.1,
+     "name": "비금속광물",
+     "prod_mom": -3.7,
+     "prod_yoy": -10.8,
+     "ship_mom": -3.3,
+     "ship_yoy": -10.4,
+     "weight": 206.5
+    },
+    {
+     "inv_mom": 6.7,
+     "inv_yoy": 3.3,
+     "name": "1차금속",
+     "prod_mom": 4.2,
+     "prod_yoy": 4.2,
+     "ship_mom": -1,
+     "ship_yoy": -0.6,
+     "weight": 536.4
+    },
+    {
+     "inv_mom": 2.6,
+     "inv_yoy": 0.5,
+     "name": "금속가공",
+     "prod_mom": -0.9,
+     "prod_yoy": 6.9,
+     "ship_mom": -4.6,
+     "ship_yoy": 4.6,
+     "weight": 514.5
+    },
+    {
+     "inv_mom": 1.9,
+     "inv_yoy": 10,
+     "name": "반도체",
+     "prod_mom": 0.5,
+     "prod_yoy": 0.8,
+     "ship_mom": -7.3,
+     "ship_yoy": -3.4,
+     "weight": 1867.1
+    },
+    {
+     "inv_mom": 23.3,
+     "inv_yoy": 15.8,
+     "name": "전자부품",
+     "prod_mom": 20.7,
+     "prod_yoy": 8,
+     "ship_mom": 11.3,
+     "ship_yoy": 2,
+     "weight": 385.8
+    },
+    {
+     "inv_mom": 21.2,
+     "inv_yoy": 5.9,
+     "name": "컴퓨터",
+     "prod_mom": -1.7,
+     "prod_yoy": -26.2,
+     "ship_mom": -20.9,
+     "ship_yoy": -31.7,
+     "weight": 15.3
+    },
+    {
+     "inv_mom": 22.7,
+     "inv_yoy": 57.2,
+     "name": "통신·방송장비",
+     "prod_mom": 7.9,
+     "prod_yoy": 18.8,
+     "ship_mom": -30.9,
+     "ship_yoy": 0.8,
+     "weight": 114
+    },
+    {
+     "inv_mom": 8.6,
+     "inv_yoy": 20.7,
+     "name": "영상·음향기기",
+     "prod_mom": 7.9,
+     "prod_yoy": 49.4,
+     "ship_mom": 6.1,
+     "ship_yoy": 35.8,
+     "weight": 10.5
+    },
+    {
+     "inv_mom": -5,
+     "inv_yoy": -15.5,
+     "name": "의료정밀광학",
+     "prod_mom": -1.3,
+     "prod_yoy": 21.1,
+     "ship_mom": 4.9,
+     "ship_yoy": 25,
+     "weight": 223.5
+    },
+    {
+     "inv_mom": 0.9,
+     "inv_yoy": 19.1,
+     "name": "전기장비",
+     "prod_mom": -2.8,
+     "prod_yoy": 4,
+     "ship_mom": -5.3,
+     "ship_yoy": 9.9,
+     "weight": 404
+    },
+    {
+     "inv_mom": -0.4,
+     "inv_yoy": 9.6,
+     "name": "기계장비",
+     "prod_mom": 0.3,
+     "prod_yoy": 9.6,
+     "ship_mom": -1.4,
+     "ship_yoy": 6.4,
+     "weight": 736.7
+    },
+    {
+     "inv_mom": 1.1,
+     "inv_yoy": 7.8,
+     "name": "자동차",
+     "prod_mom": -4.5,
+     "prod_yoy": 10.6,
+     "ship_mom": -3.6,
+     "ship_yoy": 9,
+     "weight": 1135.3
+    },
+    {
+     "name": "기타운송장비",
+     "prod_mom": -5,
+     "prod_yoy": 0.9,
+     "ship_mom": -4.8,
+     "ship_yoy": 1.1,
+     "weight": 325.8
+    },
+    {
+     "inv_mom": 6.4,
+     "inv_yoy": -5.4,
+     "name": "가구",
+     "prod_mom": -4.8,
+     "prod_yoy": -4.8,
+     "ship_mom": -1.6,
+     "ship_yoy": 2.9,
+     "weight": 53.5
+    },
+    {
+     "inv_mom": -5.8,
+     "inv_yoy": -2.6,
+     "name": "기타제품",
+     "prod_mom": 6.4,
+     "prod_yoy": -7.7,
+     "ship_mom": 23.5,
+     "ship_yoy": -1.8,
+     "weight": 43.6
+    },
+    {
+     "name": "기계·장비수리",
+     "prod_mom": -10.5,
+     "prod_yoy": 28.8,
+     "ship_mom": -9,
+     "ship_yoy": 28.6,
+     "weight": 85.8
+    },
+    {
+     "name": "전기·가스업",
+     "prod_mom": 0.6,
+     "prod_yoy": -1,
+     "ship_mom": 0.5,
+     "ship_yoy": -0.1,
+     "weight": 589.8
+    }
+   ],
+   "inventory": {
+    "mom": 2.1,
+    "yoy": 6.4
+   },
+   "manuSectors": [],
+   "month": "2026-07",
+   "orders": {
+    "construction_yoy": -34,
+    "machinery_yoy": 25.4,
+    "private_yoy": 27,
+    "public_yoy": -3.4
+   },
+   "released": "2026-08-31",
+   "retailTypes": [
+    {
+     "mom": -7.7,
+     "name": "내구재",
+     "yoy": -4.1
+    },
+    {
+     "mom": -1.4,
+     "name": "준내구재",
+     "yoy": -0.2
+    },
+    {
+     "mom": -0.1,
+     "name": "비내구재",
+     "yoy": 0.7
+    }
+   ],
+   "series": [
+    {
+     "all_mom": -0.3,
+     "all_yoy": 2.8,
+     "construction_mom": -2.3,
+     "construction_yoy": -14.1,
+     "export_ship_yoy": 11.1,
+     "facility_mom": 1.7,
+     "facility_yoy": -5.2,
+     "m": "2025-07",
+     "mining_mom": -0.8,
+     "mining_yoy": 6.9,
+     "retail_mom": 2.1,
+     "retail_yoy": 2.8,
+     "service_mom": -0.2,
+     "service_yoy": 2.3
+    },
+    {
+     "coincident_chg": 0.4,
+     "m": "2026-03"
+    },
+    {
+     "all_mom": -0.5,
+     "all_yoy": 2.4,
+     "coincident_chg": 0.2,
+     "construction_mom": -2.8,
+     "construction_yoy": -6.6,
+     "facility_mom": -4,
+     "facility_yoy": 7.6,
+     "m": "2026-04",
+     "mining_mom": -0.8,
+     "mining_yoy": 1.3,
+     "retail_mom": -3.7,
+     "retail_yoy": 1.4,
+     "service_mom": -0.8,
+     "service_yoy": 3.8
+    },
+    {
+     "all_mom": -0.4,
+     "all_yoy": 1.9,
+     "coincident_chg": -0.4,
+     "construction_mom": 3.3,
+     "construction_yoy": -3.7,
+     "export_ship_yoy": -3.2,
+     "facility_mom": -0.1,
+     "facility_yoy": 9.3,
+     "m": "2026-05",
+     "mining_mom": -3,
+     "mining_yoy": -1.1,
+     "retail_mom": -0.1,
+     "retail_yoy": 1.4,
+     "service_mom": 1,
+     "service_yoy": 4.6
+    },
+    {
+     "all_mom": 2.4,
+     "all_yoy": 4.4,
+     "coincident_chg": 0.5,
+     "construction_mom": 4.2,
+     "construction_yoy": -4.3,
+     "export_ship_yoy": 5.1,
+     "facility_mom": 6.9,
+     "facility_yoy": 22.5,
+     "m": "2026-06",
+     "mining_mom": 6.7,
+     "mining_yoy": 6,
+     "retail_mom": 2.7,
+     "retail_yoy": 3.9,
+     "service_mom": 0.9,
+     "service_yoy": 5.4
+    },
+    {
+     "all_mom": 0,
+     "all_yoy": 3.1,
+     "coincident_chg": 0.8,
+     "construction_mom": -1.1,
+     "construction_yoy": -3.2,
+     "export_ship_yoy": 3.1,
+     "facility_mom": 7.5,
+     "facility_yoy": 24.9,
+     "m": "2026-07",
+     "mining_mom": 0.2,
+     "mining_yoy": 3.6,
+     "retail_mom": -2.4,
+     "retail_yoy": -0.8,
+     "service_mom": -1.3,
+     "service_yoy": 3.5
+    }
+   ],
+   "serviceSectors": [
+    {
+     "mom": -4.8,
+     "name": "금융·보험",
+     "yoy": 10.6
+    },
+    {
+     "mom": -2.7,
+     "name": "전문·과학·기술",
+     "yoy": 11.1
+    },
+    {
+     "mom": 0.7,
+     "name": "보건·사회복지",
+     "yoy": 5.1
+    },
+    {
+     "mom": null,
+     "name": "운수·창고",
+     "yoy": 3.6
+    },
+    {
+     "mom": null,
+     "name": "사업시설관리·사업지원·임대",
+     "yoy": 1.9
+    },
+    {
+     "mom": 3.5,
+     "name": "정보통신",
+     "yoy": 0.5
+    },
+    {
+     "mom": null,
+     "name": "부동산",
+     "yoy": 0.5
+    },
+    {
+     "mom": -1.1,
+     "name": "도소매",
+     "yoy": 0.1
+    },
+    {
+     "mom": null,
+     "name": "수도·하수·폐기물처리",
+     "yoy": -2.4
+    },
+    {
+     "mom": null,
+     "name": "교육",
+     "yoy": -0.5
+    },
+    {
+     "mom": null,
+     "name": "숙박·음식점",
+     "yoy": -1
+    },
+    {
+     "mom": null,
+     "name": "예술·스포츠·여가",
+     "yoy": -3.7
+    },
+    {
+     "mom": 1.1,
+     "name": "협회·수리·개인",
+     "yoy": -2.9
+    }
+   ],
+   "shipment": {
+    "domestic": {
+     "mom": -0.9,
+     "yoy": 1.1
+    },
+    "export": {
+     "mom": -2.3,
+     "yoy": 3.1
+    },
+    "total": {
+     "mom": null,
+     "yoy": 2.2
+    }
+   },
+   "source": "국가데이터처 2026년 7월 산업활동동향",
+   "summary": [
+    "전산업생산은 전월과 같았어요(보합). 광공업은 전자부품(+20.7%)·1차금속(+4.2%) 덕에 0.2% 늘었지만, 서비스업은 금융·보험(-4.8%) 감소로 1.3% 줄었어요.",
+    "반도체 생산은 전년보다 0.8% 늘고 출하는 3.4% 줄어 물량은 거의 제자리였어요. 같은 시기 반도체 수출액이 크게 늘어난 건 대부분 가격 효과예요.",
+    "소매판매는 승용차·가전 판매가 줄어 2.4% 감소했고, 설비투자는 선박·항공기와 반도체장비 투자로 7.5% 늘었어요.",
+    "수출출하는 전월보다 2.3% 줄었지만 전년보다는 3.1% 늘었어요. 동행지수(+0.8p)·선행지수(+0.4p) 순환변동치는 함께 올랐어요."
+   ],
+   "utilization": {
+    "chg": 0.2,
+    "rate": 74.9
+   }
+  },
+  "2026-08": {
+   "cycle": {
+    "coincident": {
+     "chg": 0.5,
+     "level": 101.7
+    },
+    "leading": {
+     "chg": -0.1,
+     "level": 104.2
+    }
+   },
+   "exportMovers": {
+    "down": [
+     "자동차(-23.2%)",
+     "의약품(-33.6%)",
+     "금속가공(-22.4%)"
+    ],
+    "up": [
+     "반도체(+7.9%)",
+     "컴퓨터(+48.1%)",
+     "화학제품(+2.8%)"
+    ]
+   },
+   "facilityDetail": {
+    "machinery_mom": 1.6,
+    "machinery_yoy": 25.4,
+    "transport_mom": -32.8,
+    "transport_yoy": -4.3
+   },
+   "headline": {
+    "all": {
+     "mom": -1.3,
+     "yoy": 1.9
+    },
+    "construction": {
+     "mom": 1.9,
+     "yoy": 1.3
+    },
+    "facility": {
+     "mom": -9.5,
+     "yoy": 16.1
+    },
+    "manu": {
+     "mom": -5.1,
+     "yoy": -2.4
+    },
+    "mining": {
+     "mom": -4.8,
+     "yoy": -2.2
+    },
+    "public": {
+     "mom": -2.9,
+     "yoy": 0.9
+    },
+    "retail": {
+     "mom": -1.8,
+     "yoy": -0.3
+    },
+    "service": {
+     "mom": 0.5,
+     "yoy": 4.6
+    }
+   },
+   "industries": [
+    {
+     "name": "광업",
+     "prod_mom": 5.1,
+     "prod_yoy": 2.2,
+     "ship_mom": 11.7,
+     "ship_yoy": 7.1,
+     "weight": 17.9
+    },
+    {
+     "inv_mom": 0.6,
+     "inv_yoy": 6.1,
+     "name": "제조업",
+     "prod_mom": -5.1,
+     "prod_yoy": -2.4,
+     "ship_mom": -3.6,
+     "ship_yoy": -3,
+     "weight": 9392.3
+    },
+    {
+     "inv_mom": 1.2,
+     "inv_yoy": 3.5,
+     "name": "식료품",
+     "prod_mom": -0.4,
+     "prod_yoy": 3.7,
+     "ship_mom": -1.3,
+     "ship_yoy": 2.6,
+     "weight": 571.7
+    },
+    {
+     "inv_mom": 0.7,
+     "inv_yoy": 10.6,
+     "name": "음료",
+     "prod_mom": -4.7,
+     "prod_yoy": -3.7,
+     "ship_mom": -4.8,
+     "ship_yoy": -4.9,
+     "weight": 111.3
+    },
+    {
+     "inv_mom": 1.2,
+     "inv_yoy": 2.3,
+     "name": "담배",
+     "prod_mom": 11,
+     "prod_yoy": -2.6,
+     "ship_mom": -4,
+     "ship_yoy": -9.1,
+     "weight": 42.1
+    },
+    {
+     "inv_mom": -2.1,
+     "inv_yoy": -2.9,
+     "name": "섬유제품",
+     "prod_mom": -8.5,
+     "prod_yoy": -9.9,
+     "ship_mom": -5.2,
+     "ship_yoy": -8.7,
+     "weight": 96.3
+    },
+    {
+     "inv_mom": 2.7,
+     "inv_yoy": -10.5,
+     "name": "의복·모피",
+     "prod_mom": 11.7,
+     "prod_yoy": -2.8,
+     "ship_mom": 5,
+     "ship_yoy": 3.6,
+     "weight": 56.9
+    },
+    {
+     "inv_mom": -3.6,
+     "inv_yoy": 50.6,
+     "name": "가죽·신발",
+     "prod_mom": -10.7,
+     "prod_yoy": -16.2,
+     "ship_mom": -1.7,
+     "ship_yoy": -14,
+     "weight": 15.7
+    },
+    {
+     "inv_mom": -1.7,
+     "inv_yoy": -12.3,
+     "name": "나무제품",
+     "prod_mom": 4.8,
+     "prod_yoy": 1,
+     "ship_mom": 7.7,
+     "ship_yoy": 4.4,
+     "weight": 30.4
+    },
+    {
+     "inv_mom": -2.2,
+     "inv_yoy": 4.8,
+     "name": "종이제품",
+     "prod_mom": 0.1,
+     "prod_yoy": 4,
+     "ship_mom": -0.4,
+     "ship_yoy": 5.4,
+     "weight": 130.4
+    },
+    {
+     "name": "인쇄·기록매체",
+     "prod_mom": -10.2,
+     "prod_yoy": 0,
+     "ship_mom": -8.9,
+     "ship_yoy": -0.5,
+     "weight": 40.3
+    },
+    {
+     "inv_mom": 7.5,
+     "inv_yoy": -4.6,
+     "name": "석유정제",
+     "prod_mom": 1.5,
+     "prod_yoy": -3.1,
+     "ship_mom": -0.4,
+     "ship_yoy": -5.3,
+     "weight": 277.6
+    },
+    {
+     "inv_mom": -2.3,
+     "inv_yoy": 0.5,
+     "name": "화학제품",
+     "prod_mom": 0.7,
+     "prod_yoy": 0.3,
+     "ship_mom": 0.7,
+     "ship_yoy": -3.4,
+     "weight": 647.8
+    },
+    {
+     "name": "의약품",
+     "prod_mom": -8.8,
+     "prod_yoy": -3.7,
+     "ship_mom": -14.9,
+     "ship_yoy": 12.2,
+     "weight": 308.4
+    },
+    {
+     "inv_mom": -0.1,
+     "inv_yoy": -8.5,
+     "name": "고무·플라스틱",
+     "prod_mom": -11,
+     "prod_yoy": -11.8,
+     "ship_mom": -9.1,
+     "ship_yoy": -12.5,
+     "weight": 405.1
+    },
+    {
+     "inv_mom": 5.2,
+     "inv_yoy": -4.6,
+     "name": "비금속광물",
+     "prod_mom": 3.9,
+     "prod_yoy": -2.4,
+     "ship_mom": 1.6,
+     "ship_yoy": -6.6,
+     "weight": 206.5
+    },
+    {
+     "inv_mom": 4.1,
+     "inv_yoy": 6.3,
+     "name": "1차금속",
+     "prod_mom": -2.9,
+     "prod_yoy": 1,
+     "ship_mom": -3.3,
+     "ship_yoy": -3.4,
+     "weight": 536.4
+    },
+    {
+     "inv_mom": 1.3,
+     "inv_yoy": 2.1,
+     "name": "금속가공",
+     "prod_mom": -7,
+     "prod_yoy": -2.5,
+     "ship_mom": -6.9,
+     "ship_yoy": -1.6,
+     "weight": 514.5
+    },
+    {
+     "inv_mom": -3.8,
+     "inv_yoy": 8.8,
+     "name": "반도체",
+     "prod_mom": -2.2,
+     "prod_yoy": 1.4,
+     "ship_mom": 7.1,
+     "ship_yoy": 2.5,
+     "weight": 1867.1
+    },
+    {
+     "inv_mom": 2.3,
+     "inv_yoy": 16.2,
+     "name": "전자부품",
+     "prod_mom": -2.3,
+     "prod_yoy": 1,
+     "ship_mom": -1,
+     "ship_yoy": -5.1,
+     "weight": 385.8
+    },
+    {
+     "inv_mom": -3.2,
+     "inv_yoy": 20.3,
+     "name": "컴퓨터",
+     "prod_mom": 15.7,
+     "prod_yoy": -15.1,
+     "ship_mom": 39,
+     "ship_yoy": -14.8,
+     "weight": 15.3
+    },
+    {
+     "inv_mom": -1.1,
+     "inv_yoy": 37.8,
+     "name": "통신·방송장비",
+     "prod_mom": -17.2,
+     "prod_yoy": 3.2,
+     "ship_mom": -2.8,
+     "ship_yoy": 9.8,
+     "weight": 114
+    },
+    {
+     "inv_mom": 4.9,
+     "inv_yoy": 30.3,
+     "name": "영상·음향기기",
+     "prod_mom": -17.7,
+     "prod_yoy": 20.3,
+     "ship_mom": -17.1,
+     "ship_yoy": 13.2,
+     "weight": 10.5
+    },
+    {
+     "inv_mom": 1.8,
+     "inv_yoy": -12.9,
+     "name": "의료정밀광학",
+     "prod_mom": 0.4,
+     "prod_yoy": 15.2,
+     "ship_mom": -4.1,
+     "ship_yoy": 9.4,
+     "weight": 223.5
+    },
+    {
+     "inv_mom": 3,
+     "inv_yoy": 25.8,
+     "name": "전기장비",
+     "prod_mom": -2.2,
+     "prod_yoy": 3.2,
+     "ship_mom": -0.2,
+     "ship_yoy": 9.4,
+     "weight": 404
+    },
+    {
+     "inv_mom": 4,
+     "inv_yoy": 10.6,
+     "name": "기계장비",
+     "prod_mom": 3.1,
+     "prod_yoy": 13.5,
+     "ship_mom": 2.8,
+     "ship_yoy": 12.1,
+     "weight": 736.7
+    },
+    {
+     "inv_mom": -2.8,
+     "inv_yoy": 1.4,
+     "name": "자동차",
+     "prod_mom": -24.8,
+     "prod_yoy": -29.4,
+     "ship_mom": -20.7,
+     "ship_yoy": -25.4,
+     "weight": 1135.3
+    },
+    {
+     "name": "기타운송장비",
+     "prod_mom": -4.8,
+     "prod_yoy": 6.5,
+     "ship_mom": -1.3,
+     "ship_yoy": 10.9,
+     "weight": 325.8
+    },
+    {
+     "inv_mom": -9.9,
+     "inv_yoy": -18,
+     "name": "가구",
+     "prod_mom": 1.6,
+     "prod_yoy": -0.2,
+     "ship_mom": 3.8,
+     "ship_yoy": 8.1,
+     "weight": 53.5
+    },
+    {
+     "inv_mom": -9.3,
+     "inv_yoy": -3.4,
+     "name": "기타제품",
+     "prod_mom": -6.5,
+     "prod_yoy": -8.4,
+     "ship_mom": -14.3,
+     "ship_yoy": -11.7,
+     "weight": 43.6
+    },
+    {
+     "name": "기계·장비수리",
+     "prod_mom": -9.6,
+     "prod_yoy": -10.3,
+     "ship_mom": 5.5,
+     "ship_yoy": -11,
+     "weight": 85.8
+    },
+    {
+     "name": "전기·가스업",
+     "prod_mom": 0.4,
+     "prod_yoy": 0.2,
+     "ship_mom": 0.4,
+     "ship_yoy": 1.1,
+     "weight": 589.8
+    }
+   ],
+   "inventory": {
+    "mom": 0.6,
+    "yoy": 6.1
+   },
+   "manuSectors": [],
+   "month": "2026-08",
+   "orders": {
+    "construction_yoy": -10.6,
+    "machinery_yoy": 42.2,
+    "private_yoy": 49.9,
+    "public_yoy": -19.7
+   },
+   "released": "2026-09-30",
+   "retailTypes": [
+    {
+     "mom": -4.5,
+     "name": "내구재",
+     "yoy": -5.6
+    },
+    {
+     "mom": 0.4,
+     "name": "준내구재",
+     "yoy": -1.3
+    },
+    {
+     "mom": -1.6,
+     "name": "비내구재",
+     "yoy": 2.4
+    }
+   ],
+   "series": [
+    {
+     "all_mom": -0.1,
+     "all_yoy": 0.2,
+     "construction_mom": -3.9,
+     "construction_yoy": -17.7,
+     "export_ship_yoy": 4.2,
+     "facility_mom": -3.1,
+     "facility_yoy": -2.5,
+     "m": "2025-08",
+     "mining_mom": 1.6,
+     "mining_yoy": 2.2,
+     "retail_mom": -2.2,
+     "retail_yoy": -0.5,
+     "service_mom": -0.6,
+     "service_yoy": 0.8
+    },
+    {
+     "coincident_chg": 0.2,
+     "m": "2026-04"
+    },
+    {
+     "all_mom": -0.4,
+     "all_yoy": 1.9,
+     "coincident_chg": -0.4,
+     "construction_mom": 3.3,
+     "construction_yoy": -3.7,
+     "facility_mom": -0.1,
+     "facility_yoy": 9.3,
+     "m": "2026-05",
+     "mining_mom": -3,
+     "mining_yoy": -1.1,
+     "retail_mom": -0.1,
+     "retail_yoy": 1.4,
+     "service_mom": 1,
+     "service_yoy": 4.6
+    },
+    {
+     "all_mom": 2.6,
+     "all_yoy": 4.5,
+     "coincident_chg": 0.5,
+     "construction_mom": 4.1,
+     "construction_yoy": -4.4,
+     "export_ship_yoy": 5.8,
+     "facility_mom": 6.2,
+     "facility_yoy": 21.6,
+     "m": "2026-06",
+     "mining_mom": 6.8,
+     "mining_yoy": 6.2,
+     "retail_mom": 2.7,
+     "retail_yoy": 4,
+     "service_mom": 1,
+     "service_yoy": 5.5
+    },
+    {
+     "all_mom": -0.1,
+     "all_yoy": 3.1,
+     "coincident_chg": 0.8,
+     "construction_mom": -1,
+     "construction_yoy": -3.4,
+     "export_ship_yoy": 4.1,
+     "facility_mom": 8,
+     "facility_yoy": 24.6,
+     "m": "2026-07",
+     "mining_mom": 0.5,
+     "mining_yoy": 4,
+     "retail_mom": -2.6,
+     "retail_yoy": -1,
+     "service_mom": -1.4,
+     "service_yoy": 3.4
+    },
+    {
+     "all_mom": -1.3,
+     "all_yoy": 1.9,
+     "coincident_chg": 0.5,
+     "construction_mom": 1.9,
+     "construction_yoy": 1.3,
+     "export_ship_yoy": -0.2,
+     "facility_mom": -9.5,
+     "facility_yoy": 16.1,
+     "m": "2026-08",
+     "mining_mom": -4.8,
+     "mining_yoy": -2.2,
+     "retail_mom": -1.8,
+     "retail_yoy": -0.3,
+     "service_mom": 0.5,
+     "service_yoy": 4.6
+    }
+   ],
+   "serviceSectors": [
+    {
+     "mom": -0.6,
+     "name": "금융·보험",
+     "yoy": 9.6
+    },
+    {
+     "mom": 2.3,
+     "name": "전문·과학·기술",
+     "yoy": 13.4
+    },
+    {
+     "mom": 4.7,
+     "name": "정보통신",
+     "yoy": 7.2
+    },
+    {
+     "mom": null,
+     "name": "보건·사회복지",
+     "yoy": 4.2
+    },
+    {
+     "mom": null,
+     "name": "운수·창고",
+     "yoy": 4.2
+    },
+    {
+     "mom": -0.7,
+     "name": "도소매",
+     "yoy": 1.2
+    },
+    {
+     "mom": null,
+     "name": "사업시설관리·사업지원·임대",
+     "yoy": 2.8
+    },
+    {
+     "mom": 1.8,
+     "name": "교육",
+     "yoy": 1.5
+    },
+    {
+     "mom": null,
+     "name": "협회·수리·개인",
+     "yoy": 2
+    },
+    {
+     "mom": -1.6,
+     "name": "부동산",
+     "yoy": -0.1
+    },
+    {
+     "mom": null,
+     "name": "수도·하수·폐기물처리",
+     "yoy": -1.1
+    },
+    {
+     "mom": null,
+     "name": "예술·스포츠·여가",
+     "yoy": -2.1
+    },
+    {
+     "mom": null,
+     "name": "숙박·음식점",
+     "yoy": -2.8
+    }
+   ],
+   "shipment": {
+    "domestic": {
+     "mom": -3.9,
+     "yoy": -5.5
+    },
+    "export": {
+     "mom": -3.2,
+     "yoy": -0.2
+    },
+    "total": {
+     "mom": -3.6,
+     "yoy": -3
+    }
+   },
+   "source": "국가데이터처 2026년 8월 산업활동동향",
+   "summary": [
+    "전산업생산이 전월보다 1.3% 줄었어요. 광공업이 4.8% 감소했고, 특히 자동차(-24.8%)와 고무·플라스틱(-11.0%)이 크게 줄었어요.",
+    "반도체 생산은 전월보다 2.2% 줄었지만 출하는 7.1% 늘었어요. 기계장비는 생산이 3.1%(전년비 +13.5%) 늘었어요.",
+    "소매판매는 승용차·음식료품 판매가 줄어 1.8% 감소했어요. 설비투자는 선박·항공기 투자가 줄어 9.5% 감소했고, 건설기성은 1.9% 늘었어요.",
+    "수출출하는 전월보다 3.2%, 전년보다 0.2% 줄었고 내수출하는 전년보다 5.5% 줄었어요. 제조업 가동률은 70.8%로 4.0%p 떨어졌어요.",
+    "동행지수 순환변동치는 0.5p 올랐지만 선행지수 순환변동치는 0.1p 내려 앞으로의 경기 흐름에는 주의가 필요해요."
+   ],
+   "utilization": {
+    "chg": -4,
+    "rate": 70.8
+   }
+  }
+ },
+ "tp": {},
+ "trade": {
+  "2026-08": {
+   "balance": 347.5,
+   "crude": {
+    "dubai": 88.8,
+    "dubai_yoy": 27.9,
+    "intro_price_yoy": 26,
+    "intro_volume_yoy": -3
+   },
+   "export": {
+    "amount": 982.5,
+    "daily": 44.7,
+    "daily_yoy": 72.5,
+    "volume": 1543,
+    "volume_yoy": -9.8,
+    "yoy": 68.7
+   },
+   "import": {
+    "amount": 635.1,
+    "energy": 126.8,
+    "energy_yoy": 15.3,
+    "nonenergy": 508,
+    "nonenergy_yoy": 24.4,
+    "volume": 4551,
+    "volume_yoy": -6.4,
+    "yoy": 22.5
+   },
+   "importItems": [
+    {
+     "amt": 82.8,
+     "name": "원유",
+     "yoy": 21.2
+    },
+    {
+     "amt": 27.8,
+     "name": "가스",
+     "yoy": -8.2
+    },
+    {
+     "amt": 16.1,
+     "name": "석탄",
+     "yoy": 43
+    },
+    {
+     "amt": 25.7,
+     "name": "반도체장비",
+     "yoy": 117.3
+    },
+    {
+     "amt": 13.4,
+     "name": "무선통신기기",
+     "yoy": 45.8
+    },
+    {
+     "amt": 17.2,
+     "name": "컴퓨터",
+     "yoy": 41.8
+    }
+   ],
+   "itemNotes": {
+    "바이오헬스": "바이오시밀러 유럽 입찰 수주, 8월 중 최대",
+    "반도체": "하이퍼스케일러 설비투자 확대, 역대 최대 466.5억 달러",
+    "석유제품": "물량 -2.2%, 단가 +69.1%",
+    "석유화학": "물량 -7.0%, 단가 +20.6%",
+    "선박": "인도물량 감소",
+    "이차전지": "광물가격 상승으로 단가 회복, ESS 활성화",
+    "자동차": "하계휴가 시점 이동·부분 파업으로 일시 감소",
+    "철강": "미국 AI 데이터센터 건설 확대",
+    "컴퓨터": "NAND 가격 상승으로 기업용 SSD 역대 최대",
+    "화장품": "8월 중 최대"
+   },
+   "itemSeries": {
+    "가전": [
+     {
+      "amt": 5.3,
+      "m": "2025-08",
+      "yoy": -14
+     },
+     {
+      "amt": 6.9,
+      "m": "2025-09",
+      "yoy": 12
+     },
+     {
+      "amt": 5.5,
+      "m": "2025-10",
+      "yoy": -20.1
+     },
+     {
+      "amt": 5.6,
+      "m": "2025-11",
+      "yoy": -2.5
+     },
+     {
+      "amt": 6,
+      "m": "2025-12",
+      "yoy": -1.6
+     },
+     {
+      "amt": 5.5,
+      "m": "2026-01",
+      "yoy": -0.3
+     },
+     {
+      "amt": 5.1,
+      "m": "2026-02",
+      "yoy": -19.9
+     },
+     {
+      "amt": 5.9,
+      "m": "2026-03",
+      "yoy": -8
+     },
+     {
+      "amt": 5.7,
+      "m": "2026-04",
+      "yoy": -19.8
+     },
+     {
+      "amt": 4.8,
+      "m": "2026-05",
+      "yoy": -21.8
+     },
+     {
+      "amt": 5.5,
+      "m": "2026-06",
+      "yoy": 0.1
+     },
+     {
+      "amt": 6.1,
+      "m": "2026-07",
+      "yoy": -4.1
+     },
+     {
+      "amt": 5.2,
+      "m": "2026-08",
+      "yoy": -1.5
+     }
+    ],
+    "농수산식품": [
+     {
+      "amt": 9.6,
+      "m": "2025-08",
+      "yoy": 3.3
+     },
+     {
+      "amt": 11.6,
+      "m": "2025-09",
+      "yoy": 20.9
+     },
+     {
+      "amt": 9.9,
+      "m": "2025-10",
+      "yoy": -3.9
+     },
+     {
+      "amt": 10.3,
+      "m": "2025-11",
+      "yoy": 3.2
+     },
+     {
+      "amt": 11.4,
+      "m": "2025-12",
+      "yoy": 7.2
+     },
+     {
+      "amt": 10.1,
+      "m": "2026-01",
+      "yoy": 18.8
+     },
+     {
+      "amt": 9.2,
+      "m": "2026-02",
+      "yoy": -9.4
+     },
+     {
+      "amt": 11.7,
+      "m": "2026-03",
+      "yoy": 14.4
+     },
+     {
+      "amt": 12.2,
+      "m": "2026-04",
+      "yoy": 8.6
+     },
+     {
+      "amt": 10.7,
+      "m": "2026-05",
+      "yoy": 4.5
+     },
+     {
+      "amt": 11.7,
+      "m": "2026-06",
+      "yoy": 16.7
+     },
+     {
+      "amt": 10.9,
+      "m": "2026-07",
+      "yoy": 2.3
+     },
+     {
+      "amt": 9.8,
+      "m": "2026-08",
+      "yoy": 1.5
+     }
+    ],
+    "디스플레이": [
+     {
+      "amt": 16.5,
+      "m": "2025-08",
+      "yoy": -9.2
+     },
+     {
+      "amt": 17.5,
+      "m": "2025-09",
+      "yoy": 0.9
+     },
+     {
+      "amt": 14.8,
+      "m": "2025-10",
+      "yoy": -8.7
+     },
+     {
+      "amt": 14.4,
+      "m": "2025-11",
+      "yoy": -2.9
+     },
+     {
+      "amt": 14.9,
+      "m": "2025-12",
+      "yoy": 0.8
+     },
+     {
+      "amt": 13.8,
+      "m": "2026-01",
+      "yoy": 26.1
+     },
+     {
+      "amt": 12.2,
+      "m": "2026-02",
+      "yoy": -4.2
+     },
+     {
+      "amt": 14.4,
+      "m": "2026-03",
+      "yoy": -1.5
+     },
+     {
+      "amt": 12.8,
+      "m": "2026-04",
+      "yoy": -2.7
+     },
+     {
+      "amt": 14.7,
+      "m": "2026-05",
+      "yoy": 9.4
+     },
+     {
+      "amt": 15.4,
+      "m": "2026-06",
+      "yoy": 37
+     },
+     {
+      "amt": 16.1,
+      "m": "2026-07",
+      "yoy": 2.4
+     },
+     {
+      "amt": 15.7,
+      "m": "2026-08",
+      "yoy": -4.7
+     }
+    ],
+    "무선통신기기": [
+     {
+      "amt": 15.5,
+      "m": "2025-08",
+      "yoy": -14.1
+     },
+     {
+      "amt": 17.4,
+      "m": "2025-09",
+      "yoy": -7.4
+     },
+     {
+      "amt": 18.2,
+      "m": "2025-10",
+      "yoy": -10.9
+     },
+     {
+      "amt": 17.2,
+      "m": "2025-11",
+      "yoy": 1.2
+     },
+     {
+      "amt": 16.9,
+      "m": "2025-12",
+      "yoy": 24.7
+     },
+     {
+      "amt": 20.3,
+      "m": "2026-01",
+      "yoy": 66.8
+     },
+     {
+      "amt": 14.7,
+      "m": "2026-02",
+      "yoy": 12.3
+     },
+     {
+      "amt": 17.9,
+      "m": "2026-03",
+      "yoy": 43.3
+     },
+     {
+      "amt": 16.2,
+      "m": "2026-04",
+      "yoy": 11.5
+     },
+     {
+      "amt": 14.6,
+      "m": "2026-05",
+      "yoy": 12.4
+     },
+     {
+      "amt": 15.4,
+      "m": "2026-06",
+      "yoy": 51.7
+     },
+     {
+      "amt": 18.1,
+      "m": "2026-07",
+      "yoy": 51.1
+     },
+     {
+      "amt": 18.8,
+      "m": "2026-08",
+      "yoy": 21.2
+     }
+    ],
+    "바이오헬스": [
+     {
+      "amt": 11.5,
+      "m": "2025-08",
+      "yoy": -9.3
+     },
+     {
+      "amt": 16.9,
+      "m": "2025-09",
+      "yoy": 37.8
+     },
+     {
+      "amt": 11.8,
+      "m": "2025-10",
+      "yoy": -4.5
+     },
+     {
+      "amt": 14.7,
+      "m": "2025-11",
+      "yoy": 2.4
+     },
+     {
+      "amt": 16,
+      "m": "2025-12",
+      "yoy": 27.4
+     },
+     {
+      "amt": 13.5,
+      "m": "2026-01",
+      "yoy": 16.3
+     },
+     {
+      "amt": 13.3,
+      "m": "2026-02",
+      "yoy": 7
+     },
+     {
+      "amt": 15.2,
+      "m": "2026-03",
+      "yoy": 6.3
+     },
+     {
+      "amt": 16.4,
+      "m": "2026-04",
+      "yoy": 18.4
+     },
+     {
+      "amt": 14.4,
+      "m": "2026-05",
+      "yoy": 5
+     },
+     {
+      "amt": 19.1,
+      "m": "2026-06",
+      "yoy": 13.9
+     },
+     {
+      "amt": 15.7,
+      "m": "2026-07",
+      "yoy": 30.4
+     },
+     {
+      "amt": 14.1,
+      "m": "2026-08",
+      "yoy": 22.3
+     }
+    ],
+    "반도체": [
+     {
+      "amt": 150.9,
+      "m": "2025-08",
+      "yoy": 27.1
+     },
+     {
+      "amt": 166.2,
+      "m": "2025-09",
+      "yoy": 22
+     },
+     {
+      "amt": 157,
+      "m": "2025-10",
+      "yoy": 25.2
+     },
+     {
+      "amt": 172.6,
+      "m": "2025-11",
+      "yoy": 38.6
+     },
+     {
+      "amt": 207.7,
+      "m": "2025-12",
+      "yoy": 43.2
+     },
+     {
+      "amt": 205.4,
+      "m": "2026-01",
+      "yoy": 102.8
+     },
+     {
+      "amt": 251.4,
+      "m": "2026-02",
+      "yoy": 160.6
+     },
+     {
+      "amt": 328.3,
+      "m": "2026-03",
+      "yoy": 151.4
+     },
+     {
+      "amt": 318.9,
+      "m": "2026-04",
+      "yoy": 173.4
+     },
+     {
+      "amt": 371.6,
+      "m": "2026-05",
+      "yoy": 169.4
+     },
+     {
+      "amt": 448.1,
+      "m": "2026-06",
+      "yoy": 199.5
+     },
+     {
+      "amt": 410.1,
+      "m": "2026-07",
+      "yoy": 178.8
+     },
+     {
+      "amt": 466.5,
+      "m": "2026-08",
+      "yoy": 209
+     }
+    ],
+    "비철금속": [
+     {
+      "amt": 11.9,
+      "m": "2025-08",
+      "yoy": 2.3
+     },
+     {
+      "amt": 13,
+      "m": "2025-09",
+      "yoy": 17
+     },
+     {
+      "amt": 12.1,
+      "m": "2025-10",
+      "yoy": 6.5
+     },
+     {
+      "amt": 12.6,
+      "m": "2025-11",
+      "yoy": 14.7
+     },
+     {
+      "amt": 15.1,
+      "m": "2025-12",
+      "yoy": 15.9
+     },
+     {
+      "amt": 14.1,
+      "m": "2026-01",
+      "yoy": 40.7
+     },
+     {
+      "amt": 12.2,
+      "m": "2026-02",
+      "yoy": 17.3
+     },
+     {
+      "amt": 14.8,
+      "m": "2026-03",
+      "yoy": 29.9
+     },
+     {
+      "amt": 18.5,
+      "m": "2026-04",
+      "yoy": 49.3
+     },
+     {
+      "amt": 16.8,
+      "m": "2026-05",
+      "yoy": 42.5
+     },
+     {
+      "amt": 18.3,
+      "m": "2026-06",
+      "yoy": 46.6
+     },
+     {
+      "amt": 17.3,
+      "m": "2026-07",
+      "yoy": 24
+     },
+     {
+      "amt": 14.8,
+      "m": "2026-08",
+      "yoy": 23.9
+     }
+    ],
+    "생활용품": [
+     {
+      "amt": 6.7,
+      "m": "2025-08",
+      "yoy": -17.4
+     },
+     {
+      "amt": 7.7,
+      "m": "2025-09",
+      "yoy": 13
+     },
+     {
+      "amt": 8.6,
+      "m": "2025-10",
+      "yoy": 23.8
+     },
+     {
+      "amt": 9.5,
+      "m": "2025-11",
+      "yoy": 37.6
+     },
+     {
+      "amt": 8.3,
+      "m": "2025-12",
+      "yoy": 22.7
+     },
+     {
+      "amt": 6.8,
+      "m": "2026-01",
+      "yoy": 17.6
+     },
+     {
+      "amt": 6.4,
+      "m": "2026-02",
+      "yoy": -11.6
+     },
+     {
+      "amt": 7.5,
+      "m": "2026-03",
+      "yoy": 4.5
+     },
+     {
+      "amt": 7.4,
+      "m": "2026-04",
+      "yoy": 1.3
+     },
+     {
+      "amt": 6.5,
+      "m": "2026-05",
+      "yoy": -5.2
+     },
+     {
+      "amt": 7.2,
+      "m": "2026-06",
+      "yoy": -4.4
+     },
+     {
+      "amt": 8.1,
+      "m": "2026-07",
+      "yoy": 12.9
+     },
+     {
+      "amt": 6.5,
+      "m": "2026-08",
+      "yoy": -3.4
+     }
+    ],
+    "석유제품": [
+     {
+      "amt": 41.4,
+      "m": "2025-08",
+      "yoy": -5.4
+     },
+     {
+      "amt": 42,
+      "m": "2025-09",
+      "yoy": 4.8
+     },
+     {
+      "amt": 38.4,
+      "m": "2025-10",
+      "yoy": 13.2
+     },
+     {
+      "amt": 32.8,
+      "m": "2025-11",
+      "yoy": -10.3
+     },
+     {
+      "amt": 41.8,
+      "m": "2025-12",
+      "yoy": 5.4
+     },
+     {
+      "amt": 37.5,
+      "m": "2026-01",
+      "yoy": 8.9
+     },
+     {
+      "amt": 40.9,
+      "m": "2026-02",
+      "yoy": 5.6
+     },
+     {
+      "amt": 62.5,
+      "m": "2026-03",
+      "yoy": 89.7
+     },
+     {
+      "amt": 50.1,
+      "m": "2026-04",
+      "yoy": 37.2
+     },
+     {
+      "amt": 52,
+      "m": "2026-05",
+      "yoy": 45.2
+     },
+     {
+      "amt": 53.9,
+      "m": "2026-06",
+      "yoy": 44.3
+     },
+     {
+      "amt": 57.6,
+      "m": "2026-07",
+      "yoy": 36
+     },
+     {
+      "amt": 68.4,
+      "m": "2026-08",
+      "yoy": 65.3
+     }
+    ],
+    "석유화학": [
+     {
+      "amt": 34.4,
+      "m": "2025-08",
+      "yoy": -15.9
+     },
+     {
+      "amt": 37.6,
+      "m": "2025-09",
+      "yoy": 0
+     },
+     {
+      "amt": 31.4,
+      "m": "2025-10",
+      "yoy": -19.9
+     },
+     {
+      "amt": 31.1,
+      "m": "2025-11",
+      "yoy": -11.2
+     },
+     {
+      "amt": 35.5,
+      "m": "2025-12",
+      "yoy": -6.6
+     },
+     {
+      "amt": 35.7,
+      "m": "2026-01",
+      "yoy": -0.2
+     },
+     {
+      "amt": 33.9,
+      "m": "2026-02",
+      "yoy": -13.9
+     },
+     {
+      "amt": 40.2,
+      "m": "2026-03",
+      "yoy": 10
+     },
+     {
+      "amt": 41.1,
+      "m": "2026-04",
+      "yoy": 8.4
+     },
+     {
+      "amt": 36.8,
+      "m": "2026-05",
+      "yoy": 10.5
+     },
+     {
+      "amt": 40.3,
+      "m": "2026-06",
+      "yoy": 17.7
+     },
+     {
+      "amt": 41.9,
+      "m": "2026-07",
+      "yoy": 10.3
+     },
+     {
+      "amt": 38.6,
+      "m": "2026-08",
+      "yoy": 12.2
+     }
+    ],
+    "선박": [
+     {
+      "amt": 31.3,
+      "m": "2025-08",
+      "yoy": 11.3
+     },
+     {
+      "amt": 28.9,
+      "m": "2025-09",
+      "yoy": 21.9
+     },
+     {
+      "amt": 46.9,
+      "m": "2025-10",
+      "yoy": 131.1
+     },
+     {
+      "amt": 18.5,
+      "m": "2025-11",
+      "yoy": -26.4
+     },
+     {
+      "amt": 30.3,
+      "m": "2025-12",
+      "yoy": -1.9
+     },
+     {
+      "amt": 24.8,
+      "m": "2026-01",
+      "yoy": -0.1
+     },
+     {
+      "amt": 22.1,
+      "m": "2026-02",
+      "yoy": 41.3
+     },
+     {
+      "amt": 35.2,
+      "m": "2026-03",
+      "yoy": 10.8
+     },
+     {
+      "amt": 29,
+      "m": "2026-04",
+      "yoy": 44.2
+     },
+     {
+      "amt": 26.1,
+      "m": "2026-05",
+      "yoy": 16.5
+     },
+     {
+      "amt": 28.2,
+      "m": "2026-06",
+      "yoy": 12.7
+     },
+     {
+      "amt": 32.9,
+      "m": "2026-07",
+      "yoy": 46.9
+     },
+     {
+      "amt": 16.9,
+      "m": "2026-08",
+      "yoy": -45.9
+     }
+    ],
+    "섬유": [
+     {
+      "amt": 7.5,
+      "m": "2025-08",
+      "yoy": -11.5
+     },
+     {
+      "amt": 9.4,
+      "m": "2025-09",
+      "yoy": 8.6
+     },
+     {
+      "amt": 7.7,
+      "m": "2025-10",
+      "yoy": -16.1
+     },
+     {
+      "amt": 8.9,
+      "m": "2025-11",
+      "yoy": -9
+     },
+     {
+      "amt": 9.6,
+      "m": "2025-12",
+      "yoy": 0.3
+     },
+     {
+      "amt": 8.4,
+      "m": "2026-01",
+      "yoy": 7.7
+     },
+     {
+      "amt": 7.3,
+      "m": "2026-02",
+      "yoy": -16.6
+     },
+     {
+      "amt": 9.3,
+      "m": "2026-03",
+      "yoy": 4.9
+     },
+     {
+      "amt": 10.5,
+      "m": "2026-04",
+      "yoy": 6
+     },
+     {
+      "amt": 8.5,
+      "m": "2026-05",
+      "yoy": -6.8
+     },
+     {
+      "amt": 9.7,
+      "m": "2026-06",
+      "yoy": 11.4
+     },
+     {
+      "amt": 9.3,
+      "m": "2026-07",
+      "yoy": 3.5
+     },
+     {
+      "amt": 7.5,
+      "m": "2026-08",
+      "yoy": 0.2
+     }
+    ],
+    "이차전지": [
+     {
+      "amt": 4.8,
+      "m": "2025-08",
+      "yoy": -31.3
+     },
+     {
+      "amt": 6.3,
+      "m": "2025-09",
+      "yoy": -8.8
+     },
+     {
+      "amt": 5.3,
+      "m": "2025-10",
+      "yoy": -14
+     },
+     {
+      "amt": 6.7,
+      "m": "2025-11",
+      "yoy": 2.1
+     },
+     {
+      "amt": 7.2,
+      "m": "2025-12",
+      "yoy": -13
+     },
+     {
+      "amt": 5.5,
+      "m": "2026-01",
+      "yoy": 5.8
+     },
+     {
+      "amt": 5.9,
+      "m": "2026-02",
+      "yoy": -5.7
+     },
+     {
+      "amt": 8.2,
+      "m": "2026-03",
+      "yoy": 28.6
+     },
+     {
+      "amt": 6.5,
+      "m": "2026-04",
+      "yoy": -6.5
+     },
+     {
+      "amt": 6.9,
+      "m": "2026-05",
+      "yoy": 31.2
+     },
+     {
+      "amt": 7,
+      "m": "2026-06",
+      "yoy": 17.4
+     },
+     {
+      "amt": 6.8,
+      "m": "2026-07",
+      "yoy": 17.2
+     },
+     {
+      "amt": 6,
+      "m": "2026-08",
+      "yoy": 24
+     }
+    ],
+    "일반기계": [
+     {
+      "amt": 34.6,
+      "m": "2025-08",
+      "yoy": -10.2
+     },
+     {
+      "amt": 42.1,
+      "m": "2025-09",
+      "yoy": 10.5
+     },
+     {
+      "amt": 33.4,
+      "m": "2025-10",
+      "yoy": -15.8
+     },
+     {
+      "amt": 38.2,
+      "m": "2025-11",
+      "yoy": -4.1
+     },
+     {
+      "amt": 42.4,
+      "m": "2025-12",
+      "yoy": -2.1
+     },
+     {
+      "amt": 37.1,
+      "m": "2026-01",
+      "yoy": 8.5
+     },
+     {
+      "amt": 32.8,
+      "m": "2026-02",
+      "yoy": -16.2
+     },
+     {
+      "amt": 38.9,
+      "m": "2026-03",
+      "yoy": -6.4
+     },
+     {
+      "amt": 42.1,
+      "m": "2026-04",
+      "yoy": -2.7
+     },
+     {
+      "amt": 38.2,
+      "m": "2026-05",
+      "yoy": -6.3
+     },
+     {
+      "amt": 40.8,
+      "m": "2026-06",
+      "yoy": 7.5
+     },
+     {
+      "amt": 45.3,
+      "m": "2026-07",
+      "yoy": 5.9
+     },
+     {
+      "amt": 35.3,
+      "m": "2026-08",
+      "yoy": 1.8
+     }
+    ],
+    "자동차": [
+     {
+      "amt": 54.9,
+      "m": "2025-08",
+      "yoy": 8.5
+     },
+     {
+      "amt": 64,
+      "m": "2025-09",
+      "yoy": 16.8
+     },
+     {
+      "amt": 55.4,
+      "m": "2025-10",
+      "yoy": -10.6
+     },
+     {
+      "amt": 64.1,
+      "m": "2025-11",
+      "yoy": 13.6
+     },
+     {
+      "amt": 59.5,
+      "m": "2025-12",
+      "yoy": -1.5
+     },
+     {
+      "amt": 60.7,
+      "m": "2026-01",
+      "yoy": 21.6
+     },
+     {
+      "amt": 48,
+      "m": "2026-02",
+      "yoy": -20.8
+     },
+     {
+      "amt": 63.7,
+      "m": "2026-03",
+      "yoy": 2.2
+     },
+     {
+      "amt": 61.6,
+      "m": "2026-04",
+      "yoy": -5.6
+     },
+     {
+      "amt": 58.2,
+      "m": "2026-05",
+      "yoy": -6.1
+     },
+     {
+      "amt": 67,
+      "m": "2026-06",
+      "yoy": 5.7
+     },
+     {
+      "amt": 62.4,
+      "m": "2026-07",
+      "yoy": 7
+     },
+     {
+      "amt": 38.5,
+      "m": "2026-08",
+      "yoy": -29.8
+     }
+    ],
+    "자동차부품": [
+     {
+      "amt": 16.6,
+      "m": "2025-08",
+      "yoy": -9.1
+     },
+     {
+      "amt": 19.1,
+      "m": "2025-09",
+      "yoy": 6
+     },
+     {
+      "amt": 15.1,
+      "m": "2025-10",
+      "yoy": -19
+     },
+     {
+      "amt": 15.6,
+      "m": "2025-11",
+      "yoy": -11.2
+     },
+     {
+      "amt": 18.2,
+      "m": "2025-12",
+      "yoy": -2.1
+     },
+     {
+      "amt": 16.2,
+      "m": "2026-01",
+      "yoy": 3.6
+     },
+     {
+      "amt": 14.3,
+      "m": "2026-02",
+      "yoy": -22.9
+     },
+     {
+      "amt": 17.8,
+      "m": "2026-03",
+      "yoy": -2.4
+     },
+     {
+      "amt": 18.9,
+      "m": "2026-04",
+      "yoy": -6.2
+     },
+     {
+      "amt": 15.5,
+      "m": "2026-05",
+      "yoy": -6.2
+     },
+     {
+      "amt": 17.4,
+      "m": "2026-06",
+      "yoy": -2.5
+     },
+     {
+      "amt": 19.5,
+      "m": "2026-07",
+      "yoy": 2.2
+     },
+     {
+      "amt": 15,
+      "m": "2026-08",
+      "yoy": -9.8
+     }
+    ],
+    "전기기기": [
+     {
+      "amt": 12.9,
+      "m": "2025-08",
+      "yoy": 6.8
+     },
+     {
+      "amt": 14.8,
+      "m": "2025-09",
+      "yoy": 17
+     },
+     {
+      "amt": 11.4,
+      "m": "2025-10",
+      "yoy": -11.5
+     },
+     {
+      "amt": 12.8,
+      "m": "2025-11",
+      "yoy": 7.6
+     },
+     {
+      "amt": 15.7,
+      "m": "2025-12",
+      "yoy": 11.9
+     },
+     {
+      "amt": 13.4,
+      "m": "2026-01",
+      "yoy": 19
+     },
+     {
+      "amt": 11.9,
+      "m": "2026-02",
+      "yoy": -14.6
+     },
+     {
+      "amt": 15.2,
+      "m": "2026-03",
+      "yoy": 5.3
+     },
+     {
+      "amt": 15.7,
+      "m": "2026-04",
+      "yoy": 7.8
+     },
+     {
+      "amt": 13.5,
+      "m": "2026-05",
+      "yoy": -0.3
+     },
+     {
+      "amt": 16.5,
+      "m": "2026-06",
+      "yoy": 4.5
+     },
+     {
+      "amt": 17.9,
+      "m": "2026-07",
+      "yoy": 13.9
+     },
+     {
+      "amt": 15,
+      "m": "2026-08",
+      "yoy": 16.2
+     }
+    ],
+    "철강": [
+     {
+      "amt": 19.5,
+      "m": "2025-08",
+      "yoy": -16.1
+     },
+     {
+      "amt": 21.7,
+      "m": "2025-09",
+      "yoy": -1.8
+     },
+     {
+      "amt": 18.7,
+      "m": "2025-10",
+      "yoy": -17.8
+     },
+     {
+      "amt": 18.2,
+      "m": "2025-11",
+      "yoy": -16.6
+     },
+     {
+      "amt": 20.7,
+      "m": "2025-12",
+      "yoy": -7.5
+     },
+     {
+      "amt": 20.4,
+      "m": "2026-01",
+      "yoy": -2.2
+     },
+     {
+      "amt": 19.9,
+      "m": "2026-02",
+      "yoy": -5.2
+     },
+     {
+      "amt": 20.5,
+      "m": "2026-03",
+      "yoy": -0.3
+     },
+     {
+      "amt": 21.2,
+      "m": "2026-04",
+      "yoy": -10.4
+     },
+     {
+      "amt": 20.3,
+      "m": "2026-05",
+      "yoy": -2.8
+     },
+     {
+      "amt": 21.3,
+      "m": "2026-06",
+      "yoy": 9.1
+     },
+     {
+      "amt": 23.6,
+      "m": "2026-07",
+      "yoy": 4.4
+     },
+     {
+      "amt": 21.1,
+      "m": "2026-08",
+      "yoy": 7.9
+     }
+    ],
+    "컴퓨터": [
+     {
+      "amt": 12,
+      "m": "2025-08",
+      "yoy": -18.2
+     },
+     {
+      "amt": 13.1,
+      "m": "2025-09",
+      "yoy": -13.6
+     },
+     {
+      "amt": 9.8,
+      "m": "2025-10",
+      "yoy": 1.7
+     },
+     {
+      "amt": 14,
+      "m": "2025-11",
+      "yoy": 3.4
+     },
+     {
+      "amt": 20.4,
+      "m": "2025-12",
+      "yoy": 36.6
+     },
+     {
+      "amt": 15.5,
+      "m": "2026-01",
+      "yoy": 88.9
+     },
+     {
+      "amt": 25.6,
+      "m": "2026-02",
+      "yoy": 221.6
+     },
+     {
+      "amt": 34.2,
+      "m": "2026-03",
+      "yoy": 189.1
+     },
+     {
+      "amt": 40.8,
+      "m": "2026-04",
+      "yoy": 515.5
+     },
+     {
+      "amt": 41.7,
+      "m": "2026-05",
+      "yoy": 289.6
+     },
+     {
+      "amt": 54.1,
+      "m": "2026-06",
+      "yoy": 308.8
+     },
+     {
+      "amt": 47.9,
+      "m": "2026-07",
+      "yoy": 404.2
+     },
+     {
+      "amt": 62.4,
+      "m": "2026-08",
+      "yoy": 419.5
+     }
+    ],
+    "화장품": [
+     {
+      "amt": 8.6,
+      "m": "2025-08",
+      "yoy": 4.8
+     },
+     {
+      "amt": 11.5,
+      "m": "2025-09",
+      "yoy": 25.8
+     },
+     {
+      "amt": 9.2,
+      "m": "2025-10",
+      "yoy": -11.3
+     },
+     {
+      "amt": 9.5,
+      "m": "2025-11",
+      "yoy": 4.2
+     },
+     {
+      "amt": 10.7,
+      "m": "2025-12",
+      "yoy": 21.8
+     },
+     {
+      "amt": 10.2,
+      "m": "2026-01",
+      "yoy": 36
+     },
+     {
+      "amt": 9.1,
+      "m": "2026-02",
+      "yoy": 3.1
+     },
+     {
+      "amt": 11.8,
+      "m": "2026-03",
+      "yoy": 26
+     },
+     {
+      "amt": 13.5,
+      "m": "2026-04",
+      "yoy": 31.2
+     },
+     {
+      "amt": 11.7,
+      "m": "2026-05",
+      "yoy": 23.2
+     },
+     {
+      "amt": 13.3,
+      "m": "2026-06",
+      "yoy": 41.3
+     },
+     {
+      "amt": 13.5,
+      "m": "2026-07",
+      "yoy": 37.8
+     },
+     {
+      "amt": 13.1,
+      "m": "2026-08",
+      "yoy": 52.1
+     }
+    ]
+   },
+   "items": [
+    {
+     "amt": 466.5,
+     "name": "반도체",
+     "yoy": 209
+    },
+    {
+     "amt": 38.5,
+     "name": "자동차",
+     "yoy": -29.8
+    },
+    {
+     "amt": 35.3,
+     "name": "일반기계",
+     "yoy": 1.8
+    },
+    {
+     "amt": 68.4,
+     "name": "석유제품",
+     "yoy": 65.3
+    },
+    {
+     "amt": 38.6,
+     "name": "석유화학",
+     "yoy": 12.2
+    },
+    {
+     "amt": 16.9,
+     "name": "선박",
+     "yoy": -45.9
+    },
+    {
+     "amt": 21.1,
+     "name": "철강",
+     "yoy": 7.9
+    },
+    {
+     "amt": 15,
+     "name": "자동차부품",
+     "yoy": -9.8
+    },
+    {
+     "amt": 18.8,
+     "name": "무선통신기기",
+     "yoy": 21.2
+    },
+    {
+     "amt": 15.7,
+     "name": "디스플레이",
+     "yoy": -4.7
+    },
+    {
+     "amt": 15,
+     "name": "전기기기",
+     "yoy": 16.2
+    },
+    {
+     "amt": 14.1,
+     "name": "바이오헬스",
+     "yoy": 22.3
+    },
+    {
+     "amt": 14.8,
+     "name": "비철금속",
+     "yoy": 23.9
+    },
+    {
+     "amt": 62.4,
+     "name": "컴퓨터",
+     "yoy": 419.5
+    },
+    {
+     "amt": 9.8,
+     "name": "농수산식품",
+     "yoy": 1.5
+    },
+    {
+     "amt": 13.1,
+     "name": "화장품",
+     "yoy": 52.1
+    },
+    {
+     "amt": 7.5,
+     "name": "섬유",
+     "yoy": 0.2
+    },
+    {
+     "amt": 6.5,
+     "name": "생활용품",
+     "yoy": -3.4
+    },
+    {
+     "amt": 5.2,
+     "name": "가전",
+     "yoy": -1.5
+    },
+    {
+     "amt": 6,
+     "name": "이차전지",
+     "yoy": 24
+    }
+   ],
+   "keyPriceSeries": {
+    "DDR5 16Gb 고정가($)": [
+     {
+      "m": "2026-04",
+      "v": 35
+     },
+     {
+      "m": "2026-05",
+      "v": 37.5
+     },
+     {
+      "m": "2026-06",
+      "v": 40
+     },
+     {
+      "m": "2026-07",
+      "v": 45
+     },
+     {
+      "m": "2026-08",
+      "v": 46.5
+     }
+    ],
+    "NAND 128Gb 고정가($)": [
+     {
+      "m": "2026-04",
+      "v": 24.2
+     },
+     {
+      "m": "2026-05",
+      "v": 26.5
+     },
+     {
+      "m": "2026-06",
+      "v": 28.8
+     },
+     {
+      "m": "2026-07",
+      "v": 30.1
+     },
+     {
+      "m": "2026-08",
+      "v": 30.5
+     }
+    ]
+   },
+   "keyPrices": [
+    {
+     "name": "두바이유($/b)",
+     "val": 88.8,
+     "yoy": 27.9
+    },
+    {
+     "name": "DDR5 16Gb 고정가($)",
+     "val": 46.5,
+     "yoy": null
+    },
+    {
+     "name": "NAND 128Gb 고정가($)",
+     "val": 30.5,
+     "yoy": null
+    }
+   ],
+   "month": "2026-08",
+   "priceVolume": [
+    {
+     "amt_yoy": 65.3,
+     "name": "석유제품",
+     "note": "물량 599만 톤, 단가 1,143달러/톤 (유가 상승)",
+     "price_yoy": 69.1,
+     "vol_yoy": -2.2
+    },
+    {
+     "amt_yoy": 12.2,
+     "name": "석유화학",
+     "note": "물량 291만 톤, 단가 1,326달러/톤",
+     "price_yoy": 20.6,
+     "vol_yoy": -7
+    },
+    {
+     "amt_yoy": 7.9,
+     "name": "철강",
+     "note": "8.1~25일 수출단가 920달러/톤",
+     "price_yoy": 6.3,
+     "vol_yoy": null
+    },
+    {
+     "amt_yoy": 24,
+     "name": "이차전지",
+     "note": "리튬 등 광물가격 상승으로 단가 회복",
+     "price_yoy": null,
+     "vol_yoy": null
+    },
+    {
+     "amt_yoy": 209,
+     "name": "반도체",
+     "note": "DDR5 16Gb 고정가 46.5달러, NAND 128Gb 30.5달러",
+     "price_yoy": null,
+     "vol_yoy": null
+    },
+    {
+     "amt_yoy": 419.5,
+     "name": "컴퓨터(SSD)",
+     "note": "NAND 가격 상승으로 기업용 SSD 단가 상승",
+     "price_yoy": null,
+     "vol_yoy": null
+    }
+   ],
+   "regionSeries": {
+    "CIS": [
+     {
+      "amt": 11.2,
+      "m": "2025-08",
+      "yoy": 8.6
+     },
+     {
+      "amt": 15.2,
+      "m": "2025-09",
+      "yoy": 54
+     },
+     {
+      "amt": 13.3,
+      "m": "2025-10",
+      "yoy": 34.2
+     },
+     {
+      "amt": 13.1,
+      "m": "2025-11",
+      "yoy": 25.3
+     },
+     {
+      "amt": 9.4,
+      "m": "2025-12",
+      "yoy": -3.8
+     },
+     {
+      "amt": 7.2,
+      "m": "2026-01",
+      "yoy": -1.8
+     },
+     {
+      "amt": 7.9,
+      "m": "2026-02",
+      "yoy": -22.2
+     },
+     {
+      "amt": 9.4,
+      "m": "2026-03",
+      "yoy": -12.4
+     },
+     {
+      "amt": 10.2,
+      "m": "2026-04",
+      "yoy": -12
+     },
+     {
+      "amt": 9.3,
+      "m": "2026-05",
+      "yoy": -19.2
+     },
+     {
+      "amt": 10.9,
+      "m": "2026-06",
+      "yoy": -0.6
+     },
+     {
+      "amt": 11.2,
+      "m": "2026-07",
+      "yoy": -8.5
+     },
+     {
+      "amt": 8.4,
+      "m": "2026-08",
+      "yoy": -25.1
+     }
+    ],
+    "EU(27)": [
+     {
+      "amt": 57.8,
+      "m": "2025-08",
+      "yoy": -9.8
+     },
+     {
+      "amt": 71.6,
+      "m": "2025-09",
+      "yoy": 19.3
+     },
+     {
+      "amt": 51.8,
+      "m": "2025-10",
+      "yoy": -2.3
+     },
+     {
+      "amt": 53.4,
+      "m": "2025-11",
+      "yoy": -1.9
+     },
+     {
+      "amt": 58.3,
+      "m": "2025-12",
+      "yoy": 0.5
+     },
+     {
+      "amt": 54,
+      "m": "2026-01",
+      "yoy": 7.2
+     },
+     {
+      "amt": 55.7,
+      "m": "2026-02",
+      "yoy": 9.7
+     },
+     {
+      "amt": 74.7,
+      "m": "2026-03",
+      "yoy": 19.4
+     },
+     {
+      "amt": 71.8,
+      "m": "2026-04",
+      "yoy": 8.5
+     },
+     {
+      "amt": 62.3,
+      "m": "2026-05",
+      "yoy": 3.1
+     },
+     {
+      "amt": 76.3,
+      "m": "2026-06",
+      "yoy": 31.9
+     },
+     {
+      "amt": 93.8,
+      "m": "2026-07",
+      "yoy": 55.6
+     },
+     {
+      "amt": 66.2,
+      "m": "2026-08",
+      "yoy": 14.6
+     }
+    ],
+    "미국": [
+     {
+      "amt": 87.2,
+      "m": "2025-08",
+      "yoy": -12.3
+     },
+     {
+      "amt": 102.7,
+      "m": "2025-09",
+      "yoy": -1.4
+     },
+     {
+      "amt": 87.1,
+      "m": "2025-10",
+      "yoy": -16.2
+     },
+     {
+      "amt": 103.5,
+      "m": "2025-11",
+      "yoy": -0.2
+     },
+     {
+      "amt": 123.3,
+      "m": "2025-12",
+      "yoy": 3.7
+     },
+     {
+      "amt": 120.1,
+      "m": "2026-01",
+      "yoy": 29.3
+     },
+     {
+      "amt": 127,
+      "m": "2026-02",
+      "yoy": 28.5
+     },
+     {
+      "amt": 164.2,
+      "m": "2026-03",
+      "yoy": 47.8
+     },
+     {
+      "amt": 163.6,
+      "m": "2026-04",
+      "yoy": 54.2
+     },
+     {
+      "amt": 159.8,
+      "m": "2026-05",
+      "yoy": 59.2
+     },
+     {
+      "amt": 200,
+      "m": "2026-06",
+      "yoy": 78.5
+     },
+     {
+      "amt": 174.7,
+      "m": "2026-07",
+      "yoy": 69.1
+     },
+     {
+      "amt": 165,
+      "m": "2026-08",
+      "yoy": 89.3
+     }
+    ],
+    "베트남": [
+     {
+      "amt": 54,
+      "m": "2025-08",
+      "yoy": 6.9
+     },
+     {
+      "amt": 59.3,
+      "m": "2025-09",
+      "yoy": 19
+     },
+     {
+      "amt": 51,
+      "m": "2025-10",
+      "yoy": -2.5
+     },
+     {
+      "amt": 54,
+      "m": "2025-11",
+      "yoy": 5.1
+     },
+     {
+      "amt": 62.8,
+      "m": "2025-12",
+      "yoy": 27.4
+     },
+     {
+      "amt": 64.5,
+      "m": "2026-01",
+      "yoy": 48.1
+     },
+     {
+      "amt": 59,
+      "m": "2026-02",
+      "yoy": 24.5
+     },
+     {
+      "amt": 71.3,
+      "m": "2026-03",
+      "yoy": 41.9
+     },
+     {
+      "amt": 79,
+      "m": "2026-04",
+      "yoy": 63.3
+     },
+     {
+      "amt": 84.5,
+      "m": "2026-05",
+      "yoy": 61.3
+     },
+     {
+      "amt": 86.1,
+      "m": "2026-06",
+      "yoy": 74.4
+     },
+     {
+      "amt": 99.3,
+      "m": "2026-07",
+      "yoy": 79.3
+     },
+     {
+      "amt": 88.2,
+      "m": "2026-08",
+      "yoy": 63.4
+     }
+    ],
+    "아세안": [
+     {
+      "amt": 108.8,
+      "m": "2025-08",
+      "yoy": 11.8
+     },
+     {
+      "amt": 110.5,
+      "m": "2025-09",
+      "yoy": 17.7
+     },
+     {
+      "amt": 93.5,
+      "m": "2025-10",
+      "yoy": -6.9
+     },
+     {
+      "amt": 104.3,
+      "m": "2025-11",
+      "yoy": 6.3
+     },
+     {
+      "amt": 123.2,
+      "m": "2025-12",
+      "yoy": 27.7
+     },
+     {
+      "amt": 120.9,
+      "m": "2026-01",
+      "yoy": 40.5
+     },
+     {
+      "amt": 125.9,
+      "m": "2026-02",
+      "yoy": 31.7
+     },
+     {
+      "amt": 140.6,
+      "m": "2026-03",
+      "yoy": 37.3
+     },
+     {
+      "amt": 153.2,
+      "m": "2026-04",
+      "yoy": 63
+     },
+     {
+      "amt": 158.3,
+      "m": "2026-05",
+      "yoy": 58.1
+     },
+     {
+      "amt": 182,
+      "m": "2026-06",
+      "yoy": 85.5
+     },
+     {
+      "amt": 188.1,
+      "m": "2026-07",
+      "yoy": 73.7
+     },
+     {
+      "amt": 190.9,
+      "m": "2026-08",
+      "yoy": 75.4
+     }
+    ],
+    "인도": [
+     {
+      "amt": 15.9,
+      "m": "2025-08",
+      "yoy": -2.8
+     },
+     {
+      "amt": 17.2,
+      "m": "2025-09",
+      "yoy": 17.2
+     },
+     {
+      "amt": 14.8,
+      "m": "2025-10",
+      "yoy": -2.3
+     },
+     {
+      "amt": 14.8,
+      "m": "2025-11",
+      "yoy": 1.7
+     },
+     {
+      "amt": 17.2,
+      "m": "2025-12",
+      "yoy": 2
+     },
+     {
+      "amt": 16.9,
+      "m": "2026-01",
+      "yoy": 15.1
+     },
+     {
+      "amt": 17.4,
+      "m": "2026-02",
+      "yoy": 9
+     },
+     {
+      "amt": 19.7,
+      "m": "2026-03",
+      "yoy": 30.9
+     },
+     {
+      "amt": 24.2,
+      "m": "2026-04",
+      "yoy": 41.9
+     },
+     {
+      "amt": 19.6,
+      "m": "2026-05",
+      "yoy": 21
+     },
+     {
+      "amt": 21,
+      "m": "2026-06",
+      "yoy": 33
+     },
+     {
+      "amt": 25.8,
+      "m": "2026-07",
+      "yoy": 45
+     },
+     {
+      "amt": 23.4,
+      "m": "2026-08",
+      "yoy": 47.3
+     }
+    ],
+    "일본": [
+     {
+      "amt": 23.8,
+      "m": "2025-08",
+      "yoy": -4.9
+     },
+     {
+      "amt": 25.6,
+      "m": "2025-09",
+      "yoy": 3.3
+     },
+     {
+      "amt": 22.2,
+      "m": "2025-10",
+      "yoy": -8.4
+     },
+     {
+      "amt": 23.1,
+      "m": "2025-11",
+      "yoy": -7.4
+     },
+     {
+      "amt": 24.6,
+      "m": "2025-12",
+      "yoy": -7.1
+     },
+     {
+      "amt": 22.5,
+      "m": "2026-01",
+      "yoy": -5
+     },
+     {
+      "amt": 23.9,
+      "m": "2026-02",
+      "yoy": 5.6
+     },
+     {
+      "amt": 29.2,
+      "m": "2026-03",
+      "yoy": 35.2
+     },
+     {
+      "amt": 29.8,
+      "m": "2026-04",
+      "yoy": 29.4
+     },
+     {
+      "amt": 26.4,
+      "m": "2026-05",
+      "yoy": 11.3
+     },
+     {
+      "amt": 28,
+      "m": "2026-06",
+      "yoy": 14.6
+     },
+     {
+      "amt": 27.5,
+      "m": "2026-07",
+      "yoy": 10.9
+     },
+     {
+      "amt": 26.8,
+      "m": "2026-08",
+      "yoy": 12.9
+     }
+    ],
+    "중국": [
+     {
+      "amt": 109.9,
+      "m": "2025-08",
+      "yoy": -3.1
+     },
+     {
+      "amt": 116.8,
+      "m": "2025-09",
+      "yoy": 0.5
+     },
+     {
+      "amt": 115.5,
+      "m": "2025-10",
+      "yoy": -5.1
+     },
+     {
+      "amt": 120.4,
+      "m": "2025-11",
+      "yoy": 6.6
+     },
+     {
+      "amt": 129.7,
+      "m": "2025-12",
+      "yoy": 10.1
+     },
+     {
+      "amt": 135.3,
+      "m": "2026-01",
+      "yoy": 47
+     },
+     {
+      "amt": 127.8,
+      "m": "2026-02",
+      "yoy": 34.4
+     },
+     {
+      "amt": 166.9,
+      "m": "2026-03",
+      "yoy": 65.9
+     },
+     {
+      "amt": 176.7,
+      "m": "2026-04",
+      "yoy": 62.5
+     },
+     {
+      "amt": 188.8,
+      "m": "2026-05",
+      "yoy": 80.8
+     },
+     {
+      "amt": 200,
+      "m": "2026-06",
+      "yoy": 91.9
+     },
+     {
+      "amt": 216.8,
+      "m": "2026-07",
+      "yoy": 96.2
+     },
+     {
+      "amt": 241,
+      "m": "2026-08",
+      "yoy": 119.3
+     }
+    ],
+    "중남미": [
+     {
+      "amt": 23,
+      "m": "2025-08",
+      "yoy": -9.7
+     },
+     {
+      "amt": 30.2,
+      "m": "2025-09",
+      "yoy": 33.8
+     },
+     {
+      "amt": 47.1,
+      "m": "2025-10",
+      "yoy": 98.7
+     },
+     {
+      "amt": 21.6,
+      "m": "2025-11",
+      "yoy": -7
+     },
+     {
+      "amt": 24.6,
+      "m": "2025-12",
+      "yoy": 4.1
+     },
+     {
+      "amt": 24.3,
+      "m": "2026-01",
+      "yoy": 19
+     },
+     {
+      "amt": 21.5,
+      "m": "2026-02",
+      "yoy": -2
+     },
+     {
+      "amt": 30.9,
+      "m": "2026-03",
+      "yoy": 38.3
+     },
+     {
+      "amt": 28.6,
+      "m": "2026-04",
+      "yoy": 10.2
+     },
+     {
+      "amt": 31.6,
+      "m": "2026-05",
+      "yoy": 43.2
+     },
+     {
+      "amt": 33,
+      "m": "2026-06",
+      "yoy": 36
+     },
+     {
+      "amt": 33.4,
+      "m": "2026-07",
+      "yoy": 25.7
+     },
+     {
+      "amt": 28.7,
+      "m": "2026-08",
+      "yoy": 24.8
+     }
+    ],
+    "중동": [
+     {
+      "amt": 14,
+      "m": "2025-08",
+      "yoy": 1
+     },
+     {
+      "amt": 18.6,
+      "m": "2025-09",
+      "yoy": 17.3
+     },
+     {
+      "amt": 15,
+      "m": "2025-10",
+      "yoy": -1.4
+     },
+     {
+      "amt": 21.8,
+      "m": "2025-11",
+      "yoy": 33.1
+     },
+     {
+      "amt": 21.9,
+      "m": "2025-12",
+      "yoy": 25.6
+     },
+     {
+      "amt": 15.6,
+      "m": "2026-01",
+      "yoy": 17
+     },
+     {
+      "amt": 16.8,
+      "m": "2026-02",
+      "yoy": -2.3
+     },
+     {
+      "amt": 8.9,
+      "m": "2026-03",
+      "yoy": -49.4
+     },
+     {
+      "amt": 12.7,
+      "m": "2026-04",
+      "yoy": -24.9
+     },
+     {
+      "amt": 12.7,
+      "m": "2026-05",
+      "yoy": -8.1
+     },
+     {
+      "amt": 17.9,
+      "m": "2026-06",
+      "yoy": -8.7
+     },
+     {
+      "amt": 18.3,
+      "m": "2026-07",
+      "yoy": 24.7
+     },
+     {
+      "amt": 11.9,
+      "m": "2026-08",
+      "yoy": -15
+     }
+    ]
+   },
+   "regions": [
+    {
+     "amt": 241,
+     "name": "중국",
+     "yoy": 119.3
+    },
+    {
+     "amt": 165,
+     "name": "미국",
+     "yoy": 89.3
+    },
+    {
+     "amt": 26.8,
+     "name": "일본",
+     "yoy": 12.9
+    },
+    {
+     "amt": 190.9,
+     "name": "아세안",
+     "yoy": 75.4
+    },
+    {
+     "amt": 66.2,
+     "name": "EU(27)",
+     "yoy": 14.6
+    },
+    {
+     "amt": 11.9,
+     "name": "중동",
+     "yoy": -15
+    },
+    {
+     "amt": 28.7,
+     "name": "중남미",
+     "yoy": 24.8
+    },
+    {
+     "amt": 8.4,
+     "name": "CIS",
+     "yoy": -25.1
+    },
+    {
+     "amt": 88.2,
+     "name": "베트남",
+     "yoy": 63.4
+    },
+    {
+     "amt": 23.4,
+     "name": "인도",
+     "yoy": 47.3
+    }
+   ],
+   "released": "2026-09-01",
+   "series": [
+    {
+     "balance": 64,
+     "daily": 25.9,
+     "export": 583,
+     "export_vol_yoy": 0.3,
+     "export_yoy": 1.1,
+     "import": 519,
+     "import_vol_yoy": -2.1,
+     "import_yoy": -4.1,
+     "m": "2025-08"
+    },
+    {
+     "balance": 95,
+     "daily": 27.5,
+     "export": 659,
+     "export_vol_yoy": 9.9,
+     "export_yoy": 12.6,
+     "import": 564,
+     "import_vol_yoy": 7.1,
+     "import_yoy": 8.3,
+     "m": "2025-09"
+    },
+    {
+     "balance": 60,
+     "daily": 29.8,
+     "export": 595,
+     "export_vol_yoy": 0.1,
+     "export_yoy": 3.5,
+     "import": 535,
+     "import_vol_yoy": 0.3,
+     "import_yoy": -1.5,
+     "m": "2025-10"
+    },
+    {
+     "balance": 95,
+     "daily": 27,
+     "export": 608,
+     "export_vol_yoy": -8.1,
+     "export_yoy": 7.9,
+     "import": 513,
+     "import_vol_yoy": -1.3,
+     "import_yoy": 1.1,
+     "m": "2025-11"
+    },
+    {
+     "balance": 121,
+     "daily": 29,
+     "export": 695,
+     "export_vol_yoy": 2,
+     "export_yoy": 13.3,
+     "import": 574,
+     "import_vol_yoy": -1.1,
+     "import_yoy": 4.6,
+     "m": "2025-12"
+    },
+    {
+     "balance": 87,
+     "daily": 28,
+     "export": 658,
+     "export_vol_yoy": 11.7,
+     "export_yoy": 33.9,
+     "import": 571,
+     "import_vol_yoy": 4.4,
+     "import_yoy": 11.7,
+     "m": "2026-01"
+    },
+    {
+     "balance": 157,
+     "daily": 35.6,
+     "export": 676,
+     "export_vol_yoy": -3.4,
+     "export_yoy": 29.4,
+     "import": 519,
+     "import_vol_yoy": 4.3,
+     "import_yoy": 7.5,
+     "m": "2026-02"
+    },
+    {
+     "balance": 266,
+     "daily": 38,
+     "export": 873,
+     "export_vol_yoy": 3,
+     "export_yoy": 50.4,
+     "import": 608,
+     "import_vol_yoy": 4.8,
+     "import_yoy": 13.9,
+     "m": "2026-03"
+    },
+    {
+     "balance": 236,
+     "daily": 35.7,
+     "export": 858,
+     "export_vol_yoy": -17.8,
+     "export_yoy": 47.8,
+     "import": 621,
+     "import_vol_yoy": -7.2,
+     "import_yoy": 16.7,
+     "m": "2026-04"
+    },
+    {
+     "balance": 268,
+     "daily": 42.7,
+     "export": 876,
+     "export_vol_yoy": -18,
+     "export_yoy": 52.9,
+     "import": 607,
+     "import_vol_yoy": -7.7,
+     "import_yoy": 20.7,
+     "m": "2026-05"
+    },
+    {
+     "balance": 359,
+     "daily": 45.3,
+     "export": 1020,
+     "export_vol_yoy": -3.3,
+     "export_yoy": 70.4,
+     "import": 661,
+     "import_vol_yoy": 2.2,
+     "import_yoy": 30,
+     "m": "2026-06"
+    },
+    {
+     "balance": 304,
+     "daily": 41.2,
+     "export": 990,
+     "export_vol_yoy": 0.5,
+     "export_yoy": 63,
+     "import": 686,
+     "import_vol_yoy": 7.6,
+     "import_yoy": 26.5,
+     "m": "2026-07"
+    },
+    {
+     "balance": 347,
+     "daily": 44.7,
+     "export": 983,
+     "export_vol_yoy": -9.8,
+     "export_yoy": 68.7,
+     "import": 635,
+     "import_vol_yoy": -6.4,
+     "import_yoy": 22.5,
+     "m": "2026-08"
+    }
+   ],
+   "source": "산업통상부 2026년 8월 수출입 동향",
+   "summary": [
+    "8월 수출은 982.5억 달러로 전년보다 68.7% 늘어 3개월 연속 900억 달러를 넘었어요. 무역흑자는 347.5억 달러예요.",
+    "반도체가 466.5억 달러(+209.0%)로 역대 최대, 컴퓨터(SSD)도 62.4억 달러(+419.5%)로 역대 최대예요.",
+    "자동차(-29.8%)는 하계휴가 시점 이동과 부분 파업, 선박(-45.9%)은 인도물량 감소로 크게 줄었어요.",
+    "석유제품(+65.3%)·석유화학(+12.2%)은 물량이 각각 2.2%·7.0% 줄었는데 단가가 올라 금액이 늘었어요.",
+    "전체 수출물량(톤)은 9.8% 줄어, 금액 증가는 거의 전부 단가(가격) 상승 덕분이에요. 수입은 원유 단가(+26%)와 반도체장비(+117.3%) 영향으로 22.5% 늘었어요."
+   ]
+  },
+  "2026-09": {
+   "balance": 498.5,
+   "crude": {
+    "dubai": 113.7,
+    "dubai_yoy": 62.4,
+    "intro_price": 99.8,
+    "intro_price_yoy": 35.7,
+    "intro_volume_yoy": 2
+   },
+   "export": {
+    "amount": 1209.4,
+    "daily": 56.3,
+    "daily_yoy": 104.9,
+    "volume": 2302,
+    "volume_yoy": 27.3,
+    "yoy": 83.5,
+    "ytd": 8145,
+    "ytd_yoy": 56.8
+   },
+   "fx": {
+    "export_krw_yoy": 79.2,
+    "usdkrw": 1359
+   },
+   "import": {
+    "amount": 710.9,
+    "energy": 129.6,
+    "energy_yoy": 38,
+    "nonenergy": 581.3,
+    "nonenergy_yoy": 23.6,
+    "volume": 4611,
+    "volume_yoy": -2.5,
+    "yoy": 26
+   },
+   "importItems": [
+    {
+     "amt": 79.6,
+     "name": "원유",
+     "yoy": 38.4
+    },
+    {
+     "amt": 35.2,
+     "name": "가스",
+     "yoy": 43.2
+    },
+    {
+     "amt": 14.8,
+     "name": "석탄",
+     "yoy": 24.9
+    },
+    {
+     "amt": 34.4,
+     "name": "반도체장비",
+     "yoy": 50.8
+    },
+    {
+     "amt": 20.1,
+     "name": "무선통신기기",
+     "yoy": 27.3
+    },
+    {
+     "amt": 21.1,
+     "name": "컴퓨터",
+     "yoy": 50
+    },
+    {
+     "amt": 26.5,
+     "name": "비철금속",
+     "yoy": 38
+    }
+   ],
+   "itemNotes": {
+    "농수산식품": "조업일수 감소로 소폭 감소",
+    "디스플레이": "OLED 단가 인하 압박, 신제품 출시 연기",
+    "무선통신기기": "프리미엄 신제품 효과, 11개월 연속 증가",
+    "바이오헬스": "조업일수 감소, 전년 고실적 기저",
+    "반도체": "메모리 수요·고정가격 상승, 분기말 효과로 사상 첫 600억 달러. 메모리 +358.6%, 시스템 +28.8%",
+    "비철금속": "AI·신재생 수요와 국제가격 상승",
+    "석유제품": "호르무즈 해협 리스크로 유가 급등, 물량 -6.9%·단가 +84.7%",
+    "석유화학": "중동 사태로 설비 가동률 하락, 물량 -19.1%·단가 +30.0%",
+    "선박": "LNG선·VLGC 인도물량 증가, 물량·단가 모두 상승",
+    "이차전지": "ESS 확대(물량)와 광물가격 상승(단가) 모두 개선",
+    "일반기계": "조업일수 감소·운임비 상승으로 소폭 감소, 미·중 PMI는 개선",
+    "자동차": "추석 연휴 조업일수 감소, 중고차 -56.8%. 일평균 수출은 +5.5%, 하이브리드 +8.8%·전기차 +1.1%",
+    "자동차부품": "완성차 현지생산 확대, 조업일수 감소",
+    "전기기기": "전선·변압기·차단기 중심 역대 최대",
+    "철강": "미국 AI 데이터센터向 수요, 단가 +15.8%",
+    "컴퓨터": "에이전틱 AI·AI 인프라 투자로 기업용 SSD 수요 증가, SSD +532%",
+    "화장품": "미국·EU·중국 고르게 증가, 역대 최대"
+   },
+   "itemSeries": {
+    "가전": [
+     {
+      "amt": 6.9,
+      "m": "2025-09",
+      "yoy": 12
+     },
+     {
+      "amt": 5.5,
+      "m": "2025-10",
+      "yoy": -20.1
+     },
+     {
+      "amt": 5.6,
+      "m": "2025-11",
+      "yoy": -2.5
+     },
+     {
+      "amt": 6,
+      "m": "2025-12",
+      "yoy": -1.6
+     },
+     {
+      "amt": 5.5,
+      "m": "2026-01",
+      "yoy": -0.3
+     },
+     {
+      "amt": 5.1,
+      "m": "2026-02",
+      "yoy": -19.9
+     },
+     {
+      "amt": 5.9,
+      "m": "2026-03",
+      "yoy": -8
+     },
+     {
+      "amt": 5.7,
+      "m": "2026-04",
+      "yoy": -19.8
+     },
+     {
+      "amt": 4.8,
+      "m": "2026-05",
+      "yoy": -21.8
+     },
+     {
+      "amt": 5.5,
+      "m": "2026-06",
+      "yoy": 0
+     },
+     {
+      "amt": 6,
+      "m": "2026-07",
+      "yoy": -5.4
+     },
+     {
+      "amt": 5.2,
+      "m": "2026-08",
+      "yoy": -1.5
+     },
+     {
+      "amt": 6,
+      "m": "2026-09",
+      "yoy": -13.2
+     }
+    ],
+    "농수산식품": [
+     {
+      "amt": 11.6,
+      "m": "2025-09",
+      "yoy": 20.9
+     },
+     {
+      "amt": 9.9,
+      "m": "2025-10",
+      "yoy": -3.9
+     },
+     {
+      "amt": 10.3,
+      "m": "2025-11",
+      "yoy": 3.2
+     },
+     {
+      "amt": 11.4,
+      "m": "2025-12",
+      "yoy": 7.2
+     },
+     {
+      "amt": 10.1,
+      "m": "2026-01",
+      "yoy": 18.8
+     },
+     {
+      "amt": 9.2,
+      "m": "2026-02",
+      "yoy": -9.4
+     },
+     {
+      "amt": 11.7,
+      "m": "2026-03",
+      "yoy": 14.4
+     },
+     {
+      "amt": 12.2,
+      "m": "2026-04",
+      "yoy": 8.6
+     },
+     {
+      "amt": 10.7,
+      "m": "2026-05",
+      "yoy": 4.5
+     },
+     {
+      "amt": 11.7,
+      "m": "2026-06",
+      "yoy": 16.7
+     },
+     {
+      "amt": 10.9,
+      "m": "2026-07",
+      "yoy": 2.2
+     },
+     {
+      "amt": 9.8,
+      "m": "2026-08",
+      "yoy": 1.5
+     },
+     {
+      "amt": 11.1,
+      "m": "2026-09",
+      "yoy": -4.7
+     }
+    ],
+    "디스플레이": [
+     {
+      "amt": 17.5,
+      "m": "2025-09",
+      "yoy": 0.9
+     },
+     {
+      "amt": 14.8,
+      "m": "2025-10",
+      "yoy": -8.7
+     },
+     {
+      "amt": 14.4,
+      "m": "2025-11",
+      "yoy": -2.9
+     },
+     {
+      "amt": 14.9,
+      "m": "2025-12",
+      "yoy": 0.8
+     },
+     {
+      "amt": 13.8,
+      "m": "2026-01",
+      "yoy": 26.1
+     },
+     {
+      "amt": 12.2,
+      "m": "2026-02",
+      "yoy": -4.2
+     },
+     {
+      "amt": 14.4,
+      "m": "2026-03",
+      "yoy": -1.5
+     },
+     {
+      "amt": 12.8,
+      "m": "2026-04",
+      "yoy": -2.7
+     },
+     {
+      "amt": 14.7,
+      "m": "2026-05",
+      "yoy": 9.4
+     },
+     {
+      "amt": 15.4,
+      "m": "2026-06",
+      "yoy": 37
+     },
+     {
+      "amt": 16.1,
+      "m": "2026-07",
+      "yoy": 2.4
+     },
+     {
+      "amt": 15.7,
+      "m": "2026-08",
+      "yoy": -4.7
+     },
+     {
+      "amt": 15.8,
+      "m": "2026-09",
+      "yoy": -9.5
+     }
+    ],
+    "무선통신기기": [
+     {
+      "amt": 17.4,
+      "m": "2025-09",
+      "yoy": -7.4
+     },
+     {
+      "amt": 18.2,
+      "m": "2025-10",
+      "yoy": -10.9
+     },
+     {
+      "amt": 17.2,
+      "m": "2025-11",
+      "yoy": 1.2
+     },
+     {
+      "amt": 16.9,
+      "m": "2025-12",
+      "yoy": 24.7
+     },
+     {
+      "amt": 20.3,
+      "m": "2026-01",
+      "yoy": 66.8
+     },
+     {
+      "amt": 14.7,
+      "m": "2026-02",
+      "yoy": 12.3
+     },
+     {
+      "amt": 17.9,
+      "m": "2026-03",
+      "yoy": 43.3
+     },
+     {
+      "amt": 16.2,
+      "m": "2026-04",
+      "yoy": 11.5
+     },
+     {
+      "amt": 14.6,
+      "m": "2026-05",
+      "yoy": 12.4
+     },
+     {
+      "amt": 15.4,
+      "m": "2026-06",
+      "yoy": 51.7
+     },
+     {
+      "amt": 18.1,
+      "m": "2026-07",
+      "yoy": 51.1
+     },
+     {
+      "amt": 18.8,
+      "m": "2026-08",
+      "yoy": 21.2
+     },
+     {
+      "amt": 21.4,
+      "m": "2026-09",
+      "yoy": 23.4
+     }
+    ],
+    "바이오헬스": [
+     {
+      "amt": 16.9,
+      "m": "2025-09",
+      "yoy": 37.8
+     },
+     {
+      "amt": 11.8,
+      "m": "2025-10",
+      "yoy": -4.5
+     },
+     {
+      "amt": 14.7,
+      "m": "2025-11",
+      "yoy": 2.4
+     },
+     {
+      "amt": 16,
+      "m": "2025-12",
+      "yoy": 27.4
+     },
+     {
+      "amt": 13.5,
+      "m": "2026-01",
+      "yoy": 16.3
+     },
+     {
+      "amt": 13.3,
+      "m": "2026-02",
+      "yoy": 7
+     },
+     {
+      "amt": 15.2,
+      "m": "2026-03",
+      "yoy": 6.3
+     },
+     {
+      "amt": 16.4,
+      "m": "2026-04",
+      "yoy": 18.3
+     },
+     {
+      "amt": 14.4,
+      "m": "2026-05",
+      "yoy": 5
+     },
+     {
+      "amt": 19.1,
+      "m": "2026-06",
+      "yoy": 13.8
+     },
+     {
+      "amt": 15.7,
+      "m": "2026-07",
+      "yoy": 29.9
+     },
+     {
+      "amt": 14.1,
+      "m": "2026-08",
+      "yoy": 22.3
+     },
+     {
+      "amt": 15.5,
+      "m": "2026-09",
+      "yoy": -8.6
+     }
+    ],
+    "반도체": [
+     {
+      "amt": 166.2,
+      "m": "2025-09",
+      "yoy": 22
+     },
+     {
+      "amt": 157,
+      "m": "2025-10",
+      "yoy": 25.2
+     },
+     {
+      "amt": 172.6,
+      "m": "2025-11",
+      "yoy": 38.6
+     },
+     {
+      "amt": 207.7,
+      "m": "2025-12",
+      "yoy": 43.2
+     },
+     {
+      "amt": 205.4,
+      "m": "2026-01",
+      "yoy": 102.8
+     },
+     {
+      "amt": 251.4,
+      "m": "2026-02",
+      "yoy": 160.6
+     },
+     {
+      "amt": 328.3,
+      "m": "2026-03",
+      "yoy": 151.4
+     },
+     {
+      "amt": 318.9,
+      "m": "2026-04",
+      "yoy": 173.4
+     },
+     {
+      "amt": 371.6,
+      "m": "2026-05",
+      "yoy": 169.4
+     },
+     {
+      "amt": 448.1,
+      "m": "2026-06",
+      "yoy": 199.5
+     },
+     {
+      "amt": 410.1,
+      "m": "2026-07",
+      "yoy": 178.8
+     },
+     {
+      "amt": 466.5,
+      "m": "2026-08",
+      "yoy": 209.1
+     },
+     {
+      "amt": 603,
+      "m": "2026-09",
+      "yoy": 262.8
+     }
+    ],
+    "비철금속": [
+     {
+      "amt": 13,
+      "m": "2025-09",
+      "yoy": 17
+     },
+     {
+      "amt": 12.1,
+      "m": "2025-10",
+      "yoy": 6.5
+     },
+     {
+      "amt": 12.6,
+      "m": "2025-11",
+      "yoy": 14.7
+     },
+     {
+      "amt": 15.1,
+      "m": "2025-12",
+      "yoy": 15.9
+     },
+     {
+      "amt": 14.1,
+      "m": "2026-01",
+      "yoy": 40.7
+     },
+     {
+      "amt": 12.2,
+      "m": "2026-02",
+      "yoy": 17.3
+     },
+     {
+      "amt": 14.8,
+      "m": "2026-03",
+      "yoy": 30
+     },
+     {
+      "amt": 18.5,
+      "m": "2026-04",
+      "yoy": 49.3
+     },
+     {
+      "amt": 16.8,
+      "m": "2026-05",
+      "yoy": 42.5
+     },
+     {
+      "amt": 18.3,
+      "m": "2026-06",
+      "yoy": 46.6
+     },
+     {
+      "amt": 17.4,
+      "m": "2026-07",
+      "yoy": 24.7
+     },
+     {
+      "amt": 14.8,
+      "m": "2026-08",
+      "yoy": 24.2
+     },
+     {
+      "amt": 17.4,
+      "m": "2026-09",
+      "yoy": 33.6
+     }
+    ],
+    "생활용품": [
+     {
+      "amt": 7.7,
+      "m": "2025-09",
+      "yoy": 13
+     },
+     {
+      "amt": 8.6,
+      "m": "2025-10",
+      "yoy": 23.8
+     },
+     {
+      "amt": 9.5,
+      "m": "2025-11",
+      "yoy": 37.6
+     },
+     {
+      "amt": 8.3,
+      "m": "2025-12",
+      "yoy": 22.7
+     },
+     {
+      "amt": 6.8,
+      "m": "2026-01",
+      "yoy": 17.6
+     },
+     {
+      "amt": 6.4,
+      "m": "2026-02",
+      "yoy": -11.7
+     },
+     {
+      "amt": 7.5,
+      "m": "2026-03",
+      "yoy": 4.5
+     },
+     {
+      "amt": 7.4,
+      "m": "2026-04",
+      "yoy": 1.3
+     },
+     {
+      "amt": 6.5,
+      "m": "2026-05",
+      "yoy": -5.2
+     },
+     {
+      "amt": 7.2,
+      "m": "2026-06",
+      "yoy": -4.6
+     },
+     {
+      "amt": 8.1,
+      "m": "2026-07",
+      "yoy": 12.9
+     },
+     {
+      "amt": 6.5,
+      "m": "2026-08",
+      "yoy": -3.4
+     },
+     {
+      "amt": 7.3,
+      "m": "2026-09",
+      "yoy": -5
+     }
+    ],
+    "석유제품": [
+     {
+      "amt": 42,
+      "m": "2025-09",
+      "yoy": 4.8
+     },
+     {
+      "amt": 38.4,
+      "m": "2025-10",
+      "yoy": 13.2
+     },
+     {
+      "amt": 32.8,
+      "m": "2025-11",
+      "yoy": -10.3
+     },
+     {
+      "amt": 41.8,
+      "m": "2025-12",
+      "yoy": 5.4
+     },
+     {
+      "amt": 37.5,
+      "m": "2026-01",
+      "yoy": 8.9
+     },
+     {
+      "amt": 40.9,
+      "m": "2026-02",
+      "yoy": 5.6
+     },
+     {
+      "amt": 62.8,
+      "m": "2026-03",
+      "yoy": 90.5
+     },
+     {
+      "amt": 50.1,
+      "m": "2026-04",
+      "yoy": 37.2
+     },
+     {
+      "amt": 52,
+      "m": "2026-05",
+      "yoy": 45.2
+     },
+     {
+      "amt": 54.1,
+      "m": "2026-06",
+      "yoy": 44.9
+     },
+     {
+      "amt": 60.8,
+      "m": "2026-07",
+      "yoy": 43.6
+     },
+     {
+      "amt": 68.5,
+      "m": "2026-08",
+      "yoy": 65.4
+     },
+     {
+      "amt": 72.2,
+      "m": "2026-09",
+      "yoy": 72
+     }
+    ],
+    "석유화학": [
+     {
+      "amt": 37.6,
+      "m": "2025-09",
+      "yoy": 0
+     },
+     {
+      "amt": 31.4,
+      "m": "2025-10",
+      "yoy": -19.9
+     },
+     {
+      "amt": 31.1,
+      "m": "2025-11",
+      "yoy": -11.2
+     },
+     {
+      "amt": 35.5,
+      "m": "2025-12",
+      "yoy": -6.6
+     },
+     {
+      "amt": 35.7,
+      "m": "2026-01",
+      "yoy": -0.1
+     },
+     {
+      "amt": 34,
+      "m": "2026-02",
+      "yoy": -13.7
+     },
+     {
+      "amt": 40.2,
+      "m": "2026-03",
+      "yoy": 10.1
+     },
+     {
+      "amt": 41.1,
+      "m": "2026-04",
+      "yoy": 8.4
+     },
+     {
+      "amt": 36.8,
+      "m": "2026-05",
+      "yoy": 10.5
+     },
+     {
+      "amt": 40.3,
+      "m": "2026-06",
+      "yoy": 17.7
+     },
+     {
+      "amt": 42.1,
+      "m": "2026-07",
+      "yoy": 10.9
+     },
+     {
+      "amt": 38.8,
+      "m": "2026-08",
+      "yoy": 12.7
+     },
+     {
+      "amt": 39.5,
+      "m": "2026-09",
+      "yoy": 5.1
+     }
+    ],
+    "선박": [
+     {
+      "amt": 28.9,
+      "m": "2025-09",
+      "yoy": 21.9
+     },
+     {
+      "amt": 46.9,
+      "m": "2025-10",
+      "yoy": 131.1
+     },
+     {
+      "amt": 18.5,
+      "m": "2025-11",
+      "yoy": -26.4
+     },
+     {
+      "amt": 30.3,
+      "m": "2025-12",
+      "yoy": -1.9
+     },
+     {
+      "amt": 24.8,
+      "m": "2026-01",
+      "yoy": -0.1
+     },
+     {
+      "amt": 22.1,
+      "m": "2026-02",
+      "yoy": 41.3
+     },
+     {
+      "amt": 35.2,
+      "m": "2026-03",
+      "yoy": 10.8
+     },
+     {
+      "amt": 29,
+      "m": "2026-04",
+      "yoy": 44.2
+     },
+     {
+      "amt": 26.1,
+      "m": "2026-05",
+      "yoy": 16.5
+     },
+     {
+      "amt": 28.2,
+      "m": "2026-06",
+      "yoy": 12.7
+     },
+     {
+      "amt": 32.9,
+      "m": "2026-07",
+      "yoy": 46.8
+     },
+     {
+      "amt": 16.9,
+      "m": "2026-08",
+      "yoy": -45.9
+     },
+     {
+      "amt": 37.6,
+      "m": "2026-09",
+      "yoy": 29.9
+     }
+    ],
+    "섬유": [
+     {
+      "amt": 9.4,
+      "m": "2025-09",
+      "yoy": 8.6
+     },
+     {
+      "amt": 7.7,
+      "m": "2025-10",
+      "yoy": -16.1
+     },
+     {
+      "amt": 8.9,
+      "m": "2025-11",
+      "yoy": -9
+     },
+     {
+      "amt": 9.6,
+      "m": "2025-12",
+      "yoy": 0.3
+     },
+     {
+      "amt": 8.4,
+      "m": "2026-01",
+      "yoy": 7.7
+     },
+     {
+      "amt": 7.3,
+      "m": "2026-02",
+      "yoy": -16.6
+     },
+     {
+      "amt": 9.3,
+      "m": "2026-03",
+      "yoy": 4.9
+     },
+     {
+      "amt": 10.5,
+      "m": "2026-04",
+      "yoy": 6
+     },
+     {
+      "amt": 8.5,
+      "m": "2026-05",
+      "yoy": -6.8
+     },
+     {
+      "amt": 9.7,
+      "m": "2026-06",
+      "yoy": 11.3
+     },
+     {
+      "amt": 9.3,
+      "m": "2026-07",
+      "yoy": 3.5
+     },
+     {
+      "amt": 7.5,
+      "m": "2026-08",
+      "yoy": 0.2
+     },
+     {
+      "amt": 8.8,
+      "m": "2026-09",
+      "yoy": -6.8
+     }
+    ],
+    "이차전지": [
+     {
+      "amt": 6.3,
+      "m": "2025-09",
+      "yoy": -8.8
+     },
+     {
+      "amt": 5.3,
+      "m": "2025-10",
+      "yoy": -14
+     },
+     {
+      "amt": 6.7,
+      "m": "2025-11",
+      "yoy": 2.1
+     },
+     {
+      "amt": 7.2,
+      "m": "2025-12",
+      "yoy": -13
+     },
+     {
+      "amt": 5.5,
+      "m": "2026-01",
+      "yoy": 5.8
+     },
+     {
+      "amt": 5.9,
+      "m": "2026-02",
+      "yoy": -5.7
+     },
+     {
+      "amt": 8.2,
+      "m": "2026-03",
+      "yoy": 28.6
+     },
+     {
+      "amt": 6.5,
+      "m": "2026-04",
+      "yoy": -6.5
+     },
+     {
+      "amt": 6.9,
+      "m": "2026-05",
+      "yoy": 31.2
+     },
+     {
+      "amt": 7,
+      "m": "2026-06",
+      "yoy": 17.4
+     },
+     {
+      "amt": 6.8,
+      "m": "2026-07",
+      "yoy": 17.2
+     },
+     {
+      "amt": 6,
+      "m": "2026-08",
+      "yoy": 24
+     },
+     {
+      "amt": 7.2,
+      "m": "2026-09",
+      "yoy": 14
+     }
+    ],
+    "일반기계": [
+     {
+      "amt": 42.1,
+      "m": "2025-09",
+      "yoy": 10.5
+     },
+     {
+      "amt": 33.4,
+      "m": "2025-10",
+      "yoy": -15.8
+     },
+     {
+      "amt": 38.2,
+      "m": "2025-11",
+      "yoy": -4.1
+     },
+     {
+      "amt": 42.4,
+      "m": "2025-12",
+      "yoy": -2.1
+     },
+     {
+      "amt": 37.1,
+      "m": "2026-01",
+      "yoy": 8.5
+     },
+     {
+      "amt": 32.8,
+      "m": "2026-02",
+      "yoy": -16.2
+     },
+     {
+      "amt": 38.9,
+      "m": "2026-03",
+      "yoy": -6.4
+     },
+     {
+      "amt": 42,
+      "m": "2026-04",
+      "yoy": -2.7
+     },
+     {
+      "amt": 38.1,
+      "m": "2026-05",
+      "yoy": -6.3
+     },
+     {
+      "amt": 40.7,
+      "m": "2026-06",
+      "yoy": 7.2
+     },
+     {
+      "amt": 45.2,
+      "m": "2026-07",
+      "yoy": 5.7
+     },
+     {
+      "amt": 35.3,
+      "m": "2026-08",
+      "yoy": 1.8
+     },
+     {
+      "amt": 40.7,
+      "m": "2026-09",
+      "yoy": -3.2
+     }
+    ],
+    "자동차": [
+     {
+      "amt": 64,
+      "m": "2025-09",
+      "yoy": 16.8
+     },
+     {
+      "amt": 55.4,
+      "m": "2025-10",
+      "yoy": -10.6
+     },
+     {
+      "amt": 64.1,
+      "m": "2025-11",
+      "yoy": 13.6
+     },
+     {
+      "amt": 59.5,
+      "m": "2025-12",
+      "yoy": -1.5
+     },
+     {
+      "amt": 60.7,
+      "m": "2026-01",
+      "yoy": 21.6
+     },
+     {
+      "amt": 48,
+      "m": "2026-02",
+      "yoy": -20.8
+     },
+     {
+      "amt": 63.7,
+      "m": "2026-03",
+      "yoy": 2.2
+     },
+     {
+      "amt": 61.6,
+      "m": "2026-04",
+      "yoy": -5.6
+     },
+     {
+      "amt": 58.2,
+      "m": "2026-05",
+      "yoy": -6.1
+     },
+     {
+      "amt": 67,
+      "m": "2026-06",
+      "yoy": 5.7
+     },
+     {
+      "amt": 62.2,
+      "m": "2026-07",
+      "yoy": 6.7
+     },
+     {
+      "amt": 38.5,
+      "m": "2026-08",
+      "yoy": -29.8
+     },
+     {
+      "amt": 60.5,
+      "m": "2026-09",
+      "yoy": -5.5
+     }
+    ],
+    "자동차부품": [
+     {
+      "amt": 19.1,
+      "m": "2025-09",
+      "yoy": 6
+     },
+     {
+      "amt": 15.1,
+      "m": "2025-10",
+      "yoy": -19
+     },
+     {
+      "amt": 15.6,
+      "m": "2025-11",
+      "yoy": -11.2
+     },
+     {
+      "amt": 18.2,
+      "m": "2025-12",
+      "yoy": -2.1
+     },
+     {
+      "amt": 16.2,
+      "m": "2026-01",
+      "yoy": 3.6
+     },
+     {
+      "amt": 14.3,
+      "m": "2026-02",
+      "yoy": -22.9
+     },
+     {
+      "amt": 17.8,
+      "m": "2026-03",
+      "yoy": -2.4
+     },
+     {
+      "amt": 18.9,
+      "m": "2026-04",
+      "yoy": -6.2
+     },
+     {
+      "amt": 15.5,
+      "m": "2026-05",
+      "yoy": -6.2
+     },
+     {
+      "amt": 17.4,
+      "m": "2026-06",
+      "yoy": -2.5
+     },
+     {
+      "amt": 19.5,
+      "m": "2026-07",
+      "yoy": 1.9
+     },
+     {
+      "amt": 15,
+      "m": "2026-08",
+      "yoy": -9.9
+     },
+     {
+      "amt": 17.7,
+      "m": "2026-09",
+      "yoy": -7.2
+     }
+    ],
+    "전기기기": [
+     {
+      "amt": 14.8,
+      "m": "2025-09",
+      "yoy": 17
+     },
+     {
+      "amt": 11.4,
+      "m": "2025-10",
+      "yoy": -11.5
+     },
+     {
+      "amt": 12.8,
+      "m": "2025-11",
+      "yoy": 7.6
+     },
+     {
+      "amt": 15.7,
+      "m": "2025-12",
+      "yoy": 11.9
+     },
+     {
+      "amt": 13.4,
+      "m": "2026-01",
+      "yoy": 19
+     },
+     {
+      "amt": 11.9,
+      "m": "2026-02",
+      "yoy": -14.6
+     },
+     {
+      "amt": 15.2,
+      "m": "2026-03",
+      "yoy": 5.3
+     },
+     {
+      "amt": 15.7,
+      "m": "2026-04",
+      "yoy": 7.8
+     },
+     {
+      "amt": 13.3,
+      "m": "2026-05",
+      "yoy": -1.7
+     },
+     {
+      "amt": 16.5,
+      "m": "2026-06",
+      "yoy": 4.5
+     },
+     {
+      "amt": 17.2,
+      "m": "2026-07",
+      "yoy": 9.2
+     },
+     {
+      "amt": 15,
+      "m": "2026-08",
+      "yoy": 16.2
+     },
+     {
+      "amt": 18.3,
+      "m": "2026-09",
+      "yoy": 23.4
+     }
+    ],
+    "철강": [
+     {
+      "amt": 21.7,
+      "m": "2025-09",
+      "yoy": -1.8
+     },
+     {
+      "amt": 18.7,
+      "m": "2025-10",
+      "yoy": -17.8
+     },
+     {
+      "amt": 18.2,
+      "m": "2025-11",
+      "yoy": -16.6
+     },
+     {
+      "amt": 20.7,
+      "m": "2025-12",
+      "yoy": -7.5
+     },
+     {
+      "amt": 20.4,
+      "m": "2026-01",
+      "yoy": -2.2
+     },
+     {
+      "amt": 19.9,
+      "m": "2026-02",
+      "yoy": -5.2
+     },
+     {
+      "amt": 20.5,
+      "m": "2026-03",
+      "yoy": -0.3
+     },
+     {
+      "amt": 21.2,
+      "m": "2026-04",
+      "yoy": -10.4
+     },
+     {
+      "amt": 20.3,
+      "m": "2026-05",
+      "yoy": -2.8
+     },
+     {
+      "amt": 21.3,
+      "m": "2026-06",
+      "yoy": 9.1
+     },
+     {
+      "amt": 23.6,
+      "m": "2026-07",
+      "yoy": 4.3
+     },
+     {
+      "amt": 21.1,
+      "m": "2026-08",
+      "yoy": 7.9
+     },
+     {
+      "amt": 22.4,
+      "m": "2026-09",
+      "yoy": 3.3
+     }
+    ],
+    "컴퓨터": [
+     {
+      "amt": 13.1,
+      "m": "2025-09",
+      "yoy": -13.6
+     },
+     {
+      "amt": 9.8,
+      "m": "2025-10",
+      "yoy": 1.7
+     },
+     {
+      "amt": 14,
+      "m": "2025-11",
+      "yoy": 3.4
+     },
+     {
+      "amt": 20.4,
+      "m": "2025-12",
+      "yoy": 36.6
+     },
+     {
+      "amt": 15.5,
+      "m": "2026-01",
+      "yoy": 88.9
+     },
+     {
+      "amt": 25.6,
+      "m": "2026-02",
+      "yoy": 221.6
+     },
+     {
+      "amt": 34.2,
+      "m": "2026-03",
+      "yoy": 189.1
+     },
+     {
+      "amt": 40.8,
+      "m": "2026-04",
+      "yoy": 515.5
+     },
+     {
+      "amt": 41.7,
+      "m": "2026-05",
+      "yoy": 289.6
+     },
+     {
+      "amt": 54.1,
+      "m": "2026-06",
+      "yoy": 308.8
+     },
+     {
+      "amt": 47.9,
+      "m": "2026-07",
+      "yoy": 404.2
+     },
+     {
+      "amt": 62.4,
+      "m": "2026-08",
+      "yoy": 419.5
+     },
+     {
+      "amt": 70,
+      "m": "2026-09",
+      "yoy": 435.3
+     }
+    ],
+    "화장품": [
+     {
+      "amt": 11.5,
+      "m": "2025-09",
+      "yoy": 25.8
+     },
+     {
+      "amt": 9.2,
+      "m": "2025-10",
+      "yoy": -11.3
+     },
+     {
+      "amt": 9.5,
+      "m": "2025-11",
+      "yoy": 4.2
+     },
+     {
+      "amt": 10.7,
+      "m": "2025-12",
+      "yoy": 21.8
+     },
+     {
+      "amt": 10.2,
+      "m": "2026-01",
+      "yoy": 36
+     },
+     {
+      "amt": 9.1,
+      "m": "2026-02",
+      "yoy": 3.1
+     },
+     {
+      "amt": 11.8,
+      "m": "2026-03",
+      "yoy": 26
+     },
+     {
+      "amt": 13.5,
+      "m": "2026-04",
+      "yoy": 31.2
+     },
+     {
+      "amt": 11.7,
+      "m": "2026-05",
+      "yoy": 23.1
+     },
+     {
+      "amt": 13.3,
+      "m": "2026-06",
+      "yoy": 41.3
+     },
+     {
+      "amt": 13.5,
+      "m": "2026-07",
+      "yoy": 37.5
+     },
+     {
+      "amt": 13.1,
+      "m": "2026-08",
+      "yoy": 52
+     },
+     {
+      "amt": 15.1,
+      "m": "2026-09",
+      "yoy": 31.4
+     }
+    ]
+   },
+   "items": [
+    {
+     "amt": 603,
+     "name": "반도체",
+     "yoy": 262.8
+    },
+    {
+     "amt": 60.5,
+     "name": "자동차",
+     "yoy": -5.5
+    },
+    {
+     "amt": 40.7,
+     "name": "일반기계",
+     "yoy": -3.2
+    },
+    {
+     "amt": 72.2,
+     "name": "석유제품",
+     "yoy": 72
+    },
+    {
+     "amt": 39.5,
+     "name": "석유화학",
+     "yoy": 5.1
+    },
+    {
+     "amt": 37.6,
+     "name": "선박",
+     "yoy": 29.9
+    },
+    {
+     "amt": 22.4,
+     "name": "철강",
+     "yoy": 3.3
+    },
+    {
+     "amt": 17.7,
+     "name": "자동차부품",
+     "yoy": -7.2
+    },
+    {
+     "amt": 21.4,
+     "name": "무선통신기기",
+     "yoy": 23.4
+    },
+    {
+     "amt": 15.8,
+     "name": "디스플레이",
+     "yoy": -9.5
+    },
+    {
+     "amt": 18.3,
+     "name": "전기기기",
+     "yoy": 23.4
+    },
+    {
+     "amt": 15.5,
+     "name": "바이오헬스",
+     "yoy": -8.6
+    },
+    {
+     "amt": 17.4,
+     "name": "비철금속",
+     "yoy": 33.6
+    },
+    {
+     "amt": 70,
+     "name": "컴퓨터",
+     "yoy": 435.3
+    },
+    {
+     "amt": 11.1,
+     "name": "농수산식품",
+     "yoy": -4.7
+    },
+    {
+     "amt": 15.1,
+     "name": "화장품",
+     "yoy": 31.4
+    },
+    {
+     "amt": 8.8,
+     "name": "섬유",
+     "yoy": -6.8
+    },
+    {
+     "amt": 7.3,
+     "name": "생활용품",
+     "yoy": -5
+    },
+    {
+     "amt": 6,
+     "name": "가전",
+     "yoy": -13.2
+    },
+    {
+     "amt": 7.2,
+     "name": "이차전지",
+     "yoy": 14
+    }
+   ],
+   "keyPriceSeries": {
+    "DDR5 16Gb 고정가($)": [
+     {
+      "m": "2026-04",
+      "v": 35
+     },
+     {
+      "m": "2026-05",
+      "v": 37.5
+     },
+     {
+      "m": "2026-06",
+      "v": 40
+     },
+     {
+      "m": "2026-07",
+      "v": 45
+     },
+     {
+      "m": "2026-08",
+      "v": 46.5
+     },
+     {
+      "m": "2026-09",
+      "v": 48
+     }
+    ],
+    "NAND 128Gb 고정가($)": [
+     {
+      "m": "2026-04",
+      "v": 24.2
+     },
+     {
+      "m": "2026-05",
+      "v": 26.5
+     },
+     {
+      "m": "2026-06",
+      "v": 28.8
+     },
+     {
+      "m": "2026-07",
+      "v": 30.1
+     },
+     {
+      "m": "2026-08",
+      "v": 30.5
+     },
+     {
+      "m": "2026-09",
+      "v": 30.61
+     }
+    ],
+    "두바이유($/b)": [
+     {
+      "m": "2025-09",
+      "v": 70.01
+     },
+     {
+      "m": "2026-08",
+      "v": 88.75
+     },
+     {
+      "m": "2026-09",
+      "v": 113.71
+     }
+    ]
+   },
+   "keyPrices": [
+    {
+     "name": "두바이유($/b)",
+     "val": 113.7,
+     "yoy": 62.4
+    },
+    {
+     "name": "DDR5 16Gb 고정가($)",
+     "val": 48,
+     "yoy": 687.5
+    },
+    {
+     "name": "NAND 128Gb 고정가($)",
+     "val": 30.61,
+     "yoy": 708.7
+    }
+   ],
+   "month": "2026-09",
+   "priceVolume": [
+    {
+     "amt_yoy": 72,
+     "name": "석유제품",
+     "note": "물량 570만 톤, 단가 1,267달러/톤 (두바이유 113.7달러, +62.4%)",
+     "price_yoy": 84.7,
+     "vol_yoy": -6.9
+    },
+    {
+     "amt_yoy": 5.1,
+     "name": "석유화학",
+     "note": "물량 279만 톤, 단가 1,416달러/톤",
+     "price_yoy": 30,
+     "vol_yoy": -19.1
+    },
+    {
+     "amt_yoy": 3.3,
+     "name": "철강",
+     "note": "9.1~25일 수출단가 982달러/톤",
+     "price_yoy": 15.8,
+     "vol_yoy": null
+    },
+    {
+     "amt_yoy": 14,
+     "name": "이차전지",
+     "note": "ESS 확대로 물량, 광물가격 상승으로 단가 모두 개선",
+     "price_yoy": null,
+     "vol_yoy": null
+    },
+    {
+     "amt_yoy": 29.9,
+     "name": "선박",
+     "note": "LNG선 등 인도물량·단가 모두 상승",
+     "price_yoy": null,
+     "vol_yoy": null
+    },
+    {
+     "amt_yoy": 262.8,
+     "name": "반도체",
+     "note": "DDR5 16Gb 고정가 48.0달러(+687.5%), 물량도 확대",
+     "price_yoy": null,
+     "vol_yoy": null
+    },
+    {
+     "amt_yoy": 435.3,
+     "name": "컴퓨터(SSD)",
+     "note": "SSD 수출 67.7억 달러(+532.0%), 가격 상승",
+     "price_yoy": null,
+     "vol_yoy": null
+    }
+   ],
+   "regionSeries": {
+    "CIS": [
+     {
+      "amt": 15.2,
+      "m": "2025-09",
+      "yoy": 54
+     },
+     {
+      "amt": 13.3,
+      "m": "2025-10",
+      "yoy": 34.2
+     },
+     {
+      "amt": 13.1,
+      "m": "2025-11",
+      "yoy": 25.3
+     },
+     {
+      "amt": 9.4,
+      "m": "2025-12",
+      "yoy": -3.8
+     },
+     {
+      "amt": 7.2,
+      "m": "2026-01",
+      "yoy": -1.8
+     },
+     {
+      "amt": 7.9,
+      "m": "2026-02",
+      "yoy": -22.2
+     },
+     {
+      "amt": 9.4,
+      "m": "2026-03",
+      "yoy": -12.4
+     },
+     {
+      "amt": 10.2,
+      "m": "2026-04",
+      "yoy": -12
+     },
+     {
+      "amt": 9.3,
+      "m": "2026-05",
+      "yoy": -19.2
+     },
+     {
+      "amt": 10.9,
+      "m": "2026-06",
+      "yoy": -0.6
+     },
+     {
+      "amt": 11.2,
+      "m": "2026-07",
+      "yoy": -8.6
+     },
+     {
+      "amt": 8.4,
+      "m": "2026-08",
+      "yoy": -25.2
+     },
+     {
+      "amt": 9.4,
+      "m": "2026-09",
+      "yoy": -38.2
+     }
+    ],
+    "EU(27)": [
+     {
+      "amt": 71.6,
+      "m": "2025-09",
+      "yoy": 19.3
+     },
+     {
+      "amt": 51.8,
+      "m": "2025-10",
+      "yoy": -2.3
+     },
+     {
+      "amt": 53.4,
+      "m": "2025-11",
+      "yoy": -1.9
+     },
+     {
+      "amt": 58.3,
+      "m": "2025-12",
+      "yoy": 0.5
+     },
+     {
+      "amt": 54,
+      "m": "2026-01",
+      "yoy": 7.1
+     },
+     {
+      "amt": 55.7,
+      "m": "2026-02",
+      "yoy": 9.7
+     },
+     {
+      "amt": 74.7,
+      "m": "2026-03",
+      "yoy": 19.4
+     },
+     {
+      "amt": 71.8,
+      "m": "2026-04",
+      "yoy": 8.5
+     },
+     {
+      "amt": 62.3,
+      "m": "2026-05",
+      "yoy": 3.1
+     },
+     {
+      "amt": 76.3,
+      "m": "2026-06",
+      "yoy": 31.9
+     },
+     {
+      "amt": 94.1,
+      "m": "2026-07",
+      "yoy": 56.1
+     },
+     {
+      "amt": 66.3,
+      "m": "2026-08",
+      "yoy": 14.6
+     },
+     {
+      "amt": 86.5,
+      "m": "2026-09",
+      "yoy": 20.9
+     }
+    ],
+    "미국": [
+     {
+      "amt": 102.7,
+      "m": "2025-09",
+      "yoy": -1.4
+     },
+     {
+      "amt": 87.1,
+      "m": "2025-10",
+      "yoy": -16.2
+     },
+     {
+      "amt": 103.5,
+      "m": "2025-11",
+      "yoy": -0.2
+     },
+     {
+      "amt": 123.3,
+      "m": "2025-12",
+      "yoy": 3.7
+     },
+     {
+      "amt": 120.1,
+      "m": "2026-01",
+      "yoy": 29.3
+     },
+     {
+      "amt": 127,
+      "m": "2026-02",
+      "yoy": 28.5
+     },
+     {
+      "amt": 164.2,
+      "m": "2026-03",
+      "yoy": 47.8
+     },
+     {
+      "amt": 163.6,
+      "m": "2026-04",
+      "yoy": 54.2
+     },
+     {
+      "amt": 159.9,
+      "m": "2026-05",
+      "yoy": 59.3
+     },
+     {
+      "amt": 200.2,
+      "m": "2026-06",
+      "yoy": 78.6
+     },
+     {
+      "amt": 175,
+      "m": "2026-07",
+      "yoy": 69.3
+     },
+     {
+      "amt": 165,
+      "m": "2026-08",
+      "yoy": 89.2
+     },
+     {
+      "amt": 243.3,
+      "m": "2026-09",
+      "yoy": 137
+     }
+    ],
+    "베트남": [
+     {
+      "amt": 59.3,
+      "m": "2025-09",
+      "yoy": 19
+     },
+     {
+      "amt": 51,
+      "m": "2025-10",
+      "yoy": -2.5
+     },
+     {
+      "amt": 54,
+      "m": "2025-11",
+      "yoy": 5.1
+     },
+     {
+      "amt": 62.8,
+      "m": "2025-12",
+      "yoy": 27.4
+     },
+     {
+      "amt": 64.5,
+      "m": "2026-01",
+      "yoy": 48.1
+     },
+     {
+      "amt": 59,
+      "m": "2026-02",
+      "yoy": 24.5
+     },
+     {
+      "amt": 71.3,
+      "m": "2026-03",
+      "yoy": 41.9
+     },
+     {
+      "amt": 79,
+      "m": "2026-04",
+      "yoy": 63.3
+     },
+     {
+      "amt": 84.5,
+      "m": "2026-05",
+      "yoy": 61.3
+     },
+     {
+      "amt": 86.2,
+      "m": "2026-06",
+      "yoy": 74.6
+     },
+     {
+      "amt": 98.7,
+      "m": "2026-07",
+      "yoy": 78.2
+     },
+     {
+      "amt": 88.2,
+      "m": "2026-08",
+      "yoy": 63.4
+     },
+     {
+      "amt": 85.3,
+      "m": "2026-09",
+      "yoy": 44
+     }
+    ],
+    "아세안": [
+     {
+      "amt": 110.5,
+      "m": "2025-09",
+      "yoy": 17.7
+     },
+     {
+      "amt": 93.5,
+      "m": "2025-10",
+      "yoy": -6.9
+     },
+     {
+      "amt": 104.3,
+      "m": "2025-11",
+      "yoy": 6.3
+     },
+     {
+      "amt": 123.2,
+      "m": "2025-12",
+      "yoy": 27.7
+     },
+     {
+      "amt": 120.9,
+      "m": "2026-01",
+      "yoy": 40.5
+     },
+     {
+      "amt": 125.9,
+      "m": "2026-02",
+      "yoy": 31.7
+     },
+     {
+      "amt": 140.6,
+      "m": "2026-03",
+      "yoy": 37.3
+     },
+     {
+      "amt": 153.2,
+      "m": "2026-04",
+      "yoy": 63
+     },
+     {
+      "amt": 158.1,
+      "m": "2026-05",
+      "yoy": 57.9
+     },
+     {
+      "amt": 181.9,
+      "m": "2026-06",
+      "yoy": 85.5
+     },
+     {
+      "amt": 188.3,
+      "m": "2026-07",
+      "yoy": 74
+     },
+     {
+      "amt": 190.9,
+      "m": "2026-08",
+      "yoy": 75.4
+     },
+     {
+      "amt": 212.9,
+      "m": "2026-09",
+      "yoy": 92.6
+     }
+    ],
+    "인도": [
+     {
+      "amt": 17.2,
+      "m": "2025-09",
+      "yoy": 17.2
+     },
+     {
+      "amt": 14.8,
+      "m": "2025-10",
+      "yoy": -2.3
+     },
+     {
+      "amt": 14.8,
+      "m": "2025-11",
+      "yoy": 1.7
+     },
+     {
+      "amt": 17.2,
+      "m": "2025-12",
+      "yoy": 2
+     },
+     {
+      "amt": 16.9,
+      "m": "2026-01",
+      "yoy": 15.1
+     },
+     {
+      "amt": 17.4,
+      "m": "2026-02",
+      "yoy": 9
+     },
+     {
+      "amt": 19.6,
+      "m": "2026-03",
+      "yoy": 30.8
+     },
+     {
+      "amt": 24.2,
+      "m": "2026-04",
+      "yoy": 41.9
+     },
+     {
+      "amt": 19.6,
+      "m": "2026-05",
+      "yoy": 21
+     },
+     {
+      "amt": 21,
+      "m": "2026-06",
+      "yoy": 33
+     },
+     {
+      "amt": 25.9,
+      "m": "2026-07",
+      "yoy": 45.2
+     },
+     {
+      "amt": 23.5,
+      "m": "2026-08",
+      "yoy": 47.4
+     },
+     {
+      "amt": 25.8,
+      "m": "2026-09",
+      "yoy": 49.7
+     }
+    ],
+    "일본": [
+     {
+      "amt": 25.6,
+      "m": "2025-09",
+      "yoy": 3.3
+     },
+     {
+      "amt": 22.2,
+      "m": "2025-10",
+      "yoy": -8.4
+     },
+     {
+      "amt": 23.1,
+      "m": "2025-11",
+      "yoy": -7.4
+     },
+     {
+      "amt": 24.6,
+      "m": "2025-12",
+      "yoy": -7.1
+     },
+     {
+      "amt": 22.5,
+      "m": "2026-01",
+      "yoy": -5
+     },
+     {
+      "amt": 23.9,
+      "m": "2026-02",
+      "yoy": 5.6
+     },
+     {
+      "amt": 29.2,
+      "m": "2026-03",
+      "yoy": 35.2
+     },
+     {
+      "amt": 29.8,
+      "m": "2026-04",
+      "yoy": 29.4
+     },
+     {
+      "amt": 26.4,
+      "m": "2026-05",
+      "yoy": 11.3
+     },
+     {
+      "amt": 28,
+      "m": "2026-06",
+      "yoy": 14.7
+     },
+     {
+      "amt": 27.6,
+      "m": "2026-07",
+      "yoy": 11.1
+     },
+     {
+      "amt": 26.9,
+      "m": "2026-08",
+      "yoy": 13
+     },
+     {
+      "amt": 32.1,
+      "m": "2026-09",
+      "yoy": 25.3
+     }
+    ],
+    "중국": [
+     {
+      "amt": 116.8,
+      "m": "2025-09",
+      "yoy": 0.5
+     },
+     {
+      "amt": 115.5,
+      "m": "2025-10",
+      "yoy": -5.1
+     },
+     {
+      "amt": 120.4,
+      "m": "2025-11",
+      "yoy": 6.6
+     },
+     {
+      "amt": 129.7,
+      "m": "2025-12",
+      "yoy": 10.1
+     },
+     {
+      "amt": 135.3,
+      "m": "2026-01",
+      "yoy": 47
+     },
+     {
+      "amt": 127.8,
+      "m": "2026-02",
+      "yoy": 34.4
+     },
+     {
+      "amt": 167.2,
+      "m": "2026-03",
+      "yoy": 66.2
+     },
+     {
+      "amt": 176.7,
+      "m": "2026-04",
+      "yoy": 62.5
+     },
+     {
+      "amt": 188.8,
+      "m": "2026-05",
+      "yoy": 80.7
+     },
+     {
+      "amt": 200.1,
+      "m": "2026-06",
+      "yoy": 91.9
+     },
+     {
+      "amt": 217,
+      "m": "2026-07",
+      "yoy": 96.4
+     },
+     {
+      "amt": 241.1,
+      "m": "2026-08",
+      "yoy": 119.4
+     },
+     {
+      "amt": 260.1,
+      "m": "2026-09",
+      "yoy": 122.7
+     }
+    ],
+    "중남미": [
+     {
+      "amt": 30.2,
+      "m": "2025-09",
+      "yoy": 33.8
+     },
+     {
+      "amt": 47.1,
+      "m": "2025-10",
+      "yoy": 98.7
+     },
+     {
+      "amt": 21.6,
+      "m": "2025-11",
+      "yoy": -7
+     },
+     {
+      "amt": 24.6,
+      "m": "2025-12",
+      "yoy": 4.1
+     },
+     {
+      "amt": 24.3,
+      "m": "2026-01",
+      "yoy": 19
+     },
+     {
+      "amt": 21.5,
+      "m": "2026-02",
+      "yoy": -2
+     },
+     {
+      "amt": 30.9,
+      "m": "2026-03",
+      "yoy": 38.3
+     },
+     {
+      "amt": 28.6,
+      "m": "2026-04",
+      "yoy": 10.2
+     },
+     {
+      "amt": 31.6,
+      "m": "2026-05",
+      "yoy": 43.2
+     },
+     {
+      "amt": 32.9,
+      "m": "2026-06",
+      "yoy": 35.8
+     },
+     {
+      "amt": 33.3,
+      "m": "2026-07",
+      "yoy": 25.5
+     },
+     {
+      "amt": 28.7,
+      "m": "2026-08",
+      "yoy": 24.9
+     },
+     {
+      "amt": 29.1,
+      "m": "2026-09",
+      "yoy": -3.5
+     }
+    ],
+    "중동": [
+     {
+      "amt": 18.6,
+      "m": "2025-09",
+      "yoy": 17.3
+     },
+     {
+      "amt": 15,
+      "m": "2025-10",
+      "yoy": -1.4
+     },
+     {
+      "amt": 21.8,
+      "m": "2025-11",
+      "yoy": 33.1
+     },
+     {
+      "amt": 21.9,
+      "m": "2025-12",
+      "yoy": 25.6
+     },
+     {
+      "amt": 15.6,
+      "m": "2026-01",
+      "yoy": 17
+     },
+     {
+      "amt": 16.8,
+      "m": "2026-02",
+      "yoy": -2.4
+     },
+     {
+      "amt": 8.9,
+      "m": "2026-03",
+      "yoy": -49.4
+     },
+     {
+      "amt": 12.7,
+      "m": "2026-04",
+      "yoy": -24.9
+     },
+     {
+      "amt": 12.7,
+      "m": "2026-05",
+      "yoy": -8.2
+     },
+     {
+      "amt": 17.9,
+      "m": "2026-06",
+      "yoy": -8.8
+     },
+     {
+      "amt": 18.1,
+      "m": "2026-07",
+      "yoy": 23.9
+     },
+     {
+      "amt": 11.9,
+      "m": "2026-08",
+      "yoy": -15
+     },
+     {
+      "amt": 16,
+      "m": "2026-09",
+      "yoy": -14.1
+     }
+    ]
+   },
+   "regions": [
+    {
+     "amt": 260.1,
+     "name": "중국",
+     "yoy": 122.7
+    },
+    {
+     "amt": 243.3,
+     "name": "미국",
+     "yoy": 137
+    },
+    {
+     "amt": 32.1,
+     "name": "일본",
+     "yoy": 25.3
+    },
+    {
+     "amt": 212.9,
+     "name": "아세안",
+     "yoy": 92.6
+    },
+    {
+     "amt": 86.5,
+     "name": "EU(27)",
+     "yoy": 20.9
+    },
+    {
+     "amt": 16,
+     "name": "중동",
+     "yoy": -14.1
+    },
+    {
+     "amt": 29.1,
+     "name": "중남미",
+     "yoy": -3.5
+    },
+    {
+     "amt": 9.4,
+     "name": "CIS",
+     "yoy": -38.2
+    },
+    {
+     "amt": 85.3,
+     "name": "베트남",
+     "yoy": 44
+    },
+    {
+     "amt": 25.8,
+     "name": "인도",
+     "yoy": 49.7
+    }
+   ],
+   "released": "2026-10-01",
+   "series": [
+    {
+     "balance": 95,
+     "daily": 27.5,
+     "export": 659,
+     "export_vol_yoy": 9.9,
+     "export_yoy": 12.6,
+     "import": 564,
+     "import_vol_yoy": 7.1,
+     "import_yoy": 8.3,
+     "m": "2025-09"
+    },
+    {
+     "balance": 60,
+     "daily": 29.8,
+     "export": 595,
+     "export_vol_yoy": 0.1,
+     "export_yoy": 3.5,
+     "import": 535,
+     "import_vol_yoy": 0.3,
+     "import_yoy": -1.5,
+     "m": "2025-10"
+    },
+    {
+     "balance": 95,
+     "daily": 27,
+     "export": 608,
+     "export_vol_yoy": -8.1,
+     "export_yoy": 7.9,
+     "import": 513,
+     "import_vol_yoy": -1.3,
+     "import_yoy": 1.1,
+     "m": "2025-11"
+    },
+    {
+     "balance": 121,
+     "daily": 29,
+     "export": 695,
+     "export_vol_yoy": 2,
+     "export_yoy": 13.3,
+     "import": 574,
+     "import_vol_yoy": -1.1,
+     "import_yoy": 4.6,
+     "m": "2025-12"
+    },
+    {
+     "balance": 87,
+     "daily": 28,
+     "export": 658,
+     "export_vol_yoy": 11.7,
+     "export_yoy": 33.9,
+     "import": 572,
+     "import_vol_yoy": 4.4,
+     "import_yoy": 11.7,
+     "m": "2026-01"
+    },
+    {
+     "balance": 155,
+     "daily": 35.6,
+     "export": 676,
+     "export_vol_yoy": -3.4,
+     "export_yoy": 29.4,
+     "import": 521,
+     "import_vol_yoy": 4.3,
+     "import_yoy": 7.8,
+     "m": "2026-02"
+    },
+    {
+     "balance": 266,
+     "daily": 38,
+     "export": 874,
+     "export_vol_yoy": 3,
+     "export_yoy": 50.5,
+     "import": 608,
+     "import_vol_yoy": 4.8,
+     "import_yoy": 13.9,
+     "m": "2026-03"
+    },
+    {
+     "balance": 236,
+     "daily": 35.7,
+     "export": 858,
+     "export_vol_yoy": -17.8,
+     "export_yoy": 47.8,
+     "import": 621,
+     "import_vol_yoy": -7.2,
+     "import_yoy": 16.7,
+     "m": "2026-04"
+    },
+    {
+     "balance": 268,
+     "daily": 42.7,
+     "export": 876,
+     "export_vol_yoy": -18,
+     "export_yoy": 52.9,
+     "import": 608,
+     "import_vol_yoy": -7.7,
+     "import_yoy": 20.7,
+     "m": "2026-05"
+    },
+    {
+     "balance": 359,
+     "daily": 45.3,
+     "export": 1020,
+     "export_vol_yoy": -3.3,
+     "export_yoy": 70.4,
+     "import": 660,
+     "import_vol_yoy": 2.2,
+     "import_yoy": 30,
+     "m": "2026-06"
+    },
+    {
+     "balance": 307,
+     "daily": 41.3,
+     "export": 992,
+     "export_vol_yoy": -0.8,
+     "export_yoy": 63.3,
+     "import": 685,
+     "import_vol_yoy": 7.5,
+     "import_yoy": 26.4,
+     "m": "2026-07"
+    },
+    {
+     "balance": 348,
+     "daily": 44.7,
+     "export": 983,
+     "export_vol_yoy": -9.8,
+     "export_yoy": 68.7,
+     "import": 635,
+     "import_vol_yoy": -6.4,
+     "import_yoy": 22.4,
+     "m": "2026-08"
+    },
+    {
+     "balance": 499,
+     "daily": 56.3,
+     "export": 1209,
+     "export_vol_yoy": 27.3,
+     "export_yoy": 83.5,
+     "import": 711,
+     "import_vol_yoy": -2.5,
+     "import_yoy": 26,
+     "m": "2026-09"
+    }
+   ],
+   "source": "산업통상부 2026년 9월 수출입 동향",
+   "summary": [
+    "9월 수출은 1,209.4억 달러로 사상 최대예요(+83.5%). 무역흑자 498.5억 달러도 역대 최대예요.",
+    "반도체가 603.0억 달러(+262.8%)로 단일 품목 첫 600억 달러를 넘었고, 전체 수출의 절반(49.9%)을 차지했어요. 컴퓨터(SSD)는 +435.3%예요.",
+    "석유제품(+72.0%)·석유화학(+5.1%)은 물량이 각각 6.9%·19.1% 줄었지만 유가 상승으로 단가가 올라 금액이 늘었어요.",
+    "자동차(-5.5%)는 추석 연휴로 조업일수가 줄고 중고차 수출이 56.8% 줄었어요. 중동 수출은 -14.1%예요.",
+    "수출물량(톤)이 27.3% 늘어 8월(-9.8%)과 달리 물량도 함께 늘었어요. 수입은 원유 단가(+35.7%) 영향으로 26.0% 늘었어요."
+   ]
+  }
+ }
+}

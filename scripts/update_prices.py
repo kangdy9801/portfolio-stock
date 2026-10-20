@@ -8,7 +8,7 @@
 - 원/달러 환율: yfinance KRW=X.
 
 어떤 항목을 못 받아와도 기존 값은 그대로 두고 다음 종목으로 넘어가요.
-업데이트할 종목은 data/portfolio.json(보유·장기·비교 종목)과 data/market.json에 이미 있는 종목이에요.
+업데이트할 종목은 data/stocks.json(사이트 기본 종목 목록 전체), data/portfolio.json(보유·장기·비교 종목), data/market.json에 이미 있는 종목이에요.
 """
 import json
 import re
@@ -22,6 +22,7 @@ import requests
 ROOT = Path(__file__).resolve().parent.parent
 MARKET = ROOT / "data" / "market.json"
 PORTFOLIO = ROOT / "data" / "portfolio.json"
+STOCKS = ROOT / "data" / "stocks.json"
 KST = timezone(timedelta(hours=9))
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
 HISTORY_DAYS = 250
@@ -244,7 +245,14 @@ def main():
     quotes = market.setdefault("quotes", {})
     funds = market.setdefault("fundamentals", {})
 
+    stocks = load(STOCKS, [])
     codes = set(quotes) | set(funds) | set(pf.get("watch", []))
+    for st in stocks:
+        if st.get("code"):
+            codes.add(st["code"])
+            f = funds.setdefault(st["code"], {})
+            f.setdefault("name", st.get("name"))
+            f.setdefault("sector", st.get("sector"))
     for h in (pf.get("holdings", []) or []) + (pf.get("longHoldings", []) or []):
         if h.get("code"):
             codes.add(h["code"])

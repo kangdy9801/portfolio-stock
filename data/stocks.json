@@ -3,7 +3,24 @@
   "name": "삼성전자",
   "code": "KRX:005930",
   "sector": "반도체",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체",
+   "HBM·AI 메모리",
+   "데이터센터",
+   "온디바이스 AI",
+   "XR·메타버스",
+   "CXL·차세대메모리",
+   "5G/6G·통신",
+   "3D 프린팅·적층제조",
+   "마이크로 LED",
+   "웨어러블·스마트워치",
+   "스마트홈·IoT 가전",
+   "AI 반도체설계(팹리스)",
+   "엣지컴퓨팅·엣지 AI",
+   "AI 데이터센터냉각",
+   "디지털교과서·공교육 AI"
+  ]
  },
  {
   "name": "삼성전자우",
@@ -15,25 +32,42 @@
   "name": "SK하이닉스",
   "code": "KRX:000660",
   "sector": "반도체",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체",
+   "HBM·AI 메모리",
+   "CXL·차세대메모리"
+  ]
  },
  {
   "name": "한미반도체",
   "code": "KRX:042700",
   "sector": "반도체장비",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체",
+   "HBM·AI 메모리",
+   "반도체 장비"
+  ]
  },
  {
   "name": "DB하이텍",
   "code": "KRX:000990",
   "sector": "반도체",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "HBM·AI 메모리",
+   "전력반도체(SiC/GaN)"
+  ]
  },
  {
   "name": "리노공업",
   "code": "KRX:058470",
   "sector": "반도체부품",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체"
+  ]
  },
  {
   "name": "삼성전기",
@@ -45,7 +79,12 @@
   "name": "LG이노텍",
   "code": "KRX:011070",
   "sector": "전자부품",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "온디바이스 AI",
+   "XR·메타버스",
+   "엣지컴퓨팅·엣지 AI"
+  ]
  },
  {
   "name": "이수페타시스",
@@ -57,73 +96,134 @@
   "name": "LG디스플레이",
   "code": "KRX:034220",
   "sector": "디스플레이",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "디스플레이(OLED)"
+  ]
  },
  {
   "name": "LG전자",
   "code": "KRX:066570",
   "sector": "가전",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "온디바이스 AI",
+   "마이크로 LED",
+   "스마트홈·IoT 가전",
+   "디지털교과서·공교육 AI"
+  ]
  },
  {
   "name": "삼성SDS",
   "code": "KRX:018260",
   "sector": "IT서비스",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "스마트팩토리",
+   "AI 에이전트·RPA",
+   "디지털트윈",
+   "물류자동화·AGV"
+  ]
  },
  {
   "name": "LG에너지솔루션",
   "code": "KRX:373220",
   "sector": "2차전지",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "2 차전지·배터리",
+   "전고체배터리",
+   "ESS(에너지저장)",
+   "전기버스·수소버스",
+   "가상발전소(VPP)"
+  ]
  },
  {
   "name": "삼성SDI",
   "code": "KRX:006400",
   "sector": "2차전지",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "2 차전지·배터리",
+   "전고체배터리",
+   "ESS(에너지저장)",
+   "가상발전소(VPP)"
+  ]
  },
  {
   "name": "포스코퓨처엠",
   "code": "KRX:003670",
   "sector": "2차전지",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "2 차전지·배터리",
+   "폐배터리 재활용",
+   "희토류·핵심광물",
+   "리튬·배터리원재료"
+  ]
  },
  {
   "name": "에코프로비엠",
   "code": "KRX:247540",
   "sector": "2차전지",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "2 차전지·배터리",
+   "폐배터리 재활용",
+   "희토류·핵심광물",
+   "리튬·배터리원재료"
+  ]
  },
  {
   "name": "에코프로",
   "code": "KRX:086520",
   "sector": "2차전지",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "탄소중립·CCUS"
+  ]
  },
  {
   "name": "엘앤에프",
   "code": "KRX:066970",
   "sector": "2차전지",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "2 차전지·배터리",
+   "희토류·핵심광물",
+   "리튬·배터리원재료"
+  ]
  },
  {
   "name": "삼성바이오로직스",
   "code": "KRX:207940",
   "sector": "바이오",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "바이오·신약",
+   "비만치료제(GLP-1)",
+   "유전자치료(CGT)"
+  ]
  },
  {
   "name": "셀트리온",
   "code": "KRX:068270",
   "sector": "바이오",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "바이오·신약",
+   "줄기세포·재생의료",
+   "유전자치료(CGT)"
+  ]
  },
  {
   "name": "알테오젠",
   "code": "KRX:196170",
   "sector": "바이오",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "바이오·신약"
+  ]
  },
  {
   "name": "HLB",
@@ -141,31 +241,61 @@
   "name": "유한양행",
   "code": "KRX:000100",
   "sector": "제약",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "바이오·신약",
+   "비만치료제(GLP-1)",
+   "유전자치료(CGT)"
+  ]
  },
  {
   "name": "한미약품",
   "code": "KRX:128940",
   "sector": "제약",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "바이오·신약",
+   "비만치료제(GLP-1)"
+  ]
  },
  {
   "name": "현대차",
   "code": "KRX:005380",
   "sector": "자동차",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "자율주행",
+   "수소경제",
+   "UAM·드론",
+   "전고체배터리",
+   "자동차부품·모빌리티",
+   "자율주행트럭·상용차",
+   "전기버스·수소버스",
+   "미래모빌리티·MaaS"
+  ]
  },
  {
   "name": "기아",
   "code": "KRX:000270",
   "sector": "자동차",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "자율주행",
+   "전고체배터리",
+   "자동차부품·모빌리티",
+   "미래모빌리티·MaaS"
+  ]
  },
  {
   "name": "현대모비스",
   "code": "KRX:012330",
   "sector": "자동차부품",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "자동차부품·모빌리티",
+   "전력반도체(SiC/GaN)",
+   "전기버스·수소버스"
+  ]
  },
  {
   "name": "KB금융",
@@ -207,13 +337,21 @@
   "name": "카카오뱅크",
   "code": "KRX:323410",
   "sector": "금융",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "핀테크·디지털금융"
+  ]
  },
  {
   "name": "삼성생명",
   "code": "KRX:032830",
   "sector": "보험",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "고령화·실버산업",
+   "인슈어테크·보험",
+   "미래모빌리티·MaaS"
+  ]
  },
  {
   "name": "삼성화재",
@@ -243,25 +381,48 @@
   "name": "NAVER",
   "code": "KRX:035420",
   "sector": "인터넷",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "클라우드·SaaS",
+   "K-콘텐츠",
+   "AI SW·LLM",
+   "전자상거래·커머스",
+   "AI 에이전트·RPA",
+   "스마트시티",
+   "AI 데이터센터냉각"
+  ]
  },
  {
   "name": "카카오",
   "code": "KRX:035720",
   "sector": "인터넷",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "K-콘텐츠",
+   "AI SW·LLM",
+   "전자상거래·커머스",
+   "블록체인·가상자산",
+   "AI 에이전트·RPA",
+   "스마트홈·IoT 가전"
+  ]
  },
  {
   "name": "크래프톤",
   "code": "KRX:259960",
   "sector": "게임",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "게임"
+  ]
  },
  {
   "name": "엔씨소프트",
   "code": "KRX:036570",
   "sector": "게임",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "게임"
+  ]
  },
  {
   "name": "넷마블",
@@ -273,43 +434,72 @@
   "name": "하이브",
   "code": "KRX:352820",
   "sector": "엔터",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "K-콘텐츠",
+   "엔터·K-POP"
+  ]
  },
  {
   "name": "JYP Ent.",
   "code": "KRX:035900",
   "sector": "엔터",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "엔터·K-POP"
+  ]
  },
  {
   "name": "에스엠",
   "code": "KRX:041510",
   "sector": "엔터",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "엔터·K-POP"
+  ]
  },
  {
   "name": "POSCO홀딩스",
   "code": "KRX:005490",
   "sector": "철강·소재",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "탄소중립·CCUS",
+   "건설·인프라",
+   "희토류·핵심광물",
+   "리튬·배터리원재료",
+   "철강·특수강"
+  ]
  },
  {
   "name": "고려아연",
   "code": "KRX:010130",
   "sector": "비철금속",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "금·원자재",
+   "희토류·핵심광물",
+   "리튬·배터리원재료",
+   "구리·전선"
+  ]
  },
  {
   "name": "LG화학",
   "code": "KRX:051910",
   "sector": "화학",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "바이오플라스틱·친환경포장"
+  ]
  },
  {
   "name": "롯데케미칼",
   "code": "KRX:011170",
   "sector": "화학",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "바이오플라스틱·친환경포장"
+  ]
  },
  {
   "name": "OCI홀딩스",
@@ -321,61 +511,121 @@
   "name": "한화솔루션",
   "code": "KRX:009830",
   "sector": "에너지",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "태양광·풍력"
+  ]
  },
  {
   "name": "SK이노베이션",
   "code": "KRX:096770",
   "sector": "에너지",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "정유·에너지"
+  ]
  },
  {
   "name": "S-Oil",
   "code": "KRX:010950",
   "sector": "정유",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "정유·에너지"
+  ]
  },
  {
   "name": "한국전력",
   "code": "KRX:015760",
   "sector": "유틸리티",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "원전(원자력)",
+   "전기차 충전",
+   "태양광·풍력",
+   "ESS(에너지저장)",
+   "SMR(소형모듈원자로)",
+   "스마트그리드·전력망",
+   "전기버스·수소버스",
+   "가상발전소(VPP)",
+   "V2G·양방향충전"
+  ]
  },
  {
   "name": "두산에너빌리티",
   "code": "KRX:034020",
   "sector": "원전·에너지",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "원전(원자력)",
+   "태양광·풍력",
+   "물·수자원·환경",
+   "SMR(소형모듈원자로)",
+   "해상풍력"
+  ]
  },
  {
   "name": "한화에어로스페이스",
   "code": "KRX:012450",
   "sector": "방산",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "방산·우주항공",
+   "UAM·드론",
+   "우주인터넷·위성",
+   "군용드론·무인기",
+   "탄소섬유·경량소재",
+   "우주발사체"
+  ]
  },
  {
   "name": "한화시스템",
   "code": "KRX:272210",
   "sector": "방산",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "방산·우주항공",
+   "UAM·드론",
+   "군용드론·무인기",
+   "소방·재난안전",
+   "사이버전·전자전"
+  ]
  },
  {
   "name": "LIG넥스원",
   "code": "KRX:079550",
   "sector": "방산",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "방산·우주항공",
+   "군용드론·무인기",
+   "사이버전·전자전"
+  ]
  },
  {
   "name": "현대로템",
   "code": "KRX:064350",
   "sector": "방산",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "방산·우주항공",
+   "우주발사체"
+  ]
  },
  {
   "name": "한국항공우주",
   "code": "KRX:047810",
   "sector": "방산",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "방산·우주항공",
+   "UAM·드론",
+   "우주인터넷·위성",
+   "여행·항공·레저",
+   "군용드론·무인기",
+   "탄소섬유·경량소재",
+   "우주발사체"
+  ]
  },
  {
   "name": "HD현대중공업",
@@ -387,43 +637,84 @@
   "name": "HD한국조선해양",
   "code": "KRX:009540",
   "sector": "조선",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "조선·해운",
+   "전기선박·친환경해운"
+  ]
  },
  {
   "name": "한화오션",
   "code": "KRX:042660",
   "sector": "조선",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "조선·해운",
+   "전기선박·친환경해운"
+  ]
  },
  {
   "name": "삼성중공업",
   "code": "KRX:010140",
   "sector": "조선",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "조선·해운",
+   "전기선박·친환경해운"
+  ]
  },
  {
   "name": "HD현대일렉트릭",
   "code": "KRX:267260",
   "sector": "전력기기",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "데이터센터",
+   "전력기기·변압기",
+   "ESS(에너지저장)",
+   "스마트그리드·전력망"
+  ]
  },
  {
   "name": "LS ELECTRIC",
   "code": "KRX:010120",
   "sector": "전력기기",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "데이터센터",
+   "전력기기·변압기",
+   "스마트팩토리",
+   "ESS(에너지저장)",
+   "전력반도체(SiC/GaN)",
+   "스마트그리드·전력망",
+   "물류자동화·AGV",
+   "구리·전선",
+   "가상발전소(VPP)",
+   "V2G·양방향충전"
+  ]
  },
  {
   "name": "효성중공업",
   "code": "KRX:298040",
   "sector": "전력기기",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "전력기기·변압기",
+   "ESS(에너지저장)",
+   "전력반도체(SiC/GaN)",
+   "스마트그리드·전력망",
+   "가상발전소(VPP)",
+   "V2G·양방향충전"
+  ]
  },
  {
   "name": "삼성물산",
   "code": "KRX:028260",
   "sector": "지주",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "건설·인프라"
+  ]
  },
  {
   "name": "SK",
@@ -447,43 +738,93 @@
   "name": "LS",
   "code": "KRX:006260",
   "sector": "지주",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "금·원자재",
+   "희토류·핵심광물",
+   "구리·전선"
+  ]
  },
  {
   "name": "GS",
   "code": "KRX:078930",
   "sector": "지주",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "정유·에너지"
+  ]
  },
  {
   "name": "SK텔레콤",
   "code": "KRX:017670",
   "sector": "통신",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "UAM·드론",
+   "양자컴퓨팅",
+   "5G/6G·통신",
+   "군용드론·무인기",
+   "스마트시티",
+   "소방·재난안전",
+   "스마트홈·IoT 가전",
+   "엣지컴퓨팅·엣지 AI",
+   "AI 데이터센터냉각",
+   "미래모빌리티·MaaS"
+  ]
  },
  {
   "name": "KT",
   "code": "KRX:030200",
   "sector": "통신",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "UAM·드론",
+   "클라우드·SaaS",
+   "온디바이스 AI",
+   "양자컴퓨팅",
+   "5G/6G·통신",
+   "스마트그리드·전력망",
+   "디지털트윈",
+   "생체인식·보안",
+   "스마트시티",
+   "소방·재난안전",
+   "스마트홈·IoT 가전",
+   "CCTV·영상보안",
+   "엣지컴퓨팅·엣지 AI",
+   "V2G·양방향충전",
+   "AI 데이터센터냉각",
+   "디지털교과서·공교육 AI"
+  ]
  },
  {
   "name": "LG유플러스",
   "code": "KRX:032640",
   "sector": "통신",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "5G/6G·통신"
+  ]
  },
  {
   "name": "HMM",
   "code": "KRX:011200",
   "sector": "해운",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "조선·해운",
+   "전기선박·친환경해운"
+  ]
  },
  {
   "name": "대한항공",
   "code": "KRX:003490",
   "sector": "항공",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "UAM·드론",
+   "여행·항공·레저",
+   "군용드론·무인기"
+  ]
  },
  {
   "name": "현대글로비스",
@@ -495,13 +836,24 @@
   "name": "CJ대한통운",
   "code": "KRX:000120",
   "sector": "물류",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "전자상거래·커머스",
+   "물류자동화·AGV",
+   "스마트물류·풀필먼트",
+   "자율주행트럭·상용차"
+  ]
  },
  {
   "name": "현대건설",
   "code": "KRX:000720",
   "sector": "건설",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산",
+   "건설·인프라",
+   "스마트시티"
+  ]
  },
  {
   "name": "포스코인터내셔널",
@@ -513,7 +865,14 @@
   "name": "CJ제일제당",
   "code": "KRX:097950",
   "sector": "식품",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "농업·식량안보",
+   "음식료·필수소비재",
+   "K-푸드·식품수출",
+   "대체단백질·배양육",
+   "바이오플라스틱·친환경포장"
+  ]
  },
  {
   "name": "오리온",
@@ -531,19 +890,34 @@
   "name": "아모레퍼시픽",
   "code": "KRX:090430",
   "sector": "화장품",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "K-뷰티·화장품",
+   "면세점·관광인프라"
+  ]
  },
  {
   "name": "LG생활건강",
   "code": "KRX:051900",
   "sector": "화장품",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "K-뷰티·화장품",
+   "면세점·관광인프라"
+  ]
  },
  {
   "name": "이마트",
   "code": "KRX:139480",
   "sector": "유통",
-  "currency": "KRW"
+  "currency": "KRW",
+  "themes": [
+   "음식료·필수소비재",
+   "반려동물·펫경제",
+   "대체단백질·배양육",
+   "바이오플라스틱·친환경포장",
+   "수직농업·도시농업"
+  ]
  },
  {
   "name": "KODEX 200",
@@ -686,19 +1060,4097 @@
  {
   "name": "SPY",
   "code": "NYSEARCA:SPY",
-  "sector": "ETF",
-  "currency": "USD"
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "S&P500"
+  ]
  },
  {
   "name": "QQQ",
   "code": "NASDAQ:QQQ",
-  "sector": "ETF",
-  "currency": "USD"
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "나스닥100"
+  ]
  },
  {
   "name": "SCHD",
   "code": "NYSEARCA:SCHD",
-  "sector": "ETF",
-  "currency": "USD"
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "배당성장"
+  ]
+ },
+ {
+  "name": "이오테크닉스",
+  "code": null,
+  "sector": "AI 반도체",
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체",
+   "반도체 장비",
+   "마이크로 LED"
+  ]
+ },
+ {
+  "name": "해성디에스",
+  "code": null,
+  "sector": "AI 반도체",
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체"
+  ]
+ },
+ {
+  "name": "하나머티리얼즈",
+  "code": null,
+  "sector": "AI 반도체",
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체"
+  ]
+ },
+ {
+  "name": "네패스",
+  "code": null,
+  "sector": "AI 반도체",
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체",
+   "CXL·차세대메모리",
+   "AI 반도체설계(팹리스)"
+  ]
+ },
+ {
+  "name": "리벨리온",
+  "code": null,
+  "sector": "AI 반도체",
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체",
+   "온디바이스 AI",
+   "AI 반도체설계(팹리스)",
+   "엣지컴퓨팅·엣지 AI"
+  ]
+ },
+ {
+  "name": "사피온",
+  "code": null,
+  "sector": "AI 반도체",
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체",
+   "온디바이스 AI",
+   "AI 반도체설계(팹리스)"
+  ]
+ },
+ {
+  "name": "퓨리오사AI",
+  "code": null,
+  "sector": "AI 반도체",
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체",
+   "온디바이스 AI",
+   "AI 반도체설계(팹리스)"
+  ]
+ },
+ {
+  "name": "딥엑스",
+  "code": null,
+  "sector": "AI 반도체",
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체",
+   "AI 반도체설계(팹리스)"
+  ]
+ },
+ {
+  "name": "ISC",
+  "code": null,
+  "sector": "HBM·AI 메모리",
+  "currency": "KRW",
+  "themes": [
+   "HBM·AI 메모리"
+  ]
+ },
+ {
+  "name": "솔브레인",
+  "code": null,
+  "sector": "HBM·AI 메모리",
+  "currency": "KRW",
+  "themes": [
+   "HBM·AI 메모리"
+  ]
+ },
+ {
+  "name": "유니테스트",
+  "code": null,
+  "sector": "HBM·AI 메모리",
+  "currency": "KRW",
+  "themes": [
+   "HBM·AI 메모리"
+  ]
+ },
+ {
+  "name": "동진쎄미",
+  "code": null,
+  "sector": "HBM·AI 메모리",
+  "currency": "KRW",
+  "themes": [
+   "HBM·AI 메모리"
+  ]
+ },
+ {
+  "name": "덕산네오룩스",
+  "code": null,
+  "sector": "HBM·AI 메모리",
+  "currency": "KRW",
+  "themes": [
+   "HBM·AI 메모리",
+   "디스플레이(OLED)",
+   "산업용가스"
+  ]
+ },
+ {
+  "name": "오킨스전자",
+  "code": null,
+  "sector": "HBM·AI 메모리",
+  "currency": "KRW",
+  "themes": [
+   "HBM·AI 메모리"
+  ]
+ },
+ {
+  "name": "주성엔지니어링",
+  "code": null,
+  "sector": "반도체 장비",
+  "currency": "KRW",
+  "themes": [
+   "반도체 장비"
+  ]
+ },
+ {
+  "name": "원익IPS",
+  "code": null,
+  "sector": "반도체 장비",
+  "currency": "KRW",
+  "themes": [
+   "반도체 장비"
+  ]
+ },
+ {
+  "name": "피에스케이",
+  "code": null,
+  "sector": "반도체 장비",
+  "currency": "KRW",
+  "themes": [
+   "반도체 장비"
+  ]
+ },
+ {
+  "name": "케이씨텍",
+  "code": null,
+  "sector": "반도체 장비",
+  "currency": "KRW",
+  "themes": [
+   "반도체 장비"
+  ]
+ },
+ {
+  "name": "GST",
+  "code": null,
+  "sector": "반도체 장비",
+  "currency": "KRW",
+  "themes": [
+   "반도체 장비"
+  ]
+ },
+ {
+  "name": "원익QnC",
+  "code": null,
+  "sector": "반도체 장비",
+  "currency": "KRW",
+  "themes": [
+   "반도체 장비",
+   "산업용가스"
+  ]
+ },
+ {
+  "name": "프로텍",
+  "code": null,
+  "sector": "반도체 장비",
+  "currency": "KRW",
+  "themes": [
+   "반도체 장비",
+   "마이크로 LED"
+  ]
+ },
+ {
+  "name": "다산네트웍스",
+  "code": null,
+  "sector": "데이터센터",
+  "currency": "KRW",
+  "themes": [
+   "데이터센터",
+   "광통신·네트워크장비"
+  ]
+ },
+ {
+  "name": "솔루엠",
+  "code": null,
+  "sector": "데이터센터",
+  "currency": "KRW",
+  "themes": [
+   "데이터센터",
+   "엣지컴퓨팅·엣지 AI"
+  ]
+ },
+ {
+  "name": "에이티세미콘",
+  "code": null,
+  "sector": "데이터센터",
+  "currency": "KRW",
+  "themes": [
+   "데이터센터",
+   "자동차부품·모빌리티",
+   "전력반도체(SiC/GaN)",
+   "엣지컴퓨팅·엣지 AI"
+  ]
+ },
+ {
+  "name": "네이버클라우드",
+  "code": null,
+  "sector": "데이터센터",
+  "currency": "KRW",
+  "themes": [
+   "데이터센터",
+   "클라우드·SaaS",
+   "스마트시티",
+   "엣지컴퓨팅·엣지 AI"
+  ]
+ },
+ {
+  "name": "KT클라우드",
+  "code": null,
+  "sector": "데이터센터",
+  "currency": "KRW",
+  "themes": [
+   "데이터센터"
+  ]
+ },
+ {
+  "name": "NHN",
+  "code": null,
+  "sector": "데이터센터",
+  "currency": "KRW",
+  "themes": [
+   "데이터센터",
+   "클라우드·SaaS"
+  ]
+ },
+ {
+  "name": "대한전선",
+  "code": null,
+  "sector": "전력기기·변압기",
+  "currency": "KRW",
+  "themes": [
+   "전력기기·변압기",
+   "광통신·네트워크장비",
+   "해상풍력",
+   "구리·전선"
+  ]
+ },
+ {
+  "name": "한전KPS",
+  "code": null,
+  "sector": "전력기기·변압기",
+  "currency": "KRW",
+  "themes": [
+   "전력기기·변압기",
+   "원전(원자력)",
+   "ESS(에너지저장)",
+   "SMR(소형모듈원자로)",
+   "구리·전선"
+  ]
+ },
+ {
+  "name": "가온전선",
+  "code": null,
+  "sector": "전력기기·변압기",
+  "currency": "KRW",
+  "themes": [
+   "전력기기·변압기",
+   "구리·전선"
+  ]
+ },
+ {
+  "name": "LS전선",
+  "code": null,
+  "sector": "전력기기·변압기",
+  "currency": "KRW",
+  "themes": [
+   "전력기기·변압기",
+   "광통신·네트워크장비",
+   "해상풍력",
+   "구리·전선"
+  ]
+ },
+ {
+  "name": "서전기전",
+  "code": null,
+  "sector": "전력기기·변압기",
+  "currency": "KRW",
+  "themes": [
+   "전력기기·변압기"
+  ]
+ },
+ {
+  "name": "피앤씨테크",
+  "code": null,
+  "sector": "전력기기·변압기",
+  "currency": "KRW",
+  "themes": [
+   "전력기기·변압기"
+  ]
+ },
+ {
+  "name": "한전기술",
+  "code": null,
+  "sector": "원전(원자력)",
+  "currency": "KRW",
+  "themes": [
+   "원전(원자력)",
+   "SMR(소형모듈원자로)"
+  ]
+ },
+ {
+  "name": "비에이치아이",
+  "code": null,
+  "sector": "원전(원자력)",
+  "currency": "KRW",
+  "themes": [
+   "원전(원자력)",
+   "SMR(소형모듈원자로)"
+  ]
+ },
+ {
+  "name": "보성파워텍",
+  "code": null,
+  "sector": "원전(원자력)",
+  "currency": "KRW",
+  "themes": [
+   "원전(원자력)",
+   "SMR(소형모듈원자로)"
+  ]
+ },
+ {
+  "name": "우진",
+  "code": null,
+  "sector": "원전(원자력)",
+  "currency": "KRW",
+  "themes": [
+   "원전(원자력)",
+   "SMR(소형모듈원자로)"
+  ]
+ },
+ {
+  "name": "한전원자력연료",
+  "code": null,
+  "sector": "원전(원자력)",
+  "currency": "KRW",
+  "themes": [
+   "원전(원자력)",
+   "SMR(소형모듈원자로)"
+  ]
+ },
+ {
+  "name": "한전산업개발",
+  "code": null,
+  "sector": "원전(원자력)",
+  "currency": "KRW",
+  "themes": [
+   "원전(원자력)"
+  ]
+ },
+ {
+  "name": "퍼스텍",
+  "code": null,
+  "sector": "방산·우주항공",
+  "currency": "KRW",
+  "themes": [
+   "방산·우주항공"
+  ]
+ },
+ {
+  "name": "빅텍",
+  "code": null,
+  "sector": "방산·우주항공",
+  "currency": "KRW",
+  "themes": [
+   "방산·우주항공"
+  ]
+ },
+ {
+  "name": "한국항공서비스",
+  "code": null,
+  "sector": "방산·우주항공",
+  "currency": "KRW",
+  "themes": [
+   "방산·우주항공",
+   "여행·항공·레저"
+  ]
+ },
+ {
+  "name": "한국카본",
+  "code": null,
+  "sector": "조선·해운",
+  "currency": "KRW",
+  "themes": [
+   "조선·해운",
+   "전기선박·친환경해운"
+  ]
+ },
+ {
+  "name": "동성화인텍",
+  "code": null,
+  "sector": "조선·해운",
+  "currency": "KRW",
+  "themes": [
+   "조선·해운"
+  ]
+ },
+ {
+  "name": "태광",
+  "code": null,
+  "sector": "조선·해운",
+  "currency": "KRW",
+  "themes": [
+   "조선·해운"
+  ]
+ },
+ {
+  "name": "팬오션",
+  "code": null,
+  "sector": "조선·해운",
+  "currency": "KRW",
+  "themes": [
+   "조선·해운",
+   "전기선박·친환경해운"
+  ]
+ },
+ {
+  "name": "대한해운",
+  "code": null,
+  "sector": "조선·해운",
+  "currency": "KRW",
+  "themes": [
+   "조선·해운",
+   "전기선박·친환경해운"
+  ]
+ },
+ {
+  "name": "천보",
+  "code": null,
+  "sector": "2 차전지·배터리",
+  "currency": "KRW",
+  "themes": [
+   "2 차전지·배터리",
+   "리튬·배터리원재료"
+  ]
+ },
+ {
+  "name": "SK온",
+  "code": null,
+  "sector": "2 차전지·배터리",
+  "currency": "KRW",
+  "themes": [
+   "2 차전지·배터리",
+   "전고체배터리",
+   "ESS(에너지저장)"
+  ]
+ },
+ {
+  "name": "한온시스템",
+  "code": null,
+  "sector": "2 차전지·배터리",
+  "currency": "KRW",
+  "themes": [
+   "2 차전지·배터리",
+   "자동차부품·모빌리티",
+   "AI 데이터센터냉각"
+  ]
+ },
+ {
+  "name": "상신이디피",
+  "code": null,
+  "sector": "2 차전지·배터리",
+  "currency": "KRW",
+  "themes": [
+   "2 차전지·배터리"
+  ]
+ },
+ {
+  "name": "코윈테크",
+  "code": null,
+  "sector": "2 차전지·배터리",
+  "currency": "KRW",
+  "themes": [
+   "2 차전지·배터리"
+  ]
+ },
+ {
+  "name": "SK시그넷",
+  "code": null,
+  "sector": "전기차 충전",
+  "currency": "KRW",
+  "themes": [
+   "전기차 충전",
+   "V2G·양방향충전"
+  ]
+ },
+ {
+  "name": "시그넷이브이",
+  "code": null,
+  "sector": "전기차 충전",
+  "currency": "KRW",
+  "themes": [
+   "전기차 충전",
+   "V2G·양방향충전"
+  ]
+ },
+ {
+  "name": "대영채비",
+  "code": null,
+  "sector": "전기차 충전",
+  "currency": "KRW",
+  "themes": [
+   "전기차 충전"
+  ]
+ },
+ {
+  "name": "파워넷",
+  "code": null,
+  "sector": "전기차 충전",
+  "currency": "KRW",
+  "themes": [
+   "전기차 충전",
+   "양자컴퓨팅",
+   "V2G·양방향충전"
+  ]
+ },
+ {
+  "name": "차지비",
+  "code": null,
+  "sector": "전기차 충전",
+  "currency": "KRW",
+  "themes": [
+   "전기차 충전",
+   "V2G·양방향충전"
+  ]
+ },
+ {
+  "name": "클린일렉스",
+  "code": null,
+  "sector": "전기차 충전",
+  "currency": "KRW",
+  "themes": [
+   "전기차 충전"
+  ]
+ },
+ {
+  "name": "에바트란코리아",
+  "code": null,
+  "sector": "전기차 충전",
+  "currency": "KRW",
+  "themes": [
+   "전기차 충전"
+  ]
+ },
+ {
+  "name": "GS커넥트",
+  "code": null,
+  "sector": "전기차 충전",
+  "currency": "KRW",
+  "themes": [
+   "전기차 충전"
+  ]
+ },
+ {
+  "name": "HL만도",
+  "code": null,
+  "sector": "자율주행",
+  "currency": "KRW",
+  "themes": [
+   "자율주행",
+   "자동차부품·모빌리티",
+   "3D 프린팅·적층제조",
+   "디지털트윈",
+   "자율주행트럭·상용차"
+  ]
+ },
+ {
+  "name": "현대오토에버",
+  "code": null,
+  "sector": "자율주행",
+  "currency": "KRW",
+  "themes": [
+   "자율주행",
+   "로봇·자동화",
+   "스마트팩토리",
+   "AI 에이전트·RPA",
+   "디지털트윈",
+   "물류자동화·AGV",
+   "자율주행트럭·상용차"
+  ]
+ },
+ {
+  "name": "에스오에스랩",
+  "code": null,
+  "sector": "자율주행",
+  "currency": "KRW",
+  "themes": [
+   "자율주행",
+   "자율주행트럭·상용차"
+  ],
+  "aliases": [
+   "SOS랩"
+  ]
+ },
+ {
+  "name": "42dot",
+  "code": null,
+  "sector": "자율주행",
+  "currency": "KRW",
+  "themes": [
+   "자율주행",
+   "미래모빌리티·MaaS"
+  ]
+ },
+ {
+  "name": "서울로보틱스",
+  "code": null,
+  "sector": "자율주행",
+  "currency": "KRW",
+  "themes": [
+   "자율주행",
+   "디지털트윈"
+  ]
+ },
+ {
+  "name": "모빌린",
+  "code": null,
+  "sector": "자율주행",
+  "currency": "KRW",
+  "themes": [
+   "자율주행",
+   "자율주행트럭·상용차"
+  ]
+ },
+ {
+  "name": "오비고",
+  "code": null,
+  "sector": "자율주행",
+  "currency": "KRW",
+  "themes": [
+   "자율주행"
+  ]
+ },
+ {
+  "name": "두산로보틱스",
+  "code": null,
+  "sector": "로봇·자동화",
+  "currency": "KRW",
+  "themes": [
+   "로봇·자동화"
+  ]
+ },
+ {
+  "name": "레인보우로보틱스",
+  "code": null,
+  "sector": "로봇·자동화",
+  "currency": "KRW",
+  "themes": [
+   "로봇·자동화"
+  ]
+ },
+ {
+  "name": "로보티즈",
+  "code": null,
+  "sector": "로봇·자동화",
+  "currency": "KRW",
+  "themes": [
+   "로봇·자동화",
+   "물류자동화·AGV"
+  ]
+ },
+ {
+  "name": "삼익THK",
+  "code": null,
+  "sector": "로봇·자동화",
+  "currency": "KRW",
+  "themes": [
+   "로봇·자동화",
+   "물류자동화·AGV"
+  ]
+ },
+ {
+  "name": "로보스타",
+  "code": null,
+  "sector": "로봇·자동화",
+  "currency": "KRW",
+  "themes": [
+   "로봇·자동화",
+   "물류자동화·AGV"
+  ]
+ },
+ {
+  "name": "티피씨글로벌",
+  "code": null,
+  "sector": "로봇·자동화",
+  "currency": "KRW",
+  "themes": [
+   "로봇·자동화",
+   "3D 프린팅·적층제조"
+  ],
+  "aliases": [
+   "TPC메카트로닉스"
+  ]
+ },
+ {
+  "name": "현대로보틱스",
+  "code": null,
+  "sector": "로봇·자동화",
+  "currency": "KRW",
+  "themes": [
+   "로봇·자동화",
+   "물류자동화·AGV"
+  ]
+ },
+ {
+  "name": "씨메스",
+  "code": null,
+  "sector": "로봇·자동화",
+  "currency": "KRW",
+  "themes": [
+   "로봇·자동화",
+   "물류자동화·AGV"
+  ]
+ },
+ {
+  "name": "SK바이오사이언스",
+  "code": null,
+  "sector": "바이오·신약",
+  "currency": "KRW",
+  "themes": [
+   "바이오·신약",
+   "유전자치료(CGT)"
+  ]
+ },
+ {
+  "name": "GC녹십자",
+  "code": null,
+  "sector": "바이오·신약",
+  "currency": "KRW",
+  "themes": [
+   "바이오·신약",
+   "비만치료제(GLP-1)"
+  ]
+ },
+ {
+  "name": "씨젠",
+  "code": null,
+  "sector": "바이오·신약",
+  "currency": "KRW",
+  "themes": [
+   "바이오·신약"
+  ]
+ },
+ {
+  "name": "바디텍메드",
+  "code": null,
+  "sector": "바이오·신약",
+  "currency": "KRW",
+  "themes": [
+   "바이오·신약"
+  ]
+ },
+ {
+  "name": "루닛",
+  "code": null,
+  "sector": "의료 AI·디지털헬스",
+  "currency": "KRW",
+  "themes": [
+   "의료 AI·디지털헬스"
+  ]
+ },
+ {
+  "name": "뷰노",
+  "code": null,
+  "sector": "의료 AI·디지털헬스",
+  "currency": "KRW",
+  "themes": [
+   "의료 AI·디지털헬스"
+  ]
+ },
+ {
+  "name": "딥노이드",
+  "code": null,
+  "sector": "의료 AI·디지털헬스",
+  "currency": "KRW",
+  "themes": [
+   "의료 AI·디지털헬스"
+  ]
+ },
+ {
+  "name": "유비케어",
+  "code": null,
+  "sector": "의료 AI·디지털헬스",
+  "currency": "KRW",
+  "themes": [
+   "의료 AI·디지털헬스"
+  ]
+ },
+ {
+  "name": "인성정보",
+  "code": null,
+  "sector": "의료 AI·디지털헬스",
+  "currency": "KRW",
+  "themes": [
+   "의료 AI·디지털헬스"
+  ]
+ },
+ {
+  "name": "이지케어텍",
+  "code": null,
+  "sector": "의료 AI·디지털헬스",
+  "currency": "KRW",
+  "themes": [
+   "의료 AI·디지털헬스"
+  ]
+ },
+ {
+  "name": "닥터나우",
+  "code": null,
+  "sector": "의료 AI·디지털헬스",
+  "currency": "KRW",
+  "themes": [
+   "의료 AI·디지털헬스"
+  ]
+ },
+ {
+  "name": "라인헬스케어",
+  "code": null,
+  "sector": "의료 AI·디지털헬스",
+  "currency": "KRW",
+  "themes": [
+   "의료 AI·디지털헬스"
+  ]
+ },
+ {
+  "name": "메디히어",
+  "code": null,
+  "sector": "의료 AI·디지털헬스",
+  "currency": "KRW",
+  "themes": [
+   "의료 AI·디지털헬스"
+  ]
+ },
+ {
+  "name": "한국석유",
+  "code": null,
+  "sector": "정유·에너지",
+  "currency": "KRW",
+  "themes": [
+   "정유·에너지"
+  ]
+ },
+ {
+  "name": "흥구석유",
+  "code": null,
+  "sector": "정유·에너지",
+  "currency": "KRW",
+  "themes": [
+   "정유·에너지"
+  ]
+ },
+ {
+  "name": "인터지스",
+  "code": null,
+  "sector": "정유·에너지",
+  "currency": "KRW",
+  "themes": [
+   "정유·에너지"
+  ]
+ },
+ {
+  "name": "GS칼텍스",
+  "code": null,
+  "sector": "정유·에너지",
+  "currency": "KRW",
+  "themes": [
+   "정유·에너지",
+   "AI 데이터센터냉각"
+  ]
+ },
+ {
+  "name": "SK에너지",
+  "code": null,
+  "sector": "정유·에너지",
+  "currency": "KRW",
+  "themes": [
+   "정유·에너지"
+  ]
+ },
+ {
+  "name": "GS리테일",
+  "code": null,
+  "sector": "정유·에너지",
+  "currency": "KRW",
+  "themes": [
+   "정유·에너지",
+   "음식료·필수소비재"
+  ]
+ },
+ {
+  "name": "현대오일뱅크",
+  "code": null,
+  "sector": "정유·에너지",
+  "currency": "KRW",
+  "themes": [
+   "정유·에너지"
+  ]
+ },
+ {
+  "name": "씨에스윈드",
+  "code": null,
+  "sector": "태양광·풍력",
+  "currency": "KRW",
+  "themes": [
+   "태양광·풍력",
+   "해상풍력"
+  ]
+ },
+ {
+  "name": "OCI",
+  "code": null,
+  "sector": "태양광·풍력",
+  "currency": "KRW",
+  "themes": [
+   "태양광·풍력"
+  ]
+ },
+ {
+  "name": "현대에너지솔루션",
+  "code": null,
+  "sector": "태양광·풍력",
+  "currency": "KRW",
+  "themes": [
+   "태양광·풍력"
+  ]
+ },
+ {
+  "name": "한화큐셀",
+  "code": null,
+  "sector": "태양광·풍력",
+  "currency": "KRW",
+  "themes": [
+   "태양광·풍력"
+  ]
+ },
+ {
+  "name": "SK E&S",
+  "code": null,
+  "sector": "태양광·풍력",
+  "currency": "KRW",
+  "themes": [
+   "태양광·풍력",
+   "탄소중립·CCUS",
+   "스마트그리드·전력망",
+   "전기버스·수소버스"
+  ]
+ },
+ {
+  "name": "두산퓨얼셀",
+  "code": null,
+  "sector": "수소경제",
+  "currency": "KRW",
+  "themes": [
+   "수소경제",
+   "전기버스·수소버스",
+   "전기선박·친환경해운"
+  ]
+ },
+ {
+  "name": "일진하이솔루스",
+  "code": null,
+  "sector": "수소경제",
+  "currency": "KRW",
+  "themes": [
+   "수소경제",
+   "탄소섬유·경량소재"
+  ]
+ },
+ {
+  "name": "효성첨단소재",
+  "code": null,
+  "sector": "수소경제",
+  "currency": "KRW",
+  "themes": [
+   "수소경제",
+   "탄소섬유·경량소재"
+  ]
+ },
+ {
+  "name": "엘켐텍",
+  "code": null,
+  "sector": "수소경제",
+  "currency": "KRW",
+  "themes": [
+   "수소경제"
+  ]
+ },
+ {
+  "name": "이엔플러스",
+  "code": null,
+  "sector": "수소경제",
+  "currency": "KRW",
+  "themes": [
+   "수소경제"
+  ]
+ },
+ {
+  "name": "한국가스공사",
+  "code": null,
+  "sector": "수소경제",
+  "currency": "KRW",
+  "themes": [
+   "수소경제",
+   "탄소중립·CCUS"
+  ]
+ },
+ {
+  "name": "코오롱인더스트리",
+  "code": null,
+  "sector": "수소경제",
+  "currency": "KRW",
+  "themes": [
+   "수소경제",
+   "물·수자원·환경",
+   "탄소섬유·경량소재",
+   "바이오플라스틱·친환경포장"
+  ]
+ },
+ {
+  "name": "범한퓨얼셀",
+  "code": null,
+  "sector": "수소경제",
+  "currency": "KRW",
+  "themes": [
+   "수소경제"
+  ]
+ },
+ {
+  "name": "풍산",
+  "code": null,
+  "sector": "금·원자재",
+  "currency": "KRW",
+  "themes": [
+   "금·원자재",
+   "희토류·핵심광물",
+   "구리·전선"
+  ]
+ },
+ {
+  "name": "이구산업",
+  "code": null,
+  "sector": "금·원자재",
+  "currency": "KRW",
+  "themes": [
+   "금·원자재"
+  ]
+ },
+ {
+  "name": "영풍",
+  "code": null,
+  "sector": "금·원자재",
+  "currency": "KRW",
+  "themes": [
+   "금·원자재",
+   "폐배터리 재활용"
+  ]
+ },
+ {
+  "name": "한국전자금융",
+  "code": null,
+  "sector": "금·원자재",
+  "currency": "KRW",
+  "themes": [
+   "금·원자재"
+  ]
+ },
+ {
+  "name": "솔루스첨단소재",
+  "code": null,
+  "sector": "UAM·드론",
+  "currency": "KRW",
+  "themes": [
+   "UAM·드론",
+   "자동차부품·모빌리티"
+  ]
+ },
+ {
+  "name": "안랩",
+  "code": null,
+  "sector": "사이버보안",
+  "currency": "KRW",
+  "themes": [
+   "사이버보안",
+   "사이버전·전자전"
+  ]
+ },
+ {
+  "name": "지니언스",
+  "code": null,
+  "sector": "사이버보안",
+  "currency": "KRW",
+  "themes": [
+   "사이버보안"
+  ]
+ },
+ {
+  "name": "이글루코퍼레이션",
+  "code": null,
+  "sector": "사이버보안",
+  "currency": "KRW",
+  "themes": [
+   "사이버보안"
+  ]
+ },
+ {
+  "name": "드림시큐리티",
+  "code": null,
+  "sector": "사이버보안",
+  "currency": "KRW",
+  "themes": [
+   "사이버보안",
+   "양자컴퓨팅"
+  ]
+ },
+ {
+  "name": "파이오링크",
+  "code": null,
+  "sector": "사이버보안",
+  "currency": "KRW",
+  "themes": [
+   "사이버보안"
+  ]
+ },
+ {
+  "name": "ICTK",
+  "code": null,
+  "sector": "사이버보안",
+  "currency": "KRW",
+  "themes": [
+   "사이버보안"
+  ]
+ },
+ {
+  "name": "시큐어",
+  "code": null,
+  "sector": "사이버보안",
+  "currency": "KRW",
+  "themes": [
+   "사이버보안"
+  ]
+ },
+ {
+  "name": "SK쉴더스",
+  "code": null,
+  "sector": "사이버보안",
+  "currency": "KRW",
+  "themes": [
+   "사이버보안"
+  ]
+ },
+ {
+  "name": "시큐아이",
+  "code": null,
+  "sector": "사이버보안",
+  "currency": "KRW",
+  "themes": [
+   "사이버보안",
+   "사이버전·전자전"
+  ]
+ },
+ {
+  "name": "더존비즈온",
+  "code": null,
+  "sector": "클라우드·SaaS",
+  "currency": "KRW",
+  "themes": [
+   "클라우드·SaaS"
+  ]
+ },
+ {
+  "name": "효성인포메이션시스템",
+  "code": null,
+  "sector": "클라우드·SaaS",
+  "currency": "KRW",
+  "themes": [
+   "클라우드·SaaS"
+  ]
+ },
+ {
+  "name": "NHN클라우드",
+  "code": null,
+  "sector": "클라우드·SaaS",
+  "currency": "KRW",
+  "themes": [
+   "클라우드·SaaS"
+  ]
+ },
+ {
+  "name": "카카오엔터프라이즈",
+  "code": null,
+  "sector": "클라우드·SaaS",
+  "currency": "KRW",
+  "themes": [
+   "클라우드·SaaS"
+  ]
+ },
+ {
+  "name": "토스",
+  "code": null,
+  "sector": "클라우드·SaaS",
+  "currency": "KRW",
+  "themes": [
+   "클라우드·SaaS",
+   "핀테크·디지털금융"
+  ]
+ },
+ {
+  "name": "채널톡",
+  "code": null,
+  "sector": "클라우드·SaaS",
+  "currency": "KRW",
+  "themes": [
+   "클라우드·SaaS"
+  ]
+ },
+ {
+  "name": "에스에프에이",
+  "code": null,
+  "sector": "디스플레이(OLED)",
+  "currency": "KRW",
+  "themes": [
+   "디스플레이(OLED)"
+  ]
+ },
+ {
+  "name": "AP시스템",
+  "code": null,
+  "sector": "디스플레이(OLED)",
+  "currency": "KRW",
+  "themes": [
+   "디스플레이(OLED)",
+   "마이크로 LED"
+  ]
+ },
+ {
+  "name": "이녹스첨단소재",
+  "code": null,
+  "sector": "디스플레이(OLED)",
+  "currency": "KRW",
+  "themes": [
+   "디스플레이(OLED)",
+   "웨어러블·스마트워치"
+  ]
+ },
+ {
+  "name": "SKC",
+  "code": null,
+  "sector": "디스플레이(OLED)",
+  "currency": "KRW",
+  "themes": [
+   "디스플레이(OLED)",
+   "전력반도체(SiC/GaN)",
+   "바이오플라스틱·친환경포장"
+  ]
+ },
+ {
+  "name": "삼성디스플레이",
+  "code": null,
+  "sector": "디스플레이(OLED)",
+  "currency": "KRW",
+  "themes": [
+   "디스플레이(OLED)"
+  ]
+ },
+ {
+  "name": "HB테크놀로지",
+  "code": null,
+  "sector": "디스플레이(OLED)",
+  "currency": "KRW",
+  "themes": [
+   "디스플레이(OLED)"
+  ]
+ },
+ {
+  "name": "CJ ENM",
+  "code": null,
+  "sector": "K-콘텐츠",
+  "currency": "KRW",
+  "themes": [
+   "K-콘텐츠"
+  ]
+ },
+ {
+  "name": "스튜디오드래곤",
+  "code": null,
+  "sector": "K-콘텐츠",
+  "currency": "KRW",
+  "themes": [
+   "K-콘텐츠",
+   "엔터·K-POP"
+  ]
+ },
+ {
+  "name": "카카오엔터",
+  "code": null,
+  "sector": "K-콘텐츠",
+  "currency": "KRW",
+  "themes": [
+   "K-콘텐츠",
+   "엔터·K-POP"
+  ]
+ },
+ {
+  "name": "에이스토리",
+  "code": null,
+  "sector": "K-콘텐츠",
+  "currency": "KRW",
+  "themes": [
+   "K-콘텐츠"
+  ]
+ },
+ {
+  "name": "네이버웹툰",
+  "code": null,
+  "sector": "K-콘텐츠",
+  "currency": "KRW",
+  "themes": [
+   "K-콘텐츠"
+  ]
+ },
+ {
+  "name": "문피아",
+  "code": null,
+  "sector": "K-콘텐츠",
+  "currency": "KRW",
+  "themes": [
+   "K-콘텐츠"
+  ]
+ },
+ {
+  "name": "NEW",
+  "code": null,
+  "sector": "K-콘텐츠",
+  "currency": "KRW",
+  "themes": [
+   "K-콘텐츠"
+  ]
+ },
+ {
+  "name": "넥슨",
+  "code": null,
+  "sector": "게임",
+  "currency": "KRW",
+  "themes": [
+   "게임"
+  ]
+ },
+ {
+  "name": "펄어비스",
+  "code": null,
+  "sector": "게임",
+  "currency": "KRW",
+  "themes": [
+   "게임"
+  ]
+ },
+ {
+  "name": "카카오게임즈",
+  "code": null,
+  "sector": "게임",
+  "currency": "KRW",
+  "themes": [
+   "게임"
+  ]
+ },
+ {
+  "name": "위메이드",
+  "code": null,
+  "sector": "게임",
+  "currency": "KRW",
+  "themes": [
+   "게임",
+   "블록체인·가상자산"
+  ]
+ },
+ {
+  "name": "네오위즈",
+  "code": null,
+  "sector": "게임",
+  "currency": "KRW",
+  "themes": [
+   "게임"
+  ]
+ },
+ {
+  "name": "포스코DX",
+  "code": null,
+  "sector": "스마트팩토리",
+  "currency": "KRW",
+  "themes": [
+   "스마트팩토리",
+   "디지털트윈"
+  ]
+ },
+ {
+  "name": "오토닉스",
+  "code": null,
+  "sector": "스마트팩토리",
+  "currency": "KRW",
+  "themes": [
+   "스마트팩토리",
+   "스마트시티",
+   "스마트홈·IoT 가전"
+  ]
+ },
+ {
+  "name": "미래산업",
+  "code": null,
+  "sector": "스마트팩토리",
+  "currency": "KRW",
+  "themes": [
+   "스마트팩토리"
+  ]
+ },
+ {
+  "name": "인텔리안테크",
+  "code": null,
+  "sector": "스마트팩토리",
+  "currency": "KRW",
+  "themes": [
+   "스마트팩토리",
+   "우주인터넷·위성",
+   "스마트시티"
+  ]
+ },
+ {
+  "name": "LG CNS",
+  "code": null,
+  "sector": "스마트팩토리",
+  "currency": "KRW",
+  "themes": [
+   "스마트팩토리",
+   "AI 에이전트·RPA"
+  ]
+ },
+ {
+  "name": "KT엔지니어링",
+  "code": null,
+  "sector": "스마트팩토리",
+  "currency": "KRW",
+  "themes": [
+   "스마트팩토리"
+  ]
+ },
+ {
+  "name": "코위버",
+  "code": null,
+  "sector": "양자컴퓨팅",
+  "currency": "KRW",
+  "themes": [
+   "양자컴퓨팅",
+   "광통신·네트워크장비"
+  ]
+ },
+ {
+  "name": "크립토랩",
+  "code": null,
+  "sector": "양자컴퓨팅",
+  "currency": "KRW",
+  "themes": [
+   "양자컴퓨팅"
+  ]
+ },
+ {
+  "name": "EYL",
+  "code": null,
+  "sector": "양자컴퓨팅",
+  "currency": "KRW",
+  "themes": [
+   "양자컴퓨팅"
+  ]
+ },
+ {
+  "name": "케이씨에스",
+  "code": null,
+  "sector": "양자컴퓨팅",
+  "currency": "KRW",
+  "themes": [
+   "양자컴퓨팅"
+  ]
+ },
+ {
+  "name": "쎄트렉아이",
+  "code": null,
+  "sector": "우주인터넷·위성",
+  "currency": "KRW",
+  "themes": [
+   "우주인터넷·위성",
+   "군용드론·무인기"
+  ]
+ },
+ {
+  "name": "AP위성",
+  "code": null,
+  "sector": "우주인터넷·위성",
+  "currency": "KRW",
+  "themes": [
+   "우주인터넷·위성"
+  ]
+ },
+ {
+  "name": "이노스페이스",
+  "code": null,
+  "sector": "우주인터넷·위성",
+  "currency": "KRW",
+  "themes": [
+   "우주인터넷·위성",
+   "우주발사체"
+  ]
+ },
+ {
+  "name": "페리지항공우주",
+  "code": null,
+  "sector": "우주인터넷·위성",
+  "currency": "KRW",
+  "themes": [
+   "우주인터넷·위성",
+   "우주발사체"
+  ]
+ },
+ {
+  "name": "KT SAT",
+  "code": null,
+  "sector": "우주인터넷·위성",
+  "currency": "KRW",
+  "themes": [
+   "우주인터넷·위성"
+  ]
+ },
+ {
+  "name": "컨텍",
+  "code": null,
+  "sector": "우주인터넷·위성",
+  "currency": "KRW",
+  "themes": [
+   "우주인터넷·위성"
+  ]
+ },
+ {
+  "name": "엘엠에스",
+  "code": null,
+  "sector": "XR·메타버스",
+  "currency": "KRW",
+  "themes": [
+   "XR·메타버스"
+  ]
+ },
+ {
+  "name": "맥스트",
+  "code": null,
+  "sector": "XR·메타버스",
+  "currency": "KRW",
+  "themes": [
+   "XR·메타버스",
+   "디지털트윈"
+  ]
+ },
+ {
+  "name": "자이언트스텝",
+  "code": null,
+  "sector": "XR·메타버스",
+  "currency": "KRW",
+  "themes": [
+   "XR·메타버스"
+  ]
+ },
+ {
+  "name": "레티널",
+  "code": null,
+  "sector": "XR·메타버스",
+  "currency": "KRW",
+  "themes": [
+   "XR·메타버스"
+  ]
+ },
+ {
+  "name": "이랜텍",
+  "code": null,
+  "sector": "XR·메타버스",
+  "currency": "KRW",
+  "themes": [
+   "XR·메타버스"
+  ]
+ },
+ {
+  "name": "네이버제트",
+  "code": null,
+  "sector": "XR·메타버스",
+  "currency": "KRW",
+  "themes": [
+   "XR·메타버스"
+  ]
+ },
+ {
+  "name": "SK리츠",
+  "code": null,
+  "sector": "리츠·부동산",
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산"
+  ]
+ },
+ {
+  "name": "ESR켄달스퀘어리츠",
+  "code": null,
+  "sector": "리츠·부동산",
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산"
+  ]
+ },
+ {
+  "name": "롯데리츠",
+  "code": null,
+  "sector": "리츠·부동산",
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산"
+  ]
+ },
+ {
+  "name": "신한알파리츠",
+  "code": null,
+  "sector": "리츠·부동산",
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산"
+  ]
+ },
+ {
+  "name": "이지스밸류리츠",
+  "code": null,
+  "sector": "리츠·부동산",
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산"
+  ]
+ },
+ {
+  "name": "DL이앤씨",
+  "code": null,
+  "sector": "리츠·부동산",
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산",
+   "건설·인프라",
+   "클린룸·반도체시설"
+  ]
+ },
+ {
+  "name": "GS건설",
+  "code": null,
+  "sector": "리츠·부동산",
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산",
+   "건설·인프라",
+   "스마트시티"
+  ]
+ },
+ {
+  "name": "이지스자산운용",
+  "code": null,
+  "sector": "리츠·부동산",
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산"
+  ]
+ },
+ {
+  "name": "맥쿼리자산운용",
+  "code": null,
+  "sector": "리츠·부동산",
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산"
+  ]
+ },
+ {
+  "name": "신한리츠운용",
+  "code": null,
+  "sector": "리츠·부동산",
+  "currency": "KRW",
+  "themes": [
+   "리츠·부동산"
+  ]
+ },
+ {
+  "name": "피엔티",
+  "code": null,
+  "sector": "전고체배터리",
+  "currency": "KRW",
+  "themes": [
+   "전고체배터리"
+  ]
+ },
+ {
+  "name": "한솔케미칼",
+  "code": null,
+  "sector": "전고체배터리",
+  "currency": "KRW",
+  "themes": [
+   "전고체배터리"
+  ]
+ },
+ {
+  "name": "파두",
+  "code": null,
+  "sector": "CXL·차세대메모리",
+  "currency": "KRW",
+  "themes": [
+   "CXL·차세대메모리"
+  ]
+ },
+ {
+  "name": "솔트룩스",
+  "code": null,
+  "sector": "AI SW·LLM",
+  "currency": "KRW",
+  "themes": [
+   "AI SW·LLM"
+  ]
+ },
+ {
+  "name": "업스테이지",
+  "code": null,
+  "sector": "AI SW·LLM",
+  "currency": "KRW",
+  "themes": [
+   "AI SW·LLM",
+   "AI 에이전트·RPA"
+  ]
+ },
+ {
+  "name": "마인즈랩",
+  "code": null,
+  "sector": "AI SW·LLM",
+  "currency": "KRW",
+  "themes": [
+   "AI SW·LLM",
+   "AI 에이전트·RPA"
+  ]
+ },
+ {
+  "name": "크라우드웍스",
+  "code": null,
+  "sector": "AI SW·LLM",
+  "currency": "KRW",
+  "themes": [
+   "AI SW·LLM"
+  ]
+ },
+ {
+  "name": "뤼이드",
+  "code": null,
+  "sector": "AI SW·LLM",
+  "currency": "KRW",
+  "themes": [
+   "AI SW·LLM",
+   "에듀테크·교육"
+  ]
+ },
+ {
+  "name": "포티투마루",
+  "code": null,
+  "sector": "AI SW·LLM",
+  "currency": "KRW",
+  "themes": [
+   "AI SW·LLM",
+   "AI 에이전트·RPA"
+  ]
+ },
+ {
+  "name": "올거나이즈",
+  "code": null,
+  "sector": "AI SW·LLM",
+  "currency": "KRW",
+  "themes": [
+   "AI SW·LLM",
+   "AI 에이전트·RPA"
+  ]
+ },
+ {
+  "name": "카카오페이",
+  "code": null,
+  "sector": "핀테크·디지털금융",
+  "currency": "KRW",
+  "themes": [
+   "핀테크·디지털금융",
+   "인슈어테크·보험",
+   "미래모빌리티·MaaS"
+  ]
+ },
+ {
+  "name": "KG이니시스",
+  "code": null,
+  "sector": "핀테크·디지털금융",
+  "currency": "KRW",
+  "themes": [
+   "핀테크·디지털금융",
+   "전자상거래·커머스"
+  ]
+ },
+ {
+  "name": "NHN KCP",
+  "code": null,
+  "sector": "핀테크·디지털금융",
+  "currency": "KRW",
+  "themes": [
+   "핀테크·디지털금융",
+   "전자상거래·커머스"
+  ]
+ },
+ {
+  "name": "갤럭시아머니트리",
+  "code": null,
+  "sector": "핀테크·디지털금융",
+  "currency": "KRW",
+  "themes": [
+   "핀테크·디지털금융",
+   "블록체인·가상자산"
+  ]
+ },
+ {
+  "name": "한국NFC",
+  "code": null,
+  "sector": "핀테크·디지털금융",
+  "currency": "KRW",
+  "themes": [
+   "핀테크·디지털금융"
+  ]
+ },
+ {
+  "name": "케이뱅크",
+  "code": null,
+  "sector": "핀테크·디지털금융",
+  "currency": "KRW",
+  "themes": [
+   "핀테크·디지털금융"
+  ]
+ },
+ {
+  "name": "핀다",
+  "code": null,
+  "sector": "핀테크·디지털금융",
+  "currency": "KRW",
+  "themes": [
+   "핀테크·디지털금융"
+  ]
+ },
+ {
+  "name": "뱅크샐러드",
+  "code": null,
+  "sector": "핀테크·디지털금융",
+  "currency": "KRW",
+  "themes": [
+   "핀테크·디지털금융"
+  ]
+ },
+ {
+  "name": "레이니스트",
+  "code": null,
+  "sector": "핀테크·디지털금융",
+  "currency": "KRW",
+  "themes": [
+   "핀테크·디지털금융"
+  ]
+ },
+ {
+  "name": "코스맥스",
+  "code": null,
+  "sector": "K-뷰티·화장품",
+  "currency": "KRW",
+  "themes": [
+   "K-뷰티·화장품"
+  ]
+ },
+ {
+  "name": "한국콜마",
+  "code": null,
+  "sector": "K-뷰티·화장품",
+  "currency": "KRW",
+  "themes": [
+   "K-뷰티·화장품"
+  ]
+ },
+ {
+  "name": "클리오",
+  "code": null,
+  "sector": "K-뷰티·화장품",
+  "currency": "KRW",
+  "themes": [
+   "K-뷰티·화장품"
+  ]
+ },
+ {
+  "name": "실리콘투",
+  "code": null,
+  "sector": "K-뷰티·화장품",
+  "currency": "KRW",
+  "themes": [
+   "K-뷰티·화장품"
+  ]
+ },
+ {
+  "name": "코스메카코리아",
+  "code": null,
+  "sector": "K-뷰티·화장품",
+  "currency": "KRW",
+  "themes": [
+   "K-뷰티·화장품"
+  ]
+ },
+ {
+  "name": "CJ올리브영",
+  "code": null,
+  "sector": "K-뷰티·화장품",
+  "currency": "KRW",
+  "themes": [
+   "K-뷰티·화장품",
+   "바이오플라스틱·친환경포장"
+  ]
+ },
+ {
+  "name": "무신사뷰티",
+  "code": null,
+  "sector": "K-뷰티·화장품",
+  "currency": "KRW",
+  "themes": [
+   "K-뷰티·화장품"
+  ]
+ },
+ {
+  "name": "디어유",
+  "code": null,
+  "sector": "엔터·K-POP",
+  "currency": "KRW",
+  "themes": [
+   "엔터·K-POP"
+  ]
+ },
+ {
+  "name": "와이지엔터테인먼트",
+  "code": null,
+  "sector": "엔터·K-POP",
+  "currency": "KRW",
+  "themes": [
+   "엔터·K-POP"
+  ]
+ },
+ {
+  "name": "위버스",
+  "code": null,
+  "sector": "엔터·K-POP",
+  "currency": "KRW",
+  "themes": [
+   "엔터·K-POP"
+  ]
+ },
+ {
+  "name": "벅스",
+  "code": null,
+  "sector": "엔터·K-POP",
+  "currency": "KRW",
+  "themes": [
+   "엔터·K-POP"
+  ]
+ },
+ {
+  "name": "하나투어",
+  "code": null,
+  "sector": "여행·항공·레저",
+  "currency": "KRW",
+  "themes": [
+   "여행·항공·레저",
+   "면세점·관광인프라"
+  ]
+ },
+ {
+  "name": "제주항공",
+  "code": null,
+  "sector": "여행·항공·레저",
+  "currency": "KRW",
+  "themes": [
+   "여행·항공·레저"
+  ]
+ },
+ {
+  "name": "강원랜드",
+  "code": null,
+  "sector": "여행·항공·레저",
+  "currency": "KRW",
+  "themes": [
+   "여행·항공·레저",
+   "면세점·관광인프라"
+  ]
+ },
+ {
+  "name": "호텔신라",
+  "code": null,
+  "sector": "여행·항공·레저",
+  "currency": "KRW",
+  "themes": [
+   "여행·항공·레저",
+   "면세점·관광인프라"
+  ]
+ },
+ {
+  "name": "아시아나항공",
+  "code": null,
+  "sector": "여행·항공·레저",
+  "currency": "KRW",
+  "themes": [
+   "여행·항공·레저"
+  ]
+ },
+ {
+  "name": "티웨이항공",
+  "code": null,
+  "sector": "여행·항공·레저",
+  "currency": "KRW",
+  "themes": [
+   "여행·항공·레저"
+  ]
+ },
+ {
+  "name": "모두투어",
+  "code": null,
+  "sector": "여행·항공·레저",
+  "currency": "KRW",
+  "themes": [
+   "여행·항공·레저"
+  ]
+ },
+ {
+  "name": "비나텍",
+  "code": null,
+  "sector": "ESS(에너지저장)",
+  "currency": "KRW",
+  "themes": [
+   "ESS(에너지저장)"
+  ]
+ },
+ {
+  "name": "KC코트렐",
+  "code": null,
+  "sector": "탄소중립·CCUS",
+  "currency": "KRW",
+  "themes": [
+   "탄소중립·CCUS"
+  ]
+ },
+ {
+  "name": "후성",
+  "code": null,
+  "sector": "탄소중립·CCUS",
+  "currency": "KRW",
+  "themes": [
+   "탄소중립·CCUS",
+   "리튬·배터리원재료",
+   "산업용가스"
+  ]
+ },
+ {
+  "name": "남해화학",
+  "code": null,
+  "sector": "농업·식량안보",
+  "currency": "KRW",
+  "themes": [
+   "농업·식량안보"
+  ]
+ },
+ {
+  "name": "그린플러스",
+  "code": null,
+  "sector": "농업·식량안보",
+  "currency": "KRW",
+  "themes": [
+   "농업·식량안보",
+   "수직농업·도시농업"
+  ]
+ },
+ {
+  "name": "경농",
+  "code": null,
+  "sector": "농업·식량안보",
+  "currency": "KRW",
+  "themes": [
+   "농업·식량안보"
+  ]
+ },
+ {
+  "name": "팜한농",
+  "code": null,
+  "sector": "농업·식량안보",
+  "currency": "KRW",
+  "themes": [
+   "농업·식량안보"
+  ]
+ },
+ {
+  "name": "조비",
+  "code": null,
+  "sector": "농업·식량안보",
+  "currency": "KRW",
+  "themes": [
+   "농업·식량안보"
+  ]
+ },
+ {
+  "name": "우성사료",
+  "code": null,
+  "sector": "농업·식량안보",
+  "currency": "KRW",
+  "themes": [
+   "농업·식량안보",
+   "반려동물·펫경제"
+  ]
+ },
+ {
+  "name": "이지팜",
+  "code": null,
+  "sector": "농업·식량안보",
+  "currency": "KRW",
+  "themes": [
+   "농업·식량안보"
+  ]
+ },
+ {
+  "name": "사조대림",
+  "code": null,
+  "sector": "농업·식량안보",
+  "currency": "KRW",
+  "themes": [
+   "농업·식량안보",
+   "음식료·필수소비재",
+   "반려동물·펫경제"
+  ]
+ },
+ {
+  "name": "농심",
+  "code": null,
+  "sector": "농업·식량안보",
+  "currency": "KRW",
+  "themes": [
+   "농업·식량안보",
+   "음식료·필수소비재",
+   "K-푸드·식품수출",
+   "대체단백질·배양육"
+  ]
+ },
+ {
+  "name": "삼성E&A",
+  "code": null,
+  "sector": "물·수자원·환경",
+  "currency": "KRW",
+  "themes": [
+   "물·수자원·환경",
+   "건설·인프라",
+   "클린룸·반도체시설"
+  ]
+ },
+ {
+  "name": "웅진",
+  "code": null,
+  "sector": "물·수자원·환경",
+  "currency": "KRW",
+  "themes": [
+   "물·수자원·환경"
+  ]
+ },
+ {
+  "name": "코오롱글로벌",
+  "code": null,
+  "sector": "물·수자원·환경",
+  "currency": "KRW",
+  "themes": [
+   "물·수자원·환경"
+  ]
+ },
+ {
+  "name": "도레이첨단소재",
+  "code": null,
+  "sector": "물·수자원·환경",
+  "currency": "KRW",
+  "themes": [
+   "물·수자원·환경",
+   "탄소섬유·경량소재"
+  ]
+ },
+ {
+  "name": "KMW",
+  "code": null,
+  "sector": "5G/6G·통신",
+  "currency": "KRW",
+  "themes": [
+   "5G/6G·통신",
+   "사이버전·전자전"
+  ]
+ },
+ {
+  "name": "서진시스템",
+  "code": null,
+  "sector": "5G/6G·통신",
+  "currency": "KRW",
+  "themes": [
+   "5G/6G·통신"
+  ]
+ },
+ {
+  "name": "에이스테크",
+  "code": null,
+  "sector": "5G/6G·통신",
+  "currency": "KRW",
+  "themes": [
+   "5G/6G·통신",
+   "사이버전·전자전"
+  ]
+ },
+ {
+  "name": "오이솔루션",
+  "code": null,
+  "sector": "광통신·네트워크장비",
+  "currency": "KRW",
+  "themes": [
+   "광통신·네트워크장비"
+  ]
+ },
+ {
+  "name": "옵티시스",
+  "code": null,
+  "sector": "광통신·네트워크장비",
+  "currency": "KRW",
+  "themes": [
+   "광통신·네트워크장비"
+  ]
+ },
+ {
+  "name": "라이트론",
+  "code": null,
+  "sector": "광통신·네트워크장비",
+  "currency": "KRW",
+  "themes": [
+   "광통신·네트워크장비"
+  ]
+ },
+ {
+  "name": "유비쿼스",
+  "code": null,
+  "sector": "광통신·네트워크장비",
+  "currency": "KRW",
+  "themes": [
+   "광통신·네트워크장비"
+  ]
+ },
+ {
+  "name": "쿠팡",
+  "code": null,
+  "sector": "전자상거래·커머스",
+  "currency": "KRW",
+  "themes": [
+   "전자상거래·커머스",
+   "반려동물·펫경제",
+   "스마트물류·풀필먼트",
+   "대체단백질·배양육",
+   "수직농업·도시농업"
+  ]
+ },
+ {
+  "name": "한진",
+  "code": null,
+  "sector": "전자상거래·커머스",
+  "currency": "KRW",
+  "themes": [
+   "전자상거래·커머스",
+   "스마트물류·풀필먼트",
+   "자율주행트럭·상용차"
+  ]
+ },
+ {
+  "name": "오스템임플란트",
+  "code": null,
+  "sector": "고령화·실버산업",
+  "currency": "KRW",
+  "themes": [
+   "고령화·실버산업",
+   "의료기기·진단"
+  ]
+ },
+ {
+  "name": "인바디",
+  "code": null,
+  "sector": "고령화·실버산업",
+  "currency": "KRW",
+  "themes": [
+   "고령화·실버산업",
+   "의료기기·진단"
+  ]
+ },
+ {
+  "name": "바텍",
+  "code": null,
+  "sector": "고령화·실버산업",
+  "currency": "KRW",
+  "themes": [
+   "고령화·실버산업",
+   "의료기기·진단"
+  ]
+ },
+ {
+  "name": "경동나비엔",
+  "code": null,
+  "sector": "고령화·실버산업",
+  "currency": "KRW",
+  "themes": [
+   "고령화·실버산업",
+   "스마트홈·IoT 가전"
+  ]
+ },
+ {
+  "name": "교보생명",
+  "code": null,
+  "sector": "고령화·실버산업",
+  "currency": "KRW",
+  "themes": [
+   "고령화·실버산업"
+  ]
+ },
+ {
+  "name": "메디컬아이피",
+  "code": null,
+  "sector": "고령화·실버산업",
+  "currency": "KRW",
+  "themes": [
+   "고령화·실버산업"
+  ]
+ },
+ {
+  "name": "케어링",
+  "code": null,
+  "sector": "고령화·실버산업",
+  "currency": "KRW",
+  "themes": [
+   "고령화·실버산업"
+  ]
+ },
+ {
+  "name": "메가스터디",
+  "code": null,
+  "sector": "에듀테크·교육",
+  "currency": "KRW",
+  "themes": [
+   "에듀테크·교육"
+  ]
+ },
+ {
+  "name": "비상교육",
+  "code": null,
+  "sector": "에듀테크·교육",
+  "currency": "KRW",
+  "themes": [
+   "에듀테크·교육",
+   "디지털교과서·공교육 AI"
+  ]
+ },
+ {
+  "name": "웅진씽크빅",
+  "code": null,
+  "sector": "에듀테크·교육",
+  "currency": "KRW",
+  "themes": [
+   "에듀테크·교육",
+   "디지털교과서·공교육 AI"
+  ]
+ },
+ {
+  "name": "대교",
+  "code": null,
+  "sector": "에듀테크·교육",
+  "currency": "KRW",
+  "themes": [
+   "에듀테크·교육"
+  ]
+ },
+ {
+  "name": "미래엔",
+  "code": null,
+  "sector": "에듀테크·교육",
+  "currency": "KRW",
+  "themes": [
+   "에듀테크·교육",
+   "디지털교과서·공교육 AI"
+  ]
+ },
+ {
+  "name": "천재교육",
+  "code": null,
+  "sector": "에듀테크·교육",
+  "currency": "KRW",
+  "themes": [
+   "에듀테크·교육",
+   "디지털교과서·공교육 AI"
+  ]
+ },
+ {
+  "name": "능률교육",
+  "code": null,
+  "sector": "에듀테크·교육",
+  "currency": "KRW",
+  "themes": [
+   "에듀테크·교육"
+  ]
+ },
+ {
+  "name": "YBM넷",
+  "code": null,
+  "sector": "에듀테크·교육",
+  "currency": "KRW",
+  "themes": [
+   "에듀테크·교육"
+  ]
+ },
+ {
+  "name": "두나무",
+  "code": null,
+  "sector": "블록체인·가상자산",
+  "currency": "KRW",
+  "themes": [
+   "블록체인·가상자산"
+  ]
+ },
+ {
+  "name": "한컴위드",
+  "code": null,
+  "sector": "블록체인·가상자산",
+  "currency": "KRW",
+  "themes": [
+   "블록체인·가상자산"
+  ]
+ },
+ {
+  "name": "우리기술투자",
+  "code": null,
+  "sector": "블록체인·가상자산",
+  "currency": "KRW",
+  "themes": [
+   "블록체인·가상자산"
+  ]
+ },
+ {
+  "name": "빗썸코리아",
+  "code": null,
+  "sector": "블록체인·가상자산",
+  "currency": "KRW",
+  "themes": [
+   "블록체인·가상자산"
+  ]
+ },
+ {
+  "name": "코인원",
+  "code": null,
+  "sector": "블록체인·가상자산",
+  "currency": "KRW",
+  "themes": [
+   "블록체인·가상자산"
+  ]
+ },
+ {
+  "name": "람다256",
+  "code": null,
+  "sector": "블록체인·가상자산",
+  "currency": "KRW",
+  "themes": [
+   "블록체인·가상자산"
+  ]
+ },
+ {
+  "name": "삼양식품",
+  "code": null,
+  "sector": "음식료·필수소비재",
+  "currency": "KRW",
+  "themes": [
+   "음식료·필수소비재",
+   "K-푸드·식품수출"
+  ]
+ },
+ {
+  "name": "오뚜기",
+  "code": null,
+  "sector": "음식료·필수소비재",
+  "currency": "KRW",
+  "themes": [
+   "음식료·필수소비재",
+   "K-푸드·식품수출"
+  ]
+ },
+ {
+  "name": "BGF리테일",
+  "code": null,
+  "sector": "음식료·필수소비재",
+  "currency": "KRW",
+  "themes": [
+   "음식료·필수소비재"
+  ]
+ },
+ {
+  "name": "대상",
+  "code": null,
+  "sector": "음식료·필수소비재",
+  "currency": "KRW",
+  "themes": [
+   "음식료·필수소비재",
+   "K-푸드·식품수출",
+   "프랜차이즈·외식",
+   "대체단백질·배양육"
+  ]
+ },
+ {
+  "name": "삼양사",
+  "code": null,
+  "sector": "음식료·필수소비재",
+  "currency": "KRW",
+  "themes": [
+   "음식료·필수소비재",
+   "K-푸드·식품수출"
+  ]
+ },
+ {
+  "name": "동국제강",
+  "code": null,
+  "sector": "건설·인프라",
+  "currency": "KRW",
+  "themes": [
+   "건설·인프라",
+   "철강·특수강"
+  ]
+ },
+ {
+  "name": "KCC",
+  "code": null,
+  "sector": "건설·인프라",
+  "currency": "KRW",
+  "themes": [
+   "건설·인프라"
+  ]
+ },
+ {
+  "name": "한샘",
+  "code": null,
+  "sector": "건설·인프라",
+  "currency": "KRW",
+  "themes": [
+   "건설·인프라"
+  ]
+ },
+ {
+  "name": "현대리바트",
+  "code": null,
+  "sector": "건설·인프라",
+  "currency": "KRW",
+  "themes": [
+   "건설·인프라"
+  ]
+ },
+ {
+  "name": "SNT모티브",
+  "code": null,
+  "sector": "건설·인프라",
+  "currency": "KRW",
+  "themes": [
+   "건설·인프라",
+   "소방·재난안전"
+  ],
+  "aliases": [
+   "S&T모티브"
+  ]
+ },
+ {
+  "name": "현대위아",
+  "code": null,
+  "sector": "자동차부품·모빌리티",
+  "currency": "KRW",
+  "themes": [
+   "자동차부품·모빌리티",
+   "3D 프린팅·적층제조"
+  ]
+ },
+ {
+  "name": "카카오모빌리티",
+  "code": null,
+  "sector": "자동차부품·모빌리티",
+  "currency": "KRW",
+  "themes": [
+   "자동차부품·모빌리티",
+   "미래모빌리티·MaaS"
+  ]
+ },
+ {
+  "name": "매그나칩",
+  "code": null,
+  "sector": "전력반도체(SiC/GaN)",
+  "currency": "KRW",
+  "themes": [
+   "전력반도체(SiC/GaN)"
+  ]
+ },
+ {
+  "name": "예스파워테크닉스",
+  "code": null,
+  "sector": "전력반도체(SiC/GaN)",
+  "currency": "KRW",
+  "themes": [
+   "전력반도체(SiC/GaN)"
+  ]
+ },
+ {
+  "name": "덕산테코피아",
+  "code": null,
+  "sector": "전력반도체(SiC/GaN)",
+  "currency": "KRW",
+  "themes": [
+   "전력반도체(SiC/GaN)"
+  ]
+ },
+ {
+  "name": "에스티팜",
+  "code": null,
+  "sector": "비만치료제(GLP-1)",
+  "currency": "KRW",
+  "themes": [
+   "비만치료제(GLP-1)"
+  ]
+ },
+ {
+  "name": "동아에스티",
+  "code": null,
+  "sector": "비만치료제(GLP-1)",
+  "currency": "KRW",
+  "themes": [
+   "비만치료제(GLP-1)"
+  ]
+ },
+ {
+  "name": "폴루스",
+  "code": null,
+  "sector": "비만치료제(GLP-1)",
+  "currency": "KRW",
+  "themes": [
+   "비만치료제(GLP-1)"
+  ]
+ },
+ {
+  "name": "JW중외제약",
+  "code": null,
+  "sector": "비만치료제(GLP-1)",
+  "currency": "KRW",
+  "themes": [
+   "비만치료제(GLP-1)"
+  ]
+ },
+ {
+  "name": "종근당",
+  "code": null,
+  "sector": "비만치료제(GLP-1)",
+  "currency": "KRW",
+  "themes": [
+   "비만치료제(GLP-1)"
+  ]
+ },
+ {
+  "name": "성일하이텍",
+  "code": null,
+  "sector": "폐배터리 재활용",
+  "currency": "KRW",
+  "themes": [
+   "폐배터리 재활용"
+  ]
+ },
+ {
+  "name": "에코프로CnG",
+  "code": null,
+  "sector": "폐배터리 재활용",
+  "currency": "KRW",
+  "themes": [
+   "폐배터리 재활용"
+  ]
+ },
+ {
+  "name": "새빗켐",
+  "code": null,
+  "sector": "폐배터리 재활용",
+  "currency": "KRW",
+  "themes": [
+   "폐배터리 재활용"
+  ]
+ },
+ {
+  "name": "영풍정밀",
+  "code": null,
+  "sector": "폐배터리 재활용",
+  "currency": "KRW",
+  "themes": [
+   "폐배터리 재활용"
+  ]
+ },
+ {
+  "name": "파워로직스",
+  "code": null,
+  "sector": "폐배터리 재활용",
+  "currency": "KRW",
+  "themes": [
+   "폐배터리 재활용"
+  ]
+ },
+ {
+  "name": "SK오션플랜트",
+  "code": null,
+  "sector": "해상풍력",
+  "currency": "KRW",
+  "themes": [
+   "해상풍력"
+  ],
+  "aliases": [
+   "삼강엠앤티"
+  ]
+ },
+ {
+  "name": "세진중공업",
+  "code": null,
+  "sector": "해상풍력",
+  "currency": "KRW",
+  "themes": [
+   "해상풍력"
+  ]
+ },
+ {
+  "name": "유니슨",
+  "code": null,
+  "sector": "해상풍력",
+  "currency": "KRW",
+  "themes": [
+   "해상풍력"
+  ]
+ },
+ {
+  "name": "SK에코플랜트",
+  "code": null,
+  "sector": "해상풍력",
+  "currency": "KRW",
+  "themes": [
+   "해상풍력"
+  ]
+ },
+ {
+  "name": "누리텔레콤",
+  "code": null,
+  "sector": "스마트그리드·전력망",
+  "currency": "KRW",
+  "themes": [
+   "스마트그리드·전력망",
+   "스마트시티",
+   "가상발전소(VPP)"
+  ]
+ },
+ {
+  "name": "옴니시스템",
+  "code": null,
+  "sector": "스마트그리드·전력망",
+  "currency": "KRW",
+  "themes": [
+   "스마트그리드·전력망"
+  ]
+ },
+ {
+  "name": "한전KDN",
+  "code": null,
+  "sector": "스마트그리드·전력망",
+  "currency": "KRW",
+  "themes": [
+   "스마트그리드·전력망",
+   "가상발전소(VPP)"
+  ]
+ },
+ {
+  "name": "인스텍",
+  "code": null,
+  "sector": "3D 프린팅·적층제조",
+  "currency": "KRW",
+  "themes": [
+   "3D 프린팅·적층제조"
+  ]
+ },
+ {
+  "name": "캐리마",
+  "code": null,
+  "sector": "3D 프린팅·적층제조",
+  "currency": "KRW",
+  "themes": [
+   "3D 프린팅·적층제조"
+  ]
+ },
+ {
+  "name": "대주전자재료",
+  "code": null,
+  "sector": "3D 프린팅·적층제조",
+  "currency": "KRW",
+  "themes": [
+   "3D 프린팅·적층제조"
+  ]
+ },
+ {
+  "name": "메탈쓰리디",
+  "code": null,
+  "sector": "3D 프린팅·적층제조",
+  "currency": "KRW",
+  "themes": [
+   "3D 프린팅·적층제조"
+  ]
+ },
+ {
+  "name": "비즈모델라인",
+  "code": null,
+  "sector": "디지털트윈",
+  "currency": "KRW",
+  "themes": [
+   "디지털트윈"
+  ]
+ },
+ {
+  "name": "한컴인텔리전스",
+  "code": null,
+  "sector": "군용드론·무인기",
+  "currency": "KRW",
+  "themes": [
+   "군용드론·무인기",
+   "소방·재난안전",
+   "CCTV·영상보안",
+   "사이버전·전자전"
+  ]
+ },
+ {
+  "name": "서울바이오시스",
+  "code": null,
+  "sector": "마이크로 LED",
+  "currency": "KRW",
+  "themes": [
+   "마이크로 LED"
+  ]
+ },
+ {
+  "name": "루멘스",
+  "code": null,
+  "sector": "마이크로 LED",
+  "currency": "KRW",
+  "themes": [
+   "마이크로 LED",
+   "수직농업·도시농업"
+  ]
+ },
+ {
+  "name": "엘티씨",
+  "code": null,
+  "sector": "마이크로 LED",
+  "currency": "KRW",
+  "themes": [
+   "마이크로 LED"
+  ]
+ },
+ {
+  "name": "SK케미칼",
+  "code": null,
+  "sector": "탄소섬유·경량소재",
+  "currency": "KRW",
+  "themes": [
+   "탄소섬유·경량소재",
+   "바이오플라스틱·친환경포장"
+  ]
+ },
+ {
+  "name": "슈프리마",
+  "code": null,
+  "sector": "생체인식·보안",
+  "currency": "KRW",
+  "themes": [
+   "생체인식·보안"
+  ]
+ },
+ {
+  "name": "알체라",
+  "code": null,
+  "sector": "생체인식·보안",
+  "currency": "KRW",
+  "themes": [
+   "생체인식·보안",
+   "CCTV·영상보안"
+  ]
+ },
+ {
+  "name": "크루셜텍",
+  "code": null,
+  "sector": "생체인식·보안",
+  "currency": "KRW",
+  "themes": [
+   "생체인식·보안"
+  ]
+ },
+ {
+  "name": "슈프리마아이디",
+  "code": null,
+  "sector": "생체인식·보안",
+  "currency": "KRW",
+  "themes": [
+   "생체인식·보안"
+  ]
+ },
+ {
+  "name": "파인텍",
+  "code": null,
+  "sector": "생체인식·보안",
+  "currency": "KRW",
+  "themes": [
+   "생체인식·보안",
+   "수직농업·도시농업"
+  ]
+ },
+ {
+  "name": "이엘피",
+  "code": null,
+  "sector": "생체인식·보안",
+  "currency": "KRW",
+  "themes": [
+   "생체인식·보안"
+  ]
+ },
+ {
+  "name": "옵트론텍",
+  "code": null,
+  "sector": "생체인식·보안",
+  "currency": "KRW",
+  "themes": [
+   "생체인식·보안"
+  ]
+ },
+ {
+  "name": "에스원",
+  "code": null,
+  "sector": "생체인식·보안",
+  "currency": "KRW",
+  "themes": [
+   "생체인식·보안",
+   "소방·재난안전",
+   "CCTV·영상보안"
+  ]
+ },
+ {
+  "name": "하림",
+  "code": null,
+  "sector": "반려동물·펫경제",
+  "currency": "KRW",
+  "themes": [
+   "반려동물·펫경제"
+  ]
+ },
+ {
+  "name": "대웅바이오",
+  "code": null,
+  "sector": "반려동물·펫경제",
+  "currency": "KRW",
+  "themes": [
+   "반려동물·펫경제"
+  ]
+ },
+ {
+  "name": "펫프렌즈",
+  "code": null,
+  "sector": "반려동물·펫경제",
+  "currency": "KRW",
+  "themes": [
+   "반려동물·펫경제"
+  ]
+ },
+ {
+  "name": "풀무원",
+  "code": null,
+  "sector": "K-푸드·식품수출",
+  "currency": "KRW",
+  "themes": [
+   "K-푸드·식품수출",
+   "대체단백질·배양육",
+   "바이오플라스틱·친환경포장"
+  ]
+ },
+ {
+  "name": "동원F&B",
+  "code": null,
+  "sector": "K-푸드·식품수출",
+  "currency": "KRW",
+  "themes": [
+   "K-푸드·식품수출"
+  ]
+ },
+ {
+  "name": "교촌F&B",
+  "code": null,
+  "sector": "프랜차이즈·외식",
+  "currency": "KRW",
+  "themes": [
+   "프랜차이즈·외식"
+  ]
+ },
+ {
+  "name": "CJ프레시웨이",
+  "code": null,
+  "sector": "프랜차이즈·외식",
+  "currency": "KRW",
+  "themes": [
+   "프랜차이즈·외식"
+  ]
+ },
+ {
+  "name": "SPC삼립",
+  "code": null,
+  "sector": "프랜차이즈·외식",
+  "currency": "KRW",
+  "themes": [
+   "프랜차이즈·외식"
+  ]
+ },
+ {
+  "name": "제너시스BBQ",
+  "code": null,
+  "sector": "프랜차이즈·외식",
+  "currency": "KRW",
+  "themes": [
+   "프랜차이즈·외식"
+  ]
+ },
+ {
+  "name": "이디야",
+  "code": null,
+  "sector": "프랜차이즈·외식",
+  "currency": "KRW",
+  "themes": [
+   "프랜차이즈·외식"
+  ]
+ },
+ {
+  "name": "다이닝브랜즈그룹",
+  "code": null,
+  "sector": "프랜차이즈·외식",
+  "currency": "KRW",
+  "themes": [
+   "프랜차이즈·외식"
+  ],
+  "aliases": [
+   "bhc"
+  ]
+ },
+ {
+  "name": "맘스터치",
+  "code": null,
+  "sector": "프랜차이즈·외식",
+  "currency": "KRW",
+  "themes": [
+   "프랜차이즈·외식"
+  ]
+ },
+ {
+  "name": "파라다이스",
+  "code": null,
+  "sector": "면세점·관광인프라",
+  "currency": "KRW",
+  "themes": [
+   "면세점·관광인프라"
+  ]
+ },
+ {
+  "name": "롯데관광개발",
+  "code": null,
+  "sector": "면세점·관광인프라",
+  "currency": "KRW",
+  "themes": [
+   "면세점·관광인프라"
+  ]
+ },
+ {
+  "name": "롯데면세",
+  "code": null,
+  "sector": "면세점·관광인프라",
+  "currency": "KRW",
+  "themes": [
+   "면세점·관광인프라"
+  ]
+ },
+ {
+  "name": "신세계면세",
+  "code": null,
+  "sector": "면세점·관광인프라",
+  "currency": "KRW",
+  "themes": [
+   "면세점·관광인프라"
+  ]
+ },
+ {
+  "name": "유진로봇",
+  "code": null,
+  "sector": "물류자동화·AGV",
+  "currency": "KRW",
+  "themes": [
+   "물류자동화·AGV"
+  ]
+ },
+ {
+  "name": "롯데글로벌로지스",
+  "code": null,
+  "sector": "스마트물류·풀필먼트",
+  "currency": "KRW",
+  "themes": [
+   "스마트물류·풀필먼트",
+   "자율주행트럭·상용차"
+  ]
+ },
+ {
+  "name": "한화정밀기계",
+  "code": null,
+  "sector": "스마트물류·풀필먼트",
+  "currency": "KRW",
+  "themes": [
+   "스마트물류·풀필먼트"
+  ]
+ },
+ {
+  "name": "인터플렉스",
+  "code": null,
+  "sector": "스마트물류·풀필먼트",
+  "currency": "KRW",
+  "themes": [
+   "스마트물류·풀필먼트"
+  ]
+ },
+ {
+  "name": "팀프레시",
+  "code": null,
+  "sector": "스마트물류·풀필먼트",
+  "currency": "KRW",
+  "themes": [
+   "스마트물류·풀필먼트"
+  ]
+ },
+ {
+  "name": "오아시스",
+  "code": null,
+  "sector": "스마트물류·풀필먼트",
+  "currency": "KRW",
+  "themes": [
+   "스마트물류·풀필먼트"
+  ]
+ },
+ {
+  "name": "현대제철",
+  "code": null,
+  "sector": "철강·특수강",
+  "currency": "KRW",
+  "themes": [
+   "철강·특수강"
+  ]
+ },
+ {
+  "name": "세아베스틸",
+  "code": null,
+  "sector": "철강·특수강",
+  "currency": "KRW",
+  "themes": [
+   "철강·특수강"
+  ]
+ },
+ {
+  "name": "한국철강",
+  "code": null,
+  "sector": "철강·특수강",
+  "currency": "KRW",
+  "themes": [
+   "철강·특수강"
+  ]
+ },
+ {
+  "name": "동국S&C",
+  "code": null,
+  "sector": "철강·특수강",
+  "currency": "KRW",
+  "themes": [
+   "철강·특수강"
+  ]
+ },
+ {
+  "name": "포스코A&C",
+  "code": null,
+  "sector": "스마트시티",
+  "currency": "KRW",
+  "themes": [
+   "스마트시티"
+  ]
+ },
+ {
+  "name": "타타대우",
+  "code": null,
+  "sector": "자율주행트럭·상용차",
+  "currency": "KRW",
+  "themes": [
+   "자율주행트럭·상용차"
+  ]
+ },
+ {
+  "name": "우진산전",
+  "code": null,
+  "sector": "전기버스·수소버스",
+  "currency": "KRW",
+  "themes": [
+   "전기버스·수소버스"
+  ]
+ },
+ {
+  "name": "에디슨모터스",
+  "code": null,
+  "sector": "전기버스·수소버스",
+  "currency": "KRW",
+  "themes": [
+   "전기버스·수소버스"
+  ]
+ },
+ {
+  "name": "지구인컴퍼니",
+  "code": null,
+  "sector": "대체단백질·배양육",
+  "currency": "KRW",
+  "themes": [
+   "대체단백질·배양육"
+  ]
+ },
+ {
+  "name": "씨위드",
+  "code": null,
+  "sector": "대체단백질·배양육",
+  "currency": "KRW",
+  "themes": [
+   "대체단백질·배양육"
+  ]
+ },
+ {
+  "name": "디보션푸드",
+  "code": null,
+  "sector": "대체단백질·배양육",
+  "currency": "KRW",
+  "themes": [
+   "대체단백질·배양육"
+  ]
+ },
+ {
+  "name": "SK스페셜티",
+  "code": null,
+  "sector": "산업용가스",
+  "currency": "KRW",
+  "themes": [
+   "산업용가스"
+  ]
+ },
+ {
+  "name": "원익머트리얼즈",
+  "code": null,
+  "sector": "산업용가스",
+  "currency": "KRW",
+  "themes": [
+   "산업용가스"
+  ]
+ },
+ {
+  "name": "대성산업가스",
+  "code": null,
+  "sector": "산업용가스",
+  "currency": "KRW",
+  "themes": [
+   "산업용가스"
+  ]
+ },
+ {
+  "name": "SK머티리얼즈",
+  "code": null,
+  "sector": "산업용가스",
+  "currency": "KRW",
+  "themes": [
+   "산업용가스"
+  ]
+ },
+ {
+  "name": "하나마이크론",
+  "code": null,
+  "sector": "산업용가스",
+  "currency": "KRW",
+  "themes": [
+   "산업용가스"
+  ]
+ },
+ {
+  "name": "동방",
+  "code": null,
+  "sector": "소방·재난안전",
+  "currency": "KRW",
+  "themes": [
+   "소방·재난안전"
+  ]
+ },
+ {
+  "name": "한국소방산업",
+  "code": null,
+  "sector": "소방·재난안전",
+  "currency": "KRW",
+  "themes": [
+   "소방·재난안전"
+  ]
+ },
+ {
+  "name": "파트론",
+  "code": null,
+  "sector": "웨어러블·스마트워치",
+  "currency": "KRW",
+  "themes": [
+   "웨어러블·스마트워치"
+  ]
+ },
+ {
+  "name": "자화전자",
+  "code": null,
+  "sector": "웨어러블·스마트워치",
+  "currency": "KRW",
+  "themes": [
+   "웨어러블·스마트워치"
+  ]
+ },
+ {
+  "name": "아모텍",
+  "code": null,
+  "sector": "웨어러블·스마트워치",
+  "currency": "KRW",
+  "themes": [
+   "웨어러블·스마트워치",
+   "스마트홈·IoT 가전"
+  ]
+ },
+ {
+  "name": "LX세미콘",
+  "code": null,
+  "sector": "스마트홈·IoT 가전",
+  "currency": "KRW",
+  "themes": [
+   "스마트홈·IoT 가전"
+  ]
+ },
+ {
+  "name": "차바이오텍",
+  "code": null,
+  "sector": "줄기세포·재생의료",
+  "currency": "KRW",
+  "themes": [
+   "줄기세포·재생의료"
+  ]
+ },
+ {
+  "name": "메디포스트",
+  "code": null,
+  "sector": "줄기세포·재생의료",
+  "currency": "KRW",
+  "themes": [
+   "줄기세포·재생의료"
+  ]
+ },
+ {
+  "name": "안트로젠",
+  "code": null,
+  "sector": "줄기세포·재생의료",
+  "currency": "KRW",
+  "themes": [
+   "줄기세포·재생의료"
+  ]
+ },
+ {
+  "name": "파미셀",
+  "code": null,
+  "sector": "줄기세포·재생의료",
+  "currency": "KRW",
+  "themes": [
+   "줄기세포·재생의료"
+  ]
+ },
+ {
+  "name": "강스템바이오텍",
+  "code": null,
+  "sector": "줄기세포·재생의료",
+  "currency": "KRW",
+  "themes": [
+   "줄기세포·재생의료"
+  ]
+ },
+ {
+  "name": "툴젠",
+  "code": null,
+  "sector": "유전자치료(CGT)",
+  "currency": "KRW",
+  "themes": [
+   "유전자치료(CGT)"
+  ]
+ },
+ {
+  "name": "제넥신",
+  "code": null,
+  "sector": "유전자치료(CGT)",
+  "currency": "KRW",
+  "themes": [
+   "유전자치료(CGT)"
+  ]
+ },
+ {
+  "name": "바이넥스",
+  "code": null,
+  "sector": "유전자치료(CGT)",
+  "currency": "KRW",
+  "themes": [
+   "유전자치료(CGT)"
+  ]
+ },
+ {
+  "name": "진원생명과학",
+  "code": null,
+  "sector": "유전자치료(CGT)",
+  "currency": "KRW",
+  "themes": [
+   "유전자치료(CGT)"
+  ]
+ },
+ {
+  "name": "인터로조",
+  "code": null,
+  "sector": "의료기기·진단",
+  "currency": "KRW",
+  "themes": [
+   "의료기기·진단"
+  ]
+ },
+ {
+  "name": "루트로닉",
+  "code": null,
+  "sector": "의료기기·진단",
+  "currency": "KRW",
+  "themes": [
+   "의료기기·진단"
+  ]
+ },
+ {
+  "name": "큐렉소",
+  "code": null,
+  "sector": "의료기기·진단",
+  "currency": "KRW",
+  "themes": [
+   "의료기기·진단"
+  ]
+ },
+ {
+  "name": "힘스",
+  "code": null,
+  "sector": "의료기기·진단",
+  "currency": "KRW",
+  "themes": [
+   "의료기기·진단"
+  ]
+ },
+ {
+  "name": "세운메디칼",
+  "code": null,
+  "sector": "의료기기·진단",
+  "currency": "KRW",
+  "themes": [
+   "의료기기·진단"
+  ]
+ },
+ {
+  "name": "메디톡스",
+  "code": null,
+  "sector": "의료기기·진단",
+  "currency": "KRW",
+  "themes": [
+   "의료기기·진단"
+  ]
+ },
+ {
+  "name": "DB손해보험",
+  "code": null,
+  "sector": "인슈어테크·보험",
+  "currency": "KRW",
+  "themes": [
+   "인슈어테크·보험",
+   "미래모빌리티·MaaS"
+  ]
+ },
+ {
+  "name": "웹케시",
+  "code": null,
+  "sector": "인슈어테크·보험",
+  "currency": "KRW",
+  "themes": [
+   "인슈어테크·보험"
+  ]
+ },
+ {
+  "name": "쿠콘",
+  "code": null,
+  "sector": "인슈어테크·보험",
+  "currency": "KRW",
+  "themes": [
+   "인슈어테크·보험"
+  ]
+ },
+ {
+  "name": "카카오페이손해보험",
+  "code": null,
+  "sector": "인슈어테크·보험",
+  "currency": "KRW",
+  "themes": [
+   "인슈어테크·보험"
+  ]
+ },
+ {
+  "name": "보맵",
+  "code": null,
+  "sector": "인슈어테크·보험",
+  "currency": "KRW",
+  "themes": [
+   "인슈어테크·보험"
+  ]
+ },
+ {
+  "name": "굿리치",
+  "code": null,
+  "sector": "인슈어테크·보험",
+  "currency": "KRW",
+  "themes": [
+   "인슈어테크·보험"
+  ]
+ },
+ {
+  "name": "HD현대마린솔루션",
+  "code": null,
+  "sector": "전기선박·친환경해운",
+  "currency": "KRW",
+  "themes": [
+   "전기선박·친환경해운"
+  ]
+ },
+ {
+  "name": "에너토크",
+  "code": null,
+  "sector": "가상발전소(VPP)",
+  "currency": "KRW",
+  "themes": [
+   "가상발전소(VPP)"
+  ]
+ },
+ {
+  "name": "KPX케미칼",
+  "code": null,
+  "sector": "가상발전소(VPP)",
+  "currency": "KRW",
+  "themes": [
+   "가상발전소(VPP)"
+  ],
+  "aliases": [
+   "KPX"
+  ]
+ },
+ {
+  "name": "뉴냅스",
+  "code": null,
+  "sector": "디지털치료제(DTx)",
+  "currency": "KRW",
+  "themes": [
+   "디지털치료제(DTx)"
+  ]
+ },
+ {
+  "name": "라이프시맨틱스",
+  "code": null,
+  "sector": "디지털치료제(DTx)",
+  "currency": "KRW",
+  "themes": [
+   "디지털치료제(DTx)"
+  ]
+ },
+ {
+  "name": "웰트",
+  "code": null,
+  "sector": "디지털치료제(DTx)",
+  "currency": "KRW",
+  "themes": [
+   "디지털치료제(DTx)"
+  ]
+ },
+ {
+  "name": "에이아이더뉴트리션",
+  "code": null,
+  "sector": "디지털치료제(DTx)",
+  "currency": "KRW",
+  "themes": [
+   "디지털치료제(DTx)"
+  ]
+ },
+ {
+  "name": "한화비전",
+  "code": null,
+  "sector": "CCTV·영상보안",
+  "currency": "KRW",
+  "themes": [
+   "CCTV·영상보안"
+  ]
+ },
+ {
+  "name": "아이디스",
+  "code": null,
+  "sector": "CCTV·영상보안",
+  "currency": "KRW",
+  "themes": [
+   "CCTV·영상보안"
+  ]
+ },
+ {
+  "name": "수산아이앤티",
+  "code": null,
+  "sector": "CCTV·영상보안",
+  "currency": "KRW",
+  "themes": [
+   "CCTV·영상보안"
+  ]
+ },
+ {
+  "name": "ADT캡스",
+  "code": null,
+  "sector": "CCTV·영상보안",
+  "currency": "KRW",
+  "themes": [
+   "CCTV·영상보안"
+  ]
+ },
+ {
+  "name": "칩스앤미디어",
+  "code": null,
+  "sector": "AI 반도체설계(팹리스)",
+  "currency": "KRW",
+  "themes": [
+   "AI 반도체설계(팹리스)"
+  ]
+ },
+ {
+  "name": "신성이엔지",
+  "code": null,
+  "sector": "클린룸·반도체시설",
+  "currency": "KRW",
+  "themes": [
+   "클린룸·반도체시설"
+  ]
+ },
+ {
+  "name": "한양이엔지",
+  "code": null,
+  "sector": "클린룸·반도체시설",
+  "currency": "KRW",
+  "themes": [
+   "클린룸·반도체시설"
+  ]
+ },
+ {
+  "name": "크린앤사이언스",
+  "code": null,
+  "sector": "클린룸·반도체시설",
+  "currency": "KRW",
+  "themes": [
+   "클린룸·반도체시설"
+  ]
+ },
+ {
+  "name": "케이씨",
+  "code": null,
+  "sector": "클린룸·반도체시설",
+  "currency": "KRW",
+  "themes": [
+   "클린룸·반도체시설"
+  ]
+ },
+ {
+  "name": "에이치엘비",
+  "code": null,
+  "sector": "클린룸·반도체시설",
+  "currency": "KRW",
+  "themes": [
+   "클린룸·반도체시설"
+  ]
+ },
+ {
+  "name": "SK엔무브",
+  "code": null,
+  "sector": "AI 데이터센터냉각",
+  "currency": "KRW",
+  "themes": [
+   "AI 데이터센터냉각"
+  ]
+ },
+ {
+  "name": "아이스크림에듀",
+  "code": null,
+  "sector": "디지털교과서·공교육 AI",
+  "currency": "KRW",
+  "themes": [
+   "디지털교과서·공교육 AI"
+  ]
+ },
+ {
+  "name": "서울반도체",
+  "code": null,
+  "sector": "수직농업·도시농업",
+  "currency": "KRW",
+  "themes": [
+   "수직농업·도시농업"
+  ]
+ },
+ {
+  "name": "팜에이트",
+  "code": null,
+  "sector": "수직농업·도시농업",
+  "currency": "KRW",
+  "themes": [
+   "수직농업·도시농업"
+  ]
+ },
+ {
+  "name": "넥스트온",
+  "code": null,
+  "sector": "수직농업·도시농업",
+  "currency": "KRW",
+  "themes": [
+   "수직농업·도시농업"
+  ]
+ },
+ {
+  "name": "마켓컬리",
+  "code": null,
+  "sector": "수직농업·도시농업",
+  "currency": "KRW",
+  "themes": [
+   "수직농업·도시농업"
+  ]
+ },
+ {
+  "name": "풍산FNS",
+  "code": null,
+  "sector": "사이버전·전자전",
+  "currency": "KRW",
+  "themes": [
+   "사이버전·전자전"
+  ]
+ },
+ {
+  "name": "타다",
+  "code": null,
+  "sector": "미래모빌리티·MaaS",
+  "currency": "KRW",
+  "themes": [
+   "미래모빌리티·MaaS"
+  ]
+ },
+ {
+  "name": "QQQM",
+  "code": "NASDAQ:QQQM",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "나스닥100"
+  ]
+ },
+ {
+  "name": "TQQQ",
+  "code": "NASDAQ:TQQQ",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "나스닥100 3배 레버리지"
+  ]
+ },
+ {
+  "name": "VOO",
+  "code": "NYSEARCA:VOO",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "S&P500"
+  ]
+ },
+ {
+  "name": "IVV",
+  "code": "NYSEARCA:IVV",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "S&P500"
+  ]
+ },
+ {
+  "name": "SPLG",
+  "code": "NYSEARCA:SPLG",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "S&P500"
+  ]
+ },
+ {
+  "name": "VTI",
+  "code": "NYSEARCA:VTI",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "미국 전체시장"
+  ]
+ },
+ {
+  "name": "VT",
+  "code": "NYSEARCA:VT",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "전세계 주식"
+  ]
+ },
+ {
+  "name": "DIA",
+  "code": "NYSEARCA:DIA",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "다우존스"
+  ]
+ },
+ {
+  "name": "IWM",
+  "code": "NYSEARCA:IWM",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "러셀2000 소형주"
+  ]
+ },
+ {
+  "name": "DGRO",
+  "code": "NYSEARCA:DGRO",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "배당성장"
+  ]
+ },
+ {
+  "name": "VIG",
+  "code": "NYSEARCA:VIG",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "배당성장"
+  ]
+ },
+ {
+  "name": "JEPI",
+  "code": "NYSEARCA:JEPI",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "커버드콜 월배당"
+  ]
+ },
+ {
+  "name": "JEPQ",
+  "code": "NASDAQ:JEPQ",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "커버드콜 월배당"
+  ]
+ },
+ {
+  "name": "VGT",
+  "code": "NYSEARCA:VGT",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "미국 기술주"
+  ]
+ },
+ {
+  "name": "XLK",
+  "code": "NYSEARCA:XLK",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "미국 기술주"
+  ]
+ },
+ {
+  "name": "SCHG",
+  "code": "NYSEARCA:SCHG",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "미국 성장주"
+  ]
+ },
+ {
+  "name": "VUG",
+  "code": "NYSEARCA:VUG",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "미국 성장주"
+  ]
+ },
+ {
+  "name": "ARKK",
+  "code": "NYSEARCA:ARKK",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "혁신 성장주"
+  ]
+ },
+ {
+  "name": "SOXX",
+  "code": "NASDAQ:SOXX",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "미국 반도체"
+  ]
+ },
+ {
+  "name": "SMH",
+  "code": "NASDAQ:SMH",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "미국 반도체"
+  ]
+ },
+ {
+  "name": "SOXL",
+  "code": "NYSEARCA:SOXL",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "반도체 3배 레버리지"
+  ]
+ },
+ {
+  "name": "TLT",
+  "code": "NASDAQ:TLT",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "미국 장기채"
+  ]
+ },
+ {
+  "name": "IEF",
+  "code": "NASDAQ:IEF",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "미국 중기채"
+  ]
+ },
+ {
+  "name": "BND",
+  "code": "NASDAQ:BND",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "미국 종합채권"
+  ]
+ },
+ {
+  "name": "GLD",
+  "code": "NYSEARCA:GLD",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "금"
+  ]
+ },
+ {
+  "name": "SLV",
+  "code": "NYSEARCA:SLV",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "은"
+  ]
+ },
+ {
+  "name": "VEA",
+  "code": "NYSEARCA:VEA",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "선진국 주식"
+  ]
+ },
+ {
+  "name": "VWO",
+  "code": "NYSEARCA:VWO",
+  "sector": "미국 ETF",
+  "currency": "USD",
+  "themes": [
+   "신흥국 주식"
+  ]
  }
 ]

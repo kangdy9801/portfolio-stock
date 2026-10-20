@@ -90,6 +90,18 @@ button,input,select{font:inherit;color:inherit}
 .add{padding:18px 20px;margin-bottom:16px;display:none}
 .add.open{display:block}
 .add-grid{display:grid;grid-template-columns:1.6fr 1fr 1.1fr 1fr .8fr 1fr auto;gap:10px;align-items:end}
+[data-pf="long"] .add-grid{grid-template-columns:1.6fr 1fr 1.1fr 1fr .8fr 1fr .9fr auto}
+.acct{display:inline-block;font-size:11px;font-weight:600;padding:1px 6px;border-radius:4px;margin-left:6px;border:1px solid var(--line);color:var(--muted);vertical-align:1px}
+.acct.pension{color:#7C5CD6;border-color:#7C5CD6}.acct.isa{color:#2E9E6B;border-color:#2E9E6B}.acct.irp{color:#00A3B4;border-color:#00A3B4}
+select.cell{font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+.tax-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:12px}
+@media (max-width:980px){.tax-cards{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.tax-cards{grid-template-columns:1fr}}
+.tcard{padding:16px 18px}.tcard h3{margin:0 0 2px;font-size:14px}.tcard .big{font-size:22px;font-weight:700;margin:6px 0 2px}
+.tcard .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:13px;margin-top:6px;color:var(--muted)}.tcard .row b{color:var(--ink);font-weight:600;white-space:nowrap}
+#tAcctBody td:first-child{padding-left:20px}
+.meter{height:8px;border-radius:99px;background:var(--panel-2);overflow:hidden;margin-top:8px}.meter b{display:block;height:100%;background:var(--ink);border-radius:99px}
+.meter.warn b{background:var(--up)}
 @media (max-width:980px){.add-grid{grid-template-columns:1fr 1fr 1fr}}
 @media (max-width:520px){.add-grid{grid-template-columns:1fr 1fr}}
 .field label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
@@ -476,6 +488,7 @@ th.sort[aria-sort="descending"]::after{content:" ▼";font-size:9px}
   <section class="view" id="view-long" role="tabpanel" aria-labelledby="tab-long" hidden>
     <section class="panel goal" id="goalPanel"></section>
     <div data-pf="long"></div>
+    <div id="taxRoot"></div>
     <div id="divRoot"></div>
   </section>
 
@@ -613,6 +626,9 @@ const isUSD = code => /^(NASDAQ|NYSE|NYSEARCA|AMEX):/.test(code);
 
 /* ───────── 상태 ───────── */
 const LISTS = { main:"holdings", long:"longHoldings" };
+const ACCTS = { general:"일반", pension:"연금저축", isa:"ISA", irp:"IRP" };
+const acctOf = x => (x && ACCTS[x.acct]) ? x.acct : "general";
+const acctSel = (cur, attrs) => `<select ${attrs}>${Object.entries(ACCTS).map(([k,v])=>`<option value="${k}" ${k===cur?"selected":""}>${v}</option>`).join("")}</select>`;
 const state = {
   holdings: [], longHoldings: [], watch: [], divInfo: {}, divLog: [], saleLog: [], customEvents: [], customStocks: {}, reports: {ip:{},trade:{},cpi:{},tp:{}},
   settings: { usdkrw: null, long: { title:"장기 프로젝트", target:null, start:null, years:null } },
@@ -770,6 +786,7 @@ function buildPF(key){
       <div class="field"><label>매수평단</label><input data-f="avg" inputmode="decimal" placeholder="0"></div>
       <div class="field"><label>수량</label><input data-f="qty" inputmode="decimal" placeholder="0"></div>
       <div class="field"><label>${long?"목표주가 (선택)":"현재주가 (선택)"}</label><input data-f="extra" inputmode="decimal" placeholder="${long?"예: 300,000":"모르면 비워두기"}"></div>
+      ${long?`<div class="field"><label>계좌</label>${acctSel("general",'data-f="acct"')}</div>`:""}
       <button class="btn primary" data-act="add">추가하기</button>
     </div>
     <div class="field" data-fx style="display:none;margin-top:10px;max-width:220px"><label>원/달러 환율</label><input data-f="fx" inputmode="decimal" placeholder="예: 1,400"></div>
@@ -782,9 +799,9 @@ function buildPF(key){
       <button class="btn primary small" data-act="toggle" aria-expanded="false">종목 추가</button></div>
     </div>
     <div class="scroll">
-      <table data-tbl style="${long?"min-width:1460px":""}">
+      <table data-tbl style="${long?"min-width:1560px":""}">
         <thead><tr>
-          <th class="l">섹터</th><th class="l">종목</th><th class="l">코드</th>
+          ${long?`<th class="l">계좌</th>`:""}<th class="l">섹터</th><th class="l">종목</th><th class="l">코드</th>
           <th>현재주가</th><th>매수평단</th><th>주가추이</th><th>수량</th>
           <th>매수금액</th><th>초기비중</th><th>현재잔고</th><th>현재비중</th><th>수익금</th><th>수익률</th>
           ${long?`<th>목표주가</th><th>상승여력</th><th class="l">메모</th>`:""}
@@ -835,7 +852,9 @@ function renderPF(key, keep){
     const ps = r.price==null ? null : (usd ? "$"+num(r.price,2) : won(r.price));
     const fxMiss = usd && !r.fx;
     const up = (h.target && r.price) ? h.target/r.price-1 : null;
+    const ac = acctOf(h), badAcct = long && ac!=="general" && usd;
     return `<tr data-code="${esc(h.code)}">
+      ${long?`<td class="l">${acctSel(ac, `class="cell" data-key="${key}" data-id="${esc(h.id)}" data-field="acct" aria-label="${esc(h.name)} 계좌"`)}${badAcct?'<span class="pending" style="display:block;color:var(--up)">미국 직상장은 이 계좌에 못 담아요</span>':""}</td>`:""}
       <td class="l"><span class="sector">${esc(h.sector||"기타")}</span></td>
       <td class="l name">${esc(h.name)}</td>
       <td class="l code">${esc(h.code)}</td>
@@ -856,7 +875,7 @@ function renderPF(key, keep){
     </tr>`;
   }).join("");
   host.querySelector("[data-foot]").innerHTML = C.rows.length ? `<tr>
-    <td class="l" colspan="3">합계</td><td></td><td></td><td></td><td></td>
+    <td class="l" colspan="${long?4:3}">합계</td><td></td><td></td><td></td><td></td>
     <td title="매수금액 합계">${won(C.sumBuy)}</td><td>100%</td>
     <td title="현재금액 합계">${won(C.sumCur)}</td><td>100%</td>
     <td class="${cls(C.profit)}">${sgn(C.profit)}${won(C.profit)}</td>
@@ -912,16 +931,17 @@ function wirePF(key, host){
       if(!fxOf("USD")){ fxWrap.style.display=""; return warn("원/달러 환율을 입력하세요."); }
     }
     const list = state[LISTS[key]];
-    const ex = list.find(x=>x.code===code);
+    const acct = (key==="long" && F("acct")) ? F("acct").value : "general";
+    const ex = list.find(x=>x.code===code && (key!=="long" || acctOf(x)===acct));
     if(ex){
       const tq=(ex.qty||0)+qty; ex.avg = ((ex.avg||0)*(ex.qty||0)+avg*qty)/tq; ex.qty=tq;
       if(key==="long" && extra) ex.target = extra;
       hint.className="hint"; hint.textContent=`${name} 기존 보유분에 합쳐 평단을 다시 계산했어요.`;
     } else {
       const h = {id:"h"+Date.now().toString(36)+Math.random().toString(36).slice(2,6), name, sector, code, avg, qty, currency, addedAt: today()};
-      if(key==="long"){ h.target = extra||null; h.memo = ""; }
+      if(key==="long"){ h.target = extra||null; h.memo = ""; h.acct = acct; }
       list.push(h);
-      hint.className="hint"; hint.textContent=`${name} 추가됨.`;
+      hint.className="hint"; hint.textContent=`${name} 추가됨.` + (key==="long" && acct!=="general" && currency==="USD" ? ` 다만 ${ACCTS[acct]} 계좌에서는 미국에 직접 상장된 종목을 살 수 없어요. 같은 지수를 따르는 국내 상장 ETF를 고려해 보세요.` : "");
     }
     if(key==="main" && extra) setManualPrice(code, extra);
     ["name","sector","code","avg","qty","extra","fx"].forEach(n=>F(n).value="");
@@ -929,8 +949,13 @@ function wirePF(key, host){
     render(); scheduleSave(); F("name").focus();
   };
   const body = host.querySelector("[data-body]");
+  body.addEventListener("change", e=>{
+    const t=e.target; if(t.dataset.field!=="acct") return;
+    const h = state[LISTS[key]].find(x=>x.id===t.dataset.id); if(!h) return;
+    h.acct = t.value; render(); scheduleSave();
+  });
   body.addEventListener("input", e=>{
-    const t=e.target; if(!t.dataset.field) return;
+    const t=e.target; if(!t.dataset.field || t.dataset.field==="acct") return;
     const h = state[LISTS[key]].find(x=>x.id===t.dataset.id); if(!h) return;
     if(t.dataset.text){ h[t.dataset.field] = t.value; scheduleSave(); return; }
     const v = parseNum(t.value);
@@ -1247,6 +1272,164 @@ function closeDrawer(){
   if(lastFocus && lastFocus.focus) lastFocus.focus();
 }
 
+/* ───────── 절세 계좌 (연금저축·ISA·IRP) ───────── */
+// 2026년 10월 시행 중인 세법 기준값. 법이 바뀌면 화면의 '세법 기준값'에서 고치면 돼요.
+const TAX_DEF = { isaYear:20000000, isaTotal:100000000, isaFreeGen:2000000, isaFreeLow:4000000, isaSep:0.099, isaYears:3,
+  penCredit:6000000, totCredit:9000000, penPay:18000000, rateLow:0.165, rateHigh:0.132, irpRisk:0.7, isaMoveRate:0.1, isaMoveMax:3000000, divTax:0.154 };
+const TAX_LABEL = { isaYear:["ISA 연간 납입한도","원"], isaTotal:["ISA 총 납입한도","원"], isaFreeGen:["ISA 비과세 한도 (일반형)","원"], isaFreeLow:["ISA 비과세 한도 (서민형·농어민)","원"],
+  isaSep:["ISA 비과세 초과분 세율","%"], isaYears:["ISA 의무 가입기간","년"], penCredit:["연금저축 세액공제 한도","원"], totCredit:["연금저축+IRP 세액공제 한도","원"], penPay:["연금계좌 연간 납입한도","원"],
+  rateLow:["세액공제율 (총급여 5,500만원 이하)","%"], rateHigh:["세액공제율 (총급여 5,500만원 초과)","%"], irpRisk:["IRP 위험자산 한도","%"], isaMoveRate:["ISA→연금 이전 추가공제 비율","%"], isaMoveMax:["ISA→연금 이전 추가공제 최대","원"], divTax:["일반계좌 배당소득세","%"] };
+const SAFE_RE = /(채권|국채|국고채|단기|머니마켓|MMF|CD금리|KOFR|SOFR|금리|통안|크레딧|회사채|TDF|TIF|예금|파킹|달러단기|머니)/;
+const penRateByAge = a => a>=80 ? 0.033 : a>=70 ? 0.044 : 0.055;
+function taxCfg(){
+  const T = state.settings.tax = state.settings.tax || {};
+  T.rules = Object.assign({}, TAX_DEF, T.rules||{});
+  T.years = T.years || {};
+  if(!T.income) T.income = "low"; if(!T.isaType) T.isaType = "gen"; if(!T.age) T.age = 60;
+  return T;
+}
+function taxYear(){ return ui.taxYear || new Date().getFullYear(); }
+function buildTax(){
+  const el = document.getElementById("taxRoot");
+  el.innerHTML = `
+  <div class="div-head"><h2>절세 계좌 (연금저축 · ISA · IRP)</h2>
+    <label class="code">연도 <select id="tYear" aria-label="연도 선택"></select></label></div>
+  <div class="tax-cards" id="tCards"></div>
+  <div id="tWarn"></div>
+  <section class="panel log-form">
+    <h2 style="margin:0 0 10px;font-size:15px;font-weight:600">내 조건과 올해 납입액</h2>
+    <div class="lf-grid" style="grid-template-columns:repeat(4,minmax(0,1fr))">
+      <div class="field"><label for="tIncome">총급여 (세액공제율)</label><select id="tIncome"><option value="low">5,500만원 이하 (16.5%)</option><option value="high">5,500만원 초과 (13.2%)</option></select></div>
+      <div class="field"><label for="tAge">연금 받기 시작할 나이</label><input id="tAge" inputmode="numeric" placeholder="60"></div>
+      <div class="field"><label for="tIsaType">ISA 유형</label><select id="tIsaType"><option value="gen">일반형</option><option value="low">서민형·농어민형</option></select></div>
+      <div class="field"><label for="tIsaOpen">ISA 가입일</label><input id="tIsaOpen" type="date"></div>
+      <div class="field"><label for="tPen" id="tPenL">올해 연금저축 납입액</label><input id="tPen" inputmode="decimal" placeholder="0"></div>
+      <div class="field"><label for="tIrp" id="tIrpL">올해 IRP 납입액 (본인 부담분)</label><input id="tIrp" inputmode="decimal" placeholder="0"></div>
+      <div class="field"><label for="tIsa" id="tIsaL">올해 ISA 납입액</label><input id="tIsa" inputmode="decimal" placeholder="0"></div>
+      <div class="field"><label for="tIsaTot">ISA 누적 납입액 (가입 후 전체)</label><input id="tIsaTot" inputmode="decimal" placeholder="0"></div>
+      <div class="field"><label for="tIsaReal">ISA 확정 손익 (매도 차익 등, 선택)</label><input id="tIsaReal" inputmode="decimal" placeholder="0"></div>
+    </div>
+    <p class="hint" style="font-size:13px;color:var(--muted);margin:10px 0 0">위 '장기 보유 종목' 표에서 종목마다 계좌를 고르면 계좌별 평가금액과 수익이 자동으로 들어가요. 분배금은 아래 '실제 입금 기록'에서 계좌를 골라 기록하면 반영돼요.</p>
+  </section>
+  <section class="panel sec">
+    <div class="sec-head"><h2>계좌별 현황</h2><p>장기 보유 종목의 계좌 기준이에요.</p></div>
+    <div class="scroll"><table class="sumtab" style="min-width:760px"><thead><tr><th class="l">계좌</th><th>종목 수</th><th>매수금액</th><th>평가금액</th><th>평가손익</th><th>누적 분배금 (세전)</th><th class="l">세금 처리</th></tr></thead><tbody id="tAcctBody"></tbody></table></div>
+  </section>
+  <details class="panel" style="padding:14px 18px;margin-bottom:16px"><summary style="cursor:pointer;font-weight:600">세법 기준값 (법이 바뀌면 여기서 고치세요)</summary>
+    <p class="code" style="margin:8px 0 10px">2026년 10월 현재 시행 기준이에요. ISA 납입·비과세 한도 확대는 정부안으로 논의됐지만 아직 법이 바뀌지 않았어요. 바뀌면 해당 숫자만 고치면 모든 계산에 반영돼요.</p>
+    <div class="lf-grid" id="tRules" style="grid-template-columns:repeat(3,minmax(0,1fr))"></div>
+    <button class="btn small" id="tRulesReset" style="margin-top:10px">기본값으로 되돌리기</button>
+  </details>`;
+  const T = taxCfg();
+  document.getElementById("tYear").onchange = e=>{ ui.taxYear = +e.target.value; renderTax(); };
+  const bind = (id, fn) => { const inp = document.getElementById(id); inp.addEventListener("input", ()=>{ fn(inp.value); renderTax(true); scheduleSave(); }); inp.addEventListener("change", ()=>{ fn(inp.value); renderTax(); scheduleSave(); }); inp.addEventListener("blur", ()=>renderTax()); };
+  const Y = () => { const T=taxCfg(), y=taxYear(); T.years[y] = T.years[y] || {}; return T.years[y]; };
+  bind("tIncome", v=>{ taxCfg().income = v; });
+  bind("tAge", v=>{ taxCfg().age = parseNum(v) || 60; });
+  bind("tIsaType", v=>{ taxCfg().isaType = v; });
+  bind("tIsaOpen", v=>{ taxCfg().isaOpen = v; });
+  bind("tPen", v=>{ Y().pension = parseNum(v); });
+  bind("tIrp", v=>{ Y().irp = parseNum(v); });
+  bind("tIsa", v=>{ Y().isa = parseNum(v); });
+  bind("tIsaTot", v=>{ taxCfg().isaTotal = parseNum(v); });
+  bind("tIsaReal", v=>{ taxCfg().isaRealized = parseNum(v); });
+  document.getElementById("tRules").innerHTML = Object.entries(TAX_LABEL).map(([k,[l,u]])=>`<div class="field"><label for="tr_${k}">${l} (${u})</label><input id="tr_${k}" data-rule="${k}" inputmode="decimal"></div>`).join("");
+  document.getElementById("tRules").addEventListener("input", e=>{
+    const k = e.target.dataset.rule; if(!k) return; const T = taxCfg(); const v = parseNum(e.target.value);
+    if(v==null) delete T.rules[k]; else T.rules[k] = TAX_LABEL[k][1]==="%" ? v/100 : v;
+    renderTax(true); scheduleSave();
+  });
+  document.getElementById("tRulesReset").onclick = ()=>{ taxCfg().rules = Object.assign({}, TAX_DEF); renderTax(); scheduleSave(); };
+}
+function taxCalc(){
+  const T = taxCfg(), R = T.rules, y = taxYear(), Y = T.years[y] || {};
+  const rate = T.income==="high" ? R.rateHigh : R.rateLow;
+  const C = compute("long");
+  const by = {}; Object.keys(ACCTS).forEach(k=>by[k] = {n:0, buy:0, cur:0, profit:0, div:0, rows:[]});
+  C.rows.forEach(r=>{ const a = by[acctOf(r.h)]; a.n++; a.buy+=r.buy; a.cur+=r.cur; a.profit+=r.profit; a.rows.push(r); });
+  (state.divLog||[]).forEach(d=>{ const fx = d.currency==="USD" ? (d.fx||fxOf("USD")||0) : 1; by[acctOf(d)].div += d.gross*fx; });
+  // 연금저축·IRP 세액공제
+  const pen = Y.pension||0, irp = Y.irp||0;
+  const penCred = Math.min(pen, R.penCredit), totCred = Math.min(penCred + irp, R.totCredit);
+  const refund = totCred*rate, remainCredit = Math.max(0, R.totCredit - totCred);
+  const payRoom = Math.max(0, R.penPay - pen - irp);
+  // IRP 위험자산 비중
+  const irpRows = by.irp.rows, irpTot = by.irp.cur;
+  const irpRisk = irpTot ? irpRows.filter(r=>!SAFE_RE.test(r.h.name)).reduce((a,r)=>a+r.cur,0)/irpTot : null;
+  // ISA
+  const isaTot = T.isaTotal || 0, now = new Date();
+  let elapsed = 0, maturity = null, dleft = null;
+  if(T.isaOpen){ const o = new Date(T.isaOpen+"T00:00:00"); elapsed = Math.max(0, y - o.getFullYear()); maturity = new Date(o); maturity.setFullYear(o.getFullYear()+R.isaYears); dleft = Math.ceil((maturity - now)/864e5); }
+  const cumCap = Math.min(R.isaYear*(1+Math.min(4, elapsed)), R.isaTotal);
+  const isaRoom = Math.max(0, Math.min(cumCap - isaTot, R.isaTotal - isaTot));
+  const isaNet = by.isa.profit + (T.isaRealized||0) + by.isa.div;
+  const isaFree = T.isaType==="low" ? R.isaFreeLow : R.isaFreeGen;
+  const isaRemainFree = Math.max(0, isaFree - Math.max(0, isaNet));
+  const isaTaxIfClose = Math.max(0, isaNet - isaFree)*R.isaSep;
+  const isaBenefit = Math.min(Math.max(0, isaNet), isaFree)*R.divTax + Math.max(0, isaNet - isaFree)*(R.divTax - R.isaSep);
+  const isaValue = by.isa.cur || isaTot;
+  const moveCredit = Math.min(isaValue*R.isaMoveRate, R.isaMoveMax), moveRefund = moveCredit*rate;
+  // 연금계좌 과세이연
+  const defGain = Math.max(0, by.pension.profit + by.irp.profit) + by.pension.div + by.irp.div;
+  const taxIfGeneral = defGain*R.divTax, penTax = defGain*penRateByAge(T.age||60);
+  return {T, R, y, Y, rate, by, pen, irp, penCred, totCred, refund, remainCredit, payRoom, irpRisk, irpTot, isaTot, elapsed, maturity, dleft, cumCap, isaRoom, isaNet, isaFree, isaRemainFree, isaTaxIfClose, isaBenefit, isaValue, moveCredit, moveRefund, defGain, taxIfGeneral, penTax};
+}
+function renderTax(typing){
+  const X = taxCalc(), {T, R} = X;
+  const ys = new Set([new Date().getFullYear(), ...Object.keys(T.years).map(Number)]);
+  const ysel = document.getElementById("tYear"), yl = [...ys].filter(Boolean).sort((a,b)=>b-a);
+  const yh = yl.map(y=>`<option value="${y}" ${y===X.y?"selected":""}>${y}년</option>`).join(""); if(ysel.dataset.h!==yh){ ysel.innerHTML = yh; ysel.dataset.h = yh; }
+  const a = document.activeElement, setv = (id,v) => { const el=document.getElementById(id); if(el && el!==a) el.value = v; };
+  setv("tIncome", T.income); setv("tAge", T.age||""); setv("tIsaType", T.isaType); setv("tIsaOpen", T.isaOpen||"");
+  setv("tPen", X.Y.pension!=null ? num(X.Y.pension) : ""); setv("tIrp", X.Y.irp!=null ? num(X.Y.irp) : ""); setv("tIsa", X.Y.isa!=null ? num(X.Y.isa) : "");
+  setv("tIsaTot", T.isaTotal!=null ? num(T.isaTotal) : ""); setv("tIsaReal", T.isaRealized!=null ? num(T.isaRealized) : "");
+  document.getElementById("tPenL").textContent = `${X.y}년 연금저축 납입액`; document.getElementById("tIrpL").textContent = `${X.y}년 IRP 납입액 (본인 부담분)`; document.getElementById("tIsaL").textContent = `${X.y}년 ISA 납입액`;
+  Object.keys(TAX_LABEL).forEach(k=>setv("tr_"+k, TAX_LABEL[k][1]==="%" ? +(R[k]*100).toFixed(2) : num(R[k])));
+  const m = (v, max, warn) => `<div class="meter ${warn?"warn":""}"><b style="width:${max? Math.min(100, v/max*100).toFixed(1):0}%"></b></div>`;
+  const pr = v => (v*100).toFixed(1)+"%";
+  document.getElementById("tCards").innerHTML = `
+    <div class="panel tcard"><h3>${X.y}년 연금 세액공제</h3><span class="code">연금저축 + IRP</span>
+      <div class="big">${won(X.refund)}원</div><span class="code">연말정산 환급 예상 (공제율 ${pr(X.rate)})</span>
+      ${m(X.totCred, R.totCredit)}
+      <div class="row"><span>공제 대상 납입</span><b>${won(X.totCred)} / ${won(R.totCredit)}원</b></div>
+      <div class="row"><span>남은 공제 한도</span><b>${won(X.remainCredit)}원</b></div>
+      <div class="row"><span>다 채우면 추가 환급</span><b class="up">+${won(X.remainCredit*X.rate)}원</b></div></div>
+    <div class="panel tcard"><h3>연금저축 · IRP 한도</h3><span class="code">${X.y}년 납입 기준</span>
+      <div class="row"><span>연금저축 (공제 ${won(R.penCredit)}원까지)</span><b>${won(X.pen)}원</b></div>${m(X.pen, R.penCredit)}
+      <div class="row"><span>IRP</span><b>${won(X.irp)}원</b></div>
+      <div class="row"><span>합산 납입 / 연 ${won(R.penPay)}원</span><b>${won(X.pen+X.irp)}원</b></div>${m(X.pen+X.irp, R.penPay, X.pen+X.irp>R.penPay)}
+      <div class="row"><span>올해 더 넣을 수 있는 금액</span><b>${won(X.payRoom)}원</b></div>
+      <div class="row"><span>IRP 위험자산 비중 (한도 ${pr(R.irpRisk)})</span><b class="${X.irpRisk>R.irpRisk?"up":""}">${X.irpRisk==null?"—":pr(X.irpRisk)}</b></div></div>
+    <div class="panel tcard"><h3>ISA 남은 비과세</h3><span class="code">${T.isaType==="low"?"서민형·농어민형":"일반형"} · 한도 ${won(X.isaFree)}원</span>
+      <div class="big">${won(X.isaRemainFree)}원</div><span class="code">순이익 ${sgn(X.isaNet)}${won(X.isaNet)}원 (평가손익 + 분배금 + 확정 손익)</span>
+      ${m(Math.max(0,X.isaNet), X.isaFree, X.isaNet>X.isaFree)}
+      <div class="row"><span>지금 해지하면 낼 세금</span><b>${won(X.isaTaxIfClose)}원</b></div>
+      <div class="row"><span>${X.y}년 더 넣을 수 있는 금액</span><b>${T.isaOpen?won(X.isaRoom)+"원":"가입일 입력 필요"}</b></div>
+      <div class="row"><span>총 납입 / ${won(R.isaTotal)}원</span><b>${won(X.isaTot)}원</b></div>
+      <div class="row"><span>의무 가입기간 만료</span><b>${X.maturity ? (X.dleft>0 ? `D-${X.dleft} (${X.maturity.toISOString().slice(0,10)})` : "만료 · 해지·연장 가능") : "—"}</b></div></div>
+    <div class="panel tcard"><h3>과세이연 · 절세 효과</h3><span class="code">지금까지 쌓인 효과 (추정)</span>
+      <div class="row"><span>연금계좌에서 미뤄둔 수익</span><b>${won(X.defGain)}원</b></div>
+      <div class="row"><span>일반계좌였다면 세금 (${pr(R.divTax)})</span><b>${won(X.taxIfGeneral)}원</b></div>
+      <div class="row"><span>${T.age||60}세부터 연금 수령 시 (${pr(penRateByAge(T.age||60))})</span><b>${won(X.penTax)}원</b></div>
+      <div class="row"><span>연금계좌 절세 차이</span><b class="up">+${won(Math.max(0,X.taxIfGeneral-X.penTax))}원</b></div>
+      <div class="row"><span>ISA 비과세·분리과세 효과</span><b class="up">+${won(X.isaBenefit)}원</b></div>
+      <div class="row"><span>ISA 만기 → 연금 이전 시 추가 환급</span><b class="up">+${won(X.moveRefund)}원</b></div></div>`;
+  // 경고
+  const W = [];
+  const usdBad = (state.longHoldings||[]).filter(h=>acctOf(h)!=="general" && h.currency==="USD");
+  if(usdBad.length) W.push(`미국에 직접 상장된 ${usdBad.map(h=>esc(h.name)).join(", ")}은(는) ${[...new Set(usdBad.map(h=>ACCTS[acctOf(h)]))].join("·")} 계좌에서 살 수 없어요. 같은 지수를 따르는 국내 상장 ETF(예: TIGER 미국S&P500, TIGER 미국배당다우존스)로 바꾸거나 계좌를 '일반'으로 바꿔 주세요.`);
+  if(X.irpRisk!=null && X.irpRisk>R.irpRisk) W.push(`IRP의 위험자산 비중이 ${pr(X.irpRisk)}로 한도 ${pr(R.irpRisk)}를 넘어요. 채권·TDF 같은 안전자산을 30% 이상 담아야 해요. (이름에 채권·국채·단기·TDF 등이 들어간 종목을 안전자산으로 봤어요)`);
+  if(X.pen+X.irp > R.penPay) W.push(`연금저축과 IRP 합산 납입액이 연 납입한도 ${won(R.penPay)}원을 넘어요.`);
+  if(X.isaNet > X.isaFree) W.push(`ISA 순이익이 비과세 한도를 넘었어요. 넘는 ${won(X.isaNet-X.isaFree)}원은 해지할 때 ${pr(R.isaSep)} 분리과세돼요.`);
+  if(X.maturity && X.dleft<=90) W.push(X.dleft>0 ? `ISA 의무 가입기간이 ${X.dleft}일 남았어요. 만기 후 60일 안에 연금계좌로 옮기면 옮긴 금액의 ${pr(R.isaMoveRate)}(최대 ${won(R.isaMoveMax)}원)를 추가로 세액공제받을 수 있어요.` : `ISA 의무 가입기간이 지났어요. 해지 후 60일 안에 연금계좌로 옮기면 추가 세액공제(최대 ${won(R.isaMoveMax)}원)를 받을 수 있어요.`);
+  if(new Date().getMonth()>=9 && X.y===new Date().getFullYear() && X.remainCredit>0) W.push(`올해가 ${12-new Date().getMonth()}달 남았어요. 연금저축·IRP에 ${won(X.remainCredit)}원을 더 넣으면 연말정산에서 약 ${won(X.remainCredit*X.rate)}원을 더 돌려받을 수 있어요.`);
+  document.getElementById("tWarn").innerHTML = W.map(w=>`<div class="warnbox">${w}</div>`).join("");
+  // 계좌별 표
+  const how = { general:"배당 15.4% 원천징수 · 해외주식 양도세 22%", pension:"과세이연 → 수령 시 연금소득세 3.3~5.5%", isa:"비과세 한도 초과분만 9.9% 분리과세", irp:"과세이연 → 수령 시 연금소득세 3.3~5.5%" };
+  document.getElementById("tAcctBody").innerHTML = Object.keys(ACCTS).map(k=>{ const b = X.by[k];
+    return `<tr><td class="l"><span class="acct ${k}" style="margin:0">${ACCTS[k]}</span></td><td>${b.n}</td><td>${won(b.buy)}</td><td>${won(b.cur)}</td><td class="${cls(b.profit)}">${sgn(b.profit)}${won(b.profit)}</td><td>${won(b.div)}</td><td class="l code">${how[k]}</td></tr>`; }).join("");
+}
+
 /* ───────── 배당·실현수익 (장기 프로젝트) ───────── */
 const TX_RATE = 0.002;          // 국내 증권거래세 0.20% (2026)
 const CG_DEDUCT = 2500000;      // 양도소득 기본공제 연 250만원
@@ -1260,11 +1443,12 @@ function divRows(){
     const f = (state.market.fundamentals||{})[h.code] || {};
     const dps = info.dps!=null ? info.dps : (f.dps!=null ? f.dps : null);
     const months = Array.isArray(info.months) ? info.months : [];
-    const rate = info.rate!=null ? info.rate : defRate(h.currency);
+    const acct = acctOf(h), deferred = acct!=="general";
+    const rate = deferred ? 0 : (info.rate!=null ? info.rate : defRate(h.currency));
     const fx = fxOf(h.currency) || 0;
     const gross = (dps||0)*(h.qty||0)*fx;
     const price = priceOf(h.code);
-    return {h, info, dps, dpsAuto: info.dps==null && f.dps!=null, months, rate, gross, net: gross*(1-rate),
+    return {h, info, dps, acct, deferred, dpsAuto: info.dps==null && f.dps!=null, months, rate, gross, net: gross*(1-rate),
       yld: (dps&&price)? dps/price : null, yoc: (dps&&h.avg)? dps/h.avg : null};
   });
 }
@@ -1286,7 +1470,7 @@ function saleCalc(year){
     const proceeds = s.sell*s.qty*fx, cost = s.buy*s.qty*fx, gain = proceeds-cost;
     const tx = usd ? 0 : proceeds*TX_RATE;
     let cg = 0;
-    if(usd){ cum += gain; const t = Math.max(0, cum-CG_DEDUCT)*CG_RATE; cg = t-prevTax; prevTax = t; }
+    if(usd && acctOf(s)==="general"){ cum += gain; const t = Math.max(0, cum-CG_DEDUCT)*CG_RATE; cg = t-prevTax; prevTax = t; }
     const pre = gain - tx;
     return {s, proceeds, gain, tx, pre, cg, post: pre-cg};
   });
@@ -1335,6 +1519,7 @@ function buildDiv(){
       <div class="field"><label for="lDivCode">종목</label><select id="lDivCode"></select></div>
       <div class="field"><label for="lDivAmt">받은 금액</label><input id="lDivAmt" inputmode="decimal" placeholder="0"></div>
       <div class="field"><label for="lDivBasis">금액 기준</label><select id="lDivBasis"><option value="net">세후 (통장 입금액)</option><option value="gross">세전</option></select></div>
+      <div class="field"><label for="lDivAcct">계좌</label>${acctSel("general",'id="lDivAcct"')}</div>
       <div class="field"><label for="lDivRate">배당세율 %</label><input id="lDivRate" inputmode="decimal"></div>
       <div class="field" id="lDivFxW" style="display:none"><label for="lDivFx">환율</label><input id="lDivFx" inputmode="decimal" placeholder="원/달러"></div>
       <button class="btn primary" id="lDivAdd">기록 추가</button>
@@ -1345,6 +1530,7 @@ function buildDiv(){
       <div class="field"><label for="lSaleQty">수량</label><input id="lSaleQty" inputmode="decimal" placeholder="0"></div>
       <div class="field"><label for="lSalePx">매도가</label><input id="lSalePx" inputmode="decimal" placeholder="0"></div>
       <div class="field"><label for="lSaleBuy">매수평단</label><input id="lSaleBuy" inputmode="decimal"></div>
+      <div class="field"><label for="lSaleAcct">계좌</label>${acctSel("general",'id="lSaleAcct"')}</div>
       <div class="field" id="lSaleFxW" style="display:none"><label for="lSaleFx">환율</label><input id="lSaleFx" inputmode="decimal" placeholder="원/달러"></div>
       <button class="btn primary" id="lSaleAdd">기록 추가</button>
       <label class="chk" style="grid-column:1/-1"><input type="checkbox" id="lSaleReduce" checked> 장기 보유 수량에서 매도 수량만큼 빼기</label>
@@ -1386,7 +1572,9 @@ function buildDiv(){
   const syncDiv = ()=>{
     const code = document.getElementById("lDivCode").value, I = infoOf(code);
     const info = (state.divInfo||{})[code] || {};
-    document.getElementById("lDivRate").value = ((info.rate!=null?info.rate:defRate(I.currency))*100).toFixed(1);
+    const lh = state.longHoldings.find(x=>x.code===code);
+    document.getElementById("lDivAcct").value = acctOf(lh);
+    document.getElementById("lDivRate").value = acctOf(lh)!=="general" ? "0.0" : ((info.rate!=null?info.rate:defRate(I.currency))*100).toFixed(1);
     document.getElementById("lDivFxW").style.display = I.currency==="USD" ? "" : "none";
     if(I.currency==="USD") document.getElementById("lDivFx").value = fxOf("USD") || "";
   };
@@ -1394,11 +1582,13 @@ function buildDiv(){
     const code = document.getElementById("lSaleCode").value, I = infoOf(code);
     const h = state.longHoldings.find(x=>x.code===code) || state.holdings.find(x=>x.code===code);
     document.getElementById("lSaleBuy").value = h && h.avg ? h.avg : "";
+    document.getElementById("lSaleAcct").value = acctOf(state.longHoldings.find(x=>x.code===code));
     const p = priceOf(code); if(p) document.getElementById("lSalePx").placeholder = num(p, I.currency==="USD"?2:0);
     document.getElementById("lSaleFxW").style.display = I.currency==="USD" ? "" : "none";
     if(I.currency==="USD") document.getElementById("lSaleFx").value = fxOf("USD") || "";
   };
   document.getElementById("lDivCode").onchange = syncDiv;
+  document.getElementById("lDivAcct").onchange = e=>{ if(e.target.value!=="general") document.getElementById("lDivRate").value = "0.0"; else syncDiv(); };
   document.getElementById("lSaleCode").onchange = syncSale;
   ui._syncDiv = syncDiv; ui._syncSale = syncSale;
   const hint = document.getElementById("lfHint");
@@ -1408,9 +1598,10 @@ function buildDiv(){
     const basis = document.getElementById("lDivBasis").value, I = infoOf(code);
     if(!date || !code){ hint.textContent = "입금 월과 종목을 고르세요."; return; }
     if(amt==null || amt<=0){ hint.textContent = "받은 금액을 입력하세요."; return; }
-    const r = (rate==null ? defRate(I.currency)*100 : rate)/100;
+    const dacct = document.getElementById("lDivAcct").value;
+    const r = dacct!=="general" ? 0 : (rate==null ? defRate(I.currency)*100 : rate)/100;
     const gross = basis==="net" ? amt/(1-r) : amt;
-    const rec = {id:"d"+Date.now().toString(36), date, code, name:I.name, gross, rate:r, currency:I.currency};
+    const rec = {id:"d"+Date.now().toString(36), date, code, name:I.name, gross, rate:r, currency:I.currency, acct:dacct};
     if(I.currency==="USD"){ const fx = parseNum(document.getElementById("lDivFx").value)||fxOf("USD"); if(!fx){ hint.textContent="환율을 입력하세요."; return; } rec.fx = fx; }
     state.divLog = (state.divLog||[]).concat(rec);
     document.getElementById("lDivAmt").value = "";
@@ -1424,11 +1615,11 @@ function buildDiv(){
     const I = infoOf(code);
     if(!date || !code){ hint.textContent = "매도일과 종목을 고르세요."; return; }
     if(!qty || !sell || buy==null){ hint.textContent = "수량, 매도가, 매수평단을 입력하세요."; return; }
-    const rec = {id:"s"+Date.now().toString(36), date, code, name:I.name, qty, sell, buy, currency:I.currency};
+    const rec = {id:"s"+Date.now().toString(36), date, code, name:I.name, qty, sell, buy, currency:I.currency, acct:document.getElementById("lSaleAcct").value};
     if(I.currency==="USD"){ const fx = parseNum(document.getElementById("lSaleFx").value)||fxOf("USD"); if(!fx){ hint.textContent="환율을 입력하세요."; return; } rec.fx = fx; }
     state.saleLog = (state.saleLog||[]).concat(rec);
     if(document.getElementById("lSaleReduce").checked){
-      const h = state.longHoldings.find(x=>x.code===code);
+      const h = state.longHoldings.find(x=>x.code===code && acctOf(x)===rec.acct) || state.longHoldings.find(x=>x.code===code);
       if(h){ h.qty = Math.max(0,(h.qty||0)-qty); if(h.qty===0) state.longHoldings = state.longHoldings.filter(x=>x!==h); }
     }
     ["lSaleQty","lSalePx"].forEach(id=>document.getElementById(id).value="");
@@ -1475,11 +1666,11 @@ function renderDiv(keep){
   document.getElementById("dList").innerHTML = rows.map(r=>{
     const usd = r.h.currency==="USD";
     return `<tr data-code="${esc(r.h.code)}">
-      <td class="l name">${esc(r.h.name)}</td>
+      <td class="l name">${esc(r.h.name)}${r.acct!=="general"?`<span class="acct ${r.acct}">${ACCTS[r.acct]}</span>`:""}</td>
       <td>${num(r.h.qty,4)}</td>
       <td><input class="cell" data-dfield="dps" data-code="${esc(r.h.code)}" inputmode="decimal" placeholder="—" value="${esc(kv(r.h.code,"dps", r.dps!=null? num(r.dps,usd?2:0):""))}" aria-label="${esc(r.h.name)} 주당 배당금">${r.dpsAuto?'<span class="pending">재무 데이터 값</span>':""}</td>
       <td class="l"><input class="cell memo" style="width:110px" data-dfield="months" data-code="${esc(r.h.code)}" placeholder="예: 4,5,8,11" value="${esc(kv(r.h.code,"months", r.info.monthsText!=null? r.info.monthsText : r.months.join(",")))}" aria-label="${esc(r.h.name)} 지급월"></td>
-      <td><input class="cell qty" data-dfield="rate" data-code="${esc(r.h.code)}" inputmode="decimal" value="${esc(kv(r.h.code,"rate", (r.rate*100).toFixed(1)))}" aria-label="${esc(r.h.name)} 배당세율">%</td>
+      <td>${r.deferred ? `<span class="code" title="계좌 안에서 받는 분배금은 지금 세금을 떼지 않아요">${r.acct==="isa"?"ISA 비과세":"과세이연"}</span>` : `<input class="cell qty" data-dfield="rate" data-code="${esc(r.h.code)}" inputmode="decimal" value="${esc(kv(r.h.code,"rate", (r.rate*100).toFixed(1)))}" aria-label="${esc(r.h.name)} 배당세율">%`}</td>
       <td>${r.yld!=null?pct(r.yld,2):"—"}</td>
       <td>${r.yoc!=null?pct(r.yoc,2):"—"}</td>
       <td>${won(r.gross)}</td><td><b>${won(r.net)}</b></td><td>${won(r.net/12)}</td></tr>`;
@@ -1526,12 +1717,15 @@ function renderDiv(keep){
     <div class="panel card"><span>${year}년 받은 배당 (세후)</span><b>${won(S.n)}원</b><small>세전 ${won(S.g)}원 · 배당소득세 ${won(S.t)}원</small></div>
     <div class="panel card"><span>${year}년 매도차익 (양도세 후)</span><b class="${cls(S.post)}">${sgn(S.post)}${won(S.post)}원</b><small>양도세 전 ${sgn(S.pre)}${won(S.pre)}원 · 양도세 ${won(S.cg)}원</small></div>
     <div class="panel card"><span>${year}년 최종 실수령</span><b class="${cls(S.n+S.post)}">${sgn(S.n+S.post)}${won(S.n+S.post)}원</b><small>월평균 ${won((S.n+S.post)/months)}원</small></div>`;
-  const finInc = Math.max(S.g, tg);
+  const tgGen = rows.filter(r=>!r.deferred).reduce((a,r)=>a+r.gross,0);
+  const sgGen = dv.filter(x=>acctOf(x.d)==="general").reduce((a,x)=>a+x.gross,0);
+  const finInc = Math.max(sgGen, tgGen);
   document.getElementById("dWarn").innerHTML = finInc > DIV_LIMIT*0.8 ? `<div class="warnbox">올해 배당 세전 금액이 ${won(finInc)}원으로, 금융소득종합과세 기준(이자·배당 합계 연 2,000만 원)에 ${finInc>DIV_LIMIT?"넘었어요":"가까워요"}. 넘는 부분은 다른 소득과 합산돼 세율이 올라갈 수 있어요. 2026년부터는 요건을 갖춘 고배당 기업 배당에 한해 14~30% 분리과세를 선택할 수도 있으니 세무사와 확인해 보세요.</div>` : "";
 
   // 기록 목록
-  const allDiv = (state.divLog||[]).map(d=>{ const fx=d.currency==="USD"?(d.fx||fxOf("USD")||0):1, g=d.gross*fx; return {id:d.id, date:d.date, type:"배당", name:d.name, g, t:g*d.rate, n:g*(1-d.rate)}; });
-  const saleRows = []; yearsAvail().forEach(y=>saleCalc(y).forEach(x=>saleRows.push({id:x.s.id, date:x.s.date, type:"매도", name:x.s.name, g:x.pre, t:x.cg, n:x.post})));
+  const atag = x => acctOf(x)!=="general" ? `<span class="acct ${acctOf(x)}">${ACCTS[acctOf(x)]}</span>` : "";
+  const allDiv = (state.divLog||[]).map(d=>{ const fx=d.currency==="USD"?(d.fx||fxOf("USD")||0):1, g=d.gross*fx; return {id:d.id, date:d.date, type:"배당"+atag(d), name:d.name, g, t:g*d.rate, n:g*(1-d.rate)}; });
+  const saleRows = []; yearsAvail().forEach(y=>saleCalc(y).forEach(x=>saleRows.push({id:x.s.id, date:x.s.date, type:"매도"+atag(x.s), name:x.s.name, g:x.pre, t:x.cg, n:x.post})));
   const logs = allDiv.concat(saleRows).sort((a,b)=>String(b.date).localeCompare(String(a.date)));
   document.getElementById("logBody").innerHTML = logs.length ? logs.map(l=>`<tr><td class="l">${esc(l.date)}</td><td class="l">${l.type}</td><td class="l">${esc(l.name)}</td>
     <td class="${l.type==="매도"?cls(l.g):""}">${won(l.g)}</td><td>${l.t?won(l.t):"0"}</td><td class="${cls(l.n)}"><b>${won(l.n)}</b></td>
@@ -2509,7 +2703,7 @@ function render(){
   if(ui.tab==="portfolio"){ renderPF("main", keep); renderUpNext(); }
   if(ui.tab==="macro") renderMacro();
   if(ui.tab==="report") renderReport();
-  if(ui.tab==="long"){ renderPF("long", keep); renderGoal(); renderDiv(dkeep); }
+  if(ui.tab==="long"){ renderPF("long", keep); renderGoal(); renderTax(); renderDiv(dkeep); }
   if(ui.tab==="sector") renderSector();
   if(openCode) renderDrawer(openCode);
   if(dkeep){
@@ -2709,6 +2903,7 @@ function applyP(d){
   const s = d && d.settings ? JSON.parse(JSON.stringify(d.settings)) : {};
   state.settings = Object.assign({usdkrw:null}, s);
   state.settings.long = Object.assign({title:"장기 프로젝트", target:null, start:null, years:null}, s.long||{});
+  state.settings.tax = s.tax ? s.tax : {};
 }
 function applyM(d){ state.market = Object.assign({quotes:{},fundamentals:{},feargreed:null,fx:{}}, d ? JSON.parse(JSON.stringify(d)) : {}); }
 function loadLocal(){
@@ -2770,7 +2965,7 @@ document.getElementById("impFile").onchange = async e=>{
 };
 function setNote(t){ document.getElementById("storeNote").textContent=t; }
 async function init(){
-  buildPF("main"); buildPF("long"); buildGoal(); buildDiv();
+  buildPF("main"); buildPF("long"); buildGoal(); buildTax(); buildDiv();
   const hadLocal = loadLocal();
   setTab(location.hash.slice(1));
   setNote("데이터는 이 브라우저에만 저장돼요.");
